@@ -1,0 +1,1773 @@
+{
+  "Edmx": {
+    "Version": "4.0",
+    "xmlns:edmx": "http://docs.oasis-open.org/odata/ns/edmx",
+    "DataServices": {
+      "Schema": {
+        "Namespace": "Microsoft.OutlookServices",
+        "xmlns": "http://docs.oasis-open.org/odata/ns/edm",
+        "EnumType": [
+          {
+            "Name": "MeetingMessageType",
+            "Member": [
+              {
+                "Name": "None",
+                "Value": "0"
+              },
+              {
+                "Name": "MeetingRequest",
+                "Value": "1"
+              },
+              {
+                "Name": "MeetingCancelled",
+                "Value": "2"
+              },
+              {
+                "Name": "MeetingAccepted",
+                "Value": "3"
+              },
+              {
+                "Name": "MeetingTenativelyAccepted",
+                "Value": "4"
+              },
+              {
+                "Name": "MeetingDeclined",
+                "Value": "5"
+              }
+            ]
+          },
+          {
+            "Name": "BodyType",
+            "Member": [
+              {
+                "Name": "Text",
+                "Value": "0"
+              },
+              {
+                "Name": "HTML",
+                "Value": "1"
+              }
+            ]
+          },
+          {
+            "Name": "Importance",
+            "Member": [
+              {
+                "Name": "Low",
+                "Value": "0"
+              },
+              {
+                "Name": "Normal",
+                "Value": "1"
+              },
+              {
+                "Name": "High",
+                "Value": "2"
+              }
+            ]
+          },
+          {
+            "Name": "CalendarColor",
+            "Member": [
+              {
+                "Name": "LightBlue",
+                "Value": "0"
+              },
+              {
+                "Name": "LightGreen",
+                "Value": "1"
+              },
+              {
+                "Name": "LightOrange",
+                "Value": "2"
+              },
+              {
+                "Name": "LightGray",
+                "Value": "3"
+              },
+              {
+                "Name": "LightYellow",
+                "Value": "4"
+              },
+              {
+                "Name": "LightTeal",
+                "Value": "5"
+              },
+              {
+                "Name": "LightPink",
+                "Value": "6"
+              },
+              {
+                "Name": "LightBrown",
+                "Value": "7"
+              },
+              {
+                "Name": "LightRed",
+                "Value": "8"
+              },
+              {
+                "Name": "MaxColor",
+                "Value": "9"
+              },
+              {
+                "Name": "Auto",
+                "Value": "-1"
+              }
+            ]
+          },
+          {
+            "Name": "ResponseType",
+            "Member": [
+              {
+                "Name": "None",
+                "Value": "0"
+              },
+              {
+                "Name": "Organizer",
+                "Value": "1"
+              },
+              {
+                "Name": "TentativelyAccepted",
+                "Value": "2"
+              },
+              {
+                "Name": "Accepted",
+                "Value": "3"
+              },
+              {
+                "Name": "Declined",
+                "Value": "4"
+              },
+              {
+                "Name": "NotResponded",
+                "Value": "5"
+              }
+            ]
+          },
+          {
+            "Name": "Sensitivity",
+            "Member": [
+              {
+                "Name": "Normal",
+                "Value": "0"
+              },
+              {
+                "Name": "Personal",
+                "Value": "1"
+              },
+              {
+                "Name": "Private",
+                "Value": "2"
+              },
+              {
+                "Name": "Confidential",
+                "Value": "3"
+              }
+            ]
+          },
+          {
+            "Name": "RecurrencePatternType",
+            "Member": [
+              {
+                "Name": "Daily",
+                "Value": "0"
+              },
+              {
+                "Name": "Weekly",
+                "Value": "1"
+              },
+              {
+                "Name": "AbsoluteMonthly",
+                "Value": "2"
+              },
+              {
+                "Name": "RelativeMonthly",
+                "Value": "3"
+              },
+              {
+                "Name": "AbsoluteYearly",
+                "Value": "4"
+              },
+              {
+                "Name": "RelativeYearly",
+                "Value": "5"
+              }
+            ]
+          },
+          {
+            "Name": "DayOfWeek",
+            "Member": [
+              {
+                "Name": "Sunday",
+                "Value": "0"
+              },
+              {
+                "Name": "Monday",
+                "Value": "1"
+              },
+              {
+                "Name": "Tuesday",
+                "Value": "2"
+              },
+              {
+                "Name": "Wednesday",
+                "Value": "3"
+              },
+              {
+                "Name": "Thursday",
+                "Value": "4"
+              },
+              {
+                "Name": "Friday",
+                "Value": "5"
+              },
+              {
+                "Name": "Saturday",
+                "Value": "6"
+              }
+            ]
+          },
+          {
+            "Name": "WeekIndex",
+            "Member": [
+              {
+                "Name": "First",
+                "Value": "0"
+              },
+              {
+                "Name": "Second",
+                "Value": "1"
+              },
+              {
+                "Name": "Third",
+                "Value": "2"
+              },
+              {
+                "Name": "Fourth",
+                "Value": "3"
+              },
+              {
+                "Name": "Last",
+                "Value": "4"
+              }
+            ]
+          },
+          {
+            "Name": "RecurrenceRangeType",
+            "Member": [
+              {
+                "Name": "EndDate",
+                "Value": "0"
+              },
+              {
+                "Name": "NoEnd",
+                "Value": "1"
+              },
+              {
+                "Name": "Numbered",
+                "Value": "2"
+              }
+            ]
+          },
+          {
+            "Name": "FreeBusyStatus",
+            "Member": [
+              {
+                "Name": "Free",
+                "Value": "0"
+              },
+              {
+                "Name": "Tentative",
+                "Value": "1"
+              },
+              {
+                "Name": "Busy",
+                "Value": "2"
+              },
+              {
+                "Name": "Oof",
+                "Value": "3"
+              },
+              {
+                "Name": "WorkingElsewhere",
+                "Value": "4"
+              },
+              {
+                "Name": "Unknown",
+                "Value": "-1"
+              }
+            ]
+          },
+          {
+            "Name": "EventType",
+            "Member": [
+              {
+                "Name": "SingleInstance",
+                "Value": "0"
+              },
+              {
+                "Name": "Occurrence",
+                "Value": "1"
+              },
+              {
+                "Name": "Exception",
+                "Value": "2"
+              },
+              {
+                "Name": "SeriesMaster",
+                "Value": "3"
+              }
+            ]
+          },
+          {
+            "Name": "AttendeeType",
+            "Member": [
+              {
+                "Name": "Required",
+                "Value": "0"
+              },
+              {
+                "Name": "Optional",
+                "Value": "1"
+              },
+              {
+                "Name": "Resource",
+                "Value": "2"
+              }
+            ]
+          }
+        ],
+        "EntityType": [
+          {
+            "Name": "Entity",
+            "Abstract": "true",
+            "Key": {
+              "PropertyRef": {
+                "Name": "Id"
+              }
+            },
+            "Property": {
+              "Name": "Id",
+              "Type": "Edm.String"
+            }
+          },
+          {
+            "Name": "Attachment",
+            "BaseType": "Microsoft.OutlookServices.Entity",
+            "Abstract": "true",
+            "Property": [
+              {
+                "Name": "Name",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "ContentType",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Size",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "IsInline",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              },
+              {
+                "Name": "DateTimeLastModified",
+                "Type": "Edm.DateTimeOffset"
+              }
+            ]
+          },
+          {
+            "Name": "Item",
+            "BaseType": "Microsoft.OutlookServices.Entity",
+            "Abstract": "true",
+            "Property": [
+              {
+                "Name": "ChangeKey",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Categories",
+                "Type": "Collection(Edm.String)"
+              },
+              {
+                "Name": "DateTimeCreated",
+                "Type": "Edm.DateTimeOffset"
+              },
+              {
+                "Name": "DateTimeLastModified",
+                "Type": "Edm.DateTimeOffset"
+              }
+            ]
+          },
+          {
+            "Name": "DirectoryObject",
+            "BaseType": "Microsoft.OutlookServices.Entity",
+            "Abstract": "true"
+          },
+          {
+            "Name": "User",
+            "BaseType": "Microsoft.OutlookServices.DirectoryObject",
+            "Property": [
+              {
+                "Name": "DisplayName",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Alias",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "MailboxGuid",
+                "Type": "Edm.Guid"
+              }
+            ],
+            "NavigationProperty": [
+              {
+                "Name": "Messages",
+                "Type": "Collection(Microsoft.OutlookServices.Message)",
+                "ContainsTarget": "true",
+                "Annotation": [
+                  {
+                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Expandable",
+                        "Bool": "false"
+                      }
+                    }
+                  },
+                  {
+                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Searchable",
+                        "Bool": "true"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "Name": "Folders",
+                "Type": "Collection(Microsoft.OutlookServices.Folder)",
+                "ContainsTarget": "true",
+                "Annotation": {
+                  "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                  "Record": {
+                    "PropertyValue": {
+                      "Property": "Expandable",
+                      "Bool": "false"
+                    }
+                  }
+                }
+              },
+              {
+                "Name": "Calendar",
+                "Type": "Microsoft.OutlookServices.Calendar",
+                "ContainsTarget": "true",
+                "Annotation": {
+                  "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                  "Record": {
+                    "PropertyValue": {
+                      "Property": "Expandable",
+                      "Bool": "false"
+                    }
+                  }
+                }
+              },
+              {
+                "Name": "Calendars",
+                "Type": "Collection(Microsoft.OutlookServices.Calendar)",
+                "ContainsTarget": "true",
+                "Annotation": {
+                  "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                  "Record": {
+                    "PropertyValue": {
+                      "Property": "Expandable",
+                      "Bool": "false"
+                    }
+                  }
+                }
+              },
+              {
+                "Name": "CalendarGroups",
+                "Type": "Collection(Microsoft.OutlookServices.CalendarGroup)",
+                "ContainsTarget": "true",
+                "Annotation": {
+                  "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                  "Record": {
+                    "PropertyValue": {
+                      "Property": "Expandable",
+                      "Bool": "false"
+                    }
+                  }
+                }
+              },
+              {
+                "Name": "CalendarView",
+                "Type": "Collection(Microsoft.OutlookServices.Event)",
+                "ContainsTarget": "true",
+                "Annotation": [
+                  {
+                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Supported",
+                        "Bool": "true"
+                      }
+                    }
+                  },
+                  {
+                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Expandable",
+                        "Bool": "false"
+                      }
+                    }
+                  },
+                  {
+                    "Term": "Org.OData.Capabilities.V1.NavigationRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Navigability",
+                        "EnumMember": "Org.OData.Capabilities.V1.NavigationType/Single"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "Name": "Events",
+                "Type": "Collection(Microsoft.OutlookServices.Event)",
+                "ContainsTarget": "true",
+                "Annotation": {
+                  "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                  "Record": {
+                    "PropertyValue": {
+                      "Property": "Expandable",
+                      "Bool": "false"
+                    }
+                  }
+                }
+              },
+              {
+                "Name": "Contacts",
+                "Type": "Collection(Microsoft.OutlookServices.Contact)",
+                "ContainsTarget": "true",
+                "Annotation": [
+                  {
+                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Supported",
+                        "Bool": "true"
+                      }
+                    }
+                  },
+                  {
+                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Expandable",
+                        "Bool": "false"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "Name": "ContactFolders",
+                "Type": "Collection(Microsoft.OutlookServices.ContactFolder)",
+                "ContainsTarget": "true",
+                "Annotation": {
+                  "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                  "Record": {
+                    "PropertyValue": {
+                      "Property": "Expandable",
+                      "Bool": "false"
+                    }
+                  }
+                }
+              },
+              {
+                "Name": "RootFolder",
+                "Type": "Microsoft.OutlookServices.Folder",
+                "ContainsTarget": "true",
+                "Annotation": [
+                  {
+                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Expandable",
+                        "Bool": "false"
+                      }
+                    }
+                  },
+                  {
+                    "Term": "Org.OData.Capabilities.V1.NavigationRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Navigability",
+                        "EnumMember": "Org.OData.Capabilities.V1.NavigationType/Single"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Name": "Folder",
+            "BaseType": "Microsoft.OutlookServices.Entity",
+            "Property": [
+              {
+                "Name": "DisplayName",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "ParentFolderId",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "ChildFolderCount",
+                "Type": "Edm.Int32"
+              },
+              {
+                "Name": "UnreadItemCount",
+                "Type": "Edm.Int32"
+              },
+              {
+                "Name": "TotalItemCount",
+                "Type": "Edm.Int32"
+              }
+            ],
+            "NavigationProperty": [
+              {
+                "Name": "Messages",
+                "Type": "Collection(Microsoft.OutlookServices.Message)",
+                "ContainsTarget": "true",
+                "Annotation": [
+                  {
+                    "Term": "Org.OData.Capabilities.V1.SearchRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Searchable",
+                        "Bool": "true"
+                      }
+                    }
+                  },
+                  {
+                    "Term": "Org.OData.Capabilities.V1.NavigationRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Navigability",
+                        "EnumMember": "Org.OData.Capabilities.V1.NavigationType/Single"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "Name": "ChildFolders",
+                "Type": "Collection(Microsoft.OutlookServices.Folder)",
+                "ContainsTarget": "true",
+                "Annotation": {
+                  "Term": "Org.OData.Capabilities.V1.NavigationRestrictions",
+                  "Record": {
+                    "PropertyValue": {
+                      "Property": "Navigability",
+                      "EnumMember": "Org.OData.Capabilities.V1.NavigationType/Single"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "Name": "Message",
+            "BaseType": "Microsoft.OutlookServices.Item",
+            "Property": [
+              {
+                "Name": "HasAttachments",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "Subject",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Body",
+                "Type": "Microsoft.OutlookServices.ItemBody"
+              },
+              {
+                "Name": "BodyPreview",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Importance",
+                "Type": "Microsoft.OutlookServices.Importance"
+              },
+              {
+                "Name": "ParentFolderId",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Sender",
+                "Type": "Microsoft.OutlookServices.Recipient"
+              },
+              {
+                "Name": "From",
+                "Type": "Microsoft.OutlookServices.Recipient"
+              },
+              {
+                "Name": "ToRecipients",
+                "Type": "Collection(Microsoft.OutlookServices.Recipient)"
+              },
+              {
+                "Name": "CcRecipients",
+                "Type": "Collection(Microsoft.OutlookServices.Recipient)"
+              },
+              {
+                "Name": "BccRecipients",
+                "Type": "Collection(Microsoft.OutlookServices.Recipient)"
+              },
+              {
+                "Name": "ReplyTo",
+                "Type": "Collection(Microsoft.OutlookServices.Recipient)"
+              },
+              {
+                "Name": "ConversationId",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "UniqueBody",
+                "Type": "Microsoft.OutlookServices.ItemBody"
+              },
+              {
+                "Name": "IsDeliveryReceiptRequested",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "IsReadReceiptRequested",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "IsRead",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "IsDraft",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "DateTimeReceived",
+                "Type": "Edm.DateTimeOffset"
+              },
+              {
+                "Name": "DateTimeSent",
+                "Type": "Edm.DateTimeOffset"
+              },
+              {
+                "Name": "WebLink",
+                "Type": "Edm.String"
+              }
+            ],
+            "NavigationProperty": {
+              "Name": "Attachments",
+              "Type": "Collection(Microsoft.OutlookServices.Attachment)",
+              "ContainsTarget": "true"
+            }
+          },
+          {
+            "Name": "FileAttachment",
+            "BaseType": "Microsoft.OutlookServices.Attachment",
+            "Property": [
+              {
+                "Name": "ContentId",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "ContentLocation",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "ContentBytes",
+                "Type": "Edm.Binary"
+              },
+              {
+                "Name": "IsContactPhoto",
+                "Type": "Edm.Boolean",
+                "Nullable": "false"
+              }
+            ]
+          },
+          {
+            "Name": "ItemAttachment",
+            "BaseType": "Microsoft.OutlookServices.Attachment",
+            "NavigationProperty": {
+              "Name": "Item",
+              "Type": "Microsoft.OutlookServices.Item",
+              "ContainsTarget": "true"
+            }
+          },
+          {
+            "Name": "Calendar",
+            "BaseType": "Microsoft.OutlookServices.Entity",
+            "Property": [
+              {
+                "Name": "Name",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Color",
+                "Type": "Microsoft.OutlookServices.CalendarColor"
+              },
+              {
+                "Name": "ChangeKey",
+                "Type": "Edm.String"
+              }
+            ],
+            "NavigationProperty": [
+              {
+                "Name": "Events",
+                "Type": "Collection(Microsoft.OutlookServices.Event)",
+                "ContainsTarget": "true",
+                "Annotation": [
+                  {
+                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Expandable",
+                        "Bool": "false"
+                      }
+                    }
+                  },
+                  {
+                    "Term": "Org.OData.Capabilities.V1.NavigationRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Navigability",
+                        "EnumMember": "Org.OData.Capabilities.V1.NavigationType/Single"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "Name": "CalendarView",
+                "Type": "Collection(Microsoft.OutlookServices.Event)",
+                "ContainsTarget": "true",
+                "Annotation": [
+                  {
+                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Supported",
+                        "Bool": "true"
+                      }
+                    }
+                  },
+                  {
+                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Expandable",
+                        "Bool": "false"
+                      }
+                    }
+                  },
+                  {
+                    "Term": "Org.OData.Capabilities.V1.NavigationRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Navigability",
+                        "EnumMember": "Org.OData.Capabilities.V1.NavigationType/Single"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Name": "CalendarGroup",
+            "BaseType": "Microsoft.OutlookServices.Entity",
+            "Property": [
+              {
+                "Name": "Name",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "ClassId",
+                "Type": "Edm.Guid"
+              },
+              {
+                "Name": "ChangeKey",
+                "Type": "Edm.String"
+              }
+            ],
+            "NavigationProperty": {
+              "Name": "Calendars",
+              "Type": "Collection(Microsoft.OutlookServices.Calendar)",
+              "ContainsTarget": "true",
+              "Annotation": [
+                {
+                  "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                  "Record": {
+                    "PropertyValue": {
+                      "Property": "Expandable",
+                      "Bool": "false"
+                    }
+                  }
+                },
+                {
+                  "Term": "Org.OData.Capabilities.V1.NavigationRestrictions",
+                  "Record": {
+                    "PropertyValue": {
+                      "Property": "Navigability",
+                      "EnumMember": "Org.OData.Capabilities.V1.NavigationType/Single"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Name": "Event",
+            "BaseType": "Microsoft.OutlookServices.Item",
+            "Property": [
+              {
+                "Name": "ResponseStatus",
+                "Type": "Microsoft.OutlookServices.ResponseStatus"
+              },
+              {
+                "Name": "iCalUId",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Reminder",
+                "Type": "Edm.Int32"
+              },
+              {
+                "Name": "HasAttachments",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "Subject",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Body",
+                "Type": "Microsoft.OutlookServices.ItemBody"
+              },
+              {
+                "Name": "BodyPreview",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Importance",
+                "Type": "Microsoft.OutlookServices.Importance"
+              },
+              {
+                "Name": "Sensitivity",
+                "Type": "Microsoft.OutlookServices.Sensitivity"
+              },
+              {
+                "Name": "Start",
+                "Type": "Edm.DateTimeOffset"
+              },
+              {
+                "Name": "OriginalStart",
+                "Type": "Edm.DateTimeOffset"
+              },
+              {
+                "Name": "StartTimeZone",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "End",
+                "Type": "Edm.DateTimeOffset"
+              },
+              {
+                "Name": "EndTimeZone",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Location",
+                "Type": "Microsoft.OutlookServices.Location"
+              },
+              {
+                "Name": "IsAllDay",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "IsCancelled",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "IsOrganizer",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "Recurrence",
+                "Type": "Microsoft.OutlookServices.PatternedRecurrence"
+              },
+              {
+                "Name": "ResponseRequested",
+                "Type": "Edm.Boolean"
+              },
+              {
+                "Name": "SeriesMasterId",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "ShowAs",
+                "Type": "Microsoft.OutlookServices.FreeBusyStatus"
+              },
+              {
+                "Name": "Type",
+                "Type": "Microsoft.OutlookServices.EventType"
+              },
+              {
+                "Name": "Attendees",
+                "Type": "Collection(Microsoft.OutlookServices.Attendee)"
+              },
+              {
+                "Name": "Organizer",
+                "Type": "Microsoft.OutlookServices.Recipient"
+              },
+              {
+                "Name": "WebLink",
+                "Type": "Edm.String"
+              }
+            ],
+            "NavigationProperty": [
+              {
+                "Name": "Calendar",
+                "Type": "Microsoft.OutlookServices.Calendar",
+                "ContainsTarget": "true",
+                "Annotation": [
+                  {
+                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Expandable",
+                        "Bool": "false"
+                      }
+                    }
+                  },
+                  {
+                    "Term": "Org.OData.Capabilities.V1.NavigationRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Navigability",
+                        "EnumMember": "Org.OData.Capabilities.V1.NavigationType/Single"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "Name": "Instances",
+                "Type": "Collection(Microsoft.OutlookServices.Event)",
+                "ContainsTarget": "true",
+                "Annotation": [
+                  {
+                    "Term": "Org.OData.Capabilities.V1.ExpandRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Expandable",
+                        "Bool": "false"
+                      }
+                    }
+                  },
+                  {
+                    "Term": "Org.OData.Capabilities.V1.NavigationRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Navigability",
+                        "EnumMember": "Org.OData.Capabilities.V1.NavigationType/Single"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "Name": "Attachments",
+                "Type": "Collection(Microsoft.OutlookServices.Attachment)",
+                "ContainsTarget": "true"
+              }
+            ]
+          },
+          {
+            "Name": "Contact",
+            "BaseType": "Microsoft.OutlookServices.Item",
+            "Property": [
+              {
+                "Name": "ParentFolderId",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Birthday",
+                "Type": "Edm.DateTimeOffset"
+              },
+              {
+                "Name": "FileAs",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "DisplayName",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "GivenName",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Initials",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "MiddleName",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "NickName",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Surname",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Title",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "YomiGivenName",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "YomiSurname",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "YomiCompanyName",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Generation",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "EmailAddresses",
+                "Type": "Collection(Microsoft.OutlookServices.EmailAddress)"
+              },
+              {
+                "Name": "ImAddresses",
+                "Type": "Collection(Edm.String)"
+              },
+              {
+                "Name": "JobTitle",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "CompanyName",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Department",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "OfficeLocation",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Profession",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "BusinessHomePage",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "AssistantName",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Manager",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "HomePhones",
+                "Type": "Collection(Edm.String)"
+              },
+              {
+                "Name": "MobilePhone1",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "BusinessPhones",
+                "Type": "Collection(Edm.String)"
+              },
+              {
+                "Name": "HomeAddress",
+                "Type": "Microsoft.OutlookServices.PhysicalAddress"
+              },
+              {
+                "Name": "BusinessAddress",
+                "Type": "Microsoft.OutlookServices.PhysicalAddress"
+              },
+              {
+                "Name": "OtherAddress",
+                "Type": "Microsoft.OutlookServices.PhysicalAddress"
+              },
+              {
+                "Name": "SpouseName",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "PersonalNotes",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Children",
+                "Type": "Collection(Edm.String)"
+              }
+            ]
+          },
+          {
+            "Name": "ContactFolder",
+            "BaseType": "Microsoft.OutlookServices.Entity",
+            "Property": [
+              {
+                "Name": "ParentFolderId",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "DisplayName",
+                "Type": "Edm.String"
+              }
+            ],
+            "NavigationProperty": [
+              {
+                "Name": "Contacts",
+                "Type": "Collection(Microsoft.OutlookServices.Contact)",
+                "ContainsTarget": "true",
+                "Annotation": [
+                  {
+                    "Term": "Org.OData.Capabilities.V1.ChangeTracking",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Supported",
+                        "Bool": "true"
+                      }
+                    }
+                  },
+                  {
+                    "Term": "Org.OData.Capabilities.V1.NavigationRestrictions",
+                    "Record": {
+                      "PropertyValue": {
+                        "Property": "Navigability",
+                        "EnumMember": "Org.OData.Capabilities.V1.NavigationType/Single"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "Name": "ChildFolders",
+                "Type": "Collection(Microsoft.OutlookServices.ContactFolder)",
+                "ContainsTarget": "true",
+                "Annotation": {
+                  "Term": "Org.OData.Capabilities.V1.NavigationRestrictions",
+                  "Record": {
+                    "PropertyValue": {
+                      "Property": "Navigability",
+                      "EnumMember": "Org.OData.Capabilities.V1.NavigationType/Single"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "Name": "EventMessage",
+            "BaseType": "Microsoft.OutlookServices.Message",
+            "Property": {
+              "Name": "MeetingMessageType",
+              "Type": "Microsoft.OutlookServices.MeetingMessageType"
+            },
+            "NavigationProperty": {
+              "Name": "Event",
+              "Type": "Microsoft.OutlookServices.Event",
+              "ContainsTarget": "true"
+            }
+          }
+        ],
+        "Action": [
+          {
+            "Name": "SendMail",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "Microsoft.OutlookServices.User"
+              },
+              {
+                "Name": "Message",
+                "Type": "Microsoft.OutlookServices.Message",
+                "Nullable": "false"
+              },
+              {
+                "Name": "SaveToSentItems",
+                "Type": "Edm.Boolean"
+              }
+            ]
+          },
+          {
+            "Name": "Copy",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "Microsoft.OutlookServices.Folder"
+              },
+              {
+                "Name": "DestinationId",
+                "Type": "Edm.String"
+              }
+            ],
+            "ReturnType": {
+              "Type": "Microsoft.OutlookServices.Folder"
+            }
+          },
+          {
+            "Name": "Move",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "Microsoft.OutlookServices.Folder"
+              },
+              {
+                "Name": "DestinationId",
+                "Type": "Edm.String"
+              }
+            ],
+            "ReturnType": {
+              "Type": "Microsoft.OutlookServices.Folder"
+            }
+          },
+          {
+            "Name": "Copy",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "Microsoft.OutlookServices.Message"
+              },
+              {
+                "Name": "DestinationId",
+                "Type": "Edm.String"
+              }
+            ],
+            "ReturnType": {
+              "Type": "Microsoft.OutlookServices.Message"
+            }
+          },
+          {
+            "Name": "Move",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "Microsoft.OutlookServices.Message"
+              },
+              {
+                "Name": "DestinationId",
+                "Type": "Edm.String"
+              }
+            ],
+            "ReturnType": {
+              "Type": "Microsoft.OutlookServices.Message"
+            }
+          },
+          {
+            "Name": "CreateReply",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": {
+              "Name": "bindingParameter",
+              "Type": "Microsoft.OutlookServices.Message"
+            },
+            "ReturnType": {
+              "Type": "Microsoft.OutlookServices.Message"
+            }
+          },
+          {
+            "Name": "CreateReplyAll",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": {
+              "Name": "bindingParameter",
+              "Type": "Microsoft.OutlookServices.Message"
+            },
+            "ReturnType": {
+              "Type": "Microsoft.OutlookServices.Message"
+            }
+          },
+          {
+            "Name": "CreateForward",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": {
+              "Name": "bindingParameter",
+              "Type": "Microsoft.OutlookServices.Message"
+            },
+            "ReturnType": {
+              "Type": "Microsoft.OutlookServices.Message"
+            }
+          },
+          {
+            "Name": "Reply",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "Microsoft.OutlookServices.Message"
+              },
+              {
+                "Name": "Comment",
+                "Type": "Edm.String"
+              }
+            ]
+          },
+          {
+            "Name": "ReplyAll",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "Microsoft.OutlookServices.Message"
+              },
+              {
+                "Name": "Comment",
+                "Type": "Edm.String"
+              }
+            ]
+          },
+          {
+            "Name": "Forward",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "Microsoft.OutlookServices.Message"
+              },
+              {
+                "Name": "Comment",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "ToRecipients",
+                "Type": "Collection(Microsoft.OutlookServices.Recipient)"
+              }
+            ]
+          },
+          {
+            "Name": "Send",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": {
+              "Name": "bindingParameter",
+              "Type": "Microsoft.OutlookServices.Message"
+            }
+          },
+          {
+            "Name": "Accept",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "Microsoft.OutlookServices.Event"
+              },
+              {
+                "Name": "Comment",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "SendResponse",
+                "Type": "Edm.Boolean"
+              }
+            ]
+          },
+          {
+            "Name": "Decline",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "Microsoft.OutlookServices.Event"
+              },
+              {
+                "Name": "Comment",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "SendResponse",
+                "Type": "Edm.Boolean"
+              }
+            ]
+          },
+          {
+            "Name": "TentativelyAccept",
+            "IsBound": "true",
+            "EntitySetPath": "bindingParameter",
+            "Parameter": [
+              {
+                "Name": "bindingParameter",
+                "Type": "Microsoft.OutlookServices.Event"
+              },
+              {
+                "Name": "Comment",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "SendResponse",
+                "Type": "Edm.Boolean"
+              }
+            ]
+          }
+        ],
+        "ComplexType": [
+          {
+            "Name": "ItemBody",
+            "Property": [
+              {
+                "Name": "ContentType",
+                "Type": "Microsoft.OutlookServices.BodyType"
+              },
+              {
+                "Name": "Content",
+                "Type": "Edm.String"
+              }
+            ]
+          },
+          {
+            "Name": "Recipient",
+            "Property": {
+              "Name": "EmailAddress",
+              "Type": "Microsoft.OutlookServices.EmailAddress"
+            }
+          },
+          {
+            "Name": "EmailAddress",
+            "Property": [
+              {
+                "Name": "Name",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Address",
+                "Type": "Edm.String"
+              }
+            ]
+          },
+          {
+            "Name": "ResponseStatus",
+            "Property": [
+              {
+                "Name": "Response",
+                "Type": "Microsoft.OutlookServices.ResponseType"
+              },
+              {
+                "Name": "Time",
+                "Type": "Edm.DateTimeOffset"
+              }
+            ]
+          },
+          {
+            "Name": "Location",
+            "Property": [
+              {
+                "Name": "DisplayName",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "Address",
+                "Type": "Microsoft.OutlookServices.PhysicalAddress"
+              },
+              {
+                "Name": "Coordinates",
+                "Type": "Microsoft.OutlookServices.GeoCoordinates"
+              }
+            ]
+          },
+          {
+            "Name": "PhysicalAddress",
+            "Property": [
+              {
+                "Name": "Street",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "City",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "State",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "CountryOrRegion",
+                "Type": "Edm.String"
+              },
+              {
+                "Name": "PostalCode",
+                "Type": "Edm.String"
+              }
+            ]
+          },
+          {
+            "Name": "GeoCoordinates",
+            "Property": [
+              {
+                "Name": "Altitude",
+                "Type": "Edm.Double"
+              },
+              {
+                "Name": "Latitude",
+                "Type": "Edm.Double"
+              },
+              {
+                "Name": "Longitude",
+                "Type": "Edm.Double"
+              },
+              {
+                "Name": "Accuracy",
+                "Type": "Edm.Double"
+              },
+              {
+                "Name": "AltitudeAccuracy",
+                "Type": "Edm.Double"
+              }
+            ]
+          },
+          {
+            "Name": "PatternedRecurrence",
+            "Property": [
+              {
+                "Name": "Pattern",
+                "Type": "Microsoft.OutlookServices.RecurrencePattern"
+              },
+              {
+                "Name": "Range",
+                "Type": "Microsoft.OutlookServices.RecurrenceRange"
+              }
+            ]
+          },
+          {
+            "Name": "RecurrencePattern",
+            "Property": [
+              {
+                "Name": "Type",
+                "Type": "Microsoft.OutlookServices.RecurrencePatternType"
+              },
+              {
+                "Name": "Interval",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "Month",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "DayOfMonth",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              },
+              {
+                "Name": "DaysOfWeek",
+                "Type": "Collection(Microsoft.OutlookServices.DayOfWeek)"
+              },
+              {
+                "Name": "FirstDayOfWeek",
+                "Type": "Microsoft.OutlookServices.DayOfWeek"
+              },
+              {
+                "Name": "Index",
+                "Type": "Microsoft.OutlookServices.WeekIndex"
+              }
+            ]
+          },
+          {
+            "Name": "RecurrenceRange",
+            "Property": [
+              {
+                "Name": "Type",
+                "Type": "Microsoft.OutlookServices.RecurrenceRangeType"
+              },
+              {
+                "Name": "StartDate",
+                "Type": "Edm.DateTimeOffset"
+              },
+              {
+                "Name": "EndDate",
+                "Type": "Edm.DateTimeOffset"
+              },
+              {
+                "Name": "NumberOfOccurrences",
+                "Type": "Edm.Int32",
+                "Nullable": "false"
+              }
+            ]
+          },
+          {
+            "Name": "Attendee",
+            "BaseType": "Microsoft.OutlookServices.Recipient",
+            "Property": [
+              {
+                "Name": "Status",
+                "Type": "Microsoft.OutlookServices.ResponseStatus"
+              },
+              {
+                "Name": "Type",
+                "Type": "Microsoft.OutlookServices.AttendeeType"
+              }
+            ]
+          }
+        ],
+        "EntityContainer": {
+          "Name": "EntityContainer",
+          "EntitySet": {
+            "Name": "Users",
+            "EntityType": "Microsoft.OutlookServices.User"
+          },
+          "Singleton": {
+            "Name": "Me",
+            "Type": "Microsoft.OutlookServices.User"
+          }
+        }
+      }
+    }
+  }
+}
