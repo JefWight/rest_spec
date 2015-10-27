@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/Events/<Id>/Attachments/<Id>
-PATCH /groups/<objectId>/Events/<Id>/Attachments/<Id>
-PATCH /users/<objectId>/Messages/<Id>/Attachments/<Id>
+PATCH /users/<objectId>/events/<id>/attachments/<id>
+PATCH /groups/<objectId>/events/<id>/attachments/<id>
+PATCH /users/<objectId>/messages/<id>/attachments/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -20,14 +20,14 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ContentType|String||
-|IsInline|Boolean||
-|LastModifiedDateTime|DateTimeOffset||
-|Name|String||
-|Size|Int32||
+|contentType|String||
+|isInline|Boolean||
+|lastModifiedDateTime|DateTimeOffset||
+|name|String||
+|size|Int32||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [Attachment](../resources/attachment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [attachment](../resources/attachment.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -36,17 +36,17 @@ Here is an example of the request.
   "name": "update_attachment"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/<objectId>/Events/<Id>/Attachments/<Id>
+PUT https://graph.microsoft.com/beta/users/<objectId>/events/<id>/attachments/<id>
 Content-type: application/json
 Content-length: 162
 
 {
-  "Name": "Name-value",
-  "ContentType": "ContentType-value",
-  "Size": 99,
-  "IsInline": true,
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "lastModifiedDateTime": "datetime-value",
+  "name": "name-value",
+  "contentType": "contentType-value",
+  "size": 99,
+  "isInline": true,
+  "id": "id-value"
 }
 ```
 ##### Response
@@ -62,12 +62,12 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "Name": "Name-value",
-  "ContentType": "ContentType-value",
-  "Size": 99,
-  "IsInline": true,
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "lastModifiedDateTime": "datetime-value",
+  "name": "name-value",
+  "contentType": "contentType-value",
+  "size": 99,
+  "isInline": true,
+  "id": "id-value"
 }
 ```
 

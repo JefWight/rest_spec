@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<objectId>/Threads/<Id>/Posts
-POST /groups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts
-POST /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts
+POST /groups/<objectId>/threads/<id>/posts
+POST /groups/<objectId>/conversations/<id>/threads/<id>/posts
+POST /users/<objectId>/joinedGroups/<objectId>/threads/<id>/posts
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_post_from_conversationthread"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<objectId>/Threads/<Id>
+POST https://graph.microsoft.com/beta/groups/<objectId>/threads/<id>
 ```
 In the request body, supply a JSON representation of [Post](../resources/post.md) object.
 ##### Response
@@ -47,41 +47,41 @@ Content-type: application/json
 Content-length: 790
 
 {
-  "Body": {
-    "ContentType": "ContentType-value",
-    "Content": "Content-value"
+  "body": {
+    "contentType": "contentType-value",
+    "content": "content-value"
   },
-  "ReceivedDateTime": "datetime-value",
-  "HasAttachments": true,
-  "From": {
-    "EmailAddress": {
-      "Name": "Name-value",
-      "Address": "Address-value"
+  "receivedDateTime": "datetime-value",
+  "hasAttachments": true,
+  "from": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
     }
   },
-  "Sender": {
-    "EmailAddress": {
-      "Name": "Name-value",
-      "Address": "Address-value"
+  "sender": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
     }
   },
-  "ConversationThreadId": "ConversationThreadId-value",
-  "ConversationId": "ConversationId-value",
-  "NewParticipants": [
+  "conversationThreadId": "conversationThreadId-value",
+  "newParticipants": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
+  "conversationId": "conversationId-value",
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "id": "id-value"
 }
 ```
 

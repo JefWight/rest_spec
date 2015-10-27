@@ -1,4 +1,4 @@
-# List Conversations
+# List conversations
 
 Retrieve a list of conversation objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<objectId>/Conversations
-GET /users/<objectId>/JoinedGroups/<objectId>/Conversations
-GET /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations
+GET /groups/<objectId>/conversations
+GET /users/<objectId>/joinedGroups/<objectId>/conversations
+GET /drive/root/createdByUser/joinedGroups/<objectId>/conversations
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_conversations"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<objectId>/Conversations
+GET https://graph.microsoft.com/beta/groups/<objectId>/conversations
 ```
 ##### Response
 Here is an example of the response.
@@ -57,14 +57,14 @@ Content-length: 262
 {
   "value": [
     {
-      "Topic": "Topic-value",
-      "HasAttachments": true,
-      "LastDeliveredDateTime": "datetime-value",
-      "UniqueSenders": [
-        "UniqueSenders-value"
+      "topic": "topic-value",
+      "hasAttachments": true,
+      "lastDeliveredDateTime": "datetime-value",
+      "uniqueSenders": [
+        "uniqueSenders-value"
       ],
-      "Preview": "Preview-value",
-      "Id": "Id-value"
+      "preview": "preview-value",
+      "id": "id-value"
     }
   ]
 }
@@ -74,7 +74,7 @@ Content-length: 262
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Conversations",
+  "description": "List conversations",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

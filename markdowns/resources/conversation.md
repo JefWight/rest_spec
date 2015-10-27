@@ -1,4 +1,4 @@
-# Conversation resource type
+# conversation resource type
 
 A conversation is a collection of [threads](#ConversationThreadResource). All threads and posts in a conversation share the same subject.
 
@@ -9,24 +9,24 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Threads"
+    "threads"
   ],
   "@odata.type": "microsoft.graph.conversation"
 }-->
 
 ```json
 {
-  "HasAttachments": true,
-  "Id": "String-value (identifier)",
-  "LastDeliveredDateTime": "String (timestamp)",
-  "Preview": "String-value",
-  "Threads": [
+  "hasAttachments": true,
+  "id": "String-value (identifier)",
+  "lastDeliveredDateTime": "String (timestamp)",
+  "preview": "String-value",
+  "threads": [
     {
       "@odata.type": "microsoft.graph.conversationthread"
     }
   ],
-  "Topic": "String-value",
-  "UniqueSenders": [
+  "topic": "String-value",
+  "uniqueSenders": [
     "String-value"
   ]
 }
@@ -35,33 +35,33 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|HasAttachments|Boolean|Indicates whether the Conversation has at least one attachment.|
-|Id|String|The group's unique identifier. Read-only.|
-|LastDeliveredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|Preview|String||
-|Topic|String|The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.|
-|UniqueSenders|String collection|All the users that sent a message to this Conversation.|
+|hasAttachments|Boolean|Indicates whether the Conversation has at least one attachment. Indicates whether the Conversation has at least one attachment.|
+|id|String|The group's unique identifier. The group's unique identifier. Read-only.|
+|lastDeliveredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|preview|String||
+|topic|String|The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.|
+|uniqueSenders|String collection|All the users that sent a message to this Conversation. All the users that sent a message to this Conversation.|
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Threads|[ConversationThread](conversationthread.md) collection|A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.|
+|threads|[ConversationThread](conversationthread.md) collection|A collection of all the conversation threads in the conversation. A navigation property. A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.|
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Conversation](../api/conversation_get.md) | [Conversation](conversation.md) |Read properties and relationships of conversation object.|
-|[Create Thread](../api/conversation_post_threads.md) |[ConversationThread](conversationthread.md)| Create a new Thread by posting to the Threads collection.|
-|[List Threads](../api/conversation_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get a Thread object collection.|
-|[Update](../api/conversation_update.md) | [Conversation](conversation.md)	|Update Conversation object. |
-|[Delete](../api/conversation_delete.md) | None |Delete Conversation object. |
+|[Get conversation](../api/conversation_get.md) | [conversation](conversation.md) |Read properties and relationships of conversation object.|
+|[Create thread](../api/conversation_post_threads.md) |[ConversationThread](conversationthread.md)| Create a new thread by posting to the threads collection.|
+|[List threads](../api/conversation_list_threads.md) |[ConversationThread](conversationthread.md) collection| Get a thread object collection.|
+|[Update](../api/conversation_update.md) | [conversation](conversation.md)	|Update conversation object. |
+|[Delete](../api/conversation_delete.md) | None |Delete conversation object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Conversation resource",
+  "description": "conversation resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

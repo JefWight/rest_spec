@@ -1,4 +1,4 @@
-# List Extensions
+# List extensions
 
 Retrieve a list of extension objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/Contacts/<Id>/Extensions
-GET /drive/root/createdByUser/Contacts/<Id>/Extensions
-GET /drive/root/lastModifiedByUser/Contacts/<Id>/Extensions
+GET /users/<objectId>/contacts/<id>/extensions
+GET /drive/root/createdByUser/contacts/<id>/extensions
+GET /drive/root/lastModifiedByUser/contacts/<id>/extensions
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_extensions"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/Contacts/<Id>/Extensions
+GET https://graph.microsoft.com/beta/users/<objectId>/contacts/<id>/extensions
 ```
 ##### Response
 Here is an example of the response.
@@ -57,7 +57,7 @@ Content-length: 55
 {
   "value": [
     {
-      "Id": "Id-value"
+      "id": "id-value"
     }
   ]
 }
@@ -67,7 +67,7 @@ Content-length: 55
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Extensions",
+  "description": "List extensions",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

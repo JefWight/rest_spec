@@ -44,7 +44,7 @@ In the request body, supply the values for relevant fields that should be update
 |thumbnailPhoto|Stream||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [OrgContact](../resources/orgcontact.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [orgContact](../resources/orgcontact.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -53,7 +53,7 @@ Here is an example of the request.
   "name": "update_orgcontact"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/contacts/<objectId>
+PUT https://graph.microsoft.com/beta/contacts/<objectId>
 Content-type: application/json
 Content-length: 1097
 

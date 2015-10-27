@@ -1,5 +1,5 @@
 {
-  "name": "Site",
+  "name": "site",
   "description": "",
   "collectionOf": null,
   "isComplexType": false,
@@ -24,7 +24,7 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/myOrganization/siteCollections/<id>/sites/<id>": true
+    "/siteCollections/<id>/sites/<id>": true
   },
   "properties": [
     {

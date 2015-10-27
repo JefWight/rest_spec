@@ -1,5 +1,5 @@
 {
-  "name": "ConversationThread",
+  "name": "conversationThread",
   "description": "",
   "collectionOf": null,
   "isComplexType": false,
@@ -24,50 +24,50 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/groups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/groups/<objectId>/Threads/<Id>": true,
-    "/users/<objectId>/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drive/items/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drive/items/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drive/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drive/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drive/shared/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drive/shared/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drive/special/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drive/special/<id>/createdByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drive/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drive/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drive/root/createdByUser/JoinedGroups/<objectId>/Threads/<Id>": true,
-    "/drive/root/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads/<Id>": true,
-    "/drive/root/lastModifiedByUser/JoinedGroups/<objectId>/Threads/<Id>": true
+    "/groups/<objectId>/threads/<id>": true,
+    "/groups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/users/<objectId>/joinedGroups/<objectId>/threads/<id>": true,
+    "/users/<objectId>/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drives/<id>/root/createdByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drives/<id>/root/createdByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drive/items/<id>/createdByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drive/items/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drive/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drive/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drive/shared/<id>/createdByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drive/shared/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drive/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drive/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drive/special/<id>/createdByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drive/special/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drive/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drive/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drive/root/createdByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drive/root/createdByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true,
+    "/drive/root/lastModifiedByUser/joinedGroups/<objectId>/threads/<id>": true,
+    "/drive/root/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>/threads/<id>": true
   },
   "properties": [
     {
-      "name": "ToRecipients",
+      "name": "toRecipients",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -81,7 +81,7 @@
       "isUnicode": null
     },
     {
-      "name": "Topic",
+      "name": "topic",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -95,7 +95,7 @@
       "isUnicode": false
     },
     {
-      "name": "HasAttachments",
+      "name": "hasAttachments",
       "description": "",
       "isKey": false,
       "dataType": "Boolean",
@@ -109,7 +109,7 @@
       "isUnicode": null
     },
     {
-      "name": "LastDeliveredDateTime",
+      "name": "lastDeliveredDateTime",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -123,7 +123,7 @@
       "isUnicode": null
     },
     {
-      "name": "UniqueSenders",
+      "name": "uniqueSenders",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -137,7 +137,7 @@
       "isUnicode": false
     },
     {
-      "name": "CcRecipients",
+      "name": "ccRecipients",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -151,7 +151,7 @@
       "isUnicode": null
     },
     {
-      "name": "Preview",
+      "name": "preview",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -165,7 +165,7 @@
       "isUnicode": false
     },
     {
-      "name": "IsLocked",
+      "name": "isLocked",
       "description": "",
       "isKey": false,
       "dataType": "Boolean",
@@ -179,7 +179,7 @@
       "isUnicode": null
     },
     {
-      "name": "Id",
+      "name": "id",
       "description": "",
       "isKey": true,
       "dataType": "String",
@@ -193,7 +193,7 @@
       "isUnicode": false
     },
     {
-      "name": "Posts",
+      "name": "posts",
       "description": "",
       "isKey": false,
       "dataType": "Post",
@@ -208,34 +208,6 @@
     }
   ],
   "methods": [
-    {
-      "name": "Reply",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
 
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Post",
-          "description": "",
-          "dataType": "Post",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        }
-      ]
-    }
   ]
 }

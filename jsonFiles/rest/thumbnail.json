@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "content",
-      "description": "The content stream.",
+      "description": "The content stream. The content stream.",
       "isKey": false,
       "dataType": "Stream",
       "isReadOnly": false,
@@ -42,7 +41,7 @@
     },
     {
       "name": "height",
-      "description": "The height of the thumbnail, in pixels.",
+      "description": "The height of the thumbnail, in pixels. The height of the thumbnail, in pixels.",
       "isKey": false,
       "dataType": "Int32",
       "isReadOnly": false,
@@ -56,7 +55,7 @@
     },
     {
       "name": "url",
-      "description": "The URL used to fetch the thumbnail content.",
+      "description": "The URL used to fetch the thumbnail content. The URL used to fetch the thumbnail content.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -70,7 +69,7 @@
     },
     {
       "name": "width",
-      "description": "The width of the thumbnail, in pixels.",
+      "description": "The width of the thumbnail, in pixels. The width of the thumbnail, in pixels.",
       "isKey": false,
       "dataType": "Int32",
       "isReadOnly": false,
@@ -83,7 +82,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

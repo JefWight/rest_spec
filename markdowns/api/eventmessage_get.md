@@ -1,4 +1,4 @@
-# Get EventMessage
+# Get eventMessage
 
 Retrieve the properties and relationships of eventmessage object.
 ### Prerequisites
@@ -12,7 +12,7 @@ The following **scopes** are required to execute this API:
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [EventMessage](../resources/eventmessage.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [eventMessage](../resources/eventmessage.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -23,7 +23,7 @@ The following **scopes** are required to execute this API:
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [EventMessage](../resources/eventmessage.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -44,82 +44,83 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1598
+Content-length: 1660
 
 {
-  "Subject": "Subject-value",
-  "Body": {
-    "ContentType": "ContentType-value",
-    "Content": "Content-value"
+  "receivedDateTime": "datetime-value",
+  "sentDateTime": "datetime-value",
+  "hasAttachments": true,
+  "subject": "subject-value",
+  "body": {
+    "contentType": "contentType-value",
+    "content": "content-value"
   },
-  "BodyPreview": "BodyPreview-value",
-  "Importance": "Importance-value",
-  "HasAttachments": true,
-  "ParentFolderId": "ParentFolderId-value",
-  "From": {
-    "EmailAddress": {
-      "Name": "Name-value",
-      "Address": "Address-value"
+  "bodyPreview": "bodyPreview-value",
+  "importance": "importance-value",
+  "parentFolderId": "parentFolderId-value",
+  "sender": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
     }
   },
-  "Sender": {
-    "EmailAddress": {
-      "Name": "Name-value",
-      "Address": "Address-value"
+  "from": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
     }
   },
-  "ToRecipients": [
+  "toRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "CcRecipients": [
+  "ccRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "BccRecipients": [
+  "bccRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "ReplyTo": [
+  "replyTo": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "ConversationId": "ConversationId-value",
-  "UniqueBody": {
-    "ContentType": "ContentType-value",
-    "Content": "Content-value"
+  "conversationId": "conversationId-value",
+  "uniqueBody": {
+    "contentType": "contentType-value",
+    "content": "content-value"
   },
-  "ReceivedDateTime": "datetime-value",
-  "SentDateTime": "datetime-value",
-  "IsDeliveryReceiptRequested": true,
-  "IsReadReceiptRequested": true,
-  "IsDraft": true,
-  "IsRead": true,
-  "WebLink": "WebLink-value",
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
+  "isDeliveryReceiptRequested": true,
+  "isReadReceiptRequested": true,
+  "isRead": true,
+  "isDraft": true,
+  "webLink": "webLink-value",
+  "inferenceClassification": "inferenceClassification-value",
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value",
-  "MeetingMessageType": "MeetingMessageType-value"
+  "id": "id-value",
+  "meetingMessageType": "meetingMessageType-value"
 }
 ```
 
@@ -127,7 +128,7 @@ Content-length: 1598
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get EventMessage",
+  "description": "Get eventMessage",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

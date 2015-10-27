@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "item_delta"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/delta
+POST https://graph.microsoft.com/beta/drive/root/delta
 ```
 
 ##### Response
@@ -49,7 +49,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3635
+Content-length: 3784
 
 {
   "value": [
@@ -120,6 +120,11 @@ Content-length: 3635
         "state": "state-value"
       },
       "file": {
+        "hashes": {
+          "crc32Hash": "crc32Hash-value",
+          "sha1Hash": "sha1Hash-value"
+        },
+        "mimeType": "mimeType-value"
       },
       "fileSystemInfo": {
         "createdDateTime": "datetime-value",
@@ -160,9 +165,9 @@ Content-length: 3635
         }
       },
       "photo": {
-        "Width": 99,
-        "Height": 99,
-        "Id": "Id-value"
+        "height": 99,
+        "width": 99,
+        "id": "id-value"
       },
       "searchResult": {
         "onClickTelemetryUrl": "onClickTelemetryUrl-value"

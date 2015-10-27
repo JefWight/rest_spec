@@ -45,12 +45,12 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "Name": "Name-value",
-  "ContentType": "ContentType-value",
-  "Size": 99,
-  "IsInline": true,
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "lastModifiedDateTime": "datetime-value",
+  "name": "name-value",
+  "contentType": "contentType-value",
+  "size": 99,
+  "isInline": true,
+  "id": "id-value"
 }
 ```
 

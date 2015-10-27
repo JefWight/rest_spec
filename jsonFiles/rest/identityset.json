@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "application",
-      "description": "An Identity resource that represents the application.",
+      "description": "An Identity resource that represents the application. An Identity resource that represents the application.",
       "isKey": false,
       "dataType": "identity",
       "isReadOnly": false,
@@ -42,7 +41,7 @@
     },
     {
       "name": "device",
-      "description": "An Identity resource that represents the device.",
+      "description": "An Identity resource that represents the device. An Identity resource that represents the device.",
       "isKey": false,
       "dataType": "identity",
       "isReadOnly": false,
@@ -56,7 +55,7 @@
     },
     {
       "name": "user",
-      "description": "An Identity resource that represents a user.",
+      "description": "An Identity resource that represents a user. An Identity resource that represents a user.",
       "isKey": false,
       "dataType": "identity",
       "isReadOnly": false,
@@ -69,7 +68,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

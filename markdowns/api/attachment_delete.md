@@ -1,14 +1,14 @@
-# Delete Attachment
+# Delete attachment
 
-Delete Attachment.
+Delete attachment.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/<objectId>/Events/<Id>/Attachments/<Id>
-DELETE /groups/<objectId>/Events/<Id>/Attachments/<Id>
-DELETE /users/<objectId>/Messages/<Id>/Attachments/<Id>
+DELETE /users/<objectId>/events/<id>/attachments/<id>
+DELETE /groups/<objectId>/events/<id>/attachments/<id>
+DELETE /users/<objectId>/messages/<id>/attachments/<id>
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_attachment"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/<objectId>/Events/<Id>/Attachments/<Id>
+DELETE https://graph.microsoft.com/beta/users/<objectId>/events/<id>/attachments/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete Attachment",
+  "description": "Delete attachment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

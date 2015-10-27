@@ -1,4 +1,4 @@
-# TaskBoardTaskFormat resource type
+# taskBoardTaskFormat resource type
 
 
 
@@ -18,8 +18,7 @@ Here is a JSON representation of the resource
 {
   "id": "String-value (identifier)",
   "orderHint": "String-value",
-  "type": "String-value (identifier)",
-  "version": "String-value"
+  "type": "String-value (identifier)"
 }
 
 ```
@@ -28,8 +27,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
 |orderHint|String||
-|type|String| Possible values are: `Status`, `AssignedTo`, `Bucket`. Read-only.|
-|version|String||
+|type|String| Possible values are: `progress`, `assignedTo`, `bucket`. Read-only.|
 
 ### Relationships
 None
@@ -39,15 +37,15 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TaskBoardTaskFormat](../api/taskboardtaskformat_get.md) | [TaskBoardTaskFormat](taskboardtaskformat.md) |Read properties and relationships of taskBoardTaskFormat object.|
-|[Update](../api/taskboardtaskformat_update.md) | [TaskBoardTaskFormat](taskboardtaskformat.md)	|Update TaskBoardTaskFormat object. |
-|[Delete](../api/taskboardtaskformat_delete.md) | None |Delete TaskBoardTaskFormat object. |
+|[Get taskBoardTaskFormat](../api/taskboardtaskformat_get.md) | [taskBoardTaskFormat](taskboardtaskformat.md) |Read properties and relationships of taskBoardTaskFormat object.|
+|[Update](../api/taskboardtaskformat_update.md) | [taskBoardTaskFormat](taskboardtaskformat.md)	|Update taskBoardTaskFormat object. |
+|[Delete](../api/taskboardtaskformat_delete.md) | None |Delete taskBoardTaskFormat object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "TaskBoardTaskFormat resource",
+  "description": "taskBoardTaskFormat resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

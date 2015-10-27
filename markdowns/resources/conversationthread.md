@@ -1,4 +1,4 @@
-# ConversationThread resource type
+# conversationThread resource type
 
 
 
@@ -9,35 +9,35 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Posts"
+    "posts"
   ],
   "@odata.type": "microsoft.graph.conversationthread"
 }-->
 
 ```json
 {
-  "CcRecipients": [
+  "ccRecipients": [
     {
       "@odata.type": "microsoft.graph.recipient"
     }
   ],
-  "HasAttachments": true,
-  "Id": "String-value (identifier)",
-  "IsLocked": true,
-  "LastDeliveredDateTime": "String (timestamp)",
-  "Posts": [
+  "hasAttachments": true,
+  "id": "String-value (identifier)",
+  "isLocked": true,
+  "lastDeliveredDateTime": "String (timestamp)",
+  "posts": [
     {
       "@odata.type": "microsoft.graph.post"
     }
   ],
-  "Preview": "String-value",
-  "ToRecipients": [
+  "preview": "String-value",
+  "toRecipients": [
     {
       "@odata.type": "microsoft.graph.recipient"
     }
   ],
-  "Topic": "String-value",
-  "UniqueSenders": [
+  "topic": "String-value",
+  "uniqueSenders": [
     "String-value"
   ]
 }
@@ -46,37 +46,36 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|CcRecipients|[Recipient](recipient.md) collection||
-|HasAttachments|Boolean||
-|Id|String| Read-only.|
-|IsLocked|Boolean||
-|LastDeliveredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|Preview|String||
-|ToRecipients|[Recipient](recipient.md) collection||
-|Topic|String||
-|UniqueSenders|String collection||
+|ccRecipients|[Recipient](recipient.md) collection||
+|hasAttachments|Boolean||
+|id|String| Read-only.|
+|isLocked|Boolean||
+|lastDeliveredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|preview|String||
+|toRecipients|[Recipient](recipient.md) collection||
+|topic|String||
+|uniqueSenders|String collection||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Posts|[Post](post.md) collection| Read-only. Nullable.|
+|posts|[Post](post.md) collection| Read-only. Nullable.|
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ConversationThread](../api/conversationthread_get.md) | [ConversationThread](conversationthread.md) |Read properties and relationships of conversationThread object.|
-|[Create Post](../api/conversationthread_post_posts.md) |[Post](post.md)| Create a new Post by posting to the Posts collection.|
-|[List Posts](../api/conversationthread_list_posts.md) |[Post](post.md) collection| Get a Post object collection.|
-|[Update](../api/conversationthread_update.md) | [ConversationThread](conversationthread.md)	|Update ConversationThread object. |
-|[Delete](../api/conversationthread_delete.md) | None |Delete ConversationThread object. |
-|[Reply](../api/conversationthread_reply.md)|None||
+|[Get conversationThread](../api/conversationthread_get.md) | [conversationThread](conversationthread.md) |Read properties and relationships of conversationThread object.|
+|[Create Post](../api/conversationthread_post_posts.md) |[Post](post.md)| Create a new Post by posting to the posts collection.|
+|[List posts](../api/conversationthread_list_posts.md) |[Post](post.md) collection| Get a Post object collection.|
+|[Update](../api/conversationthread_update.md) | [conversationThread](conversationthread.md)	|Update conversationThread object. |
+|[Delete](../api/conversationthread_delete.md) | None |Delete conversationThread object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ConversationThread resource",
+  "description": "conversationThread resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

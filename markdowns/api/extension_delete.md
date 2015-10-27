@@ -1,14 +1,14 @@
-# Delete Extension
+# Delete extension
 
-Delete Extension.
+Delete extension.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/<objectId>/Events/<Id>/Extensions/<Id>
-DELETE /groups/<objectId>/Events/<Id>/Extensions/<Id>
-DELETE /users/<objectId>/Messages/<Id>/Extensions/<Id>
+DELETE /users/<objectId>/events/<id>/extensions/<id>
+DELETE /groups/<objectId>/events/<id>/extensions/<id>
+DELETE /users/<objectId>/contacts/<id>/extensions/<id>
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_extension"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/<objectId>/Events/<Id>/Extensions/<Id>
+DELETE https://graph.microsoft.com/beta/users/<objectId>/events/<id>/extensions/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete Extension",
+  "description": "Delete extension",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

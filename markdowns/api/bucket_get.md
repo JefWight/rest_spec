@@ -1,4 +1,4 @@
-# Get Bucket
+# Get bucket
 
 Retrieve the properties and relationships of bucket object.
 ### Prerequisites
@@ -14,7 +14,7 @@ GET /users/<objectId>/plans/<id>/buckets/<id>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Bucket](../resources/bucket.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [bucket](../resources/bucket.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -25,7 +25,7 @@ GET /users/<objectId>/plans/<id>/buckets/<id>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [Bucket](../resources/bucket.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [bucket](../resources/bucket.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_bucket"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/buckets/<id>
+GET https://graph.microsoft.com/beta/buckets/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -46,16 +46,13 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
+Content-length: 108
 
 {
   "name": "name-value",
   "planId": "planId-value",
   "orderHint": "orderHint-value",
-  "totalTasks": 99,
-  "activeTasks": 99,
-  "id": "id-value",
-  "version": "version-value"
+  "id": "id-value"
 }
 ```
 
@@ -63,7 +60,7 @@ Content-length: 179
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Bucket",
+  "description": "Get bucket",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

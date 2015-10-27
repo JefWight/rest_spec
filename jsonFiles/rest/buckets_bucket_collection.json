@@ -1,7 +1,7 @@
 {
   "name": "buckets",
   "description": "",
-  "collectionOf": "Bucket",
+  "collectionOf": "bucket",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,

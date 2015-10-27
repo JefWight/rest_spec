@@ -1,5 +1,5 @@
 {
-  "name": "ResponseStatus",
+  "name": "responseStatus",
   "description": "The response status of a meeting request.",
   "collectionOf": null,
   "isComplexType": true,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
-      "name": "Response",
-      "description": "The response type: None = 0, Organizer = 1, TentativelyAccepted = 2, Accepted = 3, Declined = 4, NotResponded = 5.",
+      "name": "response",
+      "description": "The response type: None = 0, Organizer = 1, TentativelyAccepted = 2, Accepted = 3, Declined = 4, NotResponded = 5. The response type: None = 0, Organizer = 1, TentativelyAccepted = 2, Accepted = 3, Declined = 4, NotResponded = 5.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -41,8 +40,8 @@
       "isUnicode": null
     },
     {
-      "name": "Time",
-      "description": "<!--Need description! -->",
+      "name": "time",
+      "description": "<!--Need description! --> <!--Need description! -->",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -55,7 +54,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

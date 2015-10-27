@@ -1,5 +1,5 @@
 {
-  "name": "EventMessage",
+  "name": "eventMessage",
   "description": "A message that represents a meeting request, meeting cancel message, meeting accept message, meeting tentatively accept message, or meeting declined message.",
   "collectionOf": null,
   "isComplexType": false,
@@ -23,11 +23,52 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
-      "name": "Subject",
+      "name": "receivedDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "sentDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "hasAttachments",
+      "description": "",
+      "isKey": false,
+      "dataType": "Boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "subject",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -41,7 +82,7 @@
       "isUnicode": false
     },
     {
-      "name": "Body",
+      "name": "body",
       "description": "",
       "isKey": false,
       "dataType": "ItemBody",
@@ -55,7 +96,7 @@
       "isUnicode": null
     },
     {
-      "name": "BodyPreview",
+      "name": "bodyPreview",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -69,7 +110,7 @@
       "isUnicode": false
     },
     {
-      "name": "Importance",
+      "name": "importance",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -83,21 +124,7 @@
       "isUnicode": null
     },
     {
-      "name": "HasAttachments",
-      "description": "",
-      "isKey": false,
-      "dataType": "Boolean",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "ParentFolderId",
+      "name": "parentFolderId",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -111,7 +138,7 @@
       "isUnicode": false
     },
     {
-      "name": "From",
+      "name": "sender",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -125,7 +152,7 @@
       "isUnicode": null
     },
     {
-      "name": "Sender",
+      "name": "from",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -139,7 +166,7 @@
       "isUnicode": null
     },
     {
-      "name": "ToRecipients",
+      "name": "toRecipients",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -153,7 +180,7 @@
       "isUnicode": null
     },
     {
-      "name": "CcRecipients",
+      "name": "ccRecipients",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -167,7 +194,7 @@
       "isUnicode": null
     },
     {
-      "name": "BccRecipients",
+      "name": "bccRecipients",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -181,7 +208,7 @@
       "isUnicode": null
     },
     {
-      "name": "ReplyTo",
+      "name": "replyTo",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -195,7 +222,7 @@
       "isUnicode": null
     },
     {
-      "name": "ConversationId",
+      "name": "conversationId",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -209,7 +236,7 @@
       "isUnicode": false
     },
     {
-      "name": "UniqueBody",
+      "name": "uniqueBody",
       "description": "",
       "isKey": false,
       "dataType": "ItemBody",
@@ -223,35 +250,7 @@
       "isUnicode": null
     },
     {
-      "name": "ReceivedDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "DateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "SentDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "DateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "IsDeliveryReceiptRequested",
+      "name": "isDeliveryReceiptRequested",
       "description": "",
       "isKey": false,
       "dataType": "Boolean",
@@ -265,7 +264,7 @@
       "isUnicode": null
     },
     {
-      "name": "IsReadReceiptRequested",
+      "name": "isReadReceiptRequested",
       "description": "",
       "isKey": false,
       "dataType": "Boolean",
@@ -279,7 +278,7 @@
       "isUnicode": null
     },
     {
-      "name": "IsDraft",
+      "name": "isRead",
       "description": "",
       "isKey": false,
       "dataType": "Boolean",
@@ -293,7 +292,7 @@
       "isUnicode": null
     },
     {
-      "name": "IsRead",
+      "name": "isDraft",
       "description": "",
       "isKey": false,
       "dataType": "Boolean",
@@ -307,7 +306,7 @@
       "isUnicode": null
     },
     {
-      "name": "WebLink",
+      "name": "webLink",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -321,7 +320,49 @@
       "isUnicode": false
     },
     {
-      "name": "ChangeKey",
+      "name": "inferenceClassification",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": "InferenceClassificationType",
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "createdDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "lastModifiedDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "changeKey",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -335,7 +376,7 @@
       "isUnicode": false
     },
     {
-      "name": "Categories",
+      "name": "categories",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -349,35 +390,7 @@
       "isUnicode": false
     },
     {
-      "name": "CreatedDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "DateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "LastModifiedDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "DateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "Id",
+      "name": "id",
       "description": "",
       "isKey": true,
       "dataType": "String",
@@ -391,8 +404,8 @@
       "isUnicode": false
     },
     {
-      "name": "MeetingMessageType",
-      "description": " The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5 ",
+      "name": "meetingMessageType",
+      "description": " The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5   The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5 ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -405,21 +418,7 @@
       "isUnicode": null
     },
     {
-      "name": "Attachments",
-      "description": "",
-      "isKey": false,
-      "dataType": "Attachment",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "Extensions",
+      "name": "extensions",
       "description": "",
       "isKey": false,
       "dataType": "Extension",
@@ -433,8 +432,22 @@
       "isUnicode": null
     },
     {
-      "name": "Event",
-      "description": " The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property. ",
+      "name": "attachments",
+      "description": "",
+      "isKey": false,
+      "dataType": "Attachment",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "event",
+      "description": " The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.   The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property. ",
       "isKey": false,
       "dataType": "Event",
       "isReadOnly": true,
@@ -449,7 +462,7 @@
   ],
   "methods": [
     {
-      "name": "Copy",
+      "name": "copy",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -458,15 +471,11 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
-          "name": "DestinationId",
+          "name": "destinationId",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -478,7 +487,7 @@
       ]
     },
     {
-      "name": "Move",
+      "name": "move",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -487,15 +496,11 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
-          "name": "DestinationId",
+          "name": "destinationId",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -507,7 +512,7 @@
       ]
     },
     {
-      "name": "CreateReply",
+      "name": "createReply",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -516,18 +521,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
+      "scopes": [],
+      "errorCodes": [],
+      "parameters": []
     },
     {
-      "name": "CreateReplyAll",
+      "name": "createReplyAll",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -536,18 +535,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
+      "scopes": [],
+      "errorCodes": [],
+      "parameters": []
     },
     {
-      "name": "CreateForward",
+      "name": "createForward",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -556,18 +549,12 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
+      "scopes": [],
+      "errorCodes": [],
+      "parameters": []
     },
     {
-      "name": "Reply",
+      "name": "reply",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -576,15 +563,11 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
-          "name": "Comment",
+          "name": "comment",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -596,7 +579,7 @@
       ]
     },
     {
-      "name": "ReplyAll",
+      "name": "replyAll",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -605,15 +588,11 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
-          "name": "Comment",
+          "name": "comment",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -625,7 +604,7 @@
       ]
     },
     {
-      "name": "Forward",
+      "name": "forward",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -634,15 +613,11 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
-          "name": "Comment",
+          "name": "comment",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -652,7 +627,7 @@
           "isUnicode": false
         },
         {
-          "name": "ToRecipients",
+          "name": "toRecipients",
           "description": "",
           "dataType": "Recipient",
           "isCollection": true,
@@ -664,7 +639,7 @@
       ]
     },
     {
-      "name": "Send",
+      "name": "send",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -673,15 +648,9 @@
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
+      "scopes": [],
+      "errorCodes": [],
+      "parameters": []
     }
   ]
 }

@@ -1,4 +1,4 @@
-# Get DirectoryRole
+# Get directoryRole
 
 Retrieve the properties and relationships of directoryrole object.
 ### Prerequisites
@@ -18,7 +18,7 @@ GET /directoryRoles/<objectId>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [DirectoryRole](../resources/directoryrole.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "get_directoryrole"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryRoles/<objectId>
+GET https://graph.microsoft.com/beta/directoryRoles/<objectId>
 ```
 ##### Response
 Here is an example of the response.
@@ -57,7 +57,7 @@ Content-length: 275
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get DirectoryRole",
+  "description": "Get directoryRole",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

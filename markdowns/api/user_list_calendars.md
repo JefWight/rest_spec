@@ -1,4 +1,4 @@
-# List Calendars
+# List calendars
 
 Retrieve a list of calendar objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/Calendars
-GET /drive/root/createdByUser/Calendars
-GET /drive/root/lastModifiedByUser/Calendars
+GET /users/<objectId>/calendars
+GET /drive/root/createdByUser/calendars
+GET /drive/root/lastModifiedByUser/calendars
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_calendars"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/Calendars
+GET https://graph.microsoft.com/beta/users/<objectId>/calendars
 ```
 ##### Response
 Here is an example of the response.
@@ -57,10 +57,10 @@ Content-length: 151
 {
   "value": [
     {
-      "Name": "Name-value",
-      "ChangeKey": "ChangeKey-value",
-      "Color": "Color-value",
-      "Id": "Id-value"
+      "name": "name-value",
+      "color": "color-value",
+      "changeKey": "changeKey-value",
+      "id": "id-value"
     }
   ]
 }
@@ -70,7 +70,7 @@ Content-length: 151
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Calendars",
+  "description": "List calendars",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

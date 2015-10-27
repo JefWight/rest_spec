@@ -1,4 +1,4 @@
-# Get OutlookItem
+# Get outlookItem
 
 Retrieve the properties and relationships of outlookitem object.
 ### Prerequisites
@@ -12,7 +12,7 @@ The following **scopes** are required to execute this API:
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [OutlookItem](../resources/outlookitem.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [outlookItem](../resources/outlookitem.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -23,7 +23,7 @@ The following **scopes** are required to execute this API:
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [OutlookItem](../resources/outlookitem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [outlookItem](../resources/outlookitem.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -47,13 +47,13 @@ Content-type: application/json
 Content-length: 185
 
 {
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "id": "id-value"
 }
 ```
 
@@ -61,7 +61,7 @@ Content-length: 185
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get OutlookItem",
+  "description": "Get outlookItem",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

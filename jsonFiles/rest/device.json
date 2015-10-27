@@ -1,5 +1,5 @@
 {
-  "name": "Device",
+  "name": "device",
   "description": "Represents a device registered in the directory. Inherits from [DirectoryObject].\r",
   "collectionOf": null,
   "isComplexType": false,
@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "accountEnabled",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "alternativeSecurityIds",
-      "description": "                **Notes:** not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            ",
+      "description": "                **Notes:** not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).                             **Notes:** not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            ",
       "isKey": false,
       "dataType": "AlternativeSecurityId",
       "isReadOnly": false,
@@ -57,7 +57,7 @@
     },
     {
       "name": "approximateLastLogonTimestamp",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -71,7 +71,7 @@
     },
     {
       "name": "deviceId",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -99,7 +99,7 @@
     },
     {
       "name": "deviceObjectVersion",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "Int32",
       "isReadOnly": false,
@@ -113,7 +113,7 @@
     },
     {
       "name": "deviceOSType",
-      "description": "The type of operating system on the device.",
+      "description": "The type of operating system on the device. The type of operating system on the device.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -127,7 +127,7 @@
     },
     {
       "name": "deviceOSVersion",
-      "description": "The version of the operating system on the device",
+      "description": "The version of the operating system on the device The version of the operating system on the device",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -141,7 +141,7 @@
     },
     {
       "name": "devicePhysicalIds",
-      "description": "                **Notes:** not nullable            ",
+      "description": "                **Notes:** not nullable                             **Notes:** not nullable            ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -169,7 +169,7 @@
     },
     {
       "name": "dirSyncEnabled",
-      "description": "**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).",
+      "description": "**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -183,7 +183,7 @@
     },
     {
       "name": "displayName",
-      "description": "The display name for the device.",
+      "description": "The display name for the device. The display name for the device.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -197,7 +197,7 @@
     },
     {
       "name": "lastDirSyncTime",
-      "description": "The last time at which the object was synced with the on-premises directory.",
+      "description": "The last time at which the object was synced with the on-premises directory. The last time at which the object was synced with the on-premises directory.",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -211,7 +211,7 @@
     },
     {
       "name": "objectType",
-      "description": "A string that identifies the object type. For devices the value is always “Device”. Inherited from [DirectoryObject]",
+      "description": "A string that identifies the object type. For devices the value is always “Device”. Inherited from [DirectoryObject] A string that identifies the object type. For devices the value is always “Device”. Inherited from [DirectoryObject]",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -225,7 +225,7 @@
     },
     {
       "name": "objectId",
-      "description": "The unique identifier for the device. Inherited from [DirectoryObject].                            **Notes: key**, immutable, not nullable, unique            ",
+      "description": "The unique identifier for the device. Inherited from [DirectoryObject].                            **Notes: key**, immutable, not nullable, unique             The unique identifier for the device. Inherited from [DirectoryObject].                            **Notes: key**, immutable, not nullable, unique            ",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -253,7 +253,7 @@
     },
     {
       "name": "registeredOwners",
-      "description": "Users that are registered owners of the device.",
+      "description": "Users that are registered owners of the device. Users that are registered owners of the device.",
       "isKey": false,
       "dataType": "DirectoryObject",
       "isReadOnly": true,
@@ -267,7 +267,7 @@
     },
     {
       "name": "registeredUsers",
-      "description": "Users that are registered users of the device.",
+      "description": "Users that are registered users of the device. Users that are registered users of the device.",
       "isKey": false,
       "dataType": "DirectoryObject",
       "isReadOnly": true,
@@ -291,12 +291,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "groupIds",
@@ -320,12 +316,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",
@@ -349,12 +341,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",

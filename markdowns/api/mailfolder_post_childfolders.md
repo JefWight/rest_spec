@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/MailFolders/<Id>/ChildFolders
-POST /drive/root/createdByUser/MailFolders/<Id>/ChildFolders
-POST /drive/root/lastModifiedByUser/MailFolders/<Id>/ChildFolders
+POST /users/<objectId>/mailFolders/<id>/childFolders
+POST /drive/root/createdByUser/mailFolders/<id>/childFolders
+POST /drive/root/lastModifiedByUser/mailFolders/<id>/childFolders
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_mailfolder_from_mailfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/MailFolders/<Id>
+POST https://graph.microsoft.com/beta/users/<objectId>/mailFolders/<id>
 ```
 In the request body, supply a JSON representation of [MailFolder](../resources/mailfolder.md) object.
 ##### Response
@@ -44,13 +44,15 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 130
+Content-length: 179
 
 {
-  "ParentFolderId": "ParentFolderId-value",
-  "DisplayName": "DisplayName-value",
-  "ChildFolderCount": 99,
-  "Id": "Id-value"
+  "displayName": "displayName-value",
+  "parentFolderId": "parentFolderId-value",
+  "childFolderCount": 99,
+  "unreadItemCount": 99,
+  "totalItemCount": 99,
+  "id": "id-value"
 }
 ```
 

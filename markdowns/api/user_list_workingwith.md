@@ -1,4 +1,4 @@
-# List WorkingWith
+# List workingWith
 
 Retrieve a list of user objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/WorkingWith
-GET /drive/root/createdByUser/WorkingWith
-GET /drive/root/lastModifiedByUser/WorkingWith
+GET /users/<objectId>/workingWith
+GET /drive/root/createdByUser/workingWith
+GET /drive/root/lastModifiedByUser/workingWith
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "get_workingwith"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/WorkingWith
+GET https://graph.microsoft.com/beta/users/<objectId>/workingWith
 ```
 ##### Response
 Here is an example of the response.
@@ -120,8 +120,8 @@ Content-length: 3133
       "usageLocation": "usageLocation-value",
       "userPrincipalName": "userPrincipalName-value",
       "userType": "userType-value",
-      "MailboxGuid": "MailboxGuid-value",
-      "EmailAddress": "EmailAddress-value",
+      "emailAddress": "emailAddress-value",
+      "mailboxGuid": "mailboxGuid-value",
       "aboutMe": "aboutMe-value",
       "alias": "alias-value",
       "birthday": "datetime-value",
@@ -159,7 +159,7 @@ Content-length: 3133
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List WorkingWith",
+  "description": "List workingWith",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

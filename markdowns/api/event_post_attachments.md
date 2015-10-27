@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/Events/<Id>/Attachments
-POST /groups/<objectId>/Events/<Id>/Attachments
-POST /users/<objectId>/CalendarView/<Id>/Attachments
+POST /users/<objectId>/events/<id>/attachments
+POST /groups/<objectId>/events/<id>/attachments
+POST /users/<objectId>/calendarView/<id>/attachments
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_attachment_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/Events/<Id>
+POST https://graph.microsoft.com/beta/users/<objectId>/events/<id>
 ```
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 ##### Response
@@ -47,12 +47,12 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "Name": "Name-value",
-  "ContentType": "ContentType-value",
-  "Size": 99,
-  "IsInline": true,
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "lastModifiedDateTime": "datetime-value",
+  "name": "name-value",
+  "contentType": "contentType-value",
+  "size": 99,
+  "isInline": true,
+  "id": "id-value"
 }
 ```
 

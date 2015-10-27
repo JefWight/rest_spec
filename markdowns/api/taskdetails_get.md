@@ -1,4 +1,4 @@
-# Get TaskDetails
+# Get taskDetails
 
 Retrieve the properties and relationships of taskdetails object.
 ### Prerequisites
@@ -8,13 +8,13 @@ The following **scopes** are required to execute this API:
 ```http
 GET /tasks/<id>/details
 GET /users/<objectId>/tasks/<id>/details
-GET /groups/<objectId>/tasks/<id>/details
+GET /users/<objectId>/plans/<id>/tasks/<id>/details
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [TaskDetails](../resources/taskdetails.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [taskDetails](../resources/taskdetails.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -25,7 +25,7 @@ GET /groups/<objectId>/tasks/<id>/details
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [TaskDetails](../resources/taskdetails.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [taskDetails](../resources/taskdetails.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_taskdetails"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/tasks/<id>/details
+GET https://graph.microsoft.com/beta/tasks/<id>/details
 ```
 ##### Response
 Here is an example of the response.
@@ -46,16 +46,17 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 177
+Content-length: 181
 
 {
-  "notes": "notes-value",
+  "description": "description-value",
   "previewType": "previewType-value",
   "completedBy": "completedBy-value",
   "references": {
   },
-  "id": "id-value",
-  "version": "version-value"
+  "checklist": {
+  },
+  "id": "id-value"
 }
 ```
 
@@ -63,7 +64,7 @@ Content-length: 177
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get TaskDetails",
+  "description": "Get taskDetails",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

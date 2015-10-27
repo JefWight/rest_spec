@@ -1,4 +1,4 @@
-# Entity resource type
+# entity resource type
 
 
 
@@ -16,14 +16,14 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "Id": "String-value (identifier)"
+  "id": "String-value (identifier)"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Id|String| Read-only.|
+|id|String| Read-only.|
 
 ### Relationships
 None
@@ -33,14 +33,14 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Entity](../api/entity_get.md) | [Entity](entity.md) |Read properties and relationships of entity object.|
-|[Delete](../api/entity_delete.md) | None |Delete Entity object. |
+|[Get entity](../api/entity_get.md) | [entity](entity.md) |Read properties and relationships of entity object.|
+|[Delete](../api/entity_delete.md) | None |Delete entity object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Entity resource",
+  "description": "entity resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,29 +1,63 @@
 {
-  "MeetingMessageType": {
+  "AttendeeType": {
     "isExclusive": true,
     "options": {
-      "None": {
+      "Required": {
         "value": "0",
         "description": ""
       },
-      "MeetingRequest": {
+      "Optional": {
         "value": "1",
         "description": ""
       },
-      "MeetingCancelled": {
+      "Resource": {
+        "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "FreeBusyStatus": {
+    "isExclusive": true,
+    "options": {
+      "Free": {
+        "value": "0",
+        "description": ""
+      },
+      "Tentative": {
+        "value": "1",
+        "description": ""
+      },
+      "Busy": {
         "value": "2",
         "description": ""
       },
-      "MeetingAccepted": {
+      "Oof": {
         "value": "3",
         "description": ""
       },
-      "MeetingTenativelyAccepted": {
+      "WorkingElsewhere": {
         "value": "4",
         "description": ""
       },
-      "MeetingDeclined": {
-        "value": "5",
+      "Unknown": {
+        "value": "-1",
+        "description": ""
+      }
+    }
+  },
+  "ActivityDomain": {
+    "isExclusive": true,
+    "options": {
+      "Unknown": {
+        "value": "0",
+        "description": ""
+      },
+      "Work": {
+        "value": "1",
+        "description": ""
+      },
+      "Personal": {
+        "value": "2",
         "description": ""
       }
     }
@@ -54,6 +88,19 @@
       },
       "High": {
         "value": "2",
+        "description": ""
+      }
+    }
+  },
+  "InferenceClassificationType": {
+    "isExclusive": true,
+    "options": {
+      "Focused": {
+        "value": "0",
+        "description": ""
+      },
+      "Other": {
+        "value": "1",
         "description": ""
       }
     }
@@ -107,56 +154,6 @@
       }
     }
   },
-  "FreeBusyStatus": {
-    "isExclusive": true,
-    "options": {
-      "Free": {
-        "value": "0",
-        "description": ""
-      },
-      "Tentative": {
-        "value": "1",
-        "description": ""
-      },
-      "Busy": {
-        "value": "2",
-        "description": ""
-      },
-      "Oof": {
-        "value": "3",
-        "description": ""
-      },
-      "WorkingElsewhere": {
-        "value": "4",
-        "description": ""
-      },
-      "Unknown": {
-        "value": "-1",
-        "description": ""
-      }
-    }
-  },
-  "EventType": {
-    "isExclusive": true,
-    "options": {
-      "SingleInstance": {
-        "value": "0",
-        "description": ""
-      },
-      "Occurrence": {
-        "value": "1",
-        "description": ""
-      },
-      "Exception": {
-        "value": "2",
-        "description": ""
-      },
-      "SeriesMaster": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
   "ResponseType": {
     "isExclusive": true,
     "options": {
@@ -186,19 +183,23 @@
       }
     }
   },
-  "AttendeeType": {
+  "Sensitivity": {
     "isExclusive": true,
     "options": {
-      "Required": {
+      "Normal": {
         "value": "0",
         "description": ""
       },
-      "Optional": {
+      "Personal": {
         "value": "1",
         "description": ""
       },
-      "Resource": {
+      "Private": {
         "value": "2",
+        "description": ""
+      },
+      "Confidential": {
+        "value": "3",
         "description": ""
       }
     }
@@ -307,6 +308,56 @@
       }
     }
   },
+  "EventType": {
+    "isExclusive": true,
+    "options": {
+      "SingleInstance": {
+        "value": "0",
+        "description": ""
+      },
+      "Occurrence": {
+        "value": "1",
+        "description": ""
+      },
+      "Exception": {
+        "value": "2",
+        "description": ""
+      },
+      "SeriesMaster": {
+        "value": "3",
+        "description": ""
+      }
+    }
+  },
+  "MeetingMessageType": {
+    "isExclusive": true,
+    "options": {
+      "None": {
+        "value": "0",
+        "description": ""
+      },
+      "MeetingRequest": {
+        "value": "1",
+        "description": ""
+      },
+      "MeetingCancelled": {
+        "value": "2",
+        "description": ""
+      },
+      "MeetingAccepted": {
+        "value": "3",
+        "description": ""
+      },
+      "MeetingTenativelyAccepted": {
+        "value": "4",
+        "description": ""
+      },
+      "MeetingDeclined": {
+        "value": "5",
+        "description": ""
+      }
+    }
+  },
   "GroupAccessType": {
     "isExclusive": true,
     "options": {
@@ -328,94 +379,43 @@
       }
     }
   },
-  "DisplaySettings": {
-    "isExclusive": false,
-    "options": {
-      "None": {
-        "value": "0",
-        "description": ""
-      },
-      "Today": {
-        "value": "1",
-        "description": ""
-      },
-      "TimeScale": {
-        "value": "2",
-        "description": ""
-      },
-      "TaskDate": {
-        "value": "4",
-        "description": ""
-      },
-      "All": {
-        "value": "7",
-        "description": ""
-      }
-    }
-  },
-  "DrawingStyle": {
+  "taskBoardType": {
     "isExclusive": true,
     "options": {
-      "Bar": {
+      "progress": {
         "value": "0",
         "description": ""
       },
-      "Callout": {
-        "value": "1",
-        "description": ""
-      }
-    }
-  },
-  "AnchorPosition": {
-    "isExclusive": true,
-    "options": {
-      "Top": {
-        "value": "0",
-        "description": ""
-      },
-      "Bottom": {
-        "value": "1",
-        "description": ""
-      }
-    }
-  },
-  "TaskBoardType": {
-    "isExclusive": true,
-    "options": {
-      "Status": {
-        "value": "0",
-        "description": ""
-      },
-      "AssignedTo": {
+      "assignedTo": {
         "value": "1",
         "description": ""
       },
-      "Bucket": {
+      "bucket": {
         "value": "2",
         "description": ""
       }
     }
   },
-  "PreviewType": {
+  "previewType": {
     "isExclusive": true,
     "options": {
-      "Automatic": {
+      "automatic": {
         "value": "0",
         "description": ""
       },
-      "NoPreview": {
+      "noPreview": {
         "value": "1",
         "description": ""
       },
-      "CheckList": {
+      "checklist": {
         "value": "2",
         "description": ""
       },
-      "Notes": {
+      "description": {
         "value": "3",
         "description": ""
       },
-      "Reference": {
+      "reference": {
         "value": "4",
         "description": ""
       }

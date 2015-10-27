@@ -1,14 +1,14 @@
-# Delete Post
+# Delete post
 
-Delete Post.
+Delete post.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/<objectId>/Threads/<Id>/Posts/<Id>
-DELETE /groups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>
-DELETE /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>
+DELETE /groups/<objectId>/threads/<id>/posts/<id>
+DELETE /groups/<objectId>/conversations/<id>/threads/<id>/posts/<id>
+DELETE /users/<objectId>/joinedGroups/<objectId>/threads/<id>/posts/<id>
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_post"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/<objectId>/Threads/<Id>/Posts/<Id>
+DELETE https://graph.microsoft.com/beta/groups/<objectId>/threads/<id>/posts/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete Post",
+  "description": "Delete post",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

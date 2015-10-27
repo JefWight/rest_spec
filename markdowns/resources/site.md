@@ -1,4 +1,4 @@
-# Site resource type
+# site resource type
 
 
 
@@ -37,14 +37,14 @@ Here is a JSON representation of the resource
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Site](../api/site_get.md) | [Site](site.md) |Read properties and relationships of site object.|
-|[Delete](../api/site_delete.md) | None |Delete Site object. |
+|[Get site](../api/site_get.md) | [site](site.md) |Read properties and relationships of site object.|
+|[Delete](../api/site_delete.md) | None |Delete site object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Site resource",
+  "description": "site resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -7,8 +7,8 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/notes/sectionGroups/<id>
+PATCH /groups/<objectId>/notes/sectionGroups/<id>
 PATCH /drive/root/createdByUser/notes/sectionGroups/<id>
-PATCH /drive/root/lastModifiedByUser/notes/sectionGroups/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -20,17 +20,17 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdBy|String|The user who created the section group.|
-|createdTime|DateTimeOffset|The date and time when the section group was created.|
-|lastModifiedBy|String|The user who last modified the section group.|
-|lastModifiedTime|DateTimeOffset|The date and time when the section group was last modified.|
-|name|String|The name of the section group.|
-|sectionGroupsUrl|String|The URL for the sectionGroups navigation property, which returns all the section groups in the section group.|
-|sectionsUrl|String|The URL for the sections navigation property, which returns all the sections in the section group.|
-|self|String|The endpoint where you can get details about the section group.|
+|createdBy|String|The user who created the section group. The user who created the section group.|
+|createdTime|DateTimeOffset|The date and time when the section group was created. The date and time when the section group was created.|
+|lastModifiedBy|String|The user who last modified the section group. The user who last modified the section group.|
+|lastModifiedTime|DateTimeOffset|The date and time when the section group was last modified. The date and time when the section group was last modified.|
+|name|String|The name of the section group. The name of the section group.|
+|sectionGroupsUrl|String|The URL for the sectionGroups navigation property, which returns all the section groups in the section group. The URL for the sectionGroups navigation property, which returns all the section groups in the section group.|
+|sectionsUrl|String|The URL for the sections navigation property, which returns all the sections in the section group. The URL for the sections navigation property, which returns all the sections in the section group.|
+|self|String|The endpoint where you can get details about the section group. The endpoint where you can get details about the section group.|
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [SectionGroup](../resources/sectiongroup.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [sectionGroup](../resources/sectiongroup.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "update_sectiongroup"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/<objectId>/notes/sectionGroups/<id>
+PUT https://graph.microsoft.com/beta/users/<objectId>/notes/sectionGroups/<id>
 Content-type: application/json
 Content-length: 309
 

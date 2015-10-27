@@ -1,6 +1,6 @@
-# Delete User
+# Delete user
 
-Delete User.
+Delete user.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_user"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/<objectId>
+DELETE https://graph.microsoft.com/beta/users/<objectId>
 ```
 ##### Response
 Here is an example of the response.
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete User",
+  "description": "Delete user",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

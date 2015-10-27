@@ -25,19 +25,19 @@
   "deleteDescription": "",
   "restPath": {
     "/groups/<objectId>/drive": true,
-    "/users/<objectId>/JoinedGroups/<objectId>/drive": true,
+    "/users/<objectId>/joinedGroups/<objectId>/drive": true,
     "/users/<objectId>/drive": true,
     "/drives/<id>": true,
-    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/drive": true,
+    "/shares/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/drive": true,
     "/shares/<id>/items/<id>/createdByUser/drive": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/drive": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/drive": true,
     "/shares/<id>/items/<id>/lastModifiedByUser/drive": true,
     "/drive": true
   },
   "properties": [
     {
       "name": "id",
-      "description": "The unique identifier of the drive.",
+      "description": "The unique identifier of the drive. The unique identifier of the drive.",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -51,7 +51,7 @@
     },
     {
       "name": "driveType",
-      "description": "Enumerated value that identifies the type of drive account. OneDrive drives will show as `personal`.",
+      "description": "Enumerated value that identifies the type of drive account. OneDrive drives will show as `personal`. Enumerated value that identifies the type of drive account. OneDrive drives will show as `personal`.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -65,7 +65,7 @@
     },
     {
       "name": "owner",
-      "description": "The user account that owns the drive.",
+      "description": "The user account that owns the drive. The user account that owns the drive.",
       "isKey": false,
       "dataType": "identitySet",
       "isReadOnly": false,
@@ -79,7 +79,7 @@
     },
     {
       "name": "quota",
-      "description": "Information about the drive's storage space quota.",
+      "description": "Information about the drive's storage space quota. Information about the drive's storage space quota.",
       "isKey": false,
       "dataType": "quota",
       "isReadOnly": false,
@@ -93,7 +93,7 @@
     },
     {
       "name": "items",
-      "description": "All items contained in the drive.",
+      "description": "All items contained in the drive. All items contained in the drive.",
       "isKey": false,
       "dataType": "item",
       "isReadOnly": true,
@@ -121,7 +121,7 @@
     },
     {
       "name": "special",
-      "description": "Collection of common folders available in OneDrive.",
+      "description": "Collection of common folders available in OneDrive. Collection of common folders available in OneDrive.",
       "isKey": false,
       "dataType": "item",
       "isReadOnly": true,
@@ -135,7 +135,7 @@
     },
     {
       "name": "root",
-      "description": "The root folder of the drive.",
+      "description": "The root folder of the drive. The root folder of the drive.",
       "isKey": false,
       "dataType": "item",
       "isReadOnly": true,
@@ -159,15 +159,9 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
+      "scopes": [],
+      "errorCodes": [],
+      "parameters": []
     }
   ]
 }

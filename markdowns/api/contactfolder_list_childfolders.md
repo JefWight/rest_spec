@@ -1,4 +1,4 @@
-# List ChildFolders
+# List childFolders
 
 Retrieve a list of contactfolder objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/ContactFolders/<Id>/ChildFolders
-GET /drive/root/createdByUser/ContactFolders/<Id>/ChildFolders
-GET /drive/root/lastModifiedByUser/ContactFolders/<Id>/ChildFolders
+GET /users/<objectId>/contactFolders/<id>/childFolders
+GET /drive/root/createdByUser/contactFolders/<id>/childFolders
+GET /drive/root/lastModifiedByUser/contactFolders/<id>/childFolders
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_childfolders"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/ContactFolders/<Id>/ChildFolders
+GET https://graph.microsoft.com/beta/users/<objectId>/contactFolders/<id>/childFolders
 ```
 ##### Response
 Here is an example of the response.
@@ -57,9 +57,9 @@ Content-length: 145
 {
   "value": [
     {
-      "ParentFolderId": "ParentFolderId-value",
-      "DisplayName": "DisplayName-value",
-      "Id": "Id-value"
+      "parentFolderId": "parentFolderId-value",
+      "displayName": "displayName-value",
+      "id": "id-value"
     }
   ]
 }
@@ -69,7 +69,7 @@ Content-length: 145
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List ChildFolders",
+  "description": "List childFolders",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

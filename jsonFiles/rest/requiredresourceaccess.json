@@ -1,5 +1,5 @@
 {
-  "name": "RequiredResourceAccess",
+  "name": "requiredResourceAccess",
   "description": "Specifies the set of OAuth 2.0 permission scopes and app roles under the specified resource that an application requires access to. The specified OAuth 2.0 permission scopes may be requested by client applications (through the **requiredResourceAccess** collection) when calling a resource application. The **requiredResourceAccess** property of the [Application] entity is a collection of **ReqiredResourceAccess**.\r",
   "collectionOf": null,
   "isComplexType": true,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "resourceAppId",
-      "description": "The unique identifier for the resource that the application requires access to.  This should be equal to the **appId** declared on the target resource application.",
+      "description": "The unique identifier for the resource that the application requires access to.  This should be equal to the **appId** declared on the target resource application. The unique identifier for the resource that the application requires access to.  This should be equal to the **appId** declared on the target resource application.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -42,7 +41,7 @@
     },
     {
       "name": "resourceAccess",
-      "description": "The list of OAuth2.0 permission scopes and app roles that the application requires from the specified resource.",
+      "description": "The list of OAuth2.0 permission scopes and app roles that the application requires from the specified resource. The list of OAuth2.0 permission scopes and app roles that the application requires from the specified resource.",
       "isKey": false,
       "dataType": "ResourceAccess",
       "isReadOnly": false,
@@ -55,7 +54,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

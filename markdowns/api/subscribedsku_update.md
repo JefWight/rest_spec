@@ -26,7 +26,7 @@ In the request body, supply the values for relevant fields that should be update
 |skuPartNumber|String||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [SubscribedSku](../resources/subscribedsku.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [subscribedSku](../resources/subscribedsku.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "update_subscribedsku"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/subscribedSkus/<objectId>
+PUT https://graph.microsoft.com/beta/subscribedSkus/<objectId>
 Content-type: application/json
 Content-length: 388
 

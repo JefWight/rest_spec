@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/Contacts/<Id>
-PATCH /drive/root/createdByUser/Contacts/<Id>
-PATCH /drive/root/lastModifiedByUser/Contacts/<Id>
+PATCH /users/<objectId>/contacts/<id>
+PATCH /drive/root/createdByUser/contacts/<id>
+PATCH /drive/root/lastModifiedByUser/contacts/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -20,46 +20,46 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|AssistantName|String|The name of the contact's assistant.|
-|Birthday|DateTimeOffset|The contact's birthday.|
-|BusinessAddress|PhysicalAddress|The contact's business address.|
-|BusinessHomePage|String|The business home page of the contact.|
-|BusinessPhones|String|The contact's business phone numbers.|
-|Categories|String|The categories associated with the contact.|
-|ChangeKey|String|Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|Children|String||
-|CompanyName|String|The name of the contact's company.|
-|CreatedDateTime|DateTimeOffset||
-|Department|String|The name for the department in which the contact works.|
-|DisplayName|String|The display name for the contact.|
-|EmailAddresses|EmailAddress|The contact's email addresses.|
-|FileAs|String|The name the contact is filed under.|
-|Generation|String|The contact's generation.|
-|GivenName|String|The given name (first name) of the contact.|
-|HomeAddress|PhysicalAddress|The contact's home address.|
-|HomePhones|String|The contact's home phone numbers.|
-|ImAddresses|String|The contact's instant messaging (IM) addresses.|
-|Initials|String|The contact's initials.|
-|JobTitle|String|The contact’s job title.|
-|LastModifiedDateTime|DateTimeOffset||
-|Manager|String|The user or contact that is this contact’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE|
-|MiddleName|String|The contact's middle name.|
-|MobilePhone1|String|The contact's mobile phone number.|
-|NickName|String|The contact's nickname.|
-|OfficeLocation|String|The location of the contact's office.|
-|OtherAddress|PhysicalAddress|Other addresses for the contact.|
-|ParentFolderId|String|The ID of the contact's parent folder.|
-|PersonalNotes|String||
-|Profession|String|The contact's profession.|
-|SpouseName|String||
-|Surname|String|The contact's surname (family name or last name).|
-|Title|String|The contact's title.|
-|YomiCompanyName|String|The phonetic Japanese company name of the contact. This property is optional.|
-|YomiGivenName|String|The phonetic Japanese given name (first name) of the contact. This property is optional.|
-|YomiSurname|String|The phonetic Japanese surname (last name)  of the contact. This property is optional.|
+|assistantName|String|The name of the contact's assistant. The name of the contact's assistant.|
+|birthday|DateTimeOffset|The contact's birthday. The contact's birthday.|
+|businessAddress|PhysicalAddress|The contact's business address. The contact's business address.|
+|businessHomePage|String|The business home page of the contact. The business home page of the contact.|
+|businessPhones|String|The contact's business phone numbers. The contact's business phone numbers.|
+|categories|String|The categories associated with the contact. The categories associated with the contact.|
+|changeKey|String|Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object. Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
+|children|String||
+|companyName|String|The name of the contact's company. The name of the contact's company.|
+|createdDateTime|DateTimeOffset||
+|department|String|The name for the department in which the contact works. The name for the department in which the contact works.|
+|displayName|String|The display name for the contact. The display name for the contact.|
+|emailAddresses|EmailAddress|The contact's email addresses. The contact's email addresses.|
+|fileAs|String|The name the contact is filed under. The name the contact is filed under.|
+|generation|String|The contact's generation. The contact's generation.|
+|givenName|String|The given name (first name) of the contact. The given name (first name) of the contact.|
+|homeAddress|PhysicalAddress|The contact's home address. The contact's home address.|
+|homePhones|String|The contact's home phone numbers. The contact's home phone numbers.|
+|imAddresses|String|The contact's instant messaging (IM) addresses. The contact's instant messaging (IM) addresses.|
+|initials|String|The contact's initials. The contact's initials.|
+|jobTitle|String|The contact’s job title. The contact’s job title.|
+|lastModifiedDateTime|DateTimeOffset||
+|manager|String|The user or contact that is this contact’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE The user or contact that is this contact’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE|
+|middleName|String|The contact's middle name. The contact's middle name.|
+|mobilePhone1|String|The contact's mobile phone number. The contact's mobile phone number.|
+|nickName|String|The contact's nickname. The contact's nickname.|
+|officeLocation|String|The location of the contact's office. The location of the contact's office.|
+|otherAddress|PhysicalAddress|Other addresses for the contact. Other addresses for the contact.|
+|parentFolderId|String|The ID of the contact's parent folder. The ID of the contact's parent folder.|
+|personalNotes|String||
+|profession|String|The contact's profession. The contact's profession.|
+|spouseName|String||
+|surname|String|The contact's surname (family name or last name). The contact's surname (family name or last name).|
+|title|String|The contact's title. The contact's title.|
+|yomiCompanyName|String|The phonetic Japanese company name of the contact. This property is optional. The phonetic Japanese company name of the contact. This property is optional.|
+|yomiGivenName|String|The phonetic Japanese given name (first name) of the contact. This property is optional. The phonetic Japanese given name (first name) of the contact. This property is optional.|
+|yomiSurname|String|The phonetic Japanese surname (last name)  of the contact. This property is optional. The phonetic Japanese surname (last name)  of the contact. This property is optional.|
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [Contact](../resources/contact.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [contact](../resources/contact.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -68,82 +68,82 @@ Here is an example of the request.
   "name": "update_contact"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/<objectId>/Contacts/<Id>
+PUT https://graph.microsoft.com/beta/users/<objectId>/contacts/<id>
 Content-type: application/json
 Content-length: 1977
 
 {
-  "ParentFolderId": "ParentFolderId-value",
-  "Birthday": "datetime-value",
-  "FileAs": "FileAs-value",
-  "DisplayName": "DisplayName-value",
-  "GivenName": "GivenName-value",
-  "Initials": "Initials-value",
-  "MiddleName": "MiddleName-value",
-  "NickName": "NickName-value",
-  "Surname": "Surname-value",
-  "Title": "Title-value",
-  "Generation": "Generation-value",
-  "EmailAddresses": [
+  "parentFolderId": "parentFolderId-value",
+  "birthday": "datetime-value",
+  "fileAs": "fileAs-value",
+  "displayName": "displayName-value",
+  "givenName": "givenName-value",
+  "initials": "initials-value",
+  "middleName": "middleName-value",
+  "nickName": "nickName-value",
+  "surname": "surname-value",
+  "title": "title-value",
+  "yomiGivenName": "yomiGivenName-value",
+  "yomiSurname": "yomiSurname-value",
+  "yomiCompanyName": "yomiCompanyName-value",
+  "generation": "generation-value",
+  "emailAddresses": [
     {
-      "Name": "Name-value",
-      "Address": "Address-value"
+      "name": "name-value",
+      "address": "address-value"
     }
   ],
-  "ImAddresses": [
-    "ImAddresses-value"
+  "imAddresses": [
+    "imAddresses-value"
   ],
-  "JobTitle": "JobTitle-value",
-  "CompanyName": "CompanyName-value",
-  "Department": "Department-value",
-  "OfficeLocation": "OfficeLocation-value",
-  "Profession": "Profession-value",
-  "BusinessHomePage": "BusinessHomePage-value",
-  "AssistantName": "AssistantName-value",
-  "Manager": "Manager-value",
-  "HomePhones": [
-    "HomePhones-value"
+  "jobTitle": "jobTitle-value",
+  "companyName": "companyName-value",
+  "department": "department-value",
+  "officeLocation": "officeLocation-value",
+  "profession": "profession-value",
+  "businessHomePage": "businessHomePage-value",
+  "assistantName": "assistantName-value",
+  "manager": "manager-value",
+  "homePhones": [
+    "homePhones-value"
   ],
-  "BusinessPhones": [
-    "BusinessPhones-value"
+  "mobilePhone1": "mobilePhone1-value",
+  "businessPhones": [
+    "businessPhones-value"
   ],
-  "MobilePhone1": "MobilePhone1-value",
-  "HomeAddress": {
-    "Street": "Street-value",
-    "City": "City-value",
-    "State": "State-value",
-    "CountryOrRegion": "CountryOrRegion-value",
-    "PostalCode": "PostalCode-value"
+  "homeAddress": {
+    "street": "street-value",
+    "city": "city-value",
+    "state": "state-value",
+    "countryOrRegion": "countryOrRegion-value",
+    "postalCode": "postalCode-value"
   },
-  "BusinessAddress": {
-    "Street": "Street-value",
-    "City": "City-value",
-    "State": "State-value",
-    "CountryOrRegion": "CountryOrRegion-value",
-    "PostalCode": "PostalCode-value"
+  "businessAddress": {
+    "street": "street-value",
+    "city": "city-value",
+    "state": "state-value",
+    "countryOrRegion": "countryOrRegion-value",
+    "postalCode": "postalCode-value"
   },
-  "OtherAddress": {
-    "Street": "Street-value",
-    "City": "City-value",
-    "State": "State-value",
-    "CountryOrRegion": "CountryOrRegion-value",
-    "PostalCode": "PostalCode-value"
+  "otherAddress": {
+    "street": "street-value",
+    "city": "city-value",
+    "state": "state-value",
+    "countryOrRegion": "countryOrRegion-value",
+    "postalCode": "postalCode-value"
   },
-  "YomiCompanyName": "YomiCompanyName-value",
-  "YomiGivenName": "YomiGivenName-value",
-  "YomiSurname": "YomiSurname-value",
-  "SpouseName": "SpouseName-value",
-  "PersonalNotes": "PersonalNotes-value",
-  "Children": [
-    "Children-value"
+  "spouseName": "spouseName-value",
+  "personalNotes": "personalNotes-value",
+  "children": [
+    "children-value"
   ],
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "id": "id-value"
 }
 ```
 ##### Response
@@ -159,77 +159,77 @@ Content-type: application/json
 Content-length: 1977
 
 {
-  "ParentFolderId": "ParentFolderId-value",
-  "Birthday": "datetime-value",
-  "FileAs": "FileAs-value",
-  "DisplayName": "DisplayName-value",
-  "GivenName": "GivenName-value",
-  "Initials": "Initials-value",
-  "MiddleName": "MiddleName-value",
-  "NickName": "NickName-value",
-  "Surname": "Surname-value",
-  "Title": "Title-value",
-  "Generation": "Generation-value",
-  "EmailAddresses": [
+  "parentFolderId": "parentFolderId-value",
+  "birthday": "datetime-value",
+  "fileAs": "fileAs-value",
+  "displayName": "displayName-value",
+  "givenName": "givenName-value",
+  "initials": "initials-value",
+  "middleName": "middleName-value",
+  "nickName": "nickName-value",
+  "surname": "surname-value",
+  "title": "title-value",
+  "yomiGivenName": "yomiGivenName-value",
+  "yomiSurname": "yomiSurname-value",
+  "yomiCompanyName": "yomiCompanyName-value",
+  "generation": "generation-value",
+  "emailAddresses": [
     {
-      "Name": "Name-value",
-      "Address": "Address-value"
+      "name": "name-value",
+      "address": "address-value"
     }
   ],
-  "ImAddresses": [
-    "ImAddresses-value"
+  "imAddresses": [
+    "imAddresses-value"
   ],
-  "JobTitle": "JobTitle-value",
-  "CompanyName": "CompanyName-value",
-  "Department": "Department-value",
-  "OfficeLocation": "OfficeLocation-value",
-  "Profession": "Profession-value",
-  "BusinessHomePage": "BusinessHomePage-value",
-  "AssistantName": "AssistantName-value",
-  "Manager": "Manager-value",
-  "HomePhones": [
-    "HomePhones-value"
+  "jobTitle": "jobTitle-value",
+  "companyName": "companyName-value",
+  "department": "department-value",
+  "officeLocation": "officeLocation-value",
+  "profession": "profession-value",
+  "businessHomePage": "businessHomePage-value",
+  "assistantName": "assistantName-value",
+  "manager": "manager-value",
+  "homePhones": [
+    "homePhones-value"
   ],
-  "BusinessPhones": [
-    "BusinessPhones-value"
+  "mobilePhone1": "mobilePhone1-value",
+  "businessPhones": [
+    "businessPhones-value"
   ],
-  "MobilePhone1": "MobilePhone1-value",
-  "HomeAddress": {
-    "Street": "Street-value",
-    "City": "City-value",
-    "State": "State-value",
-    "CountryOrRegion": "CountryOrRegion-value",
-    "PostalCode": "PostalCode-value"
+  "homeAddress": {
+    "street": "street-value",
+    "city": "city-value",
+    "state": "state-value",
+    "countryOrRegion": "countryOrRegion-value",
+    "postalCode": "postalCode-value"
   },
-  "BusinessAddress": {
-    "Street": "Street-value",
-    "City": "City-value",
-    "State": "State-value",
-    "CountryOrRegion": "CountryOrRegion-value",
-    "PostalCode": "PostalCode-value"
+  "businessAddress": {
+    "street": "street-value",
+    "city": "city-value",
+    "state": "state-value",
+    "countryOrRegion": "countryOrRegion-value",
+    "postalCode": "postalCode-value"
   },
-  "OtherAddress": {
-    "Street": "Street-value",
-    "City": "City-value",
-    "State": "State-value",
-    "CountryOrRegion": "CountryOrRegion-value",
-    "PostalCode": "PostalCode-value"
+  "otherAddress": {
+    "street": "street-value",
+    "city": "city-value",
+    "state": "state-value",
+    "countryOrRegion": "countryOrRegion-value",
+    "postalCode": "postalCode-value"
   },
-  "YomiCompanyName": "YomiCompanyName-value",
-  "YomiGivenName": "YomiGivenName-value",
-  "YomiSurname": "YomiSurname-value",
-  "SpouseName": "SpouseName-value",
-  "PersonalNotes": "PersonalNotes-value",
-  "Children": [
-    "Children-value"
+  "spouseName": "spouseName-value",
+  "personalNotes": "personalNotes-value",
+  "children": [
+    "children-value"
   ],
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "id": "id-value"
 }
 ```
 

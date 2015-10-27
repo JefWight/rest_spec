@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_user_from_tenantdetails"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/tenantDetails
+POST https://graph.microsoft.com/beta/tenantDetails
 ```
 In the request body, supply a JSON representation of [User](../resources/user.md) object.
 ##### Response
@@ -114,8 +114,8 @@ Content-length: 2708
   "usageLocation": "usageLocation-value",
   "userPrincipalName": "userPrincipalName-value",
   "userType": "userType-value",
-  "MailboxGuid": "MailboxGuid-value",
-  "EmailAddress": "EmailAddress-value",
+  "emailAddress": "emailAddress-value",
+  "mailboxGuid": "mailboxGuid-value",
   "aboutMe": "aboutMe-value",
   "alias": "alias-value",
   "birthday": "datetime-value",

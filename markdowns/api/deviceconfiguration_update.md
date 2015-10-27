@@ -26,7 +26,7 @@ In the request body, supply the values for relevant fields that should be update
 |registrationQuota|Int32||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [DeviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [deviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "update_deviceconfiguration"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/deviceConfiguration/<objectId>
+PUT https://graph.microsoft.com/beta/deviceConfiguration/<objectId>
 Content-type: application/json
 Content-length: 341
 

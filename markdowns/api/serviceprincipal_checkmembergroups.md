@@ -1,4 +1,4 @@
-# ServicePrincipal: checkMemberGroups
+# servicePrincipal: checkMemberGroups
 
 
 ### Prerequisites
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "serviceprincipal_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/servicePrincipals/<objectId>/checkMemberGroups
+POST https://graph.microsoft.com/beta/servicePrincipals/<objectId>/checkMemberGroups
 Content-type: application/json
 Content-length: 44
 
@@ -68,7 +68,7 @@ Content-length: 39
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ServicePrincipal: checkMemberGroups",
+  "description": "servicePrincipal: checkMemberGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

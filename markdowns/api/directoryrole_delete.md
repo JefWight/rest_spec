@@ -1,6 +1,6 @@
-# Delete DirectoryRole
+# Delete directoryRole
 
-Delete DirectoryRole.
+Delete directoryRole.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "delete_directoryrole"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryRoles/<objectId>
+DELETE https://graph.microsoft.com/beta/directoryRoles/<objectId>
 ```
 ##### Response
 Here is an example of the response.
@@ -45,7 +45,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete DirectoryRole",
+  "description": "Delete directoryRole",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

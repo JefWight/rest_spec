@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/Events/<Id>/Extensions
-POST /groups/<objectId>/Events/<Id>/Extensions
-POST /users/<objectId>/CalendarView/<Id>/Extensions
+POST /users/<objectId>/events/<id>/extensions
+POST /groups/<objectId>/events/<id>/extensions
+POST /users/<objectId>/calendarView/<id>/extensions
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_extension_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/Events/<Id>
+POST https://graph.microsoft.com/beta/users/<objectId>/events/<id>
 ```
 In the request body, supply a JSON representation of [Extension](../resources/extension.md) object.
 ##### Response
@@ -47,7 +47,7 @@ Content-type: application/json
 Content-length: 22
 
 {
-  "Id": "Id-value"
+  "id": "id-value"
 }
 ```
 

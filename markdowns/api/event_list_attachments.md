@@ -1,4 +1,4 @@
-# List Attachments
+# List attachments
 
 Retrieve a list of attachment objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/Events/<Id>/Attachments
-GET /groups/<objectId>/Events/<Id>/Attachments
-GET /users/<objectId>/CalendarView/<Id>/Attachments
+GET /users/<objectId>/events/<id>/attachments
+GET /groups/<objectId>/events/<id>/attachments
+GET /users/<objectId>/calendarView/<id>/attachments
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_attachments"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/Events/<Id>/Attachments
+GET https://graph.microsoft.com/beta/users/<objectId>/events/<id>/attachments
 ```
 ##### Response
 Here is an example of the response.
@@ -57,12 +57,12 @@ Content-length: 215
 {
   "value": [
     {
-      "Name": "Name-value",
-      "ContentType": "ContentType-value",
-      "Size": 99,
-      "IsInline": true,
-      "LastModifiedDateTime": "datetime-value",
-      "Id": "Id-value"
+      "lastModifiedDateTime": "datetime-value",
+      "name": "name-value",
+      "contentType": "contentType-value",
+      "size": 99,
+      "isInline": true,
+      "id": "id-value"
     }
   ]
 }
@@ -72,7 +72,7 @@ Content-length: 215
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Attachments",
+  "description": "List attachments",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/Messages
-POST /drive/root/createdByUser/Messages
-POST /drive/root/lastModifiedByUser/Messages
+POST /users/<objectId>/messages
+POST /drive/root/createdByUser/messages
+POST /drive/root/lastModifiedByUser/messages
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_message_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>
+POST https://graph.microsoft.com/beta/users/<objectId>
 ```
 In the request body, supply a JSON representation of [Message](../resources/message.md) object.
 ##### Response
@@ -44,81 +44,82 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1546
+Content-length: 1608
 
 {
-  "Subject": "Subject-value",
-  "Body": {
-    "ContentType": "ContentType-value",
-    "Content": "Content-value"
+  "receivedDateTime": "datetime-value",
+  "sentDateTime": "datetime-value",
+  "hasAttachments": true,
+  "subject": "subject-value",
+  "body": {
+    "contentType": "contentType-value",
+    "content": "content-value"
   },
-  "BodyPreview": "BodyPreview-value",
-  "Importance": "Importance-value",
-  "HasAttachments": true,
-  "ParentFolderId": "ParentFolderId-value",
-  "From": {
-    "EmailAddress": {
-      "Name": "Name-value",
-      "Address": "Address-value"
+  "bodyPreview": "bodyPreview-value",
+  "importance": "importance-value",
+  "parentFolderId": "parentFolderId-value",
+  "sender": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
     }
   },
-  "Sender": {
-    "EmailAddress": {
-      "Name": "Name-value",
-      "Address": "Address-value"
+  "from": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
     }
   },
-  "ToRecipients": [
+  "toRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "CcRecipients": [
+  "ccRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "BccRecipients": [
+  "bccRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "ReplyTo": [
+  "replyTo": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "ConversationId": "ConversationId-value",
-  "UniqueBody": {
-    "ContentType": "ContentType-value",
-    "Content": "Content-value"
+  "conversationId": "conversationId-value",
+  "uniqueBody": {
+    "contentType": "contentType-value",
+    "content": "content-value"
   },
-  "ReceivedDateTime": "datetime-value",
-  "SentDateTime": "datetime-value",
-  "IsDeliveryReceiptRequested": true,
-  "IsReadReceiptRequested": true,
-  "IsDraft": true,
-  "IsRead": true,
-  "WebLink": "WebLink-value",
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
+  "isDeliveryReceiptRequested": true,
+  "isReadReceiptRequested": true,
+  "isRead": true,
+  "isDraft": true,
+  "webLink": "webLink-value",
+  "inferenceClassification": "inferenceClassification-value",
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "id": "id-value"
 }
 ```
 

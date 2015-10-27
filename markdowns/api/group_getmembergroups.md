@@ -1,4 +1,4 @@
-# Group: getMemberGroups
+# group: getMemberGroups
 
 
 ### Prerequisites
@@ -7,8 +7,8 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/<objectId>/getMemberGroups
-POST /users/<objectId>/JoinedGroups/<objectId>/getMemberGroups
-POST /drive/root/createdByUser/JoinedGroups/<objectId>/getMemberGroups
+POST /users/<objectId>/joinedGroups/<objectId>/getMemberGroups
+POST /drive/root/createdByUser/joinedGroups/<objectId>/getMemberGroups
 
 ```
 ### Request headers
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "group_getmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<objectId>/getMemberGroups
+POST https://graph.microsoft.com/beta/groups/<objectId>/getMemberGroups
 Content-type: application/json
 Content-length: 33
 
@@ -68,7 +68,7 @@ Content-length: 39
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Group: getMemberGroups",
+  "description": "group: getMemberGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,5 +1,5 @@
 {
-  "name": "PatternedRecurrence",
+  "name": "patternedRecurrence",
   "description": "The recurrence pattern and range.",
   "collectionOf": null,
   "isComplexType": true,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
-      "name": "Pattern",
-      "description": "The frequency of an event.",
+      "name": "pattern",
+      "description": "The frequency of an event. The frequency of an event.",
       "isKey": false,
       "dataType": "RecurrencePattern",
       "isReadOnly": false,
@@ -41,8 +40,8 @@
       "isUnicode": null
     },
     {
-      "name": "Range",
-      "description": "The duration of an event.",
+      "name": "range",
+      "description": "The duration of an event. The duration of an event.",
       "isKey": false,
       "dataType": "RecurrenceRange",
       "isReadOnly": false,
@@ -55,7 +54,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

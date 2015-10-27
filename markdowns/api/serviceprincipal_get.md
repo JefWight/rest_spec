@@ -1,4 +1,4 @@
-# Get ServicePrincipal
+# Get servicePrincipal
 
 Retrieve the properties and relationships of serviceprincipal object.
 ### Prerequisites
@@ -18,7 +18,7 @@ GET /servicePrincipals/<objectId>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [ServicePrincipal](../resources/serviceprincipal.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "get_serviceprincipal"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/servicePrincipals/<objectId>
+GET https://graph.microsoft.com/beta/servicePrincipals/<objectId>
 ```
 ##### Response
 Here is an example of the response.
@@ -117,7 +117,7 @@ Content-length: 1942
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get ServicePrincipal",
+  "description": "Get servicePrincipal",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

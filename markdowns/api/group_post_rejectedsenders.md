@@ -1,14 +1,14 @@
-# Create RejectedSender
+# Create rejectedSender
 
-Use this API to create a new RejectedSender.
+Use this API to create a new rejectedSender.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<objectId>/RejectedSenders
-POST /users/<objectId>/JoinedGroups/<objectId>/RejectedSenders
-POST /drive/root/createdByUser/JoinedGroups/<objectId>/RejectedSenders
+POST /groups/<objectId>/rejectedSenders
+POST /users/<objectId>/joinedGroups/<objectId>/rejectedSenders
+POST /drive/root/createdByUser/joinedGroups/<objectId>/rejectedSenders
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<objectId>
+POST https://graph.microsoft.com/beta/groups/<objectId>
 ```
 In the request body, supply a JSON representation of [DirectoryObject](../resources/directoryobject.md) object.
 ##### Response
@@ -57,7 +57,7 @@ Content-length: 111
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create RejectedSender",
+  "description": "Create rejectedSender",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,5 +1,5 @@
 {
-  "name": "ExtensionProperty",
+  "name": "extensionProperty",
   "description": "Allows an application to define and use a set of additional properties that can be added to directory objects (users, groups, tenant details, devices, applications, and service principals) without the application requiring an external data store. For more information about extension properties, see [Azure AD Graph API Directory Schema Extensions](https://msdn.microsoft.com/en-us/library/azure/dn720459.aspx). Inherits from [DirectoryObject].\r",
   "collectionOf": null,
   "isComplexType": false,
@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "appDisplayName",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "name",
-      "description": "Specifies the display name for the directory extension property.                            **Notes**: not nullable.            ",
+      "description": "Specifies the display name for the directory extension property.                            **Notes**: not nullable.             Specifies the display name for the directory extension property.                            **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -57,7 +57,7 @@
     },
     {
       "name": "dataType",
-      "description": "Specifies the type of the directory extension property being added.   Supported types are: Integer, LargeInteger, DateTime (must be specified in ISO 8601 - DateTime is stored in UTC), Binary, Boolean, and String.",
+      "description": "Specifies the type of the directory extension property being added.   Supported types are: Integer, LargeInteger, DateTime (must be specified in ISO 8601 - DateTime is stored in UTC), Binary, Boolean, and String. Specifies the type of the directory extension property being added.   Supported types are: Integer, LargeInteger, DateTime (must be specified in ISO 8601 - DateTime is stored in UTC), Binary, Boolean, and String.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -71,7 +71,7 @@
     },
     {
       "name": "isSyncedFromOnPremises",
-      "description": "Indicates whether the extension property is synced from the on premises directory.                            **Notes**: not nullable.            ",
+      "description": "Indicates whether the extension property is synced from the on premises directory.                            **Notes**: not nullable.             Indicates whether the extension property is synced from the on premises directory.                            **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -85,7 +85,7 @@
     },
     {
       "name": "targetObjects",
-      "description": "The directory objects to which the directory extension property is being added.  Supported directory entities that can be extended are: “User”, “Group”, “TenantDetail”, “Device”, “Application” and “ServicePrincipal”                            **Notes**: not nullable.            ",
+      "description": "The directory objects to which the directory extension property is being added.  Supported directory entities that can be extended are: “User”, “Group”, “TenantDetail”, “Device”, “Application” and “ServicePrincipal”                            **Notes**: not nullable.             The directory objects to which the directory extension property is being added.  Supported directory entities that can be extended are: “User”, “Group”, “TenantDetail”, “Device”, “Application” and “ServicePrincipal”                            **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -99,7 +99,7 @@
     },
     {
       "name": "objectType",
-      "description": "A string that identifies the object type. For extension properties the value is always “ExtensionProperty”. Inherited from [DirectoryObject].",
+      "description": "A string that identifies the object type. For extension properties the value is always “ExtensionProperty”. Inherited from [DirectoryObject]. A string that identifies the object type. For extension properties the value is always “ExtensionProperty”. Inherited from [DirectoryObject].",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -113,7 +113,7 @@
     },
     {
       "name": "objectId",
-      "description": "The unique identifier for the permission scope. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
+      "description": "The unique identifier for the permission scope. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.             The unique identifier for the permission scope. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -151,12 +151,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "groupIds",
@@ -180,12 +176,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",
@@ -209,12 +201,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",

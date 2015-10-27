@@ -1,5 +1,5 @@
 {
-  "name": "SiteCollection",
+  "name": "siteCollection",
   "description": "",
   "collectionOf": null,
   "isComplexType": false,
@@ -24,7 +24,7 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/myOrganization/siteCollections/<id>": true
+    "/siteCollections/<id>": true
   },
   "properties": [
     {
@@ -57,34 +57,6 @@
     }
   ],
   "methods": [
-    {
-      "name": "FromUrl",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "SiteMetadata",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
 
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "url",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    }
   ]
 }

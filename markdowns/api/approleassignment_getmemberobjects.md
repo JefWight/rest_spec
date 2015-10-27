@@ -1,4 +1,4 @@
-# AppRoleAssignment: getMemberObjects
+# appRoleAssignment: getMemberObjects
 
 
 ### Prerequisites
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "approleassignment_getmemberobjects"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/appRoleAssignments/<objectId>/getMemberObjects
+POST https://graph.microsoft.com/beta/users/<objectId>/appRoleAssignments/<objectId>/getMemberObjects
 Content-type: application/json
 Content-length: 33
 
@@ -68,7 +68,7 @@ Content-length: 39
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "AppRoleAssignment: getMemberObjects",
+  "description": "appRoleAssignment: getMemberObjects",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

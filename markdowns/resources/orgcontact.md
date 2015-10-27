@@ -1,4 +1,4 @@
-# OrgContact resource type
+# orgContact resource type
 
 
 
@@ -105,13 +105,13 @@ Here is a JSON representation of the resource
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get OrgContact](../api/orgcontact_get.md) | [OrgContact](orgcontact.md) |Read properties and relationships of orgContact object.|
+|[Get orgContact](../api/orgcontact_get.md) | [orgContact](orgcontact.md) |Read properties and relationships of orgContact object.|
 |[Create directReport](../api/orgcontact_post_directreports.md) |[DirectoryObject](directoryobject.md)| Create a new directReport by posting to the directReports collection.|
 |[List directReports](../api/orgcontact_list_directreports.md) |[DirectoryObject](directoryobject.md) collection| Get a directReport object collection.|
 |[Create memberOf](../api/orgcontact_post_memberof.md) |[DirectoryObject](directoryobject.md)| Create a new memberOf by posting to the memberOf collection.|
 |[List memberOf](../api/orgcontact_list_memberof.md) |[DirectoryObject](directoryobject.md) collection| Get a memberOf object collection.|
-|[Update](../api/orgcontact_update.md) | [OrgContact](orgcontact.md)	|Update OrgContact object. |
-|[Delete](../api/orgcontact_delete.md) | None |Delete OrgContact object. |
+|[Update](../api/orgcontact_update.md) | [orgContact](orgcontact.md)	|Update orgContact object. |
+|[Delete](../api/orgcontact_delete.md) | None |Delete orgContact object. |
 |[Checkmembergroups](../api/orgcontact_checkmembergroups.md)|String collection||
 |[Get MemberGroups](../api/orgcontact_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/orgcontact_getmemberobjects.md)|String collection||
@@ -120,7 +120,7 @@ Here is a JSON representation of the resource
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "OrgContact resource",
+  "description": "orgContact resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

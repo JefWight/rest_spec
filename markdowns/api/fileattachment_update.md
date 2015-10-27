@@ -18,17 +18,17 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ContentBytes|Binary||
-|ContentId|String||
-|ContentLocation|String||
-|ContentType|String||
-|IsInline|Boolean||
-|LastModifiedDateTime|DateTimeOffset||
-|Name|String||
-|Size|Int32||
+|contentBytes|Binary||
+|contentId|String||
+|contentLocation|String||
+|contentType|String||
+|isInline|Boolean||
+|lastModifiedDateTime|DateTimeOffset||
+|name|String||
+|size|Int32||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [FileAttachment](../resources/fileattachment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [fileAttachment](../resources/fileattachment.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -42,15 +42,15 @@ Content-type: application/json
 Content-length: 282
 
 {
-  "ContentId": "ContentId-value",
-  "ContentLocation": "ContentLocation-value",
-  "ContentBytes": "ContentBytes-value",
-  "Name": "Name-value",
-  "ContentType": "ContentType-value",
-  "Size": 99,
-  "IsInline": true,
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "contentId": "contentId-value",
+  "contentLocation": "contentLocation-value",
+  "contentBytes": "contentBytes-value",
+  "lastModifiedDateTime": "datetime-value",
+  "name": "name-value",
+  "contentType": "contentType-value",
+  "size": 99,
+  "isInline": true,
+  "id": "id-value"
 }
 ```
 ##### Response
@@ -66,15 +66,15 @@ Content-type: application/json
 Content-length: 282
 
 {
-  "ContentId": "ContentId-value",
-  "ContentLocation": "ContentLocation-value",
-  "ContentBytes": "ContentBytes-value",
-  "Name": "Name-value",
-  "ContentType": "ContentType-value",
-  "Size": 99,
-  "IsInline": true,
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "contentId": "contentId-value",
+  "contentLocation": "contentLocation-value",
+  "contentBytes": "contentBytes-value",
+  "lastModifiedDateTime": "datetime-value",
+  "name": "name-value",
+  "contentType": "contentType-value",
+  "size": 99,
+  "isInline": true,
+  "id": "id-value"
 }
 ```
 

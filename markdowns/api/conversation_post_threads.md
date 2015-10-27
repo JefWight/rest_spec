@@ -1,14 +1,14 @@
-# Create Thread
+# Create thread
 
-Use this API to create a new Thread.
+Use this API to create a new thread.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<objectId>/Conversations/<Id>/Threads
-POST /users/<objectId>/JoinedGroups/<objectId>/Conversations/<Id>/Threads
-POST /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>/Threads
+POST /groups/<objectId>/conversations/<id>/threads
+POST /users/<objectId>/joinedGroups/<objectId>/conversations/<id>/threads
+POST /drive/root/createdByUser/joinedGroups/<objectId>/conversations/<id>/threads
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<objectId>/Conversations/<Id>
+POST https://graph.microsoft.com/beta/groups/<objectId>/conversations/<id>
 ```
 In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.
 ##### Response
@@ -47,31 +47,31 @@ Content-type: application/json
 Content-length: 489
 
 {
-  "ToRecipients": [
+  "toRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "Topic": "Topic-value",
-  "HasAttachments": true,
-  "LastDeliveredDateTime": "datetime-value",
-  "UniqueSenders": [
-    "UniqueSenders-value"
+  "topic": "topic-value",
+  "hasAttachments": true,
+  "lastDeliveredDateTime": "datetime-value",
+  "uniqueSenders": [
+    "uniqueSenders-value"
   ],
-  "CcRecipients": [
+  "ccRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "Preview": "Preview-value",
-  "IsLocked": true,
-  "Id": "Id-value"
+  "preview": "preview-value",
+  "isLocked": true,
+  "id": "id-value"
 }
 ```
 
@@ -79,7 +79,7 @@ Content-length: 489
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create Thread",
+  "description": "Create thread",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

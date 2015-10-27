@@ -1,4 +1,4 @@
-# DeviceConfiguration resource type
+# deviceConfiguration resource type
 
 
 
@@ -49,9 +49,9 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get DeviceConfiguration](../api/deviceconfiguration_get.md) | [DeviceConfiguration](deviceconfiguration.md) |Read properties and relationships of deviceConfiguration object.|
-|[Update](../api/deviceconfiguration_update.md) | [DeviceConfiguration](deviceconfiguration.md)	|Update DeviceConfiguration object. |
-|[Delete](../api/deviceconfiguration_delete.md) | None |Delete DeviceConfiguration object. |
+|[Get deviceConfiguration](../api/deviceconfiguration_get.md) | [deviceConfiguration](deviceconfiguration.md) |Read properties and relationships of deviceConfiguration object.|
+|[Update](../api/deviceconfiguration_update.md) | [deviceConfiguration](deviceconfiguration.md)	|Update deviceConfiguration object. |
+|[Delete](../api/deviceconfiguration_delete.md) | None |Delete deviceConfiguration object. |
 |[Checkmembergroups](../api/deviceconfiguration_checkmembergroups.md)|String collection||
 |[Get MemberGroups](../api/deviceconfiguration_getmembergroups.md)|String collection||
 |[Get MemberObjects](../api/deviceconfiguration_getmemberobjects.md)|String collection||
@@ -60,7 +60,7 @@ None
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "DeviceConfiguration resource",
+  "description": "deviceConfiguration resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

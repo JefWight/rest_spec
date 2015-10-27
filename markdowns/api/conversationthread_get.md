@@ -1,4 +1,4 @@
-# Get ConversationThread
+# Get conversationThread
 
 Retrieve the properties and relationships of conversationthread object.
 ### Prerequisites
@@ -6,15 +6,15 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<objectId>/Threads/<Id>
-GET /groups/<objectId>/Conversations/<Id>/Threads/<Id>
-GET /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>
+GET /groups/<objectId>/threads/<id>
+GET /groups/<objectId>/conversations/<id>/threads/<id>
+GET /users/<objectId>/joinedGroups/<objectId>/threads/<id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [ConversationThread](../resources/conversationthread.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [conversationThread](../resources/conversationthread.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -25,7 +25,7 @@ GET /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [conversationThread](../resources/conversationthread.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_conversationthread"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<objectId>/Threads/<Id>
+GET https://graph.microsoft.com/beta/groups/<objectId>/threads/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -49,31 +49,31 @@ Content-type: application/json
 Content-length: 489
 
 {
-  "ToRecipients": [
+  "toRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "Topic": "Topic-value",
-  "HasAttachments": true,
-  "LastDeliveredDateTime": "datetime-value",
-  "UniqueSenders": [
-    "UniqueSenders-value"
+  "topic": "topic-value",
+  "hasAttachments": true,
+  "lastDeliveredDateTime": "datetime-value",
+  "uniqueSenders": [
+    "uniqueSenders-value"
   ],
-  "CcRecipients": [
+  "ccRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "Preview": "Preview-value",
-  "IsLocked": true,
-  "Id": "Id-value"
+  "preview": "preview-value",
+  "isLocked": true,
+  "id": "id-value"
 }
 ```
 
@@ -81,7 +81,7 @@ Content-length: 489
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get ConversationThread",
+  "description": "Get conversationThread",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

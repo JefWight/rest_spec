@@ -1,14 +1,14 @@
-# Delete Photo
+# Delete photo
 
-Delete Photo.
+Delete photo.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/<objectId>/UserPhoto
-DELETE /groups/<objectId>/GroupPhoto
-DELETE /drive/root/createdByUser/UserPhoto
+DELETE /users/<objectId>/photo
+DELETE /groups/<objectId>/photo
+DELETE /drive/root/createdByUser/photo
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_photo"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/<objectId>/UserPhoto
+DELETE https://graph.microsoft.com/beta/users/<objectId>/photo
 ```
 ##### Response
 Here is an example of the response.
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete Photo",
+  "description": "Delete photo",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

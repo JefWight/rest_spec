@@ -28,14 +28,15 @@
     "/groups/<objectId>/drive/shared/<id>/thumbnails/<id>": true,
     "/groups/<objectId>/drive/special/<id>/thumbnails/<id>": true,
     "/groups/<objectId>/drive/root/thumbnails/<id>": true,
-    "/users/<objectId>/JoinedGroups/<objectId>/drive/items/<id>/thumbnails/<id>": true,
-    "/users/<objectId>/JoinedGroups/<objectId>/drive/shared/<id>/thumbnails/<id>": true,
-    "/users/<objectId>/JoinedGroups/<objectId>/drive/special/<id>/thumbnails/<id>": true,
-    "/users/<objectId>/JoinedGroups/<objectId>/drive/root/thumbnails/<id>": true,
+    "/users/<objectId>/joinedGroups/<objectId>/drive/items/<id>/thumbnails/<id>": true,
+    "/users/<objectId>/joinedGroups/<objectId>/drive/shared/<id>/thumbnails/<id>": true,
+    "/users/<objectId>/joinedGroups/<objectId>/drive/special/<id>/thumbnails/<id>": true,
+    "/users/<objectId>/joinedGroups/<objectId>/drive/root/thumbnails/<id>": true,
     "/users/<objectId>/drive/items/<id>/thumbnails/<id>": true,
     "/users/<objectId>/drive/shared/<id>/thumbnails/<id>": true,
     "/users/<objectId>/drive/special/<id>/thumbnails/<id>": true,
     "/users/<objectId>/drive/root/thumbnails/<id>": true,
+    "/users/<objectId>/trendingAround/<id>/thumbnails/<id>": true,
     "/drives/<id>/items/<id>/thumbnails/<id>": true,
     "/drives/<id>/shared/<id>/thumbnails/<id>": true,
     "/drives/<id>/special/<id>/thumbnails/<id>": true,
@@ -49,7 +50,7 @@
   "properties": [
     {
       "name": "id",
-      "description": "The id within the item.",
+      "description": "The id within the item. The id within the item.",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -63,7 +64,7 @@
     },
     {
       "name": "large",
-      "description": "A 1920x1920 scaled thumbnail.",
+      "description": "A 1920x1920 scaled thumbnail. A 1920x1920 scaled thumbnail.",
       "isKey": false,
       "dataType": "thumbnail",
       "isReadOnly": false,
@@ -77,7 +78,7 @@
     },
     {
       "name": "medium",
-      "description": "A 176x176 scaled thumbnail.",
+      "description": "A 176x176 scaled thumbnail. A 176x176 scaled thumbnail.",
       "isKey": false,
       "dataType": "thumbnail",
       "isReadOnly": false,
@@ -91,7 +92,7 @@
     },
     {
       "name": "small",
-      "description": "A 48x48 cropped thumbnail.",
+      "description": "A 48x48 cropped thumbnail. A 48x48 cropped thumbnail.",
       "isKey": false,
       "dataType": "thumbnail",
       "isReadOnly": false,
@@ -105,7 +106,7 @@
     },
     {
       "name": "source",
-      "description": "A custom thumbnail image or the original image used to generate other thumbnails.",
+      "description": "A custom thumbnail image or the original image used to generate other thumbnails. A custom thumbnail image or the original image used to generate other thumbnails.",
       "isKey": false,
       "dataType": "thumbnail",
       "isReadOnly": false,
@@ -118,7 +119,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

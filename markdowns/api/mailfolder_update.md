@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/MailFolders/<Id>
-PATCH /drive/root/createdByUser/MailFolders/<Id>
-PATCH /drive/root/lastModifiedByUser/MailFolders/<Id>
+PATCH /users/<objectId>/mailFolders/<id>
+PATCH /drive/root/createdByUser/mailFolders/<id>
+PATCH /drive/root/lastModifiedByUser/mailFolders/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -20,12 +20,14 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ChildFolderCount|Int32||
-|DisplayName|String||
-|ParentFolderId|String||
+|childFolderCount|Int32||
+|displayName|String||
+|parentFolderId|String||
+|totalItemCount|Int32||
+|unreadItemCount|Int32||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [MailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [mailFolder](../resources/mailfolder.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,15 +36,17 @@ Here is an example of the request.
   "name": "update_mailfolder"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/<objectId>/MailFolders/<Id>
+PUT https://graph.microsoft.com/beta/users/<objectId>/mailFolders/<id>
 Content-type: application/json
-Content-length: 130
+Content-length: 179
 
 {
-  "ParentFolderId": "ParentFolderId-value",
-  "DisplayName": "DisplayName-value",
-  "ChildFolderCount": 99,
-  "Id": "Id-value"
+  "displayName": "displayName-value",
+  "parentFolderId": "parentFolderId-value",
+  "childFolderCount": 99,
+  "unreadItemCount": 99,
+  "totalItemCount": 99,
+  "id": "id-value"
 }
 ```
 ##### Response
@@ -55,13 +59,15 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 130
+Content-length: 179
 
 {
-  "ParentFolderId": "ParentFolderId-value",
-  "DisplayName": "DisplayName-value",
-  "ChildFolderCount": 99,
-  "Id": "Id-value"
+  "displayName": "displayName-value",
+  "parentFolderId": "parentFolderId-value",
+  "childFolderCount": 99,
+  "unreadItemCount": 99,
+  "totalItemCount": 99,
+  "id": "id-value"
 }
 ```
 

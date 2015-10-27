@@ -1,5 +1,5 @@
 {
-  "name": "AppRoleAssignment",
+  "name": "appRoleAssignment",
   "description": "Used to record when a user or group is assigned to an application. In this case, the role assignment will result in an application tile showing up on the user's app access panel. This entity may also be used to grant another application (modeled as a service principal) access to a resource application in a particular role. You can create, read, update, and delete role assignments. Inherits from [DirectoryObject].\r",
   "collectionOf": null,
   "isComplexType": false,
@@ -36,48 +36,48 @@
     "/servicePrincipals/<objectId>/appRoleAssignedTo": true,
     "/servicePrincipals/<objectId>/appRoleAssignments/<objectId>": true,
     "/users/<objectId>/appRoleAssignments/<objectId>": true,
-    "/users/<objectId>/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/users/<objectId>/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drives/<id>/items/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drives/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drives/<id>/items/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drives/<id>/shared/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drives/<id>/shared/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drives/<id>/shared/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drives/<id>/special/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drives/<id>/special/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drives/<id>/special/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drives/<id>/root/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drives/<id>/root/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drives/<id>/root/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drives/<id>/root/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/shares/<id>/items/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/shares/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/shares/<id>/items/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drive/items/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drive/items/<id>/createdByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drive/items/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drive/items/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drive/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drive/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drive/shared/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drive/shared/<id>/createdByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drive/shared/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drive/shared/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drive/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drive/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drive/special/<id>/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drive/special/<id>/createdByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drive/special/<id>/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drive/special/<id>/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drive/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drive/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drive/root/createdByUser/appRoleAssignments/<objectId>": true,
-    "/drive/root/createdByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
+    "/drive/root/createdByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true,
     "/drive/root/lastModifiedByUser/appRoleAssignments/<objectId>": true,
-    "/drive/root/lastModifiedByUser/JoinedGroups/<objectId>/appRoleAssignments/<objectId>": true
+    "/drive/root/lastModifiedByUser/joinedGroups/<objectId>/appRoleAssignments/<objectId>": true
   },
   "properties": [
     {
       "name": "creationTimestamp",
-      "description": "The time when the grant was created.",
+      "description": "The time when the grant was created. The time when the grant was created.",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -91,7 +91,7 @@
     },
     {
       "name": "id",
-      "description": "The role id that was assigned to the principal.  This role must be declared by the target resource application **resourceId** in its **appRoles** property. Where the resource does not declare any permissions, a default id (zero GUID) must be specified.                            **Notes**: not nullable.            ",
+      "description": "The role id that was assigned to the principal.  This role must be declared by the target resource application **resourceId** in its **appRoles** property. Where the resource does not declare any permissions, a default id (zero GUID) must be specified.                            **Notes**: not nullable.             The role id that was assigned to the principal.  This role must be declared by the target resource application **resourceId** in its **appRoles** property. Where the resource does not declare any permissions, a default id (zero GUID) must be specified.                            **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -105,7 +105,7 @@
     },
     {
       "name": "principalDisplayName",
-      "description": "The display name of the principal that was granted the access.",
+      "description": "The display name of the principal that was granted the access. The display name of the principal that was granted the access.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -119,7 +119,7 @@
     },
     {
       "name": "principalId",
-      "description": "The unique identifier (**objectId**) for the principal being granted the access.                            **Notes**: required.            ",
+      "description": "The unique identifier (**objectId**) for the principal being granted the access.                            **Notes**: required.             The unique identifier (**objectId**) for the principal being granted the access.                            **Notes**: required.            ",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -133,7 +133,7 @@
     },
     {
       "name": "principalType",
-      "description": "The type of principal.  This can either be \"User\", \"Group\" or \"ServicePrincipal\".",
+      "description": "The type of principal.  This can either be \"User\", \"Group\" or \"ServicePrincipal\". The type of principal.  This can either be \"User\", \"Group\" or \"ServicePrincipal\".",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -147,7 +147,7 @@
     },
     {
       "name": "resourceDisplayName",
-      "description": "The display name of the resource to which the assignment was made.",
+      "description": "The display name of the resource to which the assignment was made. The display name of the resource to which the assignment was made.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -161,7 +161,7 @@
     },
     {
       "name": "resourceId",
-      "description": "The unique identifier (**objectId**) for the target resource (service principal) for which the assignment was made.",
+      "description": "The unique identifier (**objectId**) for the target resource (service principal) for which the assignment was made. The unique identifier (**objectId**) for the target resource (service principal) for which the assignment was made.",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -175,7 +175,7 @@
     },
     {
       "name": "objectType",
-      "description": "A string that identifies the object type. For application role assignments the value is always “AppRoleAssignment”. Inherited from [DirectoryObject].",
+      "description": "A string that identifies the object type. For application role assignments the value is always “AppRoleAssignment”. Inherited from [DirectoryObject]. A string that identifies the object type. For application role assignments the value is always “AppRoleAssignment”. Inherited from [DirectoryObject].",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -189,7 +189,7 @@
     },
     {
       "name": "objectId",
-      "description": "The unique identifier for the application role assignment. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
+      "description": "The unique identifier for the application role assignment. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.             The unique identifier for the application role assignment. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -227,12 +227,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "groupIds",
@@ -256,12 +252,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",
@@ -285,12 +277,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",

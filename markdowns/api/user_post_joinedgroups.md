@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/JoinedGroups
-POST /drive/root/createdByUser/JoinedGroups
-POST /drive/root/lastModifiedByUser/JoinedGroups
+POST /users/<objectId>/joinedGroups
+POST /drive/root/createdByUser/joinedGroups
+POST /drive/root/lastModifiedByUser/joinedGroups
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_group_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>
+POST https://graph.microsoft.com/beta/users/<objectId>
 ```
 In the request body, supply a JSON representation of [Group](../resources/group.md) object.
 ##### Response
@@ -74,13 +74,13 @@ Content-length: 1009
     "proxyAddresses-value"
   ],
   "securityEnabled": true,
-  "AccessType": "AccessType-value",
-  "EmailAddress": "EmailAddress-value",
-  "AllowExternalSenders": true,
-  "AutoSubscribeNewMembers": true,
-  "IsSubscribedByMail": true,
-  "IsFavorite": true,
-  "UnseenCount": 99,
+  "accessType": "accessType-value",
+  "allowExternalSenders": true,
+  "autoSubscribeNewMembers": true,
+  "emailAddress": "emailAddress-value",
+  "isFavorite": true,
+  "isSubscribedByMail": true,
+  "unseenCount": 99,
   "objectType": "objectType-value",
   "objectId": "objectId-value",
   "deletionTimestamp": "datetime-value"

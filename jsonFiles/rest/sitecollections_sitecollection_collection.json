@@ -1,0 +1,35 @@
+{
+  "name": "siteCollections",
+  "description": "",
+  "collectionOf": "SiteCollection",
+  "isComplexType": false,
+  "isEntitySet": true,
+  "allowPatch": false,
+  "allowUpsert": false,
+  "allowPatchCreate": false,
+  "allowDelete": false,
+  "isReferenceable": true,
+  "isExpandable": true,
+  "isFilterable": true,
+  "isCountable": true,
+  "isSelectable": true,
+  "isSkipSupported": true,
+  "isTopSupported": true,
+  "info": null,
+  "propertyNotes": "",
+  "relationshipNotes": null,
+  "methodNotes": "",
+  "listDescription": "",
+  "createDescription": null,
+  "updateDescription": null,
+  "deleteDescription": null,
+  "restPath": {
+    "/siteCollections": true
+  },
+  "properties": [
+
+  ],
+  "methods": [
+
+  ]
+}

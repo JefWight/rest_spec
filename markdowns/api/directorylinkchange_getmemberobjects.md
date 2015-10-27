@@ -1,4 +1,4 @@
-# DirectoryLinkChange: getMemberObjects
+# directoryLinkChange: getMemberObjects
 
 
 ### Prerequisites
@@ -66,7 +66,7 @@ Content-length: 39
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "DirectoryLinkChange: getMemberObjects",
+  "description": "directoryLinkChange: getMemberObjects",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

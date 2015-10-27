@@ -1,4 +1,4 @@
-# List CalendarView
+# List calendarView
 
 Retrieve a list of event objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/Calendar/CalendarView
-GET /groups/<objectId>/Calendar/CalendarView
-GET /users/<objectId>/Calendars/<Id>/CalendarView
+GET /users/<objectId>/calendar/calendarView
+GET /groups/<objectId>/calendar/calendarView
+GET /drive/root/createdByUser/calendar/calendarView
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_calendarview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/Calendar/CalendarView
+GET https://graph.microsoft.com/beta/users/<objectId>/calendar/calendarView
 ```
 ##### Response
 Here is an example of the response.
@@ -52,88 +52,96 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2149
+Content-length: 2405
 
 {
   "value": [
     {
-      "Subject": "Subject-value",
-      "Body": {
-        "ContentType": "ContentType-value",
-        "Content": "Content-value"
+      "originalStartTimeZone": "originalStartTimeZone-value",
+      "originalEndTimeZone": "originalEndTimeZone-value",
+      "responseStatus": {
+        "response": "response-value",
+        "time": "datetime-value"
       },
-      "BodyPreview": "BodyPreview-value",
-      "Importance": "Importance-value",
-      "HasAttachments": true,
-      "Start": "datetime-value",
-      "StartTimeZone": "StartTimeZone-value",
-      "End": "datetime-value",
-      "EndTimeZone": "EndTimeZone-value",
-      "Reminder": 99,
-      "Location": {
+      "iCalUId": "iCalUId-value",
+      "reminderMinutesBeforeStart": 99,
+      "isReminderOn": true,
+      "hasAttachments": true,
+      "subject": "subject-value",
+      "body": {
+        "contentType": "contentType-value",
+        "content": "content-value"
+      },
+      "bodyPreview": "bodyPreview-value",
+      "importance": "importance-value",
+      "sensitivity": "sensitivity-value",
+      "start": {
+        "dateTime": "dateTime-value",
+        "timeZone": "timeZone-value"
+      },
+      "originalStart": "datetime-value",
+      "end": {
+        "dateTime": "dateTime-value",
+        "timeZone": "timeZone-value"
+      },
+      "location": {
         "altitude": 99,
         "latitude": 99,
         "longitude": 99
       },
-      "ShowAs": "ShowAs-value",
-      "ResponseStatus": {
-        "Response": "Response-value",
-        "Time": "datetime-value"
-      },
-      "IsAllDay": true,
-      "IsCancelled": true,
-      "IsOrganizer": true,
-      "ResponseRequested": true,
-      "Type": "Type-value",
-      "SeriesMasterId": "SeriesMasterId-value",
-      "Attendees": [
-        {
-          "EmailAddress": {
-            "Name": "Name-value",
-            "Address": "Address-value"
-          },
-          "Status": {
-            "Response": "Response-value",
-            "Time": "datetime-value"
-          },
-          "Type": "Type-value"
-        }
-      ],
-      "Recurrence": {
-        "Pattern": {
-          "Type": "Type-value",
-          "Interval": 99,
-          "Month": 99,
-          "DayOfMonth": 99,
-          "DaysOfWeek": [
-            "DaysOfWeek-value"
+      "isAllDay": true,
+      "isCancelled": true,
+      "isOrganizer": true,
+      "recurrence": {
+        "pattern": {
+          "type": "type-value",
+          "interval": 99,
+          "month": 99,
+          "dayOfMonth": 99,
+          "daysOfWeek": [
+            "daysOfWeek-value"
           ],
-          "FirstDayOfWeek": "FirstDayOfWeek-value",
-          "Index": "Index-value"
+          "firstDayOfWeek": "firstDayOfWeek-value",
+          "index": "index-value"
         },
-        "Range": {
-          "Type": "Type-value",
-          "StartDate": "datetime-value",
-          "EndDate": "datetime-value",
-          "NumberOfOccurrences": 99
+        "range": {
+          "type": "type-value",
+          "startDate": "startDate-value",
+          "endDate": "endDate-value",
+          "numberOfOccurrences": 99
         }
       },
-      "Organizer": {
-        "EmailAddress": {
-          "Name": "Name-value",
-          "Address": "Address-value"
+      "responseRequested": true,
+      "seriesMasterId": "seriesMasterId-value",
+      "showAs": "showAs-value",
+      "type": "type-value",
+      "attendees": [
+        {
+          "status": {
+            "response": "response-value",
+            "time": "datetime-value"
+          },
+          "type": "type-value",
+          "emailAddress": {
+            "name": "name-value",
+            "address": "address-value"
+          }
         }
-      },
-      "iCalUId": "iCalUId-value",
-      "WebLink": "WebLink-value",
-      "OriginalStart": "datetime-value",
-      "ChangeKey": "ChangeKey-value",
-      "Categories": [
-        "Categories-value"
       ],
-      "CreatedDateTime": "datetime-value",
-      "LastModifiedDateTime": "datetime-value",
-      "Id": "Id-value"
+      "organizer": {
+        "emailAddress": {
+          "name": "name-value",
+          "address": "address-value"
+        }
+      },
+      "webLink": "webLink-value",
+      "createdDateTime": "datetime-value",
+      "lastModifiedDateTime": "datetime-value",
+      "changeKey": "changeKey-value",
+      "categories": [
+        "categories-value"
+      ],
+      "id": "id-value"
     }
   ]
 }
@@ -143,7 +151,7 @@ Content-length: 2149
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List CalendarView",
+  "description": "List calendarView",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

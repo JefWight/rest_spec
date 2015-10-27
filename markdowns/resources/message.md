@@ -1,4 +1,4 @@
-# Message resource type
+# message resource type
 
 A message in a mailbox folder.
 
@@ -9,141 +9,134 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Attachments",
-    "Extensions"
+    "attachments",
+    "extensions"
   ],
   "@odata.type": "microsoft.graph.message"
 }-->
 
 ```json
 {
-  "Attachments": [
+  "attachments": [
     {
       "@odata.type": "microsoft.graph.attachment"
     }
   ],
-  "BccRecipients": [
+  "bccRecipients": [
     {
       "@odata.type": "microsoft.graph.recipient"
     }
   ],
-  "Body": {
+  "body": {
     "@odata.type": "microsoft.graph.itembody"
   },
-  "BodyPreview": "String-value",
-  "Categories": [
+  "bodyPreview": "String-value",
+  "categories": [
     "String-value"
   ],
-  "CcRecipients": [
+  "ccRecipients": [
     {
       "@odata.type": "microsoft.graph.recipient"
     }
   ],
-  "ChangeKey": "String-value",
-  "ConversationId": "String-value",
-  "CreatedDateTime": "String (timestamp)",
-  "Extensions": [
+  "changeKey": "String-value",
+  "conversationId": "String-value",
+  "createdDateTime": "String (timestamp)",
+  "extensions": [
     {
       "@odata.type": "microsoft.graph.extension"
     }
   ],
-  "From": {
+  "from": {
     "@odata.type": "microsoft.graph.recipient"
   },
-  "HasAttachments": true,
-  "Id": "String-value (identifier)",
-  "Importance": "String-value",
-  "IsDeliveryReceiptRequested": true,
-  "IsDraft": true,
-  "IsRead": true,
-  "IsReadReceiptRequested": true,
-  "LastModifiedDateTime": "String (timestamp)",
-  "ParentFolderId": "String-value",
-  "ReceivedDateTime": "String (timestamp)",
-  "ReplyTo": [
+  "hasAttachments": true,
+  "id": "String-value (identifier)",
+  "importance": "String-value",
+  "inferenceClassification": "String-value",
+  "isDeliveryReceiptRequested": true,
+  "isDraft": true,
+  "isRead": true,
+  "isReadReceiptRequested": true,
+  "lastModifiedDateTime": "String (timestamp)",
+  "parentFolderId": "String-value",
+  "receivedDateTime": "String (timestamp)",
+  "replyTo": [
     {
       "@odata.type": "microsoft.graph.recipient"
     }
   ],
-  "Sender": {
+  "sender": {
     "@odata.type": "microsoft.graph.recipient"
   },
-  "SentDateTime": "String (timestamp)",
-  "Subject": "String-value",
-  "ToRecipients": [
+  "sentDateTime": "String (timestamp)",
+  "subject": "String-value",
+  "toRecipients": [
     {
       "@odata.type": "microsoft.graph.recipient"
     }
   ],
-  "UniqueBody": {
+  "uniqueBody": {
     "@odata.type": "microsoft.graph.itembody"
   },
-  "WebLink": "String-value"
+  "webLink": "String-value"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|BccRecipients|[Recipient](recipient.md) collection||
-|Body|[ItemBody](itembody.md)||
-|BodyPreview|String||
-|Categories|String collection||
-|CcRecipients|[Recipient](recipient.md) collection||
-|ChangeKey|String||
-|ConversationId|String||
-|CreatedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|From|[Recipient](recipient.md)||
-|HasAttachments|Boolean||
-|Id|String| Read-only.|
-|Importance|String| Possible values are: `Low`, `Normal`, `High`.|
-|IsDeliveryReceiptRequested|Boolean||
-|IsDraft|Boolean||
-|IsRead|Boolean||
-|IsReadReceiptRequested|Boolean||
-|LastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|ParentFolderId|String||
-|ReceivedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|ReplyTo|[Recipient](recipient.md) collection||
-|Sender|[Recipient](recipient.md)||
-|SentDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|Subject|String||
-|ToRecipients|[Recipient](recipient.md) collection||
-|UniqueBody|[ItemBody](itembody.md)||
-|WebLink|String||
+|bccRecipients|[Recipient](recipient.md) collection||
+|body|[ItemBody](itembody.md)||
+|bodyPreview|String||
+|categories|String collection||
+|ccRecipients|[Recipient](recipient.md) collection||
+|changeKey|String||
+|conversationId|String||
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|from|[Recipient](recipient.md)||
+|hasAttachments|Boolean||
+|id|String| Read-only.|
+|importance|String| Possible values are: `Low`, `Normal`, `High`.|
+|inferenceClassification|String| Possible values are: `Focused`, `Other`.|
+|isDeliveryReceiptRequested|Boolean||
+|isDraft|Boolean||
+|isRead|Boolean||
+|isReadReceiptRequested|Boolean||
+|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|parentFolderId|String||
+|receivedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|replyTo|[Recipient](recipient.md) collection||
+|sender|[Recipient](recipient.md)||
+|sentDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|subject|String||
+|toRecipients|[Recipient](recipient.md) collection||
+|uniqueBody|[ItemBody](itembody.md)||
+|webLink|String||
 
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|Attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+|attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
+|extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Message](../api/message_get.md) | [Message](message.md) |Read properties and relationships of message object.|
-|[Create Attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
-|[List Attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
-|[Create Extension](../api/message_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[List Extensions](../api/message_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
-|[Update](../api/message_update.md) | [Message](message.md)	|Update Message object. |
-|[Delete](../api/message_delete.md) | None |Delete Message object. |
-|[Copy](../api/message_copy.md)|[Message](message.md)||
-|[Createforward](../api/message_createforward.md)|[Message](message.md)||
-|[Createreply](../api/message_createreply.md)|[Message](message.md)||
-|[Createreplyall](../api/message_createreplyall.md)|[Message](message.md)||
-|[Forward](../api/message_forward.md)|None||
-|[Move](../api/message_move.md)|[Message](message.md)||
-|[Reply](../api/message_reply.md)|None||
-|[Replyall](../api/message_replyall.md)|None||
-|[Send](../api/message_send.md)|None||
+|[Get message](../api/message_get.md) | [message](message.md) |Read properties and relationships of message object.|
+|[Create Attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
+|[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
+|[Create Extension](../api/message_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the extensions collection.|
+|[List extensions](../api/message_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
+|[Update](../api/message_update.md) | [message](message.md)	|Update message object. |
+|[Delete](../api/message_delete.md) | None |Delete message object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Message resource",
+  "description": "message resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# List JoinedGroups
+# List joinedGroups
 
 Retrieve a list of group objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/JoinedGroups
-GET /drive/root/createdByUser/JoinedGroups
-GET /drive/root/lastModifiedByUser/JoinedGroups
+GET /users/<objectId>/joinedGroups
+GET /drive/root/createdByUser/joinedGroups
+GET /drive/root/lastModifiedByUser/joinedGroups
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "get_joinedgroups"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/JoinedGroups
+GET https://graph.microsoft.com/beta/users/<objectId>/joinedGroups
 ```
 ##### Response
 Here is an example of the response.
@@ -78,13 +78,13 @@ Content-length: 1186
         "proxyAddresses-value"
       ],
       "securityEnabled": true,
-      "AccessType": "AccessType-value",
-      "EmailAddress": "EmailAddress-value",
-      "AllowExternalSenders": true,
-      "AutoSubscribeNewMembers": true,
-      "IsSubscribedByMail": true,
-      "IsFavorite": true,
-      "UnseenCount": 99,
+      "accessType": "accessType-value",
+      "allowExternalSenders": true,
+      "autoSubscribeNewMembers": true,
+      "emailAddress": "emailAddress-value",
+      "isFavorite": true,
+      "isSubscribedByMail": true,
+      "unseenCount": 99,
       "objectType": "objectType-value",
       "objectId": "objectId-value",
       "deletionTimestamp": "datetime-value"
@@ -97,7 +97,7 @@ Content-length: 1186
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List JoinedGroups",
+  "description": "List joinedGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# List CalendarGroups
+# List calendarGroups
 
 Retrieve a list of calendargroup objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/CalendarGroups
-GET /drive/root/createdByUser/CalendarGroups
-GET /drive/root/lastModifiedByUser/CalendarGroups
+GET /users/<objectId>/calendarGroups
+GET /drive/root/createdByUser/calendarGroups
+GET /drive/root/lastModifiedByUser/calendarGroups
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_calendargroups"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/CalendarGroups
+GET https://graph.microsoft.com/beta/users/<objectId>/calendarGroups
 ```
 ##### Response
 Here is an example of the response.
@@ -57,10 +57,10 @@ Content-length: 155
 {
   "value": [
     {
-      "Name": "Name-value",
-      "ChangeKey": "ChangeKey-value",
-      "ClassId": "ClassId-value",
-      "Id": "Id-value"
+      "name": "name-value",
+      "classId": "classId-value",
+      "changeKey": "changeKey-value",
+      "id": "id-value"
     }
   ]
 }
@@ -70,7 +70,7 @@ Content-length: 155
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List CalendarGroups",
+  "description": "List calendarGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

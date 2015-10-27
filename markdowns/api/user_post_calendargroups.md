@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/CalendarGroups
-POST /drive/root/createdByUser/CalendarGroups
-POST /drive/root/lastModifiedByUser/CalendarGroups
+POST /users/<objectId>/calendarGroups
+POST /drive/root/createdByUser/calendarGroups
+POST /drive/root/lastModifiedByUser/calendarGroups
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_calendargroup_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>
+POST https://graph.microsoft.com/beta/users/<objectId>
 ```
 In the request body, supply a JSON representation of [CalendarGroup](../resources/calendargroup.md) object.
 ##### Response
@@ -47,10 +47,10 @@ Content-type: application/json
 Content-length: 110
 
 {
-  "Name": "Name-value",
-  "ChangeKey": "ChangeKey-value",
-  "ClassId": "ClassId-value",
-  "Id": "Id-value"
+  "name": "name-value",
+  "classId": "classId-value",
+  "changeKey": "changeKey-value",
+  "id": "id-value"
 }
 ```
 

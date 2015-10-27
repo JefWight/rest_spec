@@ -1,6 +1,6 @@
-# Delete OAuth2PermissionGrant
+# Delete oAuth2PermissionGrant
 
-Delete OAuth2PermissionGrant.
+Delete oAuth2PermissionGrant.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_oauth2permissiongrant"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/<objectId>
+DELETE https://graph.microsoft.com/beta/oauth2PermissionGrants/<objectId>
 ```
 ##### Response
 Here is an example of the response.
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete OAuth2PermissionGrant",
+  "description": "Delete oAuth2PermissionGrant",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

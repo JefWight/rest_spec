@@ -1,4 +1,4 @@
-# Notes resource type
+# notes resource type
 
 
 
@@ -67,7 +67,7 @@ Here is a JSON representation of the resource
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Notes](../api/notes_get.md) | [Notes](notes.md) |Read properties and relationships of notes object.|
+|[Get notes](../api/notes_get.md) | [notes](notes.md) |Read properties and relationships of notes object.|
 |[Create Notebook](../api/notes_post_notebooks.md) |[Notebook](notebook.md)| Create a new Notebook by posting to the notebooks collection.|
 |[List notebooks](../api/notes_list_notebooks.md) |[Notebook](notebook.md) collection| Get a Notebook object collection.|
 |[Create Page](../api/notes_post_pages.md) |[Page](page.md)| Create a new Page by posting to the pages collection.|
@@ -78,13 +78,13 @@ Here is a JSON representation of the resource
 |[List sectionGroups](../api/notes_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a SectionGroup object collection.|
 |[Create Section](../api/notes_post_sections.md) |[Section](section.md)| Create a new Section by posting to the sections collection.|
 |[List sections](../api/notes_list_sections.md) |[Section](section.md) collection| Get a Section object collection.|
-|[Delete](../api/notes_delete.md) | None |Delete Notes object. |
+|[Delete](../api/notes_delete.md) | None |Delete notes object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Notes resource",
+  "description": "notes resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# ExternalReferenceCollection resource type
+# externalReferenceCollection resource type
 
 
 
@@ -26,7 +26,7 @@ None
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ExternalReferenceCollection resource",
+  "description": "externalReferenceCollection resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

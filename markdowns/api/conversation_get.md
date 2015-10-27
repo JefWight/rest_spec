@@ -1,4 +1,4 @@
-# Get Conversation
+# Get conversation
 
 Retrieve the properties and relationships of conversation object.
 ### Prerequisites
@@ -6,15 +6,15 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<objectId>/Conversations/<Id>
-GET /users/<objectId>/JoinedGroups/<objectId>/Conversations/<Id>
-GET /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>
+GET /groups/<objectId>/conversations/<id>
+GET /users/<objectId>/joinedGroups/<objectId>/conversations/<id>
+GET /drive/root/createdByUser/joinedGroups/<objectId>/conversations/<id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Conversation](../resources/conversation.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [conversation](../resources/conversation.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -25,7 +25,7 @@ GET /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [Conversation](../resources/conversation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [conversation](../resources/conversation.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_conversation"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<objectId>/Conversations/<Id>
+GET https://graph.microsoft.com/beta/groups/<objectId>/conversations/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -49,14 +49,14 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "Topic": "Topic-value",
-  "HasAttachments": true,
-  "LastDeliveredDateTime": "datetime-value",
-  "UniqueSenders": [
-    "UniqueSenders-value"
+  "topic": "topic-value",
+  "hasAttachments": true,
+  "lastDeliveredDateTime": "datetime-value",
+  "uniqueSenders": [
+    "uniqueSenders-value"
   ],
-  "Preview": "Preview-value",
-  "Id": "Id-value"
+  "preview": "preview-value",
+  "id": "id-value"
 }
 ```
 
@@ -64,7 +64,7 @@ Content-length: 201
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Conversation",
+  "description": "Get conversation",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

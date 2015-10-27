@@ -1,5 +1,5 @@
 {
-  "name": "GeoCoordinates",
+  "name": "geoCoordinates",
   "description": "The geographic coordinates and elevation of the location.",
   "collectionOf": null,
   "isComplexType": true,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
-      "name": "Altitude",
-      "description": "The altitude of the location.",
+      "name": "altitude",
+      "description": "The altitude of the location. The altitude of the location.",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -41,8 +40,8 @@
       "isUnicode": null
     },
     {
-      "name": "Latitude",
-      "description": "The latitude of the location.",
+      "name": "latitude",
+      "description": "The latitude of the location. The latitude of the location.",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -55,8 +54,8 @@
       "isUnicode": null
     },
     {
-      "name": "Longitude",
-      "description": "The longitude of the location.",
+      "name": "longitude",
+      "description": "The longitude of the location. The longitude of the location.",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -69,8 +68,8 @@
       "isUnicode": null
     },
     {
-      "name": "Accuracy",
-      "description": "The accuracy of the sensor providing the latitude and longitude.",
+      "name": "accuracy",
+      "description": "The accuracy of the sensor providing the latitude and longitude. The accuracy of the sensor providing the latitude and longitude.",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -83,8 +82,8 @@
       "isUnicode": null
     },
     {
-      "name": "AltitudeAccuracy",
-      "description": "The accuracy of the sensor providing the altitude.",
+      "name": "altitudeAccuracy",
+      "description": "The accuracy of the sensor providing the altitude. The accuracy of the sensor providing the altitude.",
       "isKey": false,
       "dataType": "Double",
       "isReadOnly": false,
@@ -97,7 +96,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

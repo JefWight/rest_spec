@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "get_users"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users
+GET https://graph.microsoft.com/beta/users
 ```
 ##### Response
 Here is an example of the response.
@@ -118,8 +118,8 @@ Content-length: 3133
       "usageLocation": "usageLocation-value",
       "userPrincipalName": "userPrincipalName-value",
       "userType": "userType-value",
-      "MailboxGuid": "MailboxGuid-value",
-      "EmailAddress": "EmailAddress-value",
+      "emailAddress": "emailAddress-value",
+      "mailboxGuid": "mailboxGuid-value",
       "aboutMe": "aboutMe-value",
       "alias": "alias-value",
       "birthday": "datetime-value",

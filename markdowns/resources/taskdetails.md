@@ -1,4 +1,4 @@
-# TaskDetails resource type
+# taskDetails resource type
 
 
 
@@ -16,26 +16,28 @@ Here is a JSON representation of the resource
 
 ```json
 {
+  "checklist": {
+    "@odata.type": "microsoft.graph.checklistitemcollection"
+  },
   "completedBy": "String-value",
+  "description": "String-value",
   "id": "String-value (identifier)",
-  "notes": "String-value",
   "previewType": "String-value",
   "references": {
     "@odata.type": "microsoft.graph.externalreferencecollection"
-  },
-  "version": "String-value"
+  }
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|checklist|[checklistItemCollection](checklistitemcollection.md)||
 |completedBy|String||
+|description|String||
 |id|String| Read-only.|
-|notes|String||
-|previewType|String| Possible values are: `Automatic`, `NoPreview`, `CheckList`, `Notes`, `Reference`.|
-|references|[ExternalReferenceCollection](externalreferencecollection.md)||
-|version|String||
+|previewType|String| Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
+|references|[externalReferenceCollection](externalreferencecollection.md)||
 
 ### Relationships
 None
@@ -45,15 +47,15 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TaskDetails](../api/taskdetails_get.md) | [TaskDetails](taskdetails.md) |Read properties and relationships of taskDetails object.|
-|[Update](../api/taskdetails_update.md) | [TaskDetails](taskdetails.md)	|Update TaskDetails object. |
-|[Delete](../api/taskdetails_delete.md) | None |Delete TaskDetails object. |
+|[Get taskDetails](../api/taskdetails_get.md) | [taskDetails](taskdetails.md) |Read properties and relationships of taskDetails object.|
+|[Update](../api/taskdetails_update.md) | [taskDetails](taskdetails.md)	|Update taskDetails object. |
+|[Delete](../api/taskdetails_delete.md) | None |Delete taskDetails object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "TaskDetails resource",
+  "description": "taskDetails resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

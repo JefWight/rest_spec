@@ -1,5 +1,5 @@
 {
-  "name": "Resource",
+  "name": "resource",
   "description": "",
   "collectionOf": null,
   "isComplexType": false,
@@ -32,31 +32,51 @@
     "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/notes/resources/<id>": true,
     "/groups/<objectId>/drive/root/createdByUser/notes/resources/<id>": true,
     "/groups/<objectId>/drive/root/lastModifiedByUser/notes/resources/<id>": true,
+    "/groups/<objectId>/notes/resources/<id>": true,
+    "/users/<objectId>/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/users/<objectId>/notes/resources/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drives/<id>/items/<id>/createdByUser/notes/resources/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drives/<id>/items/<id>/lastModifiedByUser/notes/resources/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drives/<id>/shared/<id>/createdByUser/notes/resources/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drives/<id>/shared/<id>/lastModifiedByUser/notes/resources/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drives/<id>/special/<id>/createdByUser/notes/resources/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drives/<id>/special/<id>/lastModifiedByUser/notes/resources/<id>": true,
+    "/drives/<id>/root/createdByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drives/<id>/root/createdByUser/notes/resources/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drives/<id>/root/lastModifiedByUser/notes/resources/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/shares/<id>/items/<id>/createdByUser/notes/resources/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/shares/<id>/items/<id>/lastModifiedByUser/notes/resources/<id>": true,
+    "/siteCollections/<id>/sites/<id>/notes/resources/<id>": true,
+    "/drive/items/<id>/createdByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drive/items/<id>/createdByUser/notes/resources/<id>": true,
+    "/drive/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drive/items/<id>/lastModifiedByUser/notes/resources/<id>": true,
+    "/drive/shared/<id>/createdByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drive/shared/<id>/createdByUser/notes/resources/<id>": true,
+    "/drive/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drive/shared/<id>/lastModifiedByUser/notes/resources/<id>": true,
+    "/drive/special/<id>/createdByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drive/special/<id>/createdByUser/notes/resources/<id>": true,
+    "/drive/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drive/special/<id>/lastModifiedByUser/notes/resources/<id>": true,
+    "/drive/root/createdByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
     "/drive/root/createdByUser/notes/resources/<id>": true,
-    "/drive/root/lastModifiedByUser/notes/resources/<id>": true,
-    "/myOrganization/siteCollections/<id>/sites/<id>/notes/resources/<id>": true
+    "/drive/root/lastModifiedByUser/joinedGroups/<objectId>/notes/resources/<id>": true,
+    "/drive/root/lastModifiedByUser/notes/resources/<id>": true
   },
   "properties": [
     {
       "name": "id",
-      "description": "The unique id of this resource. ",
+      "description": "The unique id of this resource.  The unique id of this resource. ",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -84,7 +104,7 @@
     },
     {
       "name": "content",
-      "description": "A stream of the content of this resource. ",
+      "description": "A stream of the content of this resource.  A stream of the content of this resource. ",
       "isKey": false,
       "dataType": "Stream",
       "isReadOnly": false,
@@ -98,7 +118,7 @@
     },
     {
       "name": "contentUrl",
-      "description": "A Url to which a GET request can be sent to retrieve this resource. ",
+      "description": "A Url to which a GET request can be sent to retrieve this resource.  A Url to which a GET request can be sent to retrieve this resource. ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -111,7 +131,5 @@
       "isUnicode": false
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

@@ -18,14 +18,14 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ContentType|String||
-|IsInline|Boolean||
-|LastModifiedDateTime|DateTimeOffset||
-|Name|String||
-|Size|Int32||
+|contentType|String||
+|isInline|Boolean||
+|lastModifiedDateTime|DateTimeOffset||
+|name|String||
+|size|Int32||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [ItemAttachment](../resources/itemattachment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [itemAttachment](../resources/itemattachment.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -39,12 +39,12 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "Name": "Name-value",
-  "ContentType": "ContentType-value",
-  "Size": 99,
-  "IsInline": true,
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "lastModifiedDateTime": "datetime-value",
+  "name": "name-value",
+  "contentType": "contentType-value",
+  "size": 99,
+  "isInline": true,
+  "id": "id-value"
 }
 ```
 ##### Response
@@ -60,12 +60,12 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "Name": "Name-value",
-  "ContentType": "ContentType-value",
-  "Size": 99,
-  "IsInline": true,
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "lastModifiedDateTime": "datetime-value",
+  "name": "name-value",
+  "contentType": "contentType-value",
+  "size": 99,
+  "isInline": true,
+  "id": "id-value"
 }
 ```
 

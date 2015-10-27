@@ -1,4 +1,4 @@
-# Get Site
+# Get site
 
 Retrieve the properties and relationships of site object.
 ### Prerequisites
@@ -6,13 +6,13 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /myOrganization/siteCollections/<id>/sites/<id>
+GET /siteCollections/<id>/sites/<id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Site](../resources/site.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [site](../resources/site.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -23,7 +23,7 @@ GET /myOrganization/siteCollections/<id>/sites/<id>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [Site](../resources/site.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [site](../resources/site.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -32,7 +32,7 @@ Here is an example of the request.
   "name": "get_site"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/myOrganization/siteCollections/<id>/sites/<id>
+GET https://graph.microsoft.com/beta/siteCollections/<id>/sites/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -55,7 +55,7 @@ Content-length: 22
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Site",
+  "description": "Get site",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

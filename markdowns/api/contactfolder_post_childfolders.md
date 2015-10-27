@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/ContactFolders/<Id>/ChildFolders
-POST /drive/root/createdByUser/ContactFolders/<Id>/ChildFolders
-POST /drive/root/lastModifiedByUser/ContactFolders/<Id>/ChildFolders
+POST /users/<objectId>/contactFolders/<id>/childFolders
+POST /drive/root/createdByUser/contactFolders/<id>/childFolders
+POST /drive/root/lastModifiedByUser/contactFolders/<id>/childFolders
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_contactfolder_from_contactfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/ContactFolders/<Id>
+POST https://graph.microsoft.com/beta/users/<objectId>/contactFolders/<id>
 ```
 In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.
 ##### Response
@@ -47,9 +47,9 @@ Content-type: application/json
 Content-length: 104
 
 {
-  "ParentFolderId": "ParentFolderId-value",
-  "DisplayName": "DisplayName-value",
-  "Id": "Id-value"
+  "parentFolderId": "parentFolderId-value",
+  "displayName": "displayName-value",
+  "id": "id-value"
 }
 ```
 

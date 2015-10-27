@@ -410,16 +410,19 @@ module SpecMaker
 		if @jsonHash[:collectionOf]
 			getMethodLines.push QRY_HEADER + NEWLINE 
 			getMethodLines.push QRY_2nd_LINE + NEWLINE
+
+			countable, expandable, selectable, filterable, skipSupported, topSupported, sortable = true, true, true, true, true, true, true
 			annotationTarget = @annotations[@jsonHash[:collectionOf].downcase]
 			
-			countable = annotationTarget["countrestrictions/countable"].nil? ? true : annotationTarget["countrestrictions/countable"]
-			expandable = annotationTarget["expandrestrictions/expandable"].nil? ? true : annotationTarget["expandrestrictions/expandable"]
-			selectable = annotationTarget["selectrestrictions/selectable"].nil? ? true : annotationTarget["selectrestrictions/selectable"]
-			filterable = annotationTarget["filterrestrictions/filterable"].nil? ? true : annotationTarget["filterrestrictions/filterable"]
-			skipSupported = annotationTarget["skipsupported"].nil? ? true : annotationTarget["skipsupported"]
-			topSupported = annotationTarget["topsupported"].nil? ? true : annotationTarget["topsupported"]
-			sortable = annotationTarget["sortrestrictions/sortable"].nil? ? true : annotationTarget["sortrestrictions/sortable"]
-			
+			if annotationTarget
+				countable = annotationTarget["countrestrictions/countable"].nil? ? true : annotationTarget["countrestrictions/countable"]
+				expandable = annotationTarget["expandrestrictions/expandable"].nil? ? true : annotationTarget["expandrestrictions/expandable"]
+				selectable = annotationTarget["selectrestrictions/selectable"].nil? ? true : annotationTarget["selectrestrictions/selectable"]
+				filterable = annotationTarget["filterrestrictions/filterable"].nil? ? true : annotationTarget["filterrestrictions/filterable"]
+				skipSupported = annotationTarget["skipsupported"].nil? ? true : annotationTarget["skipsupported"]
+				topSupported = annotationTarget["topsupported"].nil? ? true : annotationTarget["topsupported"]
+				sortable = annotationTarget["sortrestrictions/sortable"].nil? ? true : annotationTarget["sortrestrictions/sortable"]
+			end			
 			if countable
 				getMethodLines.push QRY_COUNT +  NEWLINE
 			end
@@ -443,12 +446,14 @@ module SpecMaker
 				getMethodLines.push QRY_TOP + NEWLINE
 			end		
 		else
-			annotationTarget = @annotations[@jsonHash[:name].downcase]
+			countable, expandable, selectable  = true, true, true
+			annotationTarget = @annotations[@jsonHash[:name].downcase]		
 			
-			countable = annotationTarget["countrestrictions/countable"].nil? ? true : annotationTarget["countrestrictions/countable"]
-			expandable = annotationTarget["expandrestrictions/expandable"].nil? ? true : annotationTarget["expandrestrictions/expandable"]
-			selectable = annotationTarget["selectrestrictions/selectable"].nil? ? true : annotationTarget["selectrestrictions/selectable"]
-			
+			if annotationTarget
+				countable = annotationTarget["countrestrictions/countable"].nil? ? true : annotationTarget["countrestrictions/countable"]
+				expandable = annotationTarget["expandrestrictions/expandable"].nil? ? true : annotationTarget["expandrestrictions/expandable"]
+				selectable = annotationTarget["selectrestrictions/selectable"].nil? ? true : annotationTarget["selectrestrictions/selectable"]
+			end
 			if annotationTarget && !countable && !expandable && !selectable
 			else
 				getMethodLines.push QRY_HEADER + NEWLINE 

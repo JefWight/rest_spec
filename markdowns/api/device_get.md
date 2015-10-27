@@ -1,4 +1,4 @@
-# Get Device
+# Get device
 
 Retrieve the properties and relationships of device object.
 ### Prerequisites
@@ -18,7 +18,7 @@ GET /devices/<objectId>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [Device](../resources/device.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [device](../resources/device.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "get_device"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/devices/<objectId>
+GET https://graph.microsoft.com/beta/devices/<objectId>
 ```
 ##### Response
 Here is an example of the response.
@@ -73,7 +73,7 @@ Content-length: 732
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Device",
+  "description": "Get device",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# Get Post
+# Get post
 
 Retrieve the properties and relationships of post object.
 ### Prerequisites
@@ -6,15 +6,15 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<objectId>/Threads/<Id>/Posts/<Id>
-GET /groups/<objectId>/Conversations/<Id>/Threads/<Id>/Posts/<Id>
-GET /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>
+GET /groups/<objectId>/threads/<id>/posts/<id>
+GET /groups/<objectId>/conversations/<id>/threads/<id>/posts/<id>
+GET /users/<objectId>/joinedGroups/<objectId>/threads/<id>/posts/<id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Post](../resources/post.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [post](../resources/post.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -25,7 +25,7 @@ GET /users/<objectId>/JoinedGroups/<objectId>/Threads/<Id>/Posts/<Id>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [Post](../resources/post.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [post](../resources/post.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_post"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<objectId>/Threads/<Id>/Posts/<Id>
+GET https://graph.microsoft.com/beta/groups/<objectId>/threads/<id>/posts/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -49,41 +49,41 @@ Content-type: application/json
 Content-length: 790
 
 {
-  "Body": {
-    "ContentType": "ContentType-value",
-    "Content": "Content-value"
+  "body": {
+    "contentType": "contentType-value",
+    "content": "content-value"
   },
-  "ReceivedDateTime": "datetime-value",
-  "HasAttachments": true,
-  "From": {
-    "EmailAddress": {
-      "Name": "Name-value",
-      "Address": "Address-value"
+  "receivedDateTime": "datetime-value",
+  "hasAttachments": true,
+  "from": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
     }
   },
-  "Sender": {
-    "EmailAddress": {
-      "Name": "Name-value",
-      "Address": "Address-value"
+  "sender": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
     }
   },
-  "ConversationThreadId": "ConversationThreadId-value",
-  "ConversationId": "ConversationId-value",
-  "NewParticipants": [
+  "conversationThreadId": "conversationThreadId-value",
+  "newParticipants": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
+  "conversationId": "conversationId-value",
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "id": "id-value"
 }
 ```
 
@@ -91,7 +91,7 @@ Content-length: 790
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Post",
+  "description": "Get post",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

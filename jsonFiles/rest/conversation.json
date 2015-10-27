@@ -1,5 +1,5 @@
 {
-  "name": "Conversation",
+  "name": "conversation",
   "description": "A conversation is a collection of [threads](#ConversationThreadResource). All threads and posts in a conversation share the same subject.",
   "collectionOf": null,
   "isComplexType": false,
@@ -24,31 +24,31 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/groups/<objectId>/Conversations/<Id>": true,
-    "/users/<objectId>/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drives/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drives/<id>/special/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drives/<id>/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drives/<id>/root/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/shares/<id>/items/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drive/items/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drive/items/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drive/shared/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drive/special/<id>/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drive/special/<id>/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>": true,
-    "/drive/root/lastModifiedByUser/JoinedGroups/<objectId>/Conversations/<Id>": true
+    "/groups/<objectId>/conversations/<id>": true,
+    "/users/<objectId>/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/root/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/items/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/items/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/shared/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/shared/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/special/<id>/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/special/<id>/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/root/createdByUser/joinedGroups/<objectId>/conversations/<id>": true,
+    "/drive/root/lastModifiedByUser/joinedGroups/<objectId>/conversations/<id>": true
   },
   "properties": [
     {
-      "name": "Topic",
-      "description": "The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.",
+      "name": "topic",
+      "description": "The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -61,8 +61,8 @@
       "isUnicode": false
     },
     {
-      "name": "HasAttachments",
-      "description": "Indicates whether the Conversation has at least one attachment.",
+      "name": "hasAttachments",
+      "description": "Indicates whether the Conversation has at least one attachment. Indicates whether the Conversation has at least one attachment.",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -75,7 +75,7 @@
       "isUnicode": null
     },
     {
-      "name": "LastDeliveredDateTime",
+      "name": "lastDeliveredDateTime",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -89,8 +89,8 @@
       "isUnicode": null
     },
     {
-      "name": "UniqueSenders",
-      "description": "All the users that sent a message to this Conversation.",
+      "name": "uniqueSenders",
+      "description": "All the users that sent a message to this Conversation. All the users that sent a message to this Conversation.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -103,7 +103,7 @@
       "isUnicode": false
     },
     {
-      "name": "Preview",
+      "name": "preview",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -117,8 +117,8 @@
       "isUnicode": false
     },
     {
-      "name": "Id",
-      "description": "The group's unique identifier.",
+      "name": "id",
+      "description": "The group's unique identifier. The group's unique identifier.",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -131,8 +131,8 @@
       "isUnicode": false
     },
     {
-      "name": "Threads",
-      "description": "A collection of all the conversation threads in the conversation. A navigation property.",
+      "name": "threads",
+      "description": "A collection of all the conversation threads in the conversation. A navigation property. A collection of all the conversation threads in the conversation. A navigation property.",
       "isKey": false,
       "dataType": "ConversationThread",
       "isReadOnly": true,
@@ -145,7 +145,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

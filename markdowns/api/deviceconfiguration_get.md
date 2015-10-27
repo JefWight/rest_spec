@@ -1,4 +1,4 @@
-# Get DeviceConfiguration
+# Get deviceConfiguration
 
 Retrieve the properties and relationships of deviceconfiguration object.
 ### Prerequisites
@@ -18,7 +18,7 @@ GET /deviceConfiguration/<objectId>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [DeviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [deviceConfiguration](../resources/deviceconfiguration.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "get_deviceconfiguration"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/deviceConfiguration/<objectId>
+GET https://graph.microsoft.com/beta/deviceConfiguration/<objectId>
 ```
 ##### Response
 Here is an example of the response.
@@ -60,7 +60,7 @@ Content-length: 341
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get DeviceConfiguration",
+  "description": "Get deviceConfiguration",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

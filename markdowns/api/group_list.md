@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "get_groups"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups
+GET https://graph.microsoft.com/beta/groups
 ```
 ##### Response
 Here is an example of the response.
@@ -76,13 +76,13 @@ Content-length: 1186
         "proxyAddresses-value"
       ],
       "securityEnabled": true,
-      "AccessType": "AccessType-value",
-      "EmailAddress": "EmailAddress-value",
-      "AllowExternalSenders": true,
-      "AutoSubscribeNewMembers": true,
-      "IsSubscribedByMail": true,
-      "IsFavorite": true,
-      "UnseenCount": 99,
+      "accessType": "accessType-value",
+      "allowExternalSenders": true,
+      "autoSubscribeNewMembers": true,
+      "emailAddress": "emailAddress-value",
+      "isFavorite": true,
+      "isSubscribedByMail": true,
+      "unseenCount": 99,
       "objectType": "objectType-value",
       "objectId": "objectId-value",
       "deletionTimestamp": "datetime-value"

@@ -1,4 +1,4 @@
-# TenantDetail: checkMemberGroups
+# tenantDetail: checkMemberGroups
 
 
 ### Prerequisites
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "tenantdetail_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/tenantDetails/<objectId>/checkMemberGroups
+POST https://graph.microsoft.com/beta/tenantDetails/<objectId>/checkMemberGroups
 Content-type: application/json
 Content-length: 44
 
@@ -68,7 +68,7 @@ Content-length: 39
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "TenantDetail: checkMemberGroups",
+  "description": "tenantDetail: checkMemberGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

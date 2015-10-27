@@ -1,13 +1,13 @@
-# Delete PlanTaskBoard
+# Delete planTaskBoard
 
-Delete PlanTaskBoard.
+Delete planTaskBoard.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /plans/<id>/bucketTaskBoard
-DELETE /plans/<id>/statusTaskBoard
+DELETE /plans/<id>/progressTaskBoard
 DELETE /plans/<id>/assignedToTaskBoard
 
 ```
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_plantaskboard"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/plans/<id>/bucketTaskBoard
+DELETE https://graph.microsoft.com/beta/plans/<id>/bucketTaskBoard
 ```
 ##### Response
 Here is an example of the response.
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete PlanTaskBoard",
+  "description": "Delete planTaskBoard",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

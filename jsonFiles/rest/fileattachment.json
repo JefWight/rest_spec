@@ -1,5 +1,5 @@
 {
-  "name": "FileAttachment",
+  "name": "fileAttachment",
   "description": "A file (such as a text file or Word document) attached to a message or event. The  **ContentBytes** property contains the base64-encoded contents of the file.",
   "collectionOf": null,
   "isComplexType": false,
@@ -23,11 +23,10 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
-      "name": "ContentId",
+      "name": "contentId",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -41,7 +40,7 @@
       "isUnicode": false
     },
     {
-      "name": "ContentLocation",
+      "name": "contentLocation",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -55,7 +54,7 @@
       "isUnicode": false
     },
     {
-      "name": "ContentBytes",
+      "name": "contentBytes",
       "description": "",
       "isKey": false,
       "dataType": "Binary",
@@ -69,63 +68,7 @@
       "isUnicode": null
     },
     {
-      "name": "Name",
-      "description": "",
-      "isKey": false,
-      "dataType": "String",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "ContentType",
-      "description": "",
-      "isKey": false,
-      "dataType": "String",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "Size",
-      "description": "",
-      "isKey": false,
-      "dataType": "Int32",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": null
-    },
-    {
-      "name": "IsInline",
-      "description": "",
-      "isKey": false,
-      "dataType": "Boolean",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": null
-    },
-    {
-      "name": "LastModifiedDateTime",
+      "name": "lastModifiedDateTime",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -139,7 +82,63 @@
       "isUnicode": null
     },
     {
-      "name": "Id",
+      "name": "name",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "contentType",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": false
+    },
+    {
+      "name": "size",
+      "description": "",
+      "isKey": false,
+      "dataType": "Int32",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "isInline",
+      "description": "",
+      "isKey": false,
+      "dataType": "Boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": false,
+      "isUnicode": null
+    },
+    {
+      "name": "id",
       "description": "",
       "isKey": true,
       "dataType": "String",
@@ -153,7 +152,5 @@
       "isUnicode": false
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

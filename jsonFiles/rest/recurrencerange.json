@@ -1,5 +1,5 @@
 {
-  "name": "RecurrenceRange",
+  "name": "recurrenceRange",
   "description": "The duration of an event.",
   "collectionOf": null,
   "isComplexType": true,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
-      "name": "Type",
-      "description": "The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2.",
+      "name": "type",
+      "description": "The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2. The recurrence range: EndDate = 0, NoEnd = 1, Numbered = 2.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -41,10 +40,10 @@
       "isUnicode": null
     },
     {
-      "name": "StartDate",
-      "description": "The start date of the series.",
+      "name": "startDate",
+      "description": "The start date of the series. The start date of the series.",
       "isKey": false,
-      "dataType": "DateTimeOffset",
+      "dataType": "String",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -52,13 +51,13 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": null
+      "isUnicode": false
     },
     {
-      "name": "EndDate",
-      "description": "The end date of the series.",
+      "name": "endDate",
+      "description": "The end date of the series. The end date of the series.",
       "isKey": false,
-      "dataType": "DateTimeOffset",
+      "dataType": "String",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -66,11 +65,11 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": null
+      "isUnicode": false
     },
     {
-      "name": "NumberOfOccurrences",
-      "description": "How many times to repeat the event.",
+      "name": "numberOfOccurrences",
+      "description": "How many times to repeat the event. How many times to repeat the event.",
       "isKey": false,
       "dataType": "Int32",
       "isReadOnly": false,
@@ -83,7 +82,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

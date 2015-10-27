@@ -7,8 +7,8 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/<objectId>/notes/resources/<id>
+PATCH /groups/<objectId>/notes/resources/<id>
 PATCH /drive/root/createdByUser/notes/resources/<id>
-PATCH /drive/root/lastModifiedByUser/notes/resources/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -20,12 +20,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|content|Stream|A stream of the content of this resource. |
-|contentUrl|String|A Url to which a GET request can be sent to retrieve this resource. |
+|content|Stream|A stream of the content of this resource.  A stream of the content of this resource. |
+|contentUrl|String|A Url to which a GET request can be sent to retrieve this resource.  A Url to which a GET request can be sent to retrieve this resource. |
 |self|String||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [Resource](../resources/resource.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [resource](../resources/resource.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "update_resource"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/<objectId>/notes/resources/<id>
+PUT https://graph.microsoft.com/beta/users/<objectId>/notes/resources/<id>
 Content-type: application/json
 Content-length: 112
 

@@ -1,4 +1,4 @@
-# Get Attachment
+# Get attachment
 
 Retrieve the properties and relationships of attachment object.
 ### Prerequisites
@@ -6,15 +6,15 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/Events/<Id>/Attachments/<Id>
-GET /groups/<objectId>/Events/<Id>/Attachments/<Id>
-GET /users/<objectId>/Messages/<Id>/Attachments/<Id>
+GET /users/<objectId>/events/<id>/attachments/<id>
+GET /groups/<objectId>/events/<id>/attachments/<id>
+GET /users/<objectId>/messages/<id>/attachments/<id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Attachment](../resources/attachment.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [attachment](../resources/attachment.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -25,7 +25,7 @@ GET /users/<objectId>/Messages/<Id>/Attachments/<Id>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [Attachment](../resources/attachment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [attachment](../resources/attachment.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/Events/<Id>/Attachments/<Id>
+GET https://graph.microsoft.com/beta/users/<objectId>/events/<id>/attachments/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -49,12 +49,12 @@ Content-type: application/json
 Content-length: 162
 
 {
-  "Name": "Name-value",
-  "ContentType": "ContentType-value",
-  "Size": 99,
-  "IsInline": true,
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "lastModifiedDateTime": "datetime-value",
+  "name": "name-value",
+  "contentType": "contentType-value",
+  "size": 99,
+  "isInline": true,
+  "id": "id-value"
 }
 ```
 
@@ -62,7 +62,7 @@ Content-length: 162
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Attachment",
+  "description": "Get attachment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# List Attachments
+# List attachments
 
 Retrieve a list of attachment objects.
 ### Prerequisites
@@ -37,7 +37,7 @@ Here is an example of the request.
   "name": "get_attachments"
 }-->
 ```http
-/Attachments
+/attachments
 ```
 ##### Response
 Here is an example of the response.
@@ -55,12 +55,12 @@ Content-length: 215
 {
   "value": [
     {
-      "Name": "Name-value",
-      "ContentType": "ContentType-value",
-      "Size": 99,
-      "IsInline": true,
-      "LastModifiedDateTime": "datetime-value",
-      "Id": "Id-value"
+      "lastModifiedDateTime": "datetime-value",
+      "name": "name-value",
+      "contentType": "contentType-value",
+      "size": 99,
+      "isInline": true,
+      "id": "id-value"
     }
   ]
 }
@@ -70,7 +70,7 @@ Content-length: 215
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Attachments",
+  "description": "List attachments",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

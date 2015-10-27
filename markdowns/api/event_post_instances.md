@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/Events/<Id>/Instances
-POST /groups/<objectId>/Events/<Id>/Instances
-POST /users/<objectId>/CalendarView/<Id>/Instances
+POST /users/<objectId>/events/<id>/instances
+POST /groups/<objectId>/events/<id>/instances
+POST /users/<objectId>/calendarView/<id>/instances
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_event_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/Events/<Id>
+POST https://graph.microsoft.com/beta/users/<objectId>/events/<id>
 ```
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
 ##### Response
@@ -44,86 +44,94 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1812
+Content-length: 2036
 
 {
-  "Subject": "Subject-value",
-  "Body": {
-    "ContentType": "ContentType-value",
-    "Content": "Content-value"
+  "originalStartTimeZone": "originalStartTimeZone-value",
+  "originalEndTimeZone": "originalEndTimeZone-value",
+  "responseStatus": {
+    "response": "response-value",
+    "time": "datetime-value"
   },
-  "BodyPreview": "BodyPreview-value",
-  "Importance": "Importance-value",
-  "HasAttachments": true,
-  "Start": "datetime-value",
-  "StartTimeZone": "StartTimeZone-value",
-  "End": "datetime-value",
-  "EndTimeZone": "EndTimeZone-value",
-  "Reminder": 99,
-  "Location": {
+  "iCalUId": "iCalUId-value",
+  "reminderMinutesBeforeStart": 99,
+  "isReminderOn": true,
+  "hasAttachments": true,
+  "subject": "subject-value",
+  "body": {
+    "contentType": "contentType-value",
+    "content": "content-value"
+  },
+  "bodyPreview": "bodyPreview-value",
+  "importance": "importance-value",
+  "sensitivity": "sensitivity-value",
+  "start": {
+    "dateTime": "dateTime-value",
+    "timeZone": "timeZone-value"
+  },
+  "originalStart": "datetime-value",
+  "end": {
+    "dateTime": "dateTime-value",
+    "timeZone": "timeZone-value"
+  },
+  "location": {
     "altitude": 99,
     "latitude": 99,
     "longitude": 99
   },
-  "ShowAs": "ShowAs-value",
-  "ResponseStatus": {
-    "Response": "Response-value",
-    "Time": "datetime-value"
-  },
-  "IsAllDay": true,
-  "IsCancelled": true,
-  "IsOrganizer": true,
-  "ResponseRequested": true,
-  "Type": "Type-value",
-  "SeriesMasterId": "SeriesMasterId-value",
-  "Attendees": [
-    {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
-      },
-      "Status": {
-        "Response": "Response-value",
-        "Time": "datetime-value"
-      },
-      "Type": "Type-value"
-    }
-  ],
-  "Recurrence": {
-    "Pattern": {
-      "Type": "Type-value",
-      "Interval": 99,
-      "Month": 99,
-      "DayOfMonth": 99,
-      "DaysOfWeek": [
-        "DaysOfWeek-value"
+  "isAllDay": true,
+  "isCancelled": true,
+  "isOrganizer": true,
+  "recurrence": {
+    "pattern": {
+      "type": "type-value",
+      "interval": 99,
+      "month": 99,
+      "dayOfMonth": 99,
+      "daysOfWeek": [
+        "daysOfWeek-value"
       ],
-      "FirstDayOfWeek": "FirstDayOfWeek-value",
-      "Index": "Index-value"
+      "firstDayOfWeek": "firstDayOfWeek-value",
+      "index": "index-value"
     },
-    "Range": {
-      "Type": "Type-value",
-      "StartDate": "datetime-value",
-      "EndDate": "datetime-value",
-      "NumberOfOccurrences": 99
+    "range": {
+      "type": "type-value",
+      "startDate": "startDate-value",
+      "endDate": "endDate-value",
+      "numberOfOccurrences": 99
     }
   },
-  "Organizer": {
-    "EmailAddress": {
-      "Name": "Name-value",
-      "Address": "Address-value"
+  "responseRequested": true,
+  "seriesMasterId": "seriesMasterId-value",
+  "showAs": "showAs-value",
+  "type": "type-value",
+  "attendees": [
+    {
+      "status": {
+        "response": "response-value",
+        "time": "datetime-value"
+      },
+      "type": "type-value",
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
+      }
     }
-  },
-  "iCalUId": "iCalUId-value",
-  "WebLink": "WebLink-value",
-  "OriginalStart": "datetime-value",
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "organizer": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
+    }
+  },
+  "webLink": "webLink-value",
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
+  ],
+  "id": "id-value"
 }
 ```
 

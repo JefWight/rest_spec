@@ -1,5 +1,5 @@
 {
-  "name": "ServicePlanInfo",
+  "name": "servicePlanInfo",
   "description": "Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the [SubscribedSku] entity is a collection of **ServicePlanInfo**.\r",
   "collectionOf": null,
   "isComplexType": true,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "servicePlanId",
-      "description": "The unique identifier of the service plan.",
+      "description": "The unique identifier of the service plan. The unique identifier of the service plan.",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -42,7 +41,7 @@
     },
     {
       "name": "servicePlanName",
-      "description": "The name of the service plan.",
+      "description": "The name of the service plan. The name of the service plan.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -55,7 +54,5 @@
       "isUnicode": false
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

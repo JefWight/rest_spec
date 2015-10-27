@@ -1,6 +1,6 @@
-# Delete OutlookItem
+# Delete outlookItem
 
-Delete OutlookItem.
+Delete outlookItem.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -45,7 +45,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete OutlookItem",
+  "description": "Delete outlookItem",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

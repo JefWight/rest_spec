@@ -1,4 +1,4 @@
-# List RejectedSenders
+# List rejectedSenders
 
 Retrieve a list of directoryobject objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<objectId>/RejectedSenders
-GET /users/<objectId>/JoinedGroups/<objectId>/RejectedSenders
-GET /drive/root/createdByUser/JoinedGroups/<objectId>/RejectedSenders
+GET /groups/<objectId>/rejectedSenders
+GET /users/<objectId>/joinedGroups/<objectId>/rejectedSenders
+GET /drive/root/createdByUser/joinedGroups/<objectId>/rejectedSenders
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "get_rejectedsenders"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<objectId>/RejectedSenders
+GET https://graph.microsoft.com/beta/groups/<objectId>/rejectedSenders
 ```
 ##### Response
 Here is an example of the response.
@@ -63,7 +63,7 @@ Content-length: 152
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List RejectedSenders",
+  "description": "List rejectedSenders",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

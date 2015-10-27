@@ -1,4 +1,4 @@
-# OpenTypeExtension resource type
+# openTypeExtension resource type
 
 
 
@@ -16,16 +16,16 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "ExtensionName": "String-value",
-  "Id": "String-value (identifier)"
+  "extensionName": "String-value",
+  "id": "String-value (identifier)"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ExtensionName|String||
-|Id|String| Read-only.|
+|extensionName|String||
+|id|String| Read-only.|
 
 ### Relationships
 None
@@ -35,15 +35,15 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get OpenTypeExtension](../api/opentypeextension_get.md) | [OpenTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
-|[Update](../api/opentypeextension_update.md) | [OpenTypeExtension](opentypeextension.md)	|Update OpenTypeExtension object. |
-|[Delete](../api/opentypeextension_delete.md) | None |Delete OpenTypeExtension object. |
+|[Get openTypeExtension](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
+|[Update](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)	|Update openTypeExtension object. |
+|[Delete](../api/opentypeextension_delete.md) | None |Delete openTypeExtension object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "OpenTypeExtension resource",
+  "description": "openTypeExtension resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,5 +1,5 @@
 {
-  "name": "PatchContentCommand",
+  "name": "patchContentCommand",
   "description": "",
   "collectionOf": null,
   "isComplexType": true,

@@ -1,4 +1,4 @@
-# Get Application
+# Get application
 
 Retrieve the properties and relationships of application object.
 ### Prerequisites
@@ -18,7 +18,7 @@ GET /applications/<objectId>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [Application](../resources/application.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [application](../resources/application.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "get_application"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/applications/<objectId>
+GET https://graph.microsoft.com/beta/applications/<objectId>
 ```
 ##### Response
 Here is an example of the response.
@@ -129,7 +129,7 @@ Content-length: 2150
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Application",
+  "description": "Get application",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

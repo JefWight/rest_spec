@@ -1,4 +1,4 @@
-# List Threads
+# List threads
 
 Retrieve a list of conversationthread objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<objectId>/Threads
-GET /users/<objectId>/JoinedGroups/<objectId>/Threads
-GET /drive/root/createdByUser/JoinedGroups/<objectId>/Threads
+GET /groups/<objectId>/threads
+GET /users/<objectId>/joinedGroups/<objectId>/threads
+GET /drive/root/createdByUser/joinedGroups/<objectId>/threads
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_threads"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<objectId>/Threads
+GET https://graph.microsoft.com/beta/groups/<objectId>/threads
 ```
 ##### Response
 Here is an example of the response.
@@ -57,31 +57,31 @@ Content-length: 618
 {
   "value": [
     {
-      "ToRecipients": [
+      "toRecipients": [
         {
-          "EmailAddress": {
-            "Name": "Name-value",
-            "Address": "Address-value"
+          "emailAddress": {
+            "name": "name-value",
+            "address": "address-value"
           }
         }
       ],
-      "Topic": "Topic-value",
-      "HasAttachments": true,
-      "LastDeliveredDateTime": "datetime-value",
-      "UniqueSenders": [
-        "UniqueSenders-value"
+      "topic": "topic-value",
+      "hasAttachments": true,
+      "lastDeliveredDateTime": "datetime-value",
+      "uniqueSenders": [
+        "uniqueSenders-value"
       ],
-      "CcRecipients": [
+      "ccRecipients": [
         {
-          "EmailAddress": {
-            "Name": "Name-value",
-            "Address": "Address-value"
+          "emailAddress": {
+            "name": "name-value",
+            "address": "address-value"
           }
         }
       ],
-      "Preview": "Preview-value",
-      "IsLocked": true,
-      "Id": "Id-value"
+      "preview": "preview-value",
+      "isLocked": true,
+      "id": "id-value"
     }
   ]
 }
@@ -91,7 +91,7 @@ Content-length: 618
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Threads",
+  "description": "List threads",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

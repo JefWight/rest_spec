@@ -1,5 +1,5 @@
 {
-  "name": "ServicePrincipal",
+  "name": "servicePrincipal",
   "description": "Represents an instance of an application in a directory. Inherits from [DirectoryObject].\r",
   "collectionOf": null,
   "isComplexType": false,
@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "accountEnabled",
-      "description": "                **true** if the service principal account is enabled; otherwise, **false**.            ",
+      "description": "                **true** if the service principal account is enabled; otherwise, **false**.                             **true** if the service principal account is enabled; otherwise, **false**.            ",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "appDisplayName",
-      "description": "The display name exposed by the associated application.",
+      "description": "The display name exposed by the associated application. The display name exposed by the associated application.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -57,7 +57,7 @@
     },
     {
       "name": "appId",
-      "description": "The unique identifier for the associated application (its **appId** property).",
+      "description": "The unique identifier for the associated application (its **appId** property). The unique identifier for the associated application (its **appId** property).",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -71,7 +71,7 @@
     },
     {
       "name": "appOwnerTenantId",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "Guid",
       "isReadOnly": false,
@@ -85,7 +85,7 @@
     },
     {
       "name": "appRoleAssignmentRequired",
-      "description": "Specifies whether an **AppRoleAssignment** to a user or group is required before Azure AD will issue a user or access token to the application.                            **Notes**: Requires version 1.5 or newer, not nullable.            ",
+      "description": "Specifies whether an **AppRoleAssignment** to a user or group is required before Azure AD will issue a user or access token to the application.                            **Notes**: Requires version 1.5 or newer, not nullable.             Specifies whether an **AppRoleAssignment** to a user or group is required before Azure AD will issue a user or access token to the application.                            **Notes**: Requires version 1.5 or newer, not nullable.            ",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -99,7 +99,7 @@
     },
     {
       "name": "appRoles",
-      "description": "The application roles exposed by the associated application. For more information see the **appRoles** property definition on the [Application] entity                            **Notes**: Requires version 1.5 or newer, not nullable.            ",
+      "description": "The application roles exposed by the associated application. For more information see the **appRoles** property definition on the [Application] entity                            **Notes**: Requires version 1.5 or newer, not nullable.             The application roles exposed by the associated application. For more information see the **appRoles** property definition on the [Application] entity                            **Notes**: Requires version 1.5 or newer, not nullable.            ",
       "isKey": false,
       "dataType": "AppRole",
       "isReadOnly": false,
@@ -113,7 +113,7 @@
     },
     {
       "name": "displayName",
-      "description": "The display name for the service principal.",
+      "description": "The display name for the service principal. The display name for the service principal.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -127,7 +127,7 @@
     },
     {
       "name": "errorUrl",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -141,7 +141,7 @@
     },
     {
       "name": "homepage",
-      "description": "The URL to the homepage of the associated   application.",
+      "description": "The URL to the homepage of the associated   application. The URL to the homepage of the associated   application.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -155,7 +155,7 @@
     },
     {
       "name": "keyCredentials",
-      "description": "The collection of key credentials associated with the service principal.                            **Notes**: not nullable.            ",
+      "description": "The collection of key credentials associated with the service principal.                            **Notes**: not nullable.             The collection of key credentials associated with the service principal.                            **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "KeyCredential",
       "isReadOnly": false,
@@ -169,7 +169,7 @@
     },
     {
       "name": "logoutUrl",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -183,7 +183,7 @@
     },
     {
       "name": "oauth2Permissions",
-      "description": "The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the [Application] entity.                            **Notes**: Requires version 1.5 or newer, not nullable.            ",
+      "description": "The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the [Application] entity.                            **Notes**: Requires version 1.5 or newer, not nullable.             The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the [Application] entity.                            **Notes**: Requires version 1.5 or newer, not nullable.            ",
       "isKey": false,
       "dataType": "OAuth2Permission",
       "isReadOnly": false,
@@ -197,7 +197,7 @@
     },
     {
       "name": "passwordCredentials",
-      "description": "The collection of password credentials associated with the service principal.                            **Notes**: not nullable.            ",
+      "description": "The collection of password credentials associated with the service principal.                            **Notes**: not nullable.             The collection of password credentials associated with the service principal.                            **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "PasswordCredential",
       "isReadOnly": false,
@@ -211,7 +211,7 @@
     },
     {
       "name": "preferredTokenSigningKeyThumbprint",
-      "description": "Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions.                            **Notes**: Requires version 1.5 or newer.            ",
+      "description": "Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions.                            **Notes**: Requires version 1.5 or newer.             Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions.                            **Notes**: Requires version 1.5 or newer.            ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -225,7 +225,7 @@
     },
     {
       "name": "publisherName",
-      "description": "The display name of the tenant in which the associated application is specified.",
+      "description": "The display name of the tenant in which the associated application is specified. The display name of the tenant in which the associated application is specified.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -239,7 +239,7 @@
     },
     {
       "name": "replyUrls",
-      "description": "The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.                            **Notes**: not nullable.            ",
+      "description": "The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.                            **Notes**: not nullable.             The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.                            **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -253,7 +253,7 @@
     },
     {
       "name": "samlMetadataUrl",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -267,7 +267,7 @@
     },
     {
       "name": "servicePrincipalNames",
-      "description": "The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://msdn.microsoft.com/en-us/library/azure/dn132633.aspx).                            **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            ",
+      "description": "The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://msdn.microsoft.com/en-us/library/azure/dn132633.aspx).                            **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).             The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://msdn.microsoft.com/en-us/library/azure/dn132633.aspx).                            **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -281,7 +281,7 @@
     },
     {
       "name": "tags",
-      "description": "                                        **Notes**: not nullable.            ",
+      "description": "                                        **Notes**: not nullable.                                                     **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -295,7 +295,7 @@
     },
     {
       "name": "objectType",
-      "description": "A string that identifies the object type. For service principals the value is always “ServicePrincipal”. Inherited from [DirectoryObject].",
+      "description": "A string that identifies the object type. For service principals the value is always “ServicePrincipal”. Inherited from [DirectoryObject]. A string that identifies the object type. For service principals the value is always “ServicePrincipal”. Inherited from [DirectoryObject].",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -309,7 +309,7 @@
     },
     {
       "name": "objectId",
-      "description": "The unique identifier for the service principal. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
+      "description": "The unique identifier for the service principal. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.             The unique identifier for the service principal. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -337,7 +337,7 @@
     },
     {
       "name": "appRoleAssignedTo",
-      "description": "Principals (users, groups, and service principals) that are assigned to this service principal. Requires version 1.5 or newer.",
+      "description": "Principals (users, groups, and service principals) that are assigned to this service principal. Requires version 1.5 or newer. Principals (users, groups, and service principals) that are assigned to this service principal. Requires version 1.5 or newer.",
       "isKey": false,
       "dataType": "AppRoleAssignment",
       "isReadOnly": true,
@@ -351,7 +351,7 @@
     },
     {
       "name": "appRoleAssignments",
-      "description": "Applications that the service principal is assigned to. Requires version 1.5 or newer.",
+      "description": "Applications that the service principal is assigned to. Requires version 1.5 or newer. Applications that the service principal is assigned to. Requires version 1.5 or newer.",
       "isKey": false,
       "dataType": "AppRoleAssignment",
       "isReadOnly": true,
@@ -365,7 +365,7 @@
     },
     {
       "name": "oauth2PermissionGrants",
-      "description": "User impersonation grants associated with this service principal. Requires version 1.5 or newer.",
+      "description": "User impersonation grants associated with this service principal. Requires version 1.5 or newer. User impersonation grants associated with this service principal. Requires version 1.5 or newer.",
       "isKey": false,
       "dataType": "OAuth2PermissionGrant",
       "isReadOnly": true,
@@ -379,7 +379,7 @@
     },
     {
       "name": "memberOf",
-      "description": "Roles that this service principal is a member of. Inherited from [DirectoryObject].            HTTP Methods: GET",
+      "description": "Roles that this service principal is a member of. Inherited from [DirectoryObject].            HTTP Methods: GET Roles that this service principal is a member of. Inherited from [DirectoryObject].            HTTP Methods: GET",
       "isKey": false,
       "dataType": "DirectoryObject",
       "isReadOnly": true,
@@ -407,7 +407,7 @@
     },
     {
       "name": "createdObjects",
-      "description": "Directory objects created by this service principal. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer.",
+      "description": "Directory objects created by this service principal. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer. Directory objects created by this service principal. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer.",
       "isKey": false,
       "dataType": "DirectoryObject",
       "isReadOnly": true,
@@ -421,7 +421,7 @@
     },
     {
       "name": "owners",
-      "description": "Directory objects that are owners of this service principal. The owners are a set of non-admin users who are allowed to modify this object. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer.",
+      "description": "Directory objects that are owners of this service principal. The owners are a set of non-admin users who are allowed to modify this object. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer. Directory objects that are owners of this service principal. The owners are a set of non-admin users who are allowed to modify this object. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer.",
       "isKey": false,
       "dataType": "DirectoryObject",
       "isReadOnly": true,
@@ -435,7 +435,7 @@
     },
     {
       "name": "ownedObjects",
-      "description": "Directory objects that are owned by this service principal. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer.",
+      "description": "Directory objects that are owned by this service principal. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer. Directory objects that are owned by this service principal. Inherited from [DirectoryObject]. Requires version 2013-11-08 or newer.",
       "isKey": false,
       "dataType": "DirectoryObject",
       "isReadOnly": true,
@@ -459,12 +459,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "groupIds",
@@ -488,12 +484,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",
@@ -517,12 +509,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",

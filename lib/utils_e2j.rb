@@ -67,6 +67,14 @@ module SpecMaker
 	@iexampleFilesWrittem = 0
 	@annotations = {}
 
+	def self.camelcase (str="")
+		if str.length > 0
+			str[0, 1].downcase + str[1..-1]
+		else
+			str
+		end
+	end
+
 	def self.parse_annotations(target, annotations)
 		if annotations
 			if annotations.is_a?(Array)
@@ -80,7 +88,7 @@ module SpecMaker
 	end
 	
 	def self.parse_annotation(target, term, annotation)
-		puts "-> Processing Annotation; Target: #{target}; Term: #{term}; Annotation: #{annotation}"
+		#puts "-> Processing Annotation; Target: #{target}; Term: #{term}; Annotation: #{annotation}"
 		
 		if annotation[:Term]
 			term = get_type(annotation[:Term]).downcase
@@ -117,7 +125,7 @@ module SpecMaker
 	
 	def self.set_description(target, itemToSet)
 	  target = target.downcase
-	  puts "-> Getting Annotation; Target: #{target}"
+	  #puts "-> Getting Annotation; Target: #{target}"
 	  if @annotations[target]
 	    if @annotations[target]["description"]
 	      itemToSet[:description] = @annotations[target]["description"]
@@ -265,7 +273,7 @@ module SpecMaker
 
 	def self.process_property (className, item=nil)
 		prop = deep_copy(@struct[:property])
-			prop[:name] = item[:Name]
+			prop[:name] = camelcase item[:Name]
 		dt = get_type(item[:Type])
 		prop[:isCollection] = true if item[:Type].start_with?('Collection(')
 		prop[:dataType] = dt
@@ -293,7 +301,7 @@ module SpecMaker
 
 	def self.process_navigation (className, item=nil)
 		prop = deep_copy(@struct[:property])
-		prop[:name] = item[:Name]
+		prop[:name] = camelcase item[:Name]
 		prop[:isRelationship] = true
 		dt = get_type(item[:Type])
 		prop[:isCollection] = true if item[:Type].start_with?('Collection(')
@@ -317,7 +325,7 @@ module SpecMaker
 
 	def self.process_complextype (className, item=nil)
 		prop = deep_copy(@struct[:property])
-		prop[:name] = item[:Name]
+		prop[:name] = camelcase item[:Name]
 		dt = get_type(item[:Type])
 		prop[:isCollection] = true if item[:Type].start_with?('Collection(')
 		prop[:dataType] = dt
@@ -342,7 +350,7 @@ module SpecMaker
 	# Process methods
 	def self.process_method (item=nil, type=nil)
 		mtd = deep_copy(@struct[:method]) 
-		mtd[:name] = item[:Name].chomp(')')
+		mtd[:name] = camelcase item[:Name].chomp(')')
 		if type == 'function'
 			mtd[:isFunction] = true
 		else
@@ -362,7 +370,7 @@ module SpecMaker
 				parm = deep_copy(@struct[:parameter]) 
 				next if i == 0
 				@iparam = @iparam + 1
-				parm[:name] = p[:Name]
+				parm[:name] = camelcase p[:Name]
 
 				dtp = get_type(p[:Type])
 				parm[:dataType] = dtp

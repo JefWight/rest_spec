@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/Contacts
-POST /drive/root/createdByUser/Contacts
-POST /drive/root/lastModifiedByUser/Contacts
+POST /users/<objectId>/contacts
+POST /drive/root/createdByUser/contacts
+POST /drive/root/lastModifiedByUser/contacts
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_contact_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>
+POST https://graph.microsoft.com/beta/users/<objectId>
 ```
 In the request body, supply a JSON representation of [Contact](../resources/contact.md) object.
 ##### Response
@@ -47,77 +47,77 @@ Content-type: application/json
 Content-length: 1977
 
 {
-  "ParentFolderId": "ParentFolderId-value",
-  "Birthday": "datetime-value",
-  "FileAs": "FileAs-value",
-  "DisplayName": "DisplayName-value",
-  "GivenName": "GivenName-value",
-  "Initials": "Initials-value",
-  "MiddleName": "MiddleName-value",
-  "NickName": "NickName-value",
-  "Surname": "Surname-value",
-  "Title": "Title-value",
-  "Generation": "Generation-value",
-  "EmailAddresses": [
+  "parentFolderId": "parentFolderId-value",
+  "birthday": "datetime-value",
+  "fileAs": "fileAs-value",
+  "displayName": "displayName-value",
+  "givenName": "givenName-value",
+  "initials": "initials-value",
+  "middleName": "middleName-value",
+  "nickName": "nickName-value",
+  "surname": "surname-value",
+  "title": "title-value",
+  "yomiGivenName": "yomiGivenName-value",
+  "yomiSurname": "yomiSurname-value",
+  "yomiCompanyName": "yomiCompanyName-value",
+  "generation": "generation-value",
+  "emailAddresses": [
     {
-      "Name": "Name-value",
-      "Address": "Address-value"
+      "name": "name-value",
+      "address": "address-value"
     }
   ],
-  "ImAddresses": [
-    "ImAddresses-value"
+  "imAddresses": [
+    "imAddresses-value"
   ],
-  "JobTitle": "JobTitle-value",
-  "CompanyName": "CompanyName-value",
-  "Department": "Department-value",
-  "OfficeLocation": "OfficeLocation-value",
-  "Profession": "Profession-value",
-  "BusinessHomePage": "BusinessHomePage-value",
-  "AssistantName": "AssistantName-value",
-  "Manager": "Manager-value",
-  "HomePhones": [
-    "HomePhones-value"
+  "jobTitle": "jobTitle-value",
+  "companyName": "companyName-value",
+  "department": "department-value",
+  "officeLocation": "officeLocation-value",
+  "profession": "profession-value",
+  "businessHomePage": "businessHomePage-value",
+  "assistantName": "assistantName-value",
+  "manager": "manager-value",
+  "homePhones": [
+    "homePhones-value"
   ],
-  "BusinessPhones": [
-    "BusinessPhones-value"
+  "mobilePhone1": "mobilePhone1-value",
+  "businessPhones": [
+    "businessPhones-value"
   ],
-  "MobilePhone1": "MobilePhone1-value",
-  "HomeAddress": {
-    "Street": "Street-value",
-    "City": "City-value",
-    "State": "State-value",
-    "CountryOrRegion": "CountryOrRegion-value",
-    "PostalCode": "PostalCode-value"
+  "homeAddress": {
+    "street": "street-value",
+    "city": "city-value",
+    "state": "state-value",
+    "countryOrRegion": "countryOrRegion-value",
+    "postalCode": "postalCode-value"
   },
-  "BusinessAddress": {
-    "Street": "Street-value",
-    "City": "City-value",
-    "State": "State-value",
-    "CountryOrRegion": "CountryOrRegion-value",
-    "PostalCode": "PostalCode-value"
+  "businessAddress": {
+    "street": "street-value",
+    "city": "city-value",
+    "state": "state-value",
+    "countryOrRegion": "countryOrRegion-value",
+    "postalCode": "postalCode-value"
   },
-  "OtherAddress": {
-    "Street": "Street-value",
-    "City": "City-value",
-    "State": "State-value",
-    "CountryOrRegion": "CountryOrRegion-value",
-    "PostalCode": "PostalCode-value"
+  "otherAddress": {
+    "street": "street-value",
+    "city": "city-value",
+    "state": "state-value",
+    "countryOrRegion": "countryOrRegion-value",
+    "postalCode": "postalCode-value"
   },
-  "YomiCompanyName": "YomiCompanyName-value",
-  "YomiGivenName": "YomiGivenName-value",
-  "YomiSurname": "YomiSurname-value",
-  "SpouseName": "SpouseName-value",
-  "PersonalNotes": "PersonalNotes-value",
-  "Children": [
-    "Children-value"
+  "spouseName": "spouseName-value",
+  "personalNotes": "personalNotes-value",
+  "children": [
+    "children-value"
   ],
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "id": "id-value"
 }
 ```
 

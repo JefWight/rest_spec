@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/Messages/<Id>
-PATCH /drive/root/createdByUser/Messages/<Id>
-PATCH /drive/root/lastModifiedByUser/Messages/<Id>
+PATCH /users/<objectId>/messages/<id>
+PATCH /drive/root/createdByUser/messages/<id>
+PATCH /drive/root/lastModifiedByUser/messages/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -20,34 +20,35 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|BccRecipients|Recipient||
-|Body|ItemBody||
-|BodyPreview|String||
-|Categories|String||
-|CcRecipients|Recipient||
-|ChangeKey|String||
-|ConversationId|String||
-|CreatedDateTime|DateTimeOffset||
-|From|Recipient||
-|HasAttachments|Boolean||
-|Importance|String| Possible values are: `Low`, `Normal`, `High`.|
-|IsDeliveryReceiptRequested|Boolean||
-|IsDraft|Boolean||
-|IsRead|Boolean||
-|IsReadReceiptRequested|Boolean||
-|LastModifiedDateTime|DateTimeOffset||
-|ParentFolderId|String||
-|ReceivedDateTime|DateTimeOffset||
-|ReplyTo|Recipient||
-|Sender|Recipient||
-|SentDateTime|DateTimeOffset||
-|Subject|String||
-|ToRecipients|Recipient||
-|UniqueBody|ItemBody||
-|WebLink|String||
+|bccRecipients|Recipient||
+|body|ItemBody||
+|bodyPreview|String||
+|categories|String||
+|ccRecipients|Recipient||
+|changeKey|String||
+|conversationId|String||
+|createdDateTime|DateTimeOffset||
+|from|Recipient||
+|hasAttachments|Boolean||
+|importance|String| Possible values are: `Low`, `Normal`, `High`.|
+|inferenceClassification|String| Possible values are: `Focused`, `Other`.|
+|isDeliveryReceiptRequested|Boolean||
+|isDraft|Boolean||
+|isRead|Boolean||
+|isReadReceiptRequested|Boolean||
+|lastModifiedDateTime|DateTimeOffset||
+|parentFolderId|String||
+|receivedDateTime|DateTimeOffset||
+|replyTo|Recipient||
+|sender|Recipient||
+|sentDateTime|DateTimeOffset||
+|subject|String||
+|toRecipients|Recipient||
+|uniqueBody|ItemBody||
+|webLink|String||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [Message](../resources/message.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [message](../resources/message.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -56,83 +57,84 @@ Here is an example of the request.
   "name": "update_message"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/<objectId>/Messages/<Id>
+PUT https://graph.microsoft.com/beta/users/<objectId>/messages/<id>
 Content-type: application/json
-Content-length: 1546
+Content-length: 1608
 
 {
-  "Subject": "Subject-value",
-  "Body": {
-    "ContentType": "ContentType-value",
-    "Content": "Content-value"
+  "receivedDateTime": "datetime-value",
+  "sentDateTime": "datetime-value",
+  "hasAttachments": true,
+  "subject": "subject-value",
+  "body": {
+    "contentType": "contentType-value",
+    "content": "content-value"
   },
-  "BodyPreview": "BodyPreview-value",
-  "Importance": "Importance-value",
-  "HasAttachments": true,
-  "ParentFolderId": "ParentFolderId-value",
-  "From": {
-    "EmailAddress": {
-      "Name": "Name-value",
-      "Address": "Address-value"
+  "bodyPreview": "bodyPreview-value",
+  "importance": "importance-value",
+  "parentFolderId": "parentFolderId-value",
+  "sender": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
     }
   },
-  "Sender": {
-    "EmailAddress": {
-      "Name": "Name-value",
-      "Address": "Address-value"
+  "from": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
     }
   },
-  "ToRecipients": [
+  "toRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "CcRecipients": [
+  "ccRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "BccRecipients": [
+  "bccRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "ReplyTo": [
+  "replyTo": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "ConversationId": "ConversationId-value",
-  "UniqueBody": {
-    "ContentType": "ContentType-value",
-    "Content": "Content-value"
+  "conversationId": "conversationId-value",
+  "uniqueBody": {
+    "contentType": "contentType-value",
+    "content": "content-value"
   },
-  "ReceivedDateTime": "datetime-value",
-  "SentDateTime": "datetime-value",
-  "IsDeliveryReceiptRequested": true,
-  "IsReadReceiptRequested": true,
-  "IsDraft": true,
-  "IsRead": true,
-  "WebLink": "WebLink-value",
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
+  "isDeliveryReceiptRequested": true,
+  "isReadReceiptRequested": true,
+  "isRead": true,
+  "isDraft": true,
+  "webLink": "webLink-value",
+  "inferenceClassification": "inferenceClassification-value",
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "id": "id-value"
 }
 ```
 ##### Response
@@ -145,81 +147,82 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1546
+Content-length: 1608
 
 {
-  "Subject": "Subject-value",
-  "Body": {
-    "ContentType": "ContentType-value",
-    "Content": "Content-value"
+  "receivedDateTime": "datetime-value",
+  "sentDateTime": "datetime-value",
+  "hasAttachments": true,
+  "subject": "subject-value",
+  "body": {
+    "contentType": "contentType-value",
+    "content": "content-value"
   },
-  "BodyPreview": "BodyPreview-value",
-  "Importance": "Importance-value",
-  "HasAttachments": true,
-  "ParentFolderId": "ParentFolderId-value",
-  "From": {
-    "EmailAddress": {
-      "Name": "Name-value",
-      "Address": "Address-value"
+  "bodyPreview": "bodyPreview-value",
+  "importance": "importance-value",
+  "parentFolderId": "parentFolderId-value",
+  "sender": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
     }
   },
-  "Sender": {
-    "EmailAddress": {
-      "Name": "Name-value",
-      "Address": "Address-value"
+  "from": {
+    "emailAddress": {
+      "name": "name-value",
+      "address": "address-value"
     }
   },
-  "ToRecipients": [
+  "toRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "CcRecipients": [
+  "ccRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "BccRecipients": [
+  "bccRecipients": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "ReplyTo": [
+  "replyTo": [
     {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
+      "emailAddress": {
+        "name": "name-value",
+        "address": "address-value"
       }
     }
   ],
-  "ConversationId": "ConversationId-value",
-  "UniqueBody": {
-    "ContentType": "ContentType-value",
-    "Content": "Content-value"
+  "conversationId": "conversationId-value",
+  "uniqueBody": {
+    "contentType": "contentType-value",
+    "content": "content-value"
   },
-  "ReceivedDateTime": "datetime-value",
-  "SentDateTime": "datetime-value",
-  "IsDeliveryReceiptRequested": true,
-  "IsReadReceiptRequested": true,
-  "IsDraft": true,
-  "IsRead": true,
-  "WebLink": "WebLink-value",
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
+  "isDeliveryReceiptRequested": true,
+  "isReadReceiptRequested": true,
+  "isRead": true,
+  "isDraft": true,
+  "webLink": "webLink-value",
+  "inferenceClassification": "inferenceClassification-value",
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "id": "id-value"
 }
 ```
 

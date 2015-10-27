@@ -1,4 +1,4 @@
-# List AcceptedSenders
+# List acceptedSenders
 
 Retrieve a list of directoryobject objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<objectId>/AcceptedSenders
-GET /users/<objectId>/JoinedGroups/<objectId>/AcceptedSenders
-GET /drive/root/createdByUser/JoinedGroups/<objectId>/AcceptedSenders
+GET /groups/<objectId>/acceptedSenders
+GET /users/<objectId>/joinedGroups/<objectId>/acceptedSenders
+GET /drive/root/createdByUser/joinedGroups/<objectId>/acceptedSenders
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "get_acceptedsenders"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<objectId>/AcceptedSenders
+GET https://graph.microsoft.com/beta/groups/<objectId>/acceptedSenders
 ```
 ##### Response
 Here is an example of the response.
@@ -63,7 +63,7 @@ Content-length: 152
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List AcceptedSenders",
+  "description": "List acceptedSenders",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

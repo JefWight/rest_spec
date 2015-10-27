@@ -1,5 +1,5 @@
 {
-  "name": "OutlookItem",
+  "name": "outlookItem",
   "description": "",
   "collectionOf": null,
   "isComplexType": false,
@@ -27,7 +27,35 @@
   },
   "properties": [
     {
-      "name": "ChangeKey",
+      "name": "createdDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "lastModifiedDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "changeKey",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -41,7 +69,7 @@
       "isUnicode": false
     },
     {
-      "name": "Categories",
+      "name": "categories",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -55,35 +83,7 @@
       "isUnicode": false
     },
     {
-      "name": "CreatedDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "DateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "LastModifiedDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "DateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "Id",
+      "name": "id",
       "description": "",
       "isKey": true,
       "dataType": "String",

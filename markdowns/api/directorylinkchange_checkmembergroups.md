@@ -1,4 +1,4 @@
-# DirectoryLinkChange: checkMemberGroups
+# directoryLinkChange: checkMemberGroups
 
 
 ### Prerequisites
@@ -68,7 +68,7 @@ Content-length: 39
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "DirectoryLinkChange: checkMemberGroups",
+  "description": "directoryLinkChange: checkMemberGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

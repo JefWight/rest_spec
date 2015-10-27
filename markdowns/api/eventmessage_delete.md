@@ -1,6 +1,6 @@
-# Delete EventMessage
+# Delete eventMessage
 
-Delete EventMessage.
+Delete eventMessage.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -45,7 +45,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete EventMessage",
+  "description": "Delete eventMessage",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,5 +1,5 @@
 {
-  "name": "ContactFolder",
+  "name": "contactFolder",
   "description": "A folder that contains contacts.",
   "collectionOf": null,
   "isComplexType": false,
@@ -24,38 +24,38 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/groups/<objectId>/drive/items/<id>/createdByUser/ContactFolders/<Id>": true,
-    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/ContactFolders/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/createdByUser/ContactFolders/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/ContactFolders/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/createdByUser/ContactFolders/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/ContactFolders/<Id>": true,
-    "/groups/<objectId>/drive/root/createdByUser/ContactFolders/<Id>": true,
-    "/groups/<objectId>/drive/root/lastModifiedByUser/ContactFolders/<Id>": true,
-    "/users/<objectId>/ContactFolders/<Id>": true,
-    "/drives/<id>/items/<id>/createdByUser/ContactFolders/<Id>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/ContactFolders/<Id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/ContactFolders/<Id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/ContactFolders/<Id>": true,
-    "/drives/<id>/special/<id>/createdByUser/ContactFolders/<Id>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/ContactFolders/<Id>": true,
-    "/drives/<id>/root/createdByUser/ContactFolders/<Id>": true,
-    "/drives/<id>/root/lastModifiedByUser/ContactFolders/<Id>": true,
-    "/shares/<id>/items/<id>/createdByUser/ContactFolders/<Id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/ContactFolders/<Id>": true,
-    "/drive/items/<id>/createdByUser/ContactFolders/<Id>": true,
-    "/drive/items/<id>/lastModifiedByUser/ContactFolders/<Id>": true,
-    "/drive/shared/<id>/createdByUser/ContactFolders/<Id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/ContactFolders/<Id>": true,
-    "/drive/special/<id>/createdByUser/ContactFolders/<Id>": true,
-    "/drive/special/<id>/lastModifiedByUser/ContactFolders/<Id>": true,
-    "/drive/root/createdByUser/ContactFolders/<Id>": true,
-    "/drive/root/lastModifiedByUser/ContactFolders/<Id>": true
+    "/groups/<objectId>/drive/items/<id>/createdByUser/contactFolders/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/contactFolders/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/contactFolders/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/contactFolders/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/contactFolders/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/contactFolders/<id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/contactFolders/<id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/contactFolders/<id>": true,
+    "/users/<objectId>/contactFolders/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/contactFolders/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/contactFolders/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/contactFolders/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/contactFolders/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/contactFolders/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/contactFolders/<id>": true,
+    "/drives/<id>/root/createdByUser/contactFolders/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/contactFolders/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/contactFolders/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/contactFolders/<id>": true,
+    "/drive/items/<id>/createdByUser/contactFolders/<id>": true,
+    "/drive/items/<id>/lastModifiedByUser/contactFolders/<id>": true,
+    "/drive/shared/<id>/createdByUser/contactFolders/<id>": true,
+    "/drive/shared/<id>/lastModifiedByUser/contactFolders/<id>": true,
+    "/drive/special/<id>/createdByUser/contactFolders/<id>": true,
+    "/drive/special/<id>/lastModifiedByUser/contactFolders/<id>": true,
+    "/drive/root/createdByUser/contactFolders/<id>": true,
+    "/drive/root/lastModifiedByUser/contactFolders/<id>": true
   },
   "properties": [
     {
-      "name": "ParentFolderId",
-      "description": "The ID of the folder's parent folder.",
+      "name": "parentFolderId",
+      "description": "The ID of the folder's parent folder. The ID of the folder's parent folder.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -68,8 +68,8 @@
       "isUnicode": false
     },
     {
-      "name": "DisplayName",
-      "description": "The folder's display name.",
+      "name": "displayName",
+      "description": "The folder's display name. The folder's display name.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -82,8 +82,8 @@
       "isUnicode": false
     },
     {
-      "name": "Id",
-      "description": "Unique identifier of the contact folder.",
+      "name": "id",
+      "description": "Unique identifier of the contact folder. Unique identifier of the contact folder.",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -96,8 +96,8 @@
       "isUnicode": false
     },
     {
-      "name": "Contacts",
-      "description": "The contacts in the folder. Navigation property.",
+      "name": "contacts",
+      "description": "The contacts in the folder. Navigation property. The contacts in the folder. Navigation property.",
       "isKey": false,
       "dataType": "Contact",
       "isReadOnly": true,
@@ -110,8 +110,8 @@
       "isUnicode": null
     },
     {
-      "name": "ChildFolders",
-      "description": "The collection of child folders in the folder. Navigation property.",
+      "name": "childFolders",
+      "description": "The collection of child folders in the folder. Navigation property. The collection of child folders in the folder. Navigation property.",
       "isKey": false,
       "dataType": "ContactFolder",
       "isReadOnly": true,
@@ -124,7 +124,5 @@
       "isUnicode": null
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

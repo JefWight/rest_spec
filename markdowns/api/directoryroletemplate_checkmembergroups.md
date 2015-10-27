@@ -1,4 +1,4 @@
-# DirectoryRoleTemplate: checkMemberGroups
+# directoryRoleTemplate: checkMemberGroups
 
 
 ### Prerequisites
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "directoryroletemplate_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoleTemplates/<objectId>/checkMemberGroups
+POST https://graph.microsoft.com/beta/directoryRoleTemplates/<objectId>/checkMemberGroups
 Content-type: application/json
 Content-length: 44
 
@@ -68,7 +68,7 @@ Content-length: 39
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "DirectoryRoleTemplate: checkMemberGroups",
+  "description": "directoryRoleTemplate: checkMemberGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

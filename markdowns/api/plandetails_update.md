@@ -26,11 +26,10 @@ In the request body, supply the values for relevant fields that should be update
 |category3Description|String||
 |category4Description|String||
 |category5Description|String||
-|sharedWith|UserIdCollection||
-|version|String||
+|sharedWith|userIdCollection||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [PlanDetails](../resources/plandetails.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [planDetails](../resources/plandetails.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -39,9 +38,9 @@ Here is an example of the request.
   "name": "update_plandetails"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/plans/<id>/details
+PUT https://graph.microsoft.com/beta/plans/<id>/details
 Content-type: application/json
-Content-length: 411
+Content-length: 381
 
 {
   "sharedWith": {
@@ -52,8 +51,7 @@ Content-length: 411
   "category3Description": "category3Description-value",
   "category4Description": "category4Description-value",
   "category5Description": "category5Description-value",
-  "id": "id-value",
-  "version": "version-value"
+  "id": "id-value"
 }
 ```
 ##### Response
@@ -66,7 +64,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 411
+Content-length: 381
 
 {
   "sharedWith": {
@@ -77,8 +75,7 @@ Content-length: 411
   "category3Description": "category3Description-value",
   "category4Description": "category4Description-value",
   "category5Description": "category5Description-value",
-  "id": "id-value",
-  "version": "version-value"
+  "id": "id-value"
 }
 ```
 

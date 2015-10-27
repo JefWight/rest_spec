@@ -7,7 +7,7 @@ require 'logger'
 module SpecMaker
 	require_relative 'utils_e2j'
 	# Read and load the CSDL file
-	CSDL_FILE='ppe_alpha_graph'
+	CSDL_FILE='alpha_graph'
 	f=File.read(CSDL_LOCATION + CSDL_FILE + '.xml', :encoding => 'UTF-8')
 
 	# Convert to JSON format. 
@@ -31,7 +31,7 @@ module SpecMaker
 		supplimentalSchema[:Annotations].each do |annotations|
 			target = get_type(annotations[:Target]).downcase
 	
-			puts "-> Processing Annotation #{target}"
+			#puts "-> Processing Annotation #{target}"
 			# puts item[:Annotation].length
 			# puts item[:Annotation]
 			
@@ -108,7 +108,7 @@ module SpecMaker
 		@json_object = deep_copy(@template) 
 
 		puts "-> Processing Complex Type #{entity[:Name]}"
-		@json_object[:name] = entity[:Name]
+		@json_object[:name] = camelcase entity[:Name]
 		@json_object[:isComplexType] = true
 		@json_object[:allowPatch] = false
 		@json_object[:allowUpsert] = false
@@ -164,7 +164,7 @@ module SpecMaker
 			@base_types[entity[:Name].to_sym] = deep_copy(entity)	
 		end
 		
-		@json_object[:name] = entity[:Name]
+		@json_object[:name] = camelcase entity[:Name]
 		if !entity[:Key].nil? && entity[:Key][:PropertyRef].is_a?(Hash)
 			@key_save = entity[:Key][:PropertyRef][:Name]
 		elsif !entity[:Key].nil? && entity[:Key][:PropertyRef].is_a?(Array)
@@ -231,7 +231,7 @@ module SpecMaker
 		@json_object = deep_copy(@template) 
 
 		puts "-> Processing EntitySet Type #{entity[:Name]}"
-		@json_object[:name] = entity[:Name]
+		@json_object[:name] = camelcase entity[:Name]
 		@json_object[:isEntitySet] = true
 		#dt = entity[:EntityType][(entity[:EntityType].rindex('.') + 1)..-1].chomp(')')		
 		dt = get_type(entity[:EntityType])

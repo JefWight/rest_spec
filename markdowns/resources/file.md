@@ -1,4 +1,4 @@
-# File resource type
+# file resource type
 
 
 
@@ -16,27 +16,24 @@ Here is a JSON representation of the resource
 
 ```json
 {
+  "hashes": {
+    "@odata.type": "microsoft.graph.hashes"
+  },
+  "mimeType": "String-value"
 }
 
 ```
 ### Properties
-None
-
-### Relationships
-None
-
-
-### Methods
-
-| Method		   | Return Type	|Description|
+| Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|[Delete](../api/file_delete.md) | None |Delete File object. |
+|hashes|[hashes](hashes.md)||
+|mimeType|String||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "File resource",
+  "description": "file resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

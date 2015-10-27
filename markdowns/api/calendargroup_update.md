@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/CalendarGroups/<Id>
-PATCH /drive/root/createdByUser/CalendarGroups/<Id>
-PATCH /drive/root/lastModifiedByUser/CalendarGroups/<Id>
+PATCH /users/<objectId>/calendarGroups/<id>
+PATCH /drive/root/createdByUser/calendarGroups/<id>
+PATCH /drive/root/lastModifiedByUser/calendarGroups/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -20,12 +20,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ChangeKey|String|Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|ClassId|Guid|The class identifier.|
-|Name|String|The group name.|
+|changeKey|String|Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
+|classId|Guid|The class identifier. The class identifier.|
+|name|String|The group name. The group name.|
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [CalendarGroup](../resources/calendargroup.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [calendarGroup](../resources/calendargroup.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,15 +34,15 @@ Here is an example of the request.
   "name": "update_calendargroup"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/<objectId>/CalendarGroups/<Id>
+PUT https://graph.microsoft.com/beta/users/<objectId>/calendarGroups/<id>
 Content-type: application/json
 Content-length: 110
 
 {
-  "Name": "Name-value",
-  "ChangeKey": "ChangeKey-value",
-  "ClassId": "ClassId-value",
-  "Id": "Id-value"
+  "name": "name-value",
+  "classId": "classId-value",
+  "changeKey": "changeKey-value",
+  "id": "id-value"
 }
 ```
 ##### Response
@@ -58,10 +58,10 @@ Content-type: application/json
 Content-length: 110
 
 {
-  "Name": "Name-value",
-  "ChangeKey": "ChangeKey-value",
-  "ClassId": "ClassId-value",
-  "Id": "Id-value"
+  "name": "name-value",
+  "classId": "classId-value",
+  "changeKey": "changeKey-value",
+  "id": "id-value"
 }
 ```
 

@@ -1,5 +1,5 @@
 {
-  "name": "OpenTypeExtension",
+  "name": "openTypeExtension",
   "description": "",
   "collectionOf": null,
   "isComplexType": false,
@@ -27,7 +27,7 @@
   },
   "properties": [
     {
-      "name": "Id",
+      "name": "id",
       "description": "",
       "isKey": true,
       "dataType": "String",
@@ -41,7 +41,7 @@
       "isUnicode": false
     },
     {
-      "name": "ExtensionName",
+      "name": "extensionName",
       "description": "",
       "isKey": false,
       "dataType": "String",

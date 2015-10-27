@@ -18,13 +18,13 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Categories|String||
-|ChangeKey|String||
-|CreatedDateTime|DateTimeOffset||
-|LastModifiedDateTime|DateTimeOffset||
+|categories|String||
+|changeKey|String||
+|createdDateTime|DateTimeOffset||
+|lastModifiedDateTime|DateTimeOffset||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [OutlookItem](../resources/outlookitem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [outlookItem](../resources/outlookitem.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -38,13 +38,13 @@ Content-type: application/json
 Content-length: 185
 
 {
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "id": "id-value"
 }
 ```
 ##### Response
@@ -60,13 +60,13 @@ Content-type: application/json
 Content-length: 185
 
 {
-  "ChangeKey": "ChangeKey-value",
-  "Categories": [
-    "Categories-value"
+  "createdDateTime": "datetime-value",
+  "lastModifiedDateTime": "datetime-value",
+  "changeKey": "changeKey-value",
+  "categories": [
+    "categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
-  "Id": "Id-value"
+  "id": "id-value"
 }
 ```
 

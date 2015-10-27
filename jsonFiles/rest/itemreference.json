@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
       "name": "driveId",
-      "description": "Unique identifier for the Drive that contains the item.",
+      "description": "Unique identifier for the Drive that contains the item. Unique identifier for the Drive that contains the item.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -42,7 +41,7 @@
     },
     {
       "name": "id",
-      "description": "Unique identifier for the item.",
+      "description": "Unique identifier for the item. Unique identifier for the item.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -56,7 +55,7 @@
     },
     {
       "name": "path",
-      "description": "Path that used to navigate to the item.",
+      "description": "Path that used to navigate to the item. Path that used to navigate to the item.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -69,7 +68,5 @@
       "isUnicode": false
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

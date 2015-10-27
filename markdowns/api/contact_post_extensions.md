@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/Contacts/<Id>/Extensions
-POST /drive/root/createdByUser/Contacts/<Id>/Extensions
-POST /drive/root/lastModifiedByUser/Contacts/<Id>/Extensions
+POST /users/<objectId>/contacts/<id>/extensions
+POST /drive/root/createdByUser/contacts/<id>/extensions
+POST /drive/root/lastModifiedByUser/contacts/<id>/extensions
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_extension_from_contact"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/Contacts/<Id>
+POST https://graph.microsoft.com/beta/users/<objectId>/contacts/<id>
 ```
 In the request body, supply a JSON representation of [Extension](../resources/extension.md) object.
 ##### Response
@@ -47,7 +47,7 @@ Content-type: application/json
 Content-length: 22
 
 {
-  "Id": "Id-value"
+  "id": "id-value"
 }
 ```
 

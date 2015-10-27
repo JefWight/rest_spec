@@ -1,4 +1,4 @@
-# Get User
+# Get user
 
 Retrieve the properties and relationships of user object.
 ### Prerequisites
@@ -20,7 +20,7 @@ GET /drive/root/lastModifiedByUser
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [User](../resources/user.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "get_user"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>
+GET https://graph.microsoft.com/beta/users/<objectId>
 ```
 ##### Response
 Here is an example of the response.
@@ -113,8 +113,8 @@ Content-length: 2708
   "usageLocation": "usageLocation-value",
   "userPrincipalName": "userPrincipalName-value",
   "userType": "userType-value",
-  "MailboxGuid": "MailboxGuid-value",
-  "EmailAddress": "EmailAddress-value",
+  "emailAddress": "emailAddress-value",
+  "mailboxGuid": "mailboxGuid-value",
   "aboutMe": "aboutMe-value",
   "alias": "alias-value",
   "birthday": "datetime-value",
@@ -150,7 +150,7 @@ Content-length: 2708
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get User",
+  "description": "Get user",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /groups/<objectId>/Conversations/<Id>
-PATCH /users/<objectId>/JoinedGroups/<objectId>/Conversations/<Id>
-PATCH /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations/<Id>
+PATCH /groups/<objectId>/conversations/<id>
+PATCH /users/<objectId>/joinedGroups/<objectId>/conversations/<id>
+PATCH /drive/root/createdByUser/joinedGroups/<objectId>/conversations/<id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -20,14 +20,14 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|HasAttachments|Boolean|Indicates whether the Conversation has at least one attachment.|
-|LastDeliveredDateTime|DateTimeOffset||
-|Preview|String||
-|Topic|String|The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.|
-|UniqueSenders|String|All the users that sent a message to this Conversation.|
+|hasAttachments|Boolean|Indicates whether the Conversation has at least one attachment. Indicates whether the Conversation has at least one attachment.|
+|lastDeliveredDateTime|DateTimeOffset||
+|preview|String||
+|topic|String|The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.|
+|uniqueSenders|String|All the users that sent a message to this Conversation. All the users that sent a message to this Conversation.|
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [Conversation](../resources/conversation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [conversation](../resources/conversation.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -36,19 +36,19 @@ Here is an example of the request.
   "name": "update_conversation"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/groups/<objectId>/Conversations/<Id>
+PUT https://graph.microsoft.com/beta/groups/<objectId>/conversations/<id>
 Content-type: application/json
 Content-length: 201
 
 {
-  "Topic": "Topic-value",
-  "HasAttachments": true,
-  "LastDeliveredDateTime": "datetime-value",
-  "UniqueSenders": [
-    "UniqueSenders-value"
+  "topic": "topic-value",
+  "hasAttachments": true,
+  "lastDeliveredDateTime": "datetime-value",
+  "uniqueSenders": [
+    "uniqueSenders-value"
   ],
-  "Preview": "Preview-value",
-  "Id": "Id-value"
+  "preview": "preview-value",
+  "id": "id-value"
 }
 ```
 ##### Response
@@ -64,14 +64,14 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "Topic": "Topic-value",
-  "HasAttachments": true,
-  "LastDeliveredDateTime": "datetime-value",
-  "UniqueSenders": [
-    "UniqueSenders-value"
+  "topic": "topic-value",
+  "hasAttachments": true,
+  "lastDeliveredDateTime": "datetime-value",
+  "uniqueSenders": [
+    "uniqueSenders-value"
   ],
-  "Preview": "Preview-value",
-  "Id": "Id-value"
+  "preview": "preview-value",
+  "id": "id-value"
 }
 ```
 

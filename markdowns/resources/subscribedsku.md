@@ -1,4 +1,4 @@
-# SubscribedSku resource type
+# subscribedSku resource type
 
 Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from [DirectoryObject].
 
@@ -51,15 +51,15 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get SubscribedSku](../api/subscribedsku_get.md) | [SubscribedSku](subscribedsku.md) |Read properties and relationships of subscribedSku object.|
-|[Update](../api/subscribedsku_update.md) | [SubscribedSku](subscribedsku.md)	|Update SubscribedSku object. |
-|[Delete](../api/subscribedsku_delete.md) | None |Delete SubscribedSku object. |
+|[Get subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Read properties and relationships of subscribedSku object.|
+|[Update](../api/subscribedsku_update.md) | [subscribedSku](subscribedsku.md)	|Update subscribedSku object. |
+|[Delete](../api/subscribedsku_delete.md) | None |Delete subscribedSku object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "SubscribedSku resource",
+  "description": "subscribedSku resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

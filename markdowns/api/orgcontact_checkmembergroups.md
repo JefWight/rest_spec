@@ -1,4 +1,4 @@
-# OrgContact: checkMemberGroups
+# orgContact: checkMemberGroups
 
 
 ### Prerequisites
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "orgcontact_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/contacts/<objectId>/checkMemberGroups
+POST https://graph.microsoft.com/beta/contacts/<objectId>/checkMemberGroups
 Content-type: application/json
 Content-length: 44
 
@@ -68,7 +68,7 @@ Content-length: 39
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "OrgContact: checkMemberGroups",
+  "description": "orgContact: checkMemberGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# User: getMemberObjects
+# user: getMemberObjects
 
 
 ### Prerequisites
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "user_getmemberobjects"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/getMemberObjects
+POST https://graph.microsoft.com/beta/users/<objectId>/getMemberObjects
 Content-type: application/json
 Content-length: 33
 
@@ -68,7 +68,7 @@ Content-length: 39
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "User: getMemberObjects",
+  "description": "user: getMemberObjects",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

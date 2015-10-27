@@ -1,6 +1,6 @@
-# Delete PlanDetails
+# Delete planDetails
 
-Delete PlanDetails.
+Delete planDetails.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_plandetails"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/plans/<id>/details
+DELETE https://graph.microsoft.com/beta/plans/<id>/details
 ```
 ##### Response
 Here is an example of the response.
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete PlanDetails",
+  "description": "Delete planDetails",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

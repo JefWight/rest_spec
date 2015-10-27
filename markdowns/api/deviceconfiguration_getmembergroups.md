@@ -1,4 +1,4 @@
-# DeviceConfiguration: getMemberGroups
+# deviceConfiguration: getMemberGroups
 
 
 ### Prerequisites
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "deviceconfiguration_getmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/deviceConfiguration/<objectId>/getMemberGroups
+POST https://graph.microsoft.com/beta/deviceConfiguration/<objectId>/getMemberGroups
 Content-type: application/json
 Content-length: 33
 
@@ -66,7 +66,7 @@ Content-length: 39
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "DeviceConfiguration: getMemberGroups",
+  "description": "deviceConfiguration: getMemberGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

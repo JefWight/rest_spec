@@ -98,6 +98,9 @@
       <Annotations Target="Microsoft.Graph.Application/owners">
         <Annotation Term="Core.Description" String="Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer. Inherited from [DirectoryObject]." />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.AppliedCategoriesCollection">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.AppRole">
         <Annotation Term="Core.Description" String="Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role. The **appRoles** property of the [ServicePrincipal] entity and of the [Application] entity is a collection of **AppRole**.&#xD;" />
       </Annotations>
@@ -191,7 +194,7 @@
       <Annotations Target="Microsoft.Graph.Attachment/IsInline">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Attachment/DateTimeLastModified">
+      <Annotations Target="Microsoft.Graph.Attachment/LastModifiedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Attachment/Id">
@@ -258,6 +261,33 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.audio/year">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Bucket">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Bucket/name">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Bucket/planId">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Bucket/orderHint">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Bucket/totalTasks">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Bucket/activeTasks">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Bucket/id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Bucket/version">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Bucket/tasks">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Calendar">
@@ -413,11 +443,11 @@
       <Annotations Target="Microsoft.Graph.Contact/Categories">
         <Annotation Term="Core.Description" String="The categories associated with the contact." />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Contact/DateTimeCreated">
-        <Annotation Term="Core.Description" String="The time the contact was created." />
+      <Annotations Target="Microsoft.Graph.Contact/CreatedDateTime">
+        <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Contact/DateTimeLastModified">
-        <Annotation Term="Core.Description" String="The time the contact was modified." />
+      <Annotations Target="Microsoft.Graph.Contact/LastModifiedDateTime">
+        <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Contact/Id">
         <Annotation Term="Core.Description" String="The contact's unique identifier." />
@@ -455,7 +485,7 @@
       <Annotations Target="Microsoft.Graph.Conversation/HasAttachments">
         <Annotation Term="Core.Description" String="Indicates whether the Conversation has at least one attachment." />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Conversation/DateTimeLastDelivered">
+      <Annotations Target="Microsoft.Graph.Conversation/LastDeliveredDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Conversation/UniqueSenders">
@@ -482,7 +512,7 @@
       <Annotations Target="Microsoft.Graph.ConversationThread/HasAttachments">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.ConversationThread/DateTimeLastDelivered">
+      <Annotations Target="Microsoft.Graph.ConversationThread/LastDeliveredDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.ConversationThread/UniqueSenders">
@@ -501,6 +531,111 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.ConversationThread/Posts">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel/isDefault">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel/userRole">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel/isShared">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel/sectionsUrl">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel/sectionGroupsUrl">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel/links">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel/name">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel/createdBy">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel/lastModifiedBy">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel/lastModifiedTime">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel/id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel/self">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyNotebookModel/createdTime">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyPageModel">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyPageModel/parentSection">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyPageModel/parentNotebook">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyPageModel/title">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyPageModel/createdByAppId">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyPageModel/links">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyPageModel/contentUrl">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyPageModel/lastModifiedTime">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyPageModel/id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyPageModel/self">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopyPageModel/createdTime">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopySectionModel">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopySectionModel/isDefault">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopySectionModel/pagesUrl">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopySectionModel/name">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopySectionModel/createdBy">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopySectionModel/lastModifiedBy">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopySectionModel/lastModifiedTime">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopySectionModel/id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopySectionModel/self">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.CopySectionModel/createdTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.deleted">
@@ -588,6 +723,15 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.DeviceConfiguration/deletionTimestamp">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Diagnostic">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Diagnostic/message">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Diagnostic/url">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.DirectoryLinkChange">
@@ -818,11 +962,11 @@
       <Annotations Target="Microsoft.Graph.Event/Categories">
         <Annotation Term="Core.Description" String="The categories associated with the event." />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Event/DateTimeCreated">
-        <Annotation Term="Core.Description" String="The date and time that the event was created." />
+      <Annotations Target="Microsoft.Graph.Event/CreatedDateTime">
+        <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Event/DateTimeLastModified">
-        <Annotation Term="Core.Description" String="The date and time that the event was last modified." />
+      <Annotations Target="Microsoft.Graph.Event/LastModifiedDateTime">
+        <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Event/Id">
         <Annotation Term="Core.Description" String="" />
@@ -884,10 +1028,10 @@
       <Annotations Target="Microsoft.Graph.EventMessage/UniqueBody">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.EventMessage/DateTimeReceived">
+      <Annotations Target="Microsoft.Graph.EventMessage/ReceivedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.EventMessage/DateTimeSent">
+      <Annotations Target="Microsoft.Graph.EventMessage/SentDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.EventMessage/IsDeliveryReceiptRequested">
@@ -911,10 +1055,10 @@
       <Annotations Target="Microsoft.Graph.EventMessage/Categories">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.EventMessage/DateTimeCreated">
+      <Annotations Target="Microsoft.Graph.EventMessage/CreatedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.EventMessage/DateTimeLastModified">
+      <Annotations Target="Microsoft.Graph.EventMessage/LastModifiedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.EventMessage/Id">
@@ -965,6 +1109,30 @@
       <Annotations Target="Microsoft.Graph.ExtensionProperty/deletionTimestamp">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.ExternalLink">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ExternalLink/href">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ExternalReference">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ExternalReference/alias">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ExternalReference/type">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ExternalReference/previewPriority">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ExternalReference/modifiedBy">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.ExternalReference/modifiedDate">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.ExternalReferenceCollection">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
@@ -995,7 +1163,7 @@
       <Annotations Target="Microsoft.Graph.FileAttachment/IsInline">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.FileAttachment/DateTimeLastModified">
+      <Annotations Target="Microsoft.Graph.FileAttachment/LastModifiedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.FileAttachment/Id">
@@ -1149,6 +1317,9 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Group/drive">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Group/details">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Group/tasks">
@@ -1313,7 +1484,7 @@
       <Annotations Target="Microsoft.Graph.ItemAttachment/IsInline">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.ItemAttachment/DateTimeLastModified">
+      <Annotations Target="Microsoft.Graph.ItemAttachment/LastModifiedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.ItemAttachment/Id">
@@ -1457,10 +1628,10 @@
       <Annotations Target="Microsoft.Graph.Message/UniqueBody">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/DateTimeReceived">
+      <Annotations Target="Microsoft.Graph.Message/ReceivedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/DateTimeSent">
+      <Annotations Target="Microsoft.Graph.Message/SentDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Message/IsDeliveryReceiptRequested">
@@ -1484,10 +1655,10 @@
       <Annotations Target="Microsoft.Graph.Message/Categories">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/DateTimeCreated">
+      <Annotations Target="Microsoft.Graph.Message/CreatedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Message/DateTimeLastModified">
+      <Annotations Target="Microsoft.Graph.Message/LastModifiedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Message/Id">
@@ -1499,46 +1670,91 @@
       <Annotations Target="Microsoft.Graph.Message/Extensions">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Notification">
+      <Annotations Target="Microsoft.Graph.MyOrganization">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Notification/Id">
+      <Annotations Target="Microsoft.Graph.MyOrganization/id">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Notification/DisplayName">
+      <Annotations Target="Microsoft.Graph.MyOrganization/siteCollections">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Notification/NotificationType">
+      <Annotations Target="Microsoft.Graph.Notebook">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Notification/NotificationTarget">
+      <Annotations Target="Microsoft.Graph.Notebook/isDefault">
+        <Annotation Term="Core.Description" String="Indicates whether this is the user's default notebook." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/userRole">
+        <Annotation Term="Core.Description" String="One of three values: Owner, Contributor, or Reader. Owner represents owner-level access to the notebook. Contributor represents read/write access to the notebook. Reader represents read-only access to the notebook." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/isShared">
+        <Annotation Term="Core.Description" String="Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the owner." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/sectionsUrl">
+        <Annotation Term="Core.Description" String="The URL for the sections navigation property, which returns all the sections in the notebook." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/sectionGroupsUrl">
+        <Annotation Term="Core.Description" String="The URL for the sectionGroups navigation property, which returns all the section groups in the notebook." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/links">
+        <Annotation Term="Core.Description" String="The value of oneNoteClientURL can be used to open the notebook using the OneNote native client app if it's installed. The value of oneNoteWebURL can be used to open the web-browser based OneNote Online client." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/name">
+        <Annotation Term="Core.Description" String="The name of the notebook." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/createdBy">
+        <Annotation Term="Core.Description" String="The user who created the notebook." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/lastModifiedBy">
+        <Annotation Term="Core.Description" String="The user who last modified the notebook." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/lastModifiedTime">
+        <Annotation Term="Core.Description" String="The date and time when the notebook was last modified." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/id">
+        <Annotation Term="Core.Description" String="The unique identifier of the notebook." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/self">
+        <Annotation Term="Core.Description" String="The endpoint where you can get details about the notebook." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/createdTime">
+        <Annotation Term="Core.Description" String="The date and time when the notebook was created." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/sections">
+        <Annotation Term="Core.Description" String="The sections in the notebook. Can be navigated to using the sectionsUrl property or expanded in a GET request." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Notebook/sectionGroups">
+        <Annotation Term="Core.Description" String="The section groups in the notebook. Can be navigated to using the sectionGroupsUrl property or expanded in a GET request." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.NotebookLinks">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.NotificationRule">
+      <Annotations Target="Microsoft.Graph.NotebookLinks/oneNoteClientUrl">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.NotificationRule/Id">
+      <Annotations Target="Microsoft.Graph.NotebookLinks/oneNoteWebUrl">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.NotificationRule/UserName">
+      <Annotations Target="Microsoft.Graph.Notes">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.NotificationRule/UserId">
+      <Annotations Target="Microsoft.Graph.Notes/id">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.NotificationRule/RoleName">
+      <Annotations Target="Microsoft.Graph.Notes/notebooks">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.NotificationRule/RoleId">
+      <Annotations Target="Microsoft.Graph.Notes/sections">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.NotificationRule/NotificationId">
+      <Annotations Target="Microsoft.Graph.Notes/sectionGroups">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.NotificationRule/NotificationName">
+      <Annotations Target="Microsoft.Graph.Notes/pages">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.NotificationRule/Event">
+      <Annotations Target="Microsoft.Graph.Notes/resources">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.OAuth2Permission">
@@ -1727,13 +1943,58 @@
       <Annotations Target="Microsoft.Graph.OutlookItem/Categories">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.OutlookItem/DateTimeCreated">
+      <Annotations Target="Microsoft.Graph.OutlookItem/CreatedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.OutlookItem/DateTimeLastModified">
+      <Annotations Target="Microsoft.Graph.OutlookItem/LastModifiedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.OutlookItem/Id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Page">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Page/title">
+        <Annotation Term="Core.Description" String="The title of the page " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Page/createdByAppId">
+        <Annotation Term="Core.Description" String="The unique identifier of the application that created the page " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Page/links">
+        <Annotation Term="Core.Description" String="The oneNoteClientURL link to open the page in the OneNote native client if it 's installed, and oneNoteWebUrl to open the page in OneNote Online" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Page/contentUrl">
+        <Annotation Term="Core.Description" String="The URL for the page's HTML content " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Page/content">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Page/lastModifiedTime">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Page/id">
+        <Annotation Term="Core.Description" String="The unique identifier of the page " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Page/self">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Page/createdTime">
+        <Annotation Term="Core.Description" String="The date and time when the page was created in UTC format " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Page/parentSection">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Page/parentNotebook">
+        <Annotation Term="Core.Description" String="A page in a OneNote section " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PageLinks">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PageLinks/oneNoteClientUrl">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PageLinks/oneNoteWebUrl">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.PasswordCredential">
@@ -1762,6 +2023,21 @@
       </Annotations>
       <Annotations Target="Microsoft.Graph.PasswordProfile/forceChangePasswordNextLogin">
         <Annotation Term="Core.Description" String="                **true** if the user must change her password on the next login; otherwise **false**.            " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PatchContentCommand">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PatchContentCommand/action">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PatchContentCommand/target">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PatchContentCommand/content">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PatchContentCommand/position">
+        <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.PatternedRecurrence">
         <Annotation Term="Core.Description" String="The recurrence pattern and range." />
@@ -1853,7 +2129,22 @@
       <Annotations Target="Microsoft.Graph.Plan/tasks">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.Plan/buckets">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.Plan/details">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Plan/timeline">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Plan/assignedToTaskBoard">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Plan/statusTaskBoard">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Plan/bucketTaskBoard">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.PlanDetails">
@@ -1862,10 +2153,55 @@
       <Annotations Target="Microsoft.Graph.PlanDetails/sharedWith">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanDetails/category0Description">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanDetails/category1Description">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanDetails/category2Description">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanDetails/category3Description">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanDetails/category4Description">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanDetails/category5Description">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.PlanDetails/id">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.PlanDetails/version">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanTaskBoard">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanTaskBoard/type">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanTaskBoard/id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanTaskBoard/version">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanTimeline">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanTimeline/displaySettings">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanTimeline/lockedWidth">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanTimeline/id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.PlanTimeline/version">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Post">
@@ -1874,7 +2210,7 @@
       <Annotations Target="Microsoft.Graph.Post/Body">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Post/DateTimeReceived">
+      <Annotations Target="Microsoft.Graph.Post/ReceivedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Post/HasAttachments">
@@ -1901,10 +2237,10 @@
       <Annotations Target="Microsoft.Graph.Post/Categories">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Post/DateTimeCreated">
+      <Annotations Target="Microsoft.Graph.Post/CreatedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.Post/DateTimeLastModified">
+      <Annotations Target="Microsoft.Graph.Post/LastModifiedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Post/Id">
@@ -1917,201 +2253,6 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Post/InReplyTo">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent/Id">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent/UserId">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent/UserName">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent/UserMail">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent/RoleId">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent/RoleName">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent/ExpirationTime">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent/CreationTime">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent/RequestorId">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent/RequestorName">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent/TenantId">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent/RequestType">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedOperationEvent/AdditionalInformation">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRole">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRole/Id">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRole/Name">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRole/Summary">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRole/Settings">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRole/Assignments">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleAssignment">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleAssignment/UserId">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleAssignment/RoleId">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleAssignment/IsElevated">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleAssignment/ExpirationTime">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleAssignment/ResultMessage">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleAssignment/RoleInfo">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSettings">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSettings/MinElevationDuration">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSettings/MaxElavationDuration">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSettings/ElevationDuration">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSettings/RoleId">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSettings/NotificationToUserOnElevation">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSettings/TicketingInfoOnElevation">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSettings/MfaOnElevation">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSettings/LastGlobalAdmin">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSummary">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSummary/RoleId">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSummary/Status">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSummary/UsersCount">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSummary/ManagedCount">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSummary/ElevatedCount">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedRoleSummary/MfaEnabled">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/AlertId">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/NumberOfAffectedItems">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/AdditionalData">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/AlertName">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/AlertDescription">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/LastModifiedTime">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/LastScannedTime">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/SeverityLevel">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/AlertType">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/SecurityImpact">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/MitigationSteps">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/HowToPrevent">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/WasDismissed">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/IsActive">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/IsResolvable">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/IsConfigurable">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSecurityAlert/Status">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSignupStatus">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSignupStatus/TenantId">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSignupStatus/IsRegistered">
-        <Annotation Term="Core.Description" String="" />
-      </Annotations>
-      <Annotations Target="Microsoft.Graph.PrivilegedSignupStatus/Status">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.ProvisionedPlan">
@@ -2234,7 +2375,7 @@
       <Annotations Target="Microsoft.Graph.ReferenceAttachment/IsInline">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.ReferenceAttachment/DateTimeLastModified">
+      <Annotations Target="Microsoft.Graph.ReferenceAttachment/LastModifiedDateTime">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.ReferenceAttachment/Id">
@@ -2248,6 +2389,21 @@
       </Annotations>
       <Annotations Target="Microsoft.Graph.RequiredResourceAccess/resourceAccess">
         <Annotation Term="Core.Description" String="The list of OAuth2.0 permission scopes and app roles that the application requires from the specified resource." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Resource">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Resource/id">
+        <Annotation Term="Core.Description" String="The unique id of this resource. " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Resource/self">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Resource/content">
+        <Annotation Term="Core.Description" String="A stream of the content of this resource. " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Resource/contentUrl">
+        <Annotation Term="Core.Description" String="A Url to which a GET request can be sent to retrieve this resource. " />
       </Annotations>
       <Annotations Target="Microsoft.Graph.ResourceAccess">
         <Annotation Term="Core.Description" String="Specifies an OAuth 2.0 permission scope or an app role that an application requires. The **resourceAccess** property of the [RequiredResourceAccess] type is a collection of **ResourceAccess**.&#xD;" />
@@ -2271,6 +2427,87 @@
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.searchResult/onClickTelemetryUrl">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Section">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Section/isDefault">
+        <Annotation Term="Core.Description" String="Indicates whether this is the user's default section." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Section/pagesUrl">
+        <Annotation Term="Core.Description" String="The /pages endpoint where you can get details for all the pages in the section." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Section/name">
+        <Annotation Term="Core.Description" String="The name of the section. " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Section/createdBy">
+        <Annotation Term="Core.Description" String="The user who created the section. " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Section/lastModifiedBy">
+        <Annotation Term="Core.Description" String="The user who last modified the section. " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Section/lastModifiedTime">
+        <Annotation Term="Core.Description" String="The date and time when the section was last modified. " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Section/id">
+        <Annotation Term="Core.Description" String="The unique identifier of the section. " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Section/self">
+        <Annotation Term="Core.Description" String="The endpoint where you can get details about the section. " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Section/createdTime">
+        <Annotation Term="Core.Description" String="The date and time when the section was created. " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Section/parentNotebook">
+        <Annotation Term="Core.Description" String="The notebook that contains the section, expanded by default with the id, name, and self properties selected. " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Section/parentSectionGroup">
+        <Annotation Term="Core.Description" String="The section group that contains the section, expanded by default with the id, name, and self properties selected. " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Section/pages">
+        <Annotation Term="Core.Description" String="A section in a OneNote notebook " />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup/sectionsUrl">
+        <Annotation Term="Core.Description" String="The URL for the sections navigation property, which returns all the sections in the section group." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup/sectionGroupsUrl">
+        <Annotation Term="Core.Description" String="The URL for the sectionGroups navigation property, which returns all the section groups in the section group." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup/name">
+        <Annotation Term="Core.Description" String="The name of the section group." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup/createdBy">
+        <Annotation Term="Core.Description" String="The user who created the section group." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup/lastModifiedBy">
+        <Annotation Term="Core.Description" String="The user who last modified the section group." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup/lastModifiedTime">
+        <Annotation Term="Core.Description" String="The date and time when the section group was last modified." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup/id">
+        <Annotation Term="Core.Description" String="The unique identifier of the section group." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup/self">
+        <Annotation Term="Core.Description" String="The endpoint where you can get details about the section group." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup/createdTime">
+        <Annotation Term="Core.Description" String="The date and time when the section group was created." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup/parentNotebook">
+        <Annotation Term="Core.Description" String="The notebook that contains the section group, expanded by default with the id, name, and self properties selected." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup/parentSectionGroup">
+        <Annotation Term="Core.Description" String="The section group that contains the section group, expanded by default with the id, name, and self properties selected." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup/sections">
+        <Annotation Term="Core.Description" String="The sections in the section group. Can be navigated to using the sectionsUrl property or expanded in a GET request." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SectionGroup/sectionGroups">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.ServicePlanInfo">
@@ -2423,6 +2660,33 @@
       <Annotations Target="Microsoft.Graph.sharingLink/webUrl">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.Site">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Site/id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Site/notes">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SiteCollection">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SiteCollection/id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SiteCollection/sites">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SiteMetadata">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SiteMetadata/siteCollectionId">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.SiteMetadata/siteId">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.specialFolder">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
@@ -2465,6 +2729,9 @@
       <Annotations Target="Microsoft.Graph.Task/planId">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.Task/bucketId">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.Task/title">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
@@ -2495,10 +2762,16 @@
       <Annotations Target="Microsoft.Graph.Task/hasNotes">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.Task/previewType">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.Task/completedDate">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Task/numberOfReferences">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Task/appliedCategories">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.Task/id">
@@ -2510,10 +2783,40 @@
       <Annotations Target="Microsoft.Graph.Task/details">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.Task/timelineFormat">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Task/assignedToTaskBoardFormat">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Task/statusTaskBoardFormat">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.Task/bucketTaskBoardFormat">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TaskBoardTaskFormat">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TaskBoardTaskFormat/type">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TaskBoardTaskFormat/orderHint">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TaskBoardTaskFormat/id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TaskBoardTaskFormat/version">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.TaskDetails">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.TaskDetails/notes">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TaskDetails/previewType">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.TaskDetails/completedBy">
@@ -2629,6 +2932,39 @@
       </Annotations>
       <Annotations Target="Microsoft.Graph.thumbnailSet/source">
         <Annotation Term="Core.Description" String="A custom thumbnail image or the original image used to generate other thumbnails." />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TimelineTaskFormat">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TimelineTaskFormat/color">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TimelineTaskFormat/drawingStyle">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TimelineTaskFormat/labelOffsetX">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TimelineTaskFormat/labelOffsetY">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TimelineTaskFormat/anchorPosition">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TimelineTaskFormat/swimlane">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TimelineTaskFormat/calloutHeight">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TimelineTaskFormat/visible">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TimelineTaskFormat/id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.TimelineTaskFormat/version">
+        <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.uploadSession">
         <Annotation Term="Core.Description" String="" />
@@ -2753,6 +3089,9 @@
       <Annotations Target="Microsoft.Graph.User/MailboxGuid">
         <Annotation Term="Core.Description" String="The GUID assigned to the user's mailbox." />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.User/EmailAddress">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.User/aboutMe">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
@@ -2828,8 +3167,8 @@
       <Annotations Target="Microsoft.Graph.User/ownedObjects">
         <Annotation Term="Core.Description" String="Directory objects that are owned by the user. Requires version 2013-11-08 or newer." />
       </Annotations>
-      <Annotations Target="Microsoft.Graph.User/Folders">
-        <Annotation Term="Core.Description" String="The folders in a mailbox or folder. Navigation property." />
+      <Annotations Target="Microsoft.Graph.User/MailFolders">
+        <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.User/Messages">
         <Annotation Term="Core.Description" String="The messages in a mailbox or folder. Navigation property." />
@@ -2870,10 +3209,31 @@
       <Annotations Target="Microsoft.Graph.User/drive">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
+      <Annotations Target="Microsoft.Graph.User/details">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
       <Annotations Target="Microsoft.Graph.User/tasks">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.User/plans">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.User/notes">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.UserDataCollection">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.UserDetails">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.UserDetails/userData">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.UserDetails/id">
+        <Annotation Term="Core.Description" String="" />
+      </Annotations>
+      <Annotations Target="Microsoft.Graph.UserDetails/version">
         <Annotation Term="Core.Description" String="" />
       </Annotations>
       <Annotations Target="Microsoft.Graph.UserIdCollection">

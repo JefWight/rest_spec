@@ -1,4 +1,4 @@
-# Get SectionGroup
+# Get sectionGroup
 
 Retrieve the properties and relationships of sectiongroup object.
 ### Prerequisites
@@ -7,14 +7,14 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/notes/sectionGroups/<id>
+GET /groups/<objectId>/notes/sectionGroups/<id>
 GET /drive/root/createdByUser/notes/sectionGroups/<id>
-GET /drive/root/lastModifiedByUser/notes/sectionGroups/<id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [SectionGroup](../resources/sectiongroup.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [sectionGroup](../resources/sectiongroup.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -25,7 +25,7 @@ GET /drive/root/lastModifiedByUser/notes/sectionGroups/<id>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [SectionGroup](../resources/sectiongroup.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [sectionGroup](../resources/sectiongroup.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_sectiongroup"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/notes/sectionGroups/<id>
+GET https://graph.microsoft.com/beta/users/<objectId>/notes/sectionGroups/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -65,7 +65,7 @@ Content-length: 309
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get SectionGroup",
+  "description": "Get sectionGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

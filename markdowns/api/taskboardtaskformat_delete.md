@@ -1,13 +1,13 @@
-# Delete TaskBoardTaskFormat
+# Delete taskBoardTaskFormat
 
-Delete TaskBoardTaskFormat.
+Delete taskBoardTaskFormat.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /tasks/<id>/bucketTaskBoardFormat
-DELETE /tasks/<id>/statusTaskBoardFormat
+DELETE /tasks/<id>/progressTaskBoardFormat
 DELETE /tasks/<id>/assignedToTaskBoardFormat
 
 ```
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_taskboardtaskformat"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/tasks/<id>/bucketTaskBoardFormat
+DELETE https://graph.microsoft.com/beta/tasks/<id>/bucketTaskBoardFormat
 ```
 ##### Response
 Here is an example of the response.
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete TaskBoardTaskFormat",
+  "description": "Delete taskBoardTaskFormat",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# List Messages
+# List messages
 
 Retrieve a list of message objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/Messages
-GET /drive/root/createdByUser/Messages
-GET /drive/root/lastModifiedByUser/Messages
+GET /users/<objectId>/messages
+GET /drive/root/createdByUser/messages
+GET /drive/root/lastModifiedByUser/messages
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_messages"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/Messages
+GET https://graph.microsoft.com/beta/users/<objectId>/messages
 ```
 ##### Response
 Here is an example of the response.
@@ -52,83 +52,84 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1863
+Content-length: 1929
 
 {
   "value": [
     {
-      "Subject": "Subject-value",
-      "Body": {
-        "ContentType": "ContentType-value",
-        "Content": "Content-value"
+      "receivedDateTime": "datetime-value",
+      "sentDateTime": "datetime-value",
+      "hasAttachments": true,
+      "subject": "subject-value",
+      "body": {
+        "contentType": "contentType-value",
+        "content": "content-value"
       },
-      "BodyPreview": "BodyPreview-value",
-      "Importance": "Importance-value",
-      "HasAttachments": true,
-      "ParentFolderId": "ParentFolderId-value",
-      "From": {
-        "EmailAddress": {
-          "Name": "Name-value",
-          "Address": "Address-value"
+      "bodyPreview": "bodyPreview-value",
+      "importance": "importance-value",
+      "parentFolderId": "parentFolderId-value",
+      "sender": {
+        "emailAddress": {
+          "name": "name-value",
+          "address": "address-value"
         }
       },
-      "Sender": {
-        "EmailAddress": {
-          "Name": "Name-value",
-          "Address": "Address-value"
+      "from": {
+        "emailAddress": {
+          "name": "name-value",
+          "address": "address-value"
         }
       },
-      "ToRecipients": [
+      "toRecipients": [
         {
-          "EmailAddress": {
-            "Name": "Name-value",
-            "Address": "Address-value"
+          "emailAddress": {
+            "name": "name-value",
+            "address": "address-value"
           }
         }
       ],
-      "CcRecipients": [
+      "ccRecipients": [
         {
-          "EmailAddress": {
-            "Name": "Name-value",
-            "Address": "Address-value"
+          "emailAddress": {
+            "name": "name-value",
+            "address": "address-value"
           }
         }
       ],
-      "BccRecipients": [
+      "bccRecipients": [
         {
-          "EmailAddress": {
-            "Name": "Name-value",
-            "Address": "Address-value"
+          "emailAddress": {
+            "name": "name-value",
+            "address": "address-value"
           }
         }
       ],
-      "ReplyTo": [
+      "replyTo": [
         {
-          "EmailAddress": {
-            "Name": "Name-value",
-            "Address": "Address-value"
+          "emailAddress": {
+            "name": "name-value",
+            "address": "address-value"
           }
         }
       ],
-      "ConversationId": "ConversationId-value",
-      "UniqueBody": {
-        "ContentType": "ContentType-value",
-        "Content": "Content-value"
+      "conversationId": "conversationId-value",
+      "uniqueBody": {
+        "contentType": "contentType-value",
+        "content": "content-value"
       },
-      "ReceivedDateTime": "datetime-value",
-      "SentDateTime": "datetime-value",
-      "IsDeliveryReceiptRequested": true,
-      "IsReadReceiptRequested": true,
-      "IsDraft": true,
-      "IsRead": true,
-      "WebLink": "WebLink-value",
-      "ChangeKey": "ChangeKey-value",
-      "Categories": [
-        "Categories-value"
+      "isDeliveryReceiptRequested": true,
+      "isReadReceiptRequested": true,
+      "isRead": true,
+      "isDraft": true,
+      "webLink": "webLink-value",
+      "inferenceClassification": "inferenceClassification-value",
+      "createdDateTime": "datetime-value",
+      "lastModifiedDateTime": "datetime-value",
+      "changeKey": "changeKey-value",
+      "categories": [
+        "categories-value"
       ],
-      "CreatedDateTime": "datetime-value",
-      "LastModifiedDateTime": "datetime-value",
-      "Id": "Id-value"
+      "id": "id-value"
     }
   ]
 }
@@ -138,7 +139,7 @@ Content-length: 1863
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List Messages",
+  "description": "List messages",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

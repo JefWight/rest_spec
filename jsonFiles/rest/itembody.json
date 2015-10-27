@@ -1,5 +1,5 @@
 {
-  "name": "ItemBody",
+  "name": "itemBody",
   "description": "The body content of a message or event.",
   "collectionOf": null,
   "isComplexType": true,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
-      "name": "ContentType",
-      "description": "The content type: Text = 0, HTML = 1.",
+      "name": "contentType",
+      "description": "The content type: Text = 0, HTML = 1. The content type: Text = 0, HTML = 1.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -41,8 +40,8 @@
       "isUnicode": null
     },
     {
-      "name": "Content",
-      "description": "The text or HTML content.",
+      "name": "content",
+      "description": "The text or HTML content. The text or HTML content.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -55,7 +54,5 @@
       "isUnicode": false
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

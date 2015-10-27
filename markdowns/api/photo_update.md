@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/UserPhoto
-PATCH /groups/<objectId>/GroupPhoto
-PATCH /drive/root/createdByUser/UserPhoto
+PATCH /users/<objectId>/photo
+PATCH /groups/<objectId>/photo
+PATCH /drive/root/createdByUser/photo
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -20,11 +20,11 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Height|Int32||
-|Width|Int32||
+|height|Int32||
+|width|Int32||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [Photo](../resources/photo.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [photo](../resources/photo.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -33,14 +33,14 @@ Here is an example of the request.
   "name": "update_photo"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/<objectId>/UserPhoto
+PUT https://graph.microsoft.com/beta/users/<objectId>/photo
 Content-type: application/json
 Content-length: 53
 
 {
-  "Width": 99,
-  "Height": 99,
-  "Id": "Id-value"
+  "height": 99,
+  "width": 99,
+  "id": "id-value"
 }
 ```
 ##### Response
@@ -56,9 +56,9 @@ Content-type: application/json
 Content-length: 53
 
 {
-  "Width": 99,
-  "Height": 99,
-  "Id": "Id-value"
+  "height": 99,
+  "width": 99,
+  "id": "id-value"
 }
 ```
 

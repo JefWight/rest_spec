@@ -29,7 +29,7 @@ In the request body, supply the values for relevant fields that should be update
 |startTime|DateTimeOffset||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -38,7 +38,7 @@ Here is an example of the request.
   "name": "update_oauth2permissiongrant"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/oauth2PermissionGrants/<objectId>
+PUT https://graph.microsoft.com/beta/oauth2PermissionGrants/<objectId>
 Content-type: application/json
 Content-length: 271
 

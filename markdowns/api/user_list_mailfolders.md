@@ -1,4 +1,4 @@
-# List MailFolders
+# List mailFolders
 
 Retrieve a list of mailfolder objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/MailFolders
-GET /drive/root/createdByUser/MailFolders
-GET /drive/root/lastModifiedByUser/MailFolders
+GET /users/<objectId>/mailFolders
+GET /drive/root/createdByUser/mailFolders
+GET /drive/root/lastModifiedByUser/mailFolders
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_mailfolders"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/MailFolders
+GET https://graph.microsoft.com/beta/users/<objectId>/mailFolders
 ```
 ##### Response
 Here is an example of the response.
@@ -52,15 +52,17 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 175
+Content-length: 232
 
 {
   "value": [
     {
-      "ParentFolderId": "ParentFolderId-value",
-      "DisplayName": "DisplayName-value",
-      "ChildFolderCount": 99,
-      "Id": "Id-value"
+      "displayName": "displayName-value",
+      "parentFolderId": "parentFolderId-value",
+      "childFolderCount": 99,
+      "unreadItemCount": 99,
+      "totalItemCount": 99,
+      "id": "id-value"
     }
   ]
 }
@@ -70,7 +72,7 @@ Content-length: 175
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List MailFolders",
+  "description": "List mailFolders",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

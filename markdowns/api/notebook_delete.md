@@ -1,14 +1,14 @@
-# Delete Notebook
+# Delete notebook
 
-Delete Notebook.
+Delete notebook.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/<objectId>/notes/notebooks/<id>
+DELETE /groups/<objectId>/notes/notebooks/<id>
 DELETE /drive/root/createdByUser/notes/notebooks/<id>
-DELETE /users/<objectId>/notes/pages/<id>/parentNotebook
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_notebook"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/<objectId>/notes/notebooks/<id>
+DELETE https://graph.microsoft.com/beta/users/<objectId>/notes/notebooks/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete Notebook",
+  "description": "Delete notebook",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,4 +1,4 @@
-# ExtensionProperty: checkMemberGroups
+# extensionProperty: checkMemberGroups
 
 
 ### Prerequisites
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "extensionproperty_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/applications/<objectId>/extensionProperties/<objectId>/checkMemberGroups
+POST https://graph.microsoft.com/beta/applications/<objectId>/extensionProperties/<objectId>/checkMemberGroups
 Content-type: application/json
 Content-length: 44
 
@@ -68,7 +68,7 @@ Content-length: 39
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ExtensionProperty: checkMemberGroups",
+  "description": "extensionProperty: checkMemberGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

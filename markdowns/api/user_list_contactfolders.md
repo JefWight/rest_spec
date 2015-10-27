@@ -1,4 +1,4 @@
-# List ContactFolders
+# List contactFolders
 
 Retrieve a list of contactfolder objects.
 ### Prerequisites
@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/ContactFolders
-GET /drive/root/createdByUser/ContactFolders
-GET /drive/root/lastModifiedByUser/ContactFolders
+GET /users/<objectId>/contactFolders
+GET /drive/root/createdByUser/contactFolders
+GET /drive/root/lastModifiedByUser/contactFolders
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_contactfolders"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/ContactFolders
+GET https://graph.microsoft.com/beta/users/<objectId>/contactFolders
 ```
 ##### Response
 Here is an example of the response.
@@ -57,9 +57,9 @@ Content-length: 145
 {
   "value": [
     {
-      "ParentFolderId": "ParentFolderId-value",
-      "DisplayName": "DisplayName-value",
-      "Id": "Id-value"
+      "parentFolderId": "parentFolderId-value",
+      "displayName": "displayName-value",
+      "id": "id-value"
     }
   ]
 }
@@ -69,7 +69,7 @@ Content-length: 145
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List ContactFolders",
+  "description": "List contactFolders",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

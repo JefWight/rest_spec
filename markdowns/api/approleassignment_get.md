@@ -1,4 +1,4 @@
-# Get AppRoleAssignment
+# Get appRoleAssignment
 
 Retrieve the properties and relationships of approleassignment object.
 ### Prerequisites
@@ -20,7 +20,7 @@ GET /groups/<objectId>/appRoleAssignments/<objectId>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [AppRoleAssignment](../resources/approleassignment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [appRoleAssignment](../resources/approleassignment.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "get_approleassignment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/appRoleAssignments/<objectId>
+GET https://graph.microsoft.com/beta/users/<objectId>/appRoleAssignments/<objectId>
 ```
 ##### Response
 Here is an example of the response.
@@ -61,7 +61,7 @@ Content-length: 398
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get AppRoleAssignment",
+  "description": "Get appRoleAssignment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

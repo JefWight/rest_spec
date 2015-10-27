@@ -1,4 +1,4 @@
-# Recipient resource type
+# recipient resource type
 
 A sender or receiver for a message.
 
@@ -16,7 +16,7 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "EmailAddress": {
+  "emailAddress": {
     "@odata.type": "microsoft.graph.emailaddress"
   }
 }
@@ -25,13 +25,13 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|EmailAddress|[EmailAddress](emailaddress.md)|The recipient's email address.|
+|emailAddress|[EmailAddress](emailaddress.md)|The recipient's email address. The recipient's email address.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Recipient resource",
+  "description": "recipient resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

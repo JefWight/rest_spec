@@ -1,4 +1,4 @@
-# Get DirectoryObject
+# Get directoryObject
 
 Retrieve the properties and relationships of directoryobject object.
 ### Prerequisites
@@ -20,7 +20,7 @@ GET /contacts/<objectId>/manager
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [DirectoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "get_directoryobject"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/manager
+GET https://graph.microsoft.com/beta/users/<objectId>/manager
 ```
 ##### Response
 Here is an example of the response.
@@ -54,7 +54,7 @@ Content-length: 111
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get DirectoryObject",
+  "description": "Get directoryObject",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

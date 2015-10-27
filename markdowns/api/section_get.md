@@ -1,4 +1,4 @@
-# Get Section
+# Get section
 
 Retrieve the properties and relationships of section object.
 ### Prerequisites
@@ -7,14 +7,14 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/<objectId>/notes/sections/<id>
+GET /groups/<objectId>/notes/sections/<id>
 GET /drive/root/createdByUser/notes/sections/<id>
-GET /users/<objectId>/notes/pages/<id>/parentSection
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Section](../resources/section.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [section](../resources/section.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -25,7 +25,7 @@ GET /users/<objectId>/notes/pages/<id>/parentSection
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [Section](../resources/section.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [section](../resources/section.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_section"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/notes/sections/<id>
+GET https://graph.microsoft.com/beta/users/<objectId>/notes/sections/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -65,7 +65,7 @@ Content-length: 276
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Section",
+  "description": "Get section",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

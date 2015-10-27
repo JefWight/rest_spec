@@ -1,4 +1,4 @@
-# Get DirectoryRoleTemplate
+# Get directoryRoleTemplate
 
 Retrieve the properties and relationships of directoryroletemplate object.
 ### Prerequisites
@@ -18,7 +18,7 @@ GET /directoryRoleTemplates/<objectId>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [DirectoryRoleTemplate](../resources/directoryroletemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [directoryRoleTemplate](../resources/directoryroletemplate.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -27,7 +27,7 @@ Here is an example of the request.
   "name": "get_directoryroletemplate"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/<objectId>
+GET https://graph.microsoft.com/beta/directoryRoleTemplates/<objectId>
 ```
 ##### Response
 Here is an example of the response.
@@ -54,7 +54,7 @@ Content-length: 187
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get DirectoryRoleTemplate",
+  "description": "Get directoryRoleTemplate",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

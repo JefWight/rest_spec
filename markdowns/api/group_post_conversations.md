@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<objectId>/Conversations
-POST /users/<objectId>/JoinedGroups/<objectId>/Conversations
-POST /drive/root/createdByUser/JoinedGroups/<objectId>/Conversations
+POST /groups/<objectId>/conversations
+POST /users/<objectId>/joinedGroups/<objectId>/conversations
+POST /drive/root/createdByUser/joinedGroups/<objectId>/conversations
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_conversation_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<objectId>
+POST https://graph.microsoft.com/beta/groups/<objectId>
 ```
 In the request body, supply a JSON representation of [Conversation](../resources/conversation.md) object.
 ##### Response
@@ -47,14 +47,14 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "Topic": "Topic-value",
-  "HasAttachments": true,
-  "LastDeliveredDateTime": "datetime-value",
-  "UniqueSenders": [
-    "UniqueSenders-value"
+  "topic": "topic-value",
+  "hasAttachments": true,
+  "lastDeliveredDateTime": "datetime-value",
+  "uniqueSenders": [
+    "uniqueSenders-value"
   ],
-  "Preview": "Preview-value",
-  "Id": "Id-value"
+  "preview": "preview-value",
+  "id": "id-value"
 }
 ```
 

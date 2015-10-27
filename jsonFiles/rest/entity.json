@@ -1,5 +1,5 @@
 {
-  "name": "Entity",
+  "name": "entity",
   "description": "",
   "collectionOf": null,
   "isComplexType": false,
@@ -27,7 +27,7 @@
   },
   "properties": [
     {
-      "name": "Id",
+      "name": "id",
       "description": "",
       "isKey": true,
       "dataType": "String",

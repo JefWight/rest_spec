@@ -8,7 +8,7 @@ module SpecMaker
 	EXAMPLES_FOLDER = JSON_SOURCE_FOLDER + "examples/"
 	JSON_EXAMPLE_FOLDER = "../jsonFiles/examples/"	
 	ANNOTATIONS = JSON_BASE_FOLDER + 'settings/annotations.json'
-	SERVER = 'https://graph.microsoft.com/v1.0'
+	SERVER = 'https://graph.microsoft.com/beta'
 	HEADER1 = '# '
 	HEADER2 = '## '
 	HEADER3 = '### '

@@ -7,8 +7,8 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/<objectId>/members
-GET /users/<objectId>/JoinedGroups/<objectId>/members
-GET /drive/root/createdByUser/JoinedGroups/<objectId>/members
+GET /users/<objectId>/joinedGroups/<objectId>/members
+GET /drive/root/createdByUser/joinedGroups/<objectId>/members
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "get_members"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/<objectId>/members
+GET https://graph.microsoft.com/beta/groups/<objectId>/members
 ```
 ##### Response
 Here is an example of the response.

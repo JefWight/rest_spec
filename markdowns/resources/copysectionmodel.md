@@ -1,4 +1,4 @@
-# CopySectionModel resource type
+# copySectionModel resource type
 
 
 
@@ -45,7 +45,7 @@ Here is a JSON representation of the resource
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "CopySectionModel resource",
+  "description": "copySectionModel resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

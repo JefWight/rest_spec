@@ -1,4 +1,4 @@
-# Get DirectoryLinkChange
+# Get directoryLinkChange
 
 Retrieve the properties and relationships of directorylinkchange object.
 ### Prerequisites
@@ -18,7 +18,7 @@ The following **scopes** are required to execute this API:
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [DirectoryLinkChange](../resources/directorylinkchange.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [directoryLinkChange](../resources/directorylinkchange.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -59,7 +59,7 @@ Content-length: 433
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get DirectoryLinkChange",
+  "description": "Get directoryLinkChange",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

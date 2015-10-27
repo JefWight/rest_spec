@@ -1,4 +1,4 @@
-# Get OAuth2PermissionGrant
+# Get oAuth2PermissionGrant
 
 Retrieve the properties and relationships of oauth2permissiongrant object.
 ### Prerequisites
@@ -20,7 +20,7 @@ GET /drive/root/createdByUser/oauth2PermissionGrants/<objectId>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [OAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "get_oauth2permissiongrant"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/<objectId>
+GET https://graph.microsoft.com/beta/oauth2PermissionGrants/<objectId>
 ```
 ##### Response
 Here is an example of the response.
@@ -59,7 +59,7 @@ Content-length: 271
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get OAuth2PermissionGrant",
+  "description": "Get oAuth2PermissionGrant",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

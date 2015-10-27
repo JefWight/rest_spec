@@ -1,4 +1,4 @@
-# Get ContactFolder
+# Get contactFolder
 
 Retrieve the properties and relationships of contactfolder object.
 ### Prerequisites
@@ -6,15 +6,15 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/ContactFolders/<Id>
-GET /drive/root/createdByUser/ContactFolders/<Id>
-GET /drive/root/lastModifiedByUser/ContactFolders/<Id>
+GET /users/<objectId>/contactFolders/<id>
+GET /drive/root/createdByUser/contactFolders/<id>
+GET /drive/root/lastModifiedByUser/contactFolders/<id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [ContactFolder](../resources/contactfolder.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [contactFolder](../resources/contactfolder.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -25,7 +25,7 @@ GET /drive/root/lastModifiedByUser/ContactFolders/<Id>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [contactFolder](../resources/contactfolder.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_contactfolder"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/ContactFolders/<Id>
+GET https://graph.microsoft.com/beta/users/<objectId>/contactFolders/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -49,9 +49,9 @@ Content-type: application/json
 Content-length: 104
 
 {
-  "ParentFolderId": "ParentFolderId-value",
-  "DisplayName": "DisplayName-value",
-  "Id": "Id-value"
+  "parentFolderId": "parentFolderId-value",
+  "displayName": "displayName-value",
+  "id": "id-value"
 }
 ```
 
@@ -59,7 +59,7 @@ Content-length: 104
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get ContactFolder",
+  "description": "Get contactFolder",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

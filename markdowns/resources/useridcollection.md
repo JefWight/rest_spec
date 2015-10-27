@@ -1,4 +1,4 @@
-# UserIdCollection resource type
+# userIdCollection resource type
 
 
 
@@ -26,7 +26,7 @@ None
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "UserIdCollection resource",
+  "description": "userIdCollection resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

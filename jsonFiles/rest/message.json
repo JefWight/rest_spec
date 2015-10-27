@@ -1,5 +1,5 @@
 {
-  "name": "Message",
+  "name": "message",
   "description": "A message in a mailbox folder.",
   "collectionOf": null,
   "isComplexType": false,
@@ -24,64 +24,106 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/groups/<objectId>/drive/items/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/items/<id>/createdByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/createdByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/createdByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/root/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/root/createdByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/root/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/root/lastModifiedByUser/Messages/<Id>": true,
-    "/users/<objectId>/MailFolders/<Id>/Messages/<Id>": true,
-    "/users/<objectId>/Messages/<Id>": true,
-    "/drives/<id>/items/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/items/<id>/createdByUser/Messages/<Id>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/Messages/<Id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drives/<id>/special/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/special/<id>/createdByUser/Messages/<Id>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drives/<id>/root/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/root/createdByUser/Messages/<Id>": true,
-    "/drives/<id>/root/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/root/lastModifiedByUser/Messages/<Id>": true,
-    "/shares/<id>/items/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/shares/<id>/items/<id>/createdByUser/Messages/<Id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drive/items/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/items/<id>/createdByUser/Messages/<Id>": true,
-    "/drive/items/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/items/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drive/shared/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/shared/<id>/createdByUser/Messages/<Id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drive/special/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/special/<id>/createdByUser/Messages/<Id>": true,
-    "/drive/special/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/special/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drive/root/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/root/createdByUser/Messages/<Id>": true,
-    "/drive/root/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/root/lastModifiedByUser/Messages/<Id>": true
+    "/groups/<objectId>/drive/items/<id>/createdByUser/messages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/createdByUser/mailFolders/<id>/messages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/messages/<id>": true,
+    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/mailFolders/<id>/messages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/messages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/createdByUser/mailFolders/<id>/messages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/messages/<id>": true,
+    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/mailFolders/<id>/messages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/messages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/createdByUser/mailFolders/<id>/messages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/messages/<id>": true,
+    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/mailFolders/<id>/messages/<id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/messages/<id>": true,
+    "/groups/<objectId>/drive/root/createdByUser/mailFolders/<id>/messages/<id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/messages/<id>": true,
+    "/groups/<objectId>/drive/root/lastModifiedByUser/mailFolders/<id>/messages/<id>": true,
+    "/users/<objectId>/messages/<id>": true,
+    "/users/<objectId>/mailFolders/<id>/messages/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/messages/<id>": true,
+    "/drives/<id>/items/<id>/createdByUser/mailFolders/<id>/messages/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/messages/<id>": true,
+    "/drives/<id>/items/<id>/lastModifiedByUser/mailFolders/<id>/messages/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/messages/<id>": true,
+    "/drives/<id>/shared/<id>/createdByUser/mailFolders/<id>/messages/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/messages/<id>": true,
+    "/drives/<id>/shared/<id>/lastModifiedByUser/mailFolders/<id>/messages/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/messages/<id>": true,
+    "/drives/<id>/special/<id>/createdByUser/mailFolders/<id>/messages/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/messages/<id>": true,
+    "/drives/<id>/special/<id>/lastModifiedByUser/mailFolders/<id>/messages/<id>": true,
+    "/drives/<id>/root/createdByUser/messages/<id>": true,
+    "/drives/<id>/root/createdByUser/mailFolders/<id>/messages/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/messages/<id>": true,
+    "/drives/<id>/root/lastModifiedByUser/mailFolders/<id>/messages/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/messages/<id>": true,
+    "/shares/<id>/items/<id>/createdByUser/mailFolders/<id>/messages/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/messages/<id>": true,
+    "/shares/<id>/items/<id>/lastModifiedByUser/mailFolders/<id>/messages/<id>": true,
+    "/drive/items/<id>/createdByUser/messages/<id>": true,
+    "/drive/items/<id>/createdByUser/mailFolders/<id>/messages/<id>": true,
+    "/drive/items/<id>/lastModifiedByUser/messages/<id>": true,
+    "/drive/items/<id>/lastModifiedByUser/mailFolders/<id>/messages/<id>": true,
+    "/drive/shared/<id>/createdByUser/messages/<id>": true,
+    "/drive/shared/<id>/createdByUser/mailFolders/<id>/messages/<id>": true,
+    "/drive/shared/<id>/lastModifiedByUser/messages/<id>": true,
+    "/drive/shared/<id>/lastModifiedByUser/mailFolders/<id>/messages/<id>": true,
+    "/drive/special/<id>/createdByUser/messages/<id>": true,
+    "/drive/special/<id>/createdByUser/mailFolders/<id>/messages/<id>": true,
+    "/drive/special/<id>/lastModifiedByUser/messages/<id>": true,
+    "/drive/special/<id>/lastModifiedByUser/mailFolders/<id>/messages/<id>": true,
+    "/drive/root/createdByUser/messages/<id>": true,
+    "/drive/root/createdByUser/mailFolders/<id>/messages/<id>": true,
+    "/drive/root/lastModifiedByUser/messages/<id>": true,
+    "/drive/root/lastModifiedByUser/mailFolders/<id>/messages/<id>": true
   },
   "properties": [
     {
-      "name": "Subject",
+      "name": "receivedDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "sentDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "hasAttachments",
+      "description": "",
+      "isKey": false,
+      "dataType": "Boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "subject",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -95,7 +137,7 @@
       "isUnicode": false
     },
     {
-      "name": "Body",
+      "name": "body",
       "description": "",
       "isKey": false,
       "dataType": "ItemBody",
@@ -109,7 +151,7 @@
       "isUnicode": null
     },
     {
-      "name": "BodyPreview",
+      "name": "bodyPreview",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -123,7 +165,7 @@
       "isUnicode": false
     },
     {
-      "name": "Importance",
+      "name": "importance",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -137,21 +179,7 @@
       "isUnicode": null
     },
     {
-      "name": "HasAttachments",
-      "description": "",
-      "isKey": false,
-      "dataType": "Boolean",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "ParentFolderId",
+      "name": "parentFolderId",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -165,7 +193,7 @@
       "isUnicode": false
     },
     {
-      "name": "From",
+      "name": "sender",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -179,7 +207,7 @@
       "isUnicode": null
     },
     {
-      "name": "Sender",
+      "name": "from",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -193,7 +221,7 @@
       "isUnicode": null
     },
     {
-      "name": "ToRecipients",
+      "name": "toRecipients",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -207,7 +235,7 @@
       "isUnicode": null
     },
     {
-      "name": "CcRecipients",
+      "name": "ccRecipients",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -221,7 +249,7 @@
       "isUnicode": null
     },
     {
-      "name": "BccRecipients",
+      "name": "bccRecipients",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -235,7 +263,7 @@
       "isUnicode": null
     },
     {
-      "name": "ReplyTo",
+      "name": "replyTo",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -249,7 +277,7 @@
       "isUnicode": null
     },
     {
-      "name": "ConversationId",
+      "name": "conversationId",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -263,7 +291,7 @@
       "isUnicode": false
     },
     {
-      "name": "UniqueBody",
+      "name": "uniqueBody",
       "description": "",
       "isKey": false,
       "dataType": "ItemBody",
@@ -277,35 +305,7 @@
       "isUnicode": null
     },
     {
-      "name": "ReceivedDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "DateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "SentDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "DateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "IsDeliveryReceiptRequested",
+      "name": "isDeliveryReceiptRequested",
       "description": "",
       "isKey": false,
       "dataType": "Boolean",
@@ -319,7 +319,7 @@
       "isUnicode": null
     },
     {
-      "name": "IsReadReceiptRequested",
+      "name": "isReadReceiptRequested",
       "description": "",
       "isKey": false,
       "dataType": "Boolean",
@@ -333,7 +333,7 @@
       "isUnicode": null
     },
     {
-      "name": "IsDraft",
+      "name": "isRead",
       "description": "",
       "isKey": false,
       "dataType": "Boolean",
@@ -347,7 +347,7 @@
       "isUnicode": null
     },
     {
-      "name": "IsRead",
+      "name": "isDraft",
       "description": "",
       "isKey": false,
       "dataType": "Boolean",
@@ -361,7 +361,7 @@
       "isUnicode": null
     },
     {
-      "name": "WebLink",
+      "name": "webLink",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -375,7 +375,49 @@
       "isUnicode": false
     },
     {
-      "name": "ChangeKey",
+      "name": "inferenceClassification",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": "InferenceClassificationType",
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "createdDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "lastModifiedDateTime",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "changeKey",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -389,7 +431,7 @@
       "isUnicode": false
     },
     {
-      "name": "Categories",
+      "name": "categories",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -403,35 +445,7 @@
       "isUnicode": false
     },
     {
-      "name": "CreatedDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "DateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "LastModifiedDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "DateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "Id",
+      "name": "id",
       "description": "",
       "isKey": true,
       "dataType": "String",
@@ -445,21 +459,7 @@
       "isUnicode": false
     },
     {
-      "name": "Attachments",
-      "description": "",
-      "isKey": false,
-      "dataType": "Attachment",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "Extensions",
+      "name": "extensions",
       "description": "",
       "isKey": false,
       "dataType": "Extension",
@@ -471,243 +471,21 @@
       "allowPostToCollection": true,
       "isNullable": true,
       "isUnicode": null
+    },
+    {
+      "name": "attachments",
+      "description": "",
+      "isKey": false,
+      "dataType": "Attachment",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
     }
   ],
-  "methods": [
-    {
-      "name": "Copy",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Message",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "DestinationId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "Move",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Message",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "DestinationId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "CreateReply",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Message",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "CreateReplyAll",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Message",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "CreateForward",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Message",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "Reply",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "ReplyAll",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "Forward",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "ToRecipients",
-          "description": "",
-          "dataType": "Recipient",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "Send",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    }
-  ]
+  "methods": []
 }

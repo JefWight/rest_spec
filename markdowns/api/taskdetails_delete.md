@@ -1,6 +1,6 @@
-# Delete TaskDetails
+# Delete taskDetails
 
-Delete TaskDetails.
+Delete taskDetails.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
@@ -8,7 +8,7 @@ The following **scopes** are required to execute this API:
 ```http
 DELETE /tasks/<id>/details
 DELETE /users/<objectId>/tasks/<id>/details
-DELETE /groups/<objectId>/tasks/<id>/details
+DELETE /users/<objectId>/plans/<id>/tasks/<id>/details
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "delete_taskdetails"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/tasks/<id>/details
+DELETE https://graph.microsoft.com/beta/tasks/<id>/details
 ```
 ##### Response
 Here is an example of the response.
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete TaskDetails",
+  "description": "Delete taskDetails",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,7 +1,7 @@
 {
   "name": "tasks",
   "description": "",
-  "collectionOf": "Task",
+  "collectionOf": "task",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,

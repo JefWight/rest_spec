@@ -1,4 +1,4 @@
-# ExtensionProperty: getMemberObjects
+# extensionProperty: getMemberObjects
 
 
 ### Prerequisites
@@ -33,7 +33,7 @@ Here is an example of the request.
   "name": "extensionproperty_getmemberobjects"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/applications/<objectId>/extensionProperties/<objectId>/getMemberObjects
+POST https://graph.microsoft.com/beta/applications/<objectId>/extensionProperties/<objectId>/getMemberObjects
 Content-type: application/json
 Content-length: 33
 
@@ -66,7 +66,7 @@ Content-length: 39
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ExtensionProperty: getMemberObjects",
+  "description": "extensionProperty: getMemberObjects",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

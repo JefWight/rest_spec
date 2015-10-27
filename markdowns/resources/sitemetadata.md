@@ -1,4 +1,4 @@
-# SiteMetadata resource type
+# siteMetadata resource type
 
 
 
@@ -31,7 +31,7 @@ Here is a JSON representation of the resource
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "SiteMetadata resource",
+  "description": "siteMetadata resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

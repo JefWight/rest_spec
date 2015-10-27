@@ -1,12 +1,12 @@
-# Delete SiteCollection
+# Delete siteCollection
 
-Delete SiteCollection.
+Delete siteCollection.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /myOrganization/siteCollections/<id>
+DELETE /siteCollections/<id>
 
 ```
 ### Request headers
@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "delete_sitecollection"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/myOrganization/siteCollections/<id>
+DELETE https://graph.microsoft.com/beta/siteCollections/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -45,7 +45,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete SiteCollection",
+  "description": "Delete siteCollection",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

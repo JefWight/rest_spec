@@ -7,8 +7,8 @@ The following **scopes** are required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/<objectId>/notes/sections/<id>/pages
+POST /groups/<objectId>/notes/sections/<id>/pages
 POST /drive/root/createdByUser/notes/sections/<id>/pages
-POST /users/<objectId>/notes/pages/<id>/parentSection/pages
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_page_from_section"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/notes/sections/<id>
+POST https://graph.microsoft.com/beta/users/<objectId>/notes/sections/<id>
 ```
 In the request body, supply a JSON representation of [Page](../resources/page.md) object.
 ##### Response

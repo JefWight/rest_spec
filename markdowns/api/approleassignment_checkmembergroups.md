@@ -1,4 +1,4 @@
-# AppRoleAssignment: checkMemberGroups
+# appRoleAssignment: checkMemberGroups
 
 
 ### Prerequisites
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "approleassignment_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/appRoleAssignments/<objectId>/checkMemberGroups
+POST https://graph.microsoft.com/beta/users/<objectId>/appRoleAssignments/<objectId>/checkMemberGroups
 Content-type: application/json
 Content-length: 44
 
@@ -70,7 +70,7 @@ Content-length: 39
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "AppRoleAssignment: checkMemberGroups",
+  "description": "appRoleAssignment: checkMemberGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

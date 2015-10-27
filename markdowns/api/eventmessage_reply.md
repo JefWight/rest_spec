@@ -1,4 +1,4 @@
-# EventMessage: Reply
+# eventMessage: reply
 
 
 ### Prerequisites
@@ -19,7 +19,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Comment|String||
+|comment|String||
 
 ### Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
@@ -38,7 +38,7 @@ Content-type: application/json
 Content-length: 32
 
 {
-  "Comment": "Comment-value"
+  "comment": "comment-value"
 }
 ```
 
@@ -57,7 +57,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "EventMessage: Reply",
+  "description": "eventMessage: reply",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

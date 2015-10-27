@@ -1,5 +1,5 @@
 {
-  "name": "DirectoryRole",
+  "name": "directoryRole",
   "description": "Represents an Azure AD directory role. Azure AD directory roles are also known as *administrator roles*. For more information about directory (administrator) roles, see [Assigning administrator roles in Azure AD](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).\r",
   "collectionOf": null,
   "isComplexType": false,
@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "description",
-      "description": "The description for the directory role.",
+      "description": "The description for the directory role. The description for the directory role.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "displayName",
-      "description": "The display name for the directory role. ",
+      "description": "The display name for the directory role.  The display name for the directory role. ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -57,7 +57,7 @@
     },
     {
       "name": "isSystem",
-      "description": "                **true** if the role is a system role; otherwise, **false**.            ",
+      "description": "                **true** if the role is a system role; otherwise, **false**.                             **true** if the role is a system role; otherwise, **false**.            ",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -71,7 +71,7 @@
     },
     {
       "name": "roleDisabled",
-      "description": "                **true** if the directory role is disabled; otherwise, **false**.            ",
+      "description": "                **true** if the directory role is disabled; otherwise, **false**.                             **true** if the directory role is disabled; otherwise, **false**.            ",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -85,7 +85,7 @@
     },
     {
       "name": "roleTemplateId",
-      "description": "                The **objectId** of the [DirectoryRoleTemplate] that this role is based on.                                        **Notes**: In versions prior to version 1.5, the property is read only. In version 1.5 and later, the property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only.            ",
+      "description": "                The **objectId** of the [DirectoryRoleTemplate] that this role is based on.                                        **Notes**: In versions prior to version 1.5, the property is read only. In version 1.5 and later, the property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only.                             The **objectId** of the [DirectoryRoleTemplate] that this role is based on.                                        **Notes**: In versions prior to version 1.5, the property is read only. In version 1.5 and later, the property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only.            ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -99,7 +99,7 @@
     },
     {
       "name": "objectType",
-      "description": "A string that identifies the object type. For directory roles the value is always “DirectoryRole”. Inherited from [DirectoryObject].                            **Note**: In versions prior to 1.5, the value will be “Role”.            ",
+      "description": "A string that identifies the object type. For directory roles the value is always “DirectoryRole”. Inherited from [DirectoryObject].                            **Note**: In versions prior to 1.5, the value will be “Role”.             A string that identifies the object type. For directory roles the value is always “DirectoryRole”. Inherited from [DirectoryObject].                            **Note**: In versions prior to 1.5, the value will be “Role”.            ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -113,7 +113,7 @@
     },
     {
       "name": "objectId",
-      "description": "The unique identifier for the directory role. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
+      "description": "The unique identifier for the directory role. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.             The unique identifier for the directory role. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -141,7 +141,7 @@
     },
     {
       "name": "members",
-      "description": "Users and service principals that are members of this directory role. Inherited from [DirectoryObject].            HTTP Methods: GET, POST, DELETE",
+      "description": "Users and service principals that are members of this directory role. Inherited from [DirectoryObject].            HTTP Methods: GET, POST, DELETE Users and service principals that are members of this directory role. Inherited from [DirectoryObject].            HTTP Methods: GET, POST, DELETE",
       "isKey": false,
       "dataType": "DirectoryObject",
       "isReadOnly": true,
@@ -207,12 +207,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "groupIds",
@@ -236,12 +232,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",
@@ -265,12 +257,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",

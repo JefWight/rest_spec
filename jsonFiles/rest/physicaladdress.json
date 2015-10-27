@@ -1,5 +1,5 @@
 {
-  "name": "PhysicalAddress",
+  "name": "physicalAddress",
   "description": "The physical address of a contact.",
   "collectionOf": null,
   "isComplexType": true,
@@ -23,12 +23,11 @@
   "createDescription": "",
   "updateDescription": "",
   "deleteDescription": "",
-  "restPath": {
-  },
+  "restPath": {},
   "properties": [
     {
-      "name": "Street",
-      "description": "The street.",
+      "name": "street",
+      "description": "The street. The street.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -41,8 +40,8 @@
       "isUnicode": false
     },
     {
-      "name": "City",
-      "description": "The city.",
+      "name": "city",
+      "description": "The city. The city.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -55,8 +54,8 @@
       "isUnicode": false
     },
     {
-      "name": "State",
-      "description": "The state.",
+      "name": "state",
+      "description": "The state. The state.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -69,8 +68,8 @@
       "isUnicode": false
     },
     {
-      "name": "CountryOrRegion",
-      "description": "The country or region.",
+      "name": "countryOrRegion",
+      "description": "The country or region. The country or region.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -83,8 +82,8 @@
       "isUnicode": false
     },
     {
-      "name": "PostalCode",
-      "description": "The postal code.",
+      "name": "postalCode",
+      "description": "The postal code. The postal code.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -97,7 +96,5 @@
       "isUnicode": false
     }
   ],
-  "methods": [
-
-  ]
+  "methods": []
 }

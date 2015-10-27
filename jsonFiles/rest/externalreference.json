@@ -1,5 +1,5 @@
 {
-  "name": "ExternalReference",
+  "name": "externalReference",
   "description": "",
   "collectionOf": null,
   "isComplexType": true,
@@ -69,7 +69,7 @@
       "isUnicode": false
     },
     {
-      "name": "modifiedBy",
+      "name": "lastModifiedBy",
       "description": "",
       "isKey": false,
       "dataType": "String",
@@ -83,7 +83,7 @@
       "isUnicode": false
     },
     {
-      "name": "modifiedDate",
+      "name": "lastModifiedDateTime",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",

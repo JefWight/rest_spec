@@ -29,7 +29,7 @@ Here is an example of the request.
   "name": "create_item_from_share"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/shares/<id>
+POST https://graph.microsoft.com/beta/shares/<id>
 ```
 In the request body, supply a JSON representation of [item](../resources/item.md) object.
 ##### Response
@@ -42,7 +42,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 3050
+Content-length: 3179
 
 {
   "content": "content-value",
@@ -111,6 +111,11 @@ Content-length: 3050
     "state": "state-value"
   },
   "file": {
+    "hashes": {
+      "crc32Hash": "crc32Hash-value",
+      "sha1Hash": "sha1Hash-value"
+    },
+    "mimeType": "mimeType-value"
   },
   "fileSystemInfo": {
     "createdDateTime": "datetime-value",
@@ -151,9 +156,9 @@ Content-length: 3050
     }
   },
   "photo": {
-    "Width": 99,
-    "Height": 99,
-    "Id": "Id-value"
+    "height": 99,
+    "width": 99,
+    "id": "id-value"
   },
   "searchResult": {
     "onClickTelemetryUrl": "onClickTelemetryUrl-value"

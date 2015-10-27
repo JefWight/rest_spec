@@ -1,5 +1,5 @@
 {
-  "name": "TenantDetail",
+  "name": "tenantDetail",
   "description": "Represents an Azure Active Directory tenant. Only the read and update operations are supported on tenants; create and delete are not supported. Inherits from [DirectoryOjbect].\r",
   "collectionOf": null,
   "isComplexType": false,
@@ -29,7 +29,7 @@
   "properties": [
     {
       "name": "assignedPlans",
-      "description": "The collection of service plans associated with the tenant.                            **Notes**: not nullable.            ",
+      "description": "The collection of service plans associated with the tenant.                            **Notes**: not nullable.             The collection of service plans associated with the tenant.                            **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "AssignedPlan",
       "isReadOnly": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "city",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -57,7 +57,7 @@
     },
     {
       "name": "companyLastDirSyncTime",
-      "description": "The time and date at which the tenant was last synced with the on-premise directory.",
+      "description": "The time and date at which the tenant was last synced with the on-premise directory. The time and date at which the tenant was last synced with the on-premise directory.",
       "isKey": false,
       "dataType": "DateTimeOffset",
       "isReadOnly": false,
@@ -71,7 +71,7 @@
     },
     {
       "name": "country",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -85,7 +85,7 @@
     },
     {
       "name": "countryLetterCode",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -99,7 +99,7 @@
     },
     {
       "name": "dirSyncEnabled",
-      "description": "**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).",
+      "description": "**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).",
       "isKey": false,
       "dataType": "Boolean",
       "isReadOnly": false,
@@ -113,7 +113,7 @@
     },
     {
       "name": "displayName",
-      "description": "The display name for the tenant.",
+      "description": "The display name for the tenant. The display name for the tenant.",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -127,7 +127,7 @@
     },
     {
       "name": "marketingNotificationEmails",
-      "description": "                                        **Notes**: not nullable.            ",
+      "description": "                                        **Notes**: not nullable.                                                     **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -141,7 +141,7 @@
     },
     {
       "name": "postalCode",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -155,7 +155,7 @@
     },
     {
       "name": "preferredLanguage",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -169,7 +169,7 @@
     },
     {
       "name": "provisionedPlans",
-      "description": "                                        **Notes**: not nullable.            ",
+      "description": "                                        **Notes**: not nullable.                                                     **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "ProvisionedPlan",
       "isReadOnly": false,
@@ -183,7 +183,7 @@
     },
     {
       "name": "provisioningErrors",
-      "description": "                                        **Notes**: not nullable.            ",
+      "description": "                                        **Notes**: not nullable.                                                     **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "ProvisioningError",
       "isReadOnly": false,
@@ -225,7 +225,7 @@
     },
     {
       "name": "state",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -239,7 +239,7 @@
     },
     {
       "name": "street",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -253,7 +253,7 @@
     },
     {
       "name": "technicalNotificationMails",
-      "description": "                                        **Notes**: not nullable.            ",
+      "description": "                                        **Notes**: not nullable.                                                     **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -267,7 +267,7 @@
     },
     {
       "name": "telephoneNumber",
-      "description": "            ",
+      "description": "                         ",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -281,7 +281,7 @@
     },
     {
       "name": "verifiedDomains",
-      "description": "The collection of domains associated with this tenant.                            **Notes**: not nullable.            ",
+      "description": "The collection of domains associated with this tenant.                            **Notes**: not nullable.             The collection of domains associated with this tenant.                            **Notes**: not nullable.            ",
       "isKey": false,
       "dataType": "VerifiedDomain",
       "isReadOnly": false,
@@ -295,7 +295,7 @@
     },
     {
       "name": "objectType",
-      "description": "A string that identifies the object type. For tenants the value is always “Company”. Inherited from [DirectoryObject].",
+      "description": "A string that identifies the object type. For tenants the value is always “Company”. Inherited from [DirectoryObject]. A string that identifies the object type. For tenants the value is always “Company”. Inherited from [DirectoryObject].",
       "isKey": false,
       "dataType": "String",
       "isReadOnly": false,
@@ -309,7 +309,7 @@
     },
     {
       "name": "objectId",
-      "description": "The unique identifier for the tenant. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
+      "description": "The unique identifier for the tenant. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.             The unique identifier for the tenant. Inherited from [DirectoryObject].                            **Notes**: **key**, immutable, not nullable, unique.            ",
       "isKey": true,
       "dataType": "String",
       "isReadOnly": true,
@@ -347,12 +347,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "groupIds",
@@ -376,12 +372,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",
@@ -405,12 +397,8 @@
       "isReturnTypeCollection": true,
       "httpSuccessCode": "200",
       "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
+      "scopes": [],
+      "errorCodes": [],
       "parameters": [
         {
           "name": "securityEnabledOnly",

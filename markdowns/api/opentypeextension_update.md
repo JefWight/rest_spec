@@ -18,10 +18,10 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ExtensionName|String||
+|extensionName|String||
 
 ### Response
-If successful, this method returns a `200 OK` response code and updated [OpenTypeExtension](../resources/opentypeextension.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [openTypeExtension](../resources/opentypeextension.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -35,8 +35,8 @@ Content-type: application/json
 Content-length: 48
 
 {
-  "Id": "Id-value",
-  "ExtensionName": {
+  "id": "id-value",
+  "extensionName": {
   }
 }
 ```
@@ -53,8 +53,8 @@ Content-type: application/json
 Content-length: 48
 
 {
-  "Id": "Id-value",
-  "ExtensionName": {
+  "id": "id-value",
+  "extensionName": {
   }
 }
 ```

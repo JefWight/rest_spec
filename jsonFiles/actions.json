@@ -160,7 +160,7 @@
       ]
     },
     {
-      "name": "SendMail",
+      "name": "sendMail",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -177,7 +177,7 @@
       ],
       "parameters": [
         {
-          "name": "Message",
+          "name": "message",
           "description": "",
           "dataType": "Message",
           "isCollection": false,
@@ -187,7 +187,7 @@
           "isUnicode": null
         },
         {
-          "name": "SaveToSentItems",
+          "name": "saveToSentItems",
           "description": "",
           "dataType": "Boolean",
           "isCollection": false,
@@ -197,11 +197,129 @@
           "isUnicode": null
         }
       ]
+    },
+    {
+      "name": "findMeetingTimes",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "MeetingTimeCandidate",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "attendees",
+          "description": "",
+          "dataType": "AttendeeBase",
+          "isCollection": true,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "locationConstraint",
+          "description": "",
+          "dataType": "LocationConstraint",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "timeConstraint",
+          "description": "",
+          "dataType": "TimeConstraint",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "meetingDuration",
+          "description": "",
+          "dataType": "Duration",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "maxCandidates",
+          "description": "",
+          "dataType": "Int32",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        },
+        {
+          "name": "isOrganizerOptional",
+          "description": "",
+          "dataType": "Boolean",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "reminderView",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "Reminder",
+      "isReturnNullable": false,
+      "isReturnTypeCollection": true,
+      "httpSuccessCode": "200",
+      "isFunction": true,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "startDateTime",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": false
+        },
+        {
+          "name": "endDateTime",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": false
+        }
+      ]
     }
   ],
   "MailFolder": [
     {
-      "name": "Copy",
+      "name": "copy",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -218,7 +336,7 @@
       ],
       "parameters": [
         {
-          "name": "DestinationId",
+          "name": "destinationId",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -230,7 +348,7 @@
       ]
     },
     {
-      "name": "Move",
+      "name": "move",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -247,7 +365,7 @@
       ],
       "parameters": [
         {
-          "name": "DestinationId",
+          "name": "destinationId",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -261,7 +379,7 @@
   ],
   "Message": [
     {
-      "name": "Copy",
+      "name": "copy",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -278,7 +396,7 @@
       ],
       "parameters": [
         {
-          "name": "DestinationId",
+          "name": "destinationId",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -290,7 +408,7 @@
       ]
     },
     {
-      "name": "Move",
+      "name": "move",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -307,7 +425,7 @@
       ],
       "parameters": [
         {
-          "name": "DestinationId",
+          "name": "destinationId",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -319,7 +437,7 @@
       ]
     },
     {
-      "name": "CreateReply",
+      "name": "createReply",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -339,7 +457,7 @@
       ]
     },
     {
-      "name": "CreateReplyAll",
+      "name": "createReplyAll",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -359,7 +477,7 @@
       ]
     },
     {
-      "name": "CreateForward",
+      "name": "createForward",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -379,7 +497,7 @@
       ]
     },
     {
-      "name": "Reply",
+      "name": "reply",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -396,7 +514,7 @@
       ],
       "parameters": [
         {
-          "name": "Comment",
+          "name": "comment",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -408,7 +526,7 @@
       ]
     },
     {
-      "name": "ReplyAll",
+      "name": "replyAll",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -425,7 +543,7 @@
       ],
       "parameters": [
         {
-          "name": "Comment",
+          "name": "comment",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -437,7 +555,7 @@
       ]
     },
     {
-      "name": "Forward",
+      "name": "forward",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -454,7 +572,7 @@
       ],
       "parameters": [
         {
-          "name": "Comment",
+          "name": "comment",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -464,7 +582,7 @@
           "isUnicode": false
         },
         {
-          "name": "ToRecipients",
+          "name": "toRecipients",
           "description": "",
           "dataType": "Recipient",
           "isCollection": true,
@@ -476,7 +594,7 @@
       ]
     },
     {
-      "name": "Send",
+      "name": "send",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -498,7 +616,7 @@
   ],
   "Event": [
     {
-      "name": "Accept",
+      "name": "accept",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -515,7 +633,7 @@
       ],
       "parameters": [
         {
-          "name": "Comment",
+          "name": "comment",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -525,7 +643,7 @@
           "isUnicode": false
         },
         {
-          "name": "SendResponse",
+          "name": "sendResponse",
           "description": "",
           "dataType": "Boolean",
           "isCollection": false,
@@ -537,7 +655,7 @@
       ]
     },
     {
-      "name": "Decline",
+      "name": "decline",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -554,7 +672,7 @@
       ],
       "parameters": [
         {
-          "name": "Comment",
+          "name": "comment",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -564,7 +682,7 @@
           "isUnicode": false
         },
         {
-          "name": "SendResponse",
+          "name": "sendResponse",
           "description": "",
           "dataType": "Boolean",
           "isCollection": false,
@@ -576,7 +694,7 @@
       ]
     },
     {
-      "name": "TentativelyAccept",
+      "name": "tentativelyAccept",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -593,7 +711,7 @@
       ],
       "parameters": [
         {
-          "name": "Comment",
+          "name": "comment",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -603,7 +721,7 @@
           "isUnicode": false
         },
         {
-          "name": "SendResponse",
+          "name": "sendResponse",
           "description": "",
           "dataType": "Boolean",
           "isCollection": false,
@@ -612,12 +730,61 @@
           "isNullable": null,
           "isUnicode": null
         }
+      ]
+    },
+    {
+      "name": "snoozeReminder",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "newReminderTime",
+          "description": "",
+          "dataType": "DateTimeTimeZone",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": false,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "dismissReminder",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": null,
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+
       ]
     }
   ],
   "Group": [
     {
-      "name": "SubscribeByMail",
+      "name": "subscribeByMail",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -637,7 +804,7 @@
       ]
     },
     {
-      "name": "UnsubscribeByMail",
+      "name": "unsubscribeByMail",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -657,7 +824,7 @@
       ]
     },
     {
-      "name": "AddFavorite",
+      "name": "addFavorite",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -677,7 +844,7 @@
       ]
     },
     {
-      "name": "RemoveFavorite",
+      "name": "removeFavorite",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -697,7 +864,7 @@
       ]
     },
     {
-      "name": "ResetUnseenCount",
+      "name": "resetUnseenCount",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -719,7 +886,7 @@
   ],
   "ConversationThread": [
     {
-      "name": "Reply",
+      "name": "reply",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -736,7 +903,7 @@
       ],
       "parameters": [
         {
-          "name": "Post",
+          "name": "post",
           "description": "",
           "dataType": "Post",
           "isCollection": false,
@@ -750,7 +917,7 @@
   ],
   "Post": [
     {
-      "name": "Forward",
+      "name": "forward",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -767,7 +934,7 @@
       ],
       "parameters": [
         {
-          "name": "Comment",
+          "name": "comment",
           "description": "",
           "dataType": "String",
           "isCollection": false,
@@ -777,7 +944,7 @@
           "isUnicode": false
         },
         {
-          "name": "ToRecipients",
+          "name": "toRecipients",
           "description": "",
           "dataType": "Recipient",
           "isCollection": true,
@@ -789,7 +956,7 @@
       ]
     },
     {
-      "name": "Reply",
+      "name": "reply",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -806,7 +973,7 @@
       ],
       "parameters": [
         {
-          "name": "Post",
+          "name": "post",
           "description": "",
           "dataType": "Post",
           "isCollection": false,
@@ -1066,7 +1233,7 @@
   ],
   "Page": [
     {
-      "name": "PatchContent",
+      "name": "patchContent",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -1095,7 +1262,7 @@
       ]
     },
     {
-      "name": "CopyToSection",
+      "name": "copyToSection",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -1144,7 +1311,7 @@
       ]
     },
     {
-      "name": "Thumbnail",
+      "name": "thumbnail",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -1166,7 +1333,7 @@
   ],
   "Notebook": [
     {
-      "name": "CopyNotebook",
+      "name": "copyNotebook",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -1217,7 +1384,7 @@
   ],
   "Section": [
     {
-      "name": "CopyToNotebook",
+      "name": "copyToNotebook",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -1276,7 +1443,7 @@
       ]
     },
     {
-      "name": "CopyToSectionGroup",
+      "name": "copyToSectionGroup",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -1335,7 +1502,7 @@
       ]
     },
     {
-      "name": "Thumbnail",
+      "name": "thumbnail",
       "displayName": "",
       "description": "",
       "prerequisites": "",
@@ -1379,7 +1546,7 @@
   ],
   "SiteCollection": [
     {
-      "name": "FromUrl",
+      "name": "fromUrl",
       "displayName": "",
       "description": "",
       "prerequisites": "",

@@ -1,4 +1,4 @@
-# Get Plan
+# Get plan
 
 Retrieve the properties and relationships of plan object.
 ### Prerequisites
@@ -14,7 +14,7 @@ GET /groups/<objectId>/plans/<id>
 |Name|Value|Description|
 |:---------------|:--------|:-------|
 |$count|none|The count of related entities can be requested by specifying the $count query option.|
-|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [Plan](../resources/plan.md) object for supported names. |
+|$expand|string|Comma-separated list of relationships to expand and include in the response. See relationships table of [plan](../resources/plan.md) object for supported names. |
 |$select|string|Comma-separated list of properties to include in the response.|
 
 ### Request headers
@@ -25,7 +25,7 @@ GET /groups/<objectId>/plans/<id>
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [Plan](../resources/plan.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [plan](../resources/plan.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_plan"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/plans/<id>
+GET https://graph.microsoft.com/beta/plans/<id>
 ```
 ##### Response
 Here is an example of the response.
@@ -46,16 +46,13 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
+Content-length: 108
 
 {
   "createdBy": "createdBy-value",
   "owner": "owner-value",
   "title": "title-value",
-  "totalTasks": 99,
-  "activeTasks": 99,
-  "id": "id-value",
-  "version": "version-value"
+  "id": "id-value"
 }
 ```
 
@@ -63,7 +60,7 @@ Content-length: 179
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get Plan",
+  "description": "Get plan",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

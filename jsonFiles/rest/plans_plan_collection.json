@@ -1,7 +1,7 @@
 {
   "name": "plans",
   "description": "",
-  "collectionOf": "Plan",
+  "collectionOf": "plan",
   "isComplexType": false,
   "isEntitySet": true,
   "allowPatch": false,
