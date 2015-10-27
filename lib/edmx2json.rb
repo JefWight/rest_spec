@@ -7,7 +7,7 @@ require 'logger'
 module SpecMaker
 	require_relative 'utils_e2j'
 	# Read and load the CSDL file
-	CSDL_FILE='ppe_alpha_graph'
+	CSDL_FILE='v10'
 	f=File.read(CSDL_LOCATION + CSDL_FILE + '.xml', :encoding => 'UTF-8')
 
 	# Convert to JSON format. 
@@ -28,32 +28,14 @@ module SpecMaker
 		end
 
 		supplimentalSchema = supplimentalJson[:Edmx][:DataServices][:Schema]
-		supplimentalSchema[:Annotations].each do |annotations|
-			target = get_type(annotations[:Target]).downcase
-	
-			puts "-> Processing Annotation #{target}"
-			# puts item[:Annotation].length
-			# puts item[:Annotation]
-			
-			parse_annotations(target, annotations[:Annotation])
-			@iann = @iann + 1
-		end
+		parse_annotationsNodes(supplimentalSchema)
 	end
 
 	puts "Staring..."
 
 	# Process all annotationa. Load in memory.
 	
-	schema[:Annotations].each do |item|
-		dt = get_type(item[:Target]).downcase
-
-		puts "-> Processing Annotation #{dt}"
-		# puts item[:Annotation].length
-		# puts item[:Annotation]
-		
-		parse_annotations(dt, item[:Annotation])
-		@iann = @iann + 1
-	end
+	parse_annotationsNodes(schema)
 
 	# Process all Enums. Load in memory.
 	schema[:EnumType].each do |item|
@@ -87,12 +69,13 @@ module SpecMaker
 	end
 
 	# # Process FUNCTIONS
-
-	schema[:Function].each do |item|		
+	
+	def self.process_function(item)
 		puts "-> Processing Function #{item[:Name]}"
 		@ifunction = @ifunction + 1
 		process_method(item, 'function')
 	end
+	run_ItemOrArray(schema[:Function], self.method(:process_function))
 
 	# Write Functions & Actions
 	File.open(JSON_BASE_FOLDER + 'actions.json', "w") do |f|
@@ -115,7 +98,7 @@ module SpecMaker
 		@json_object[:allowPatchCreate] = false
 		@json_object[:allowDelete] = false
 		
-		parse_annotations(entity[:Name], entity[:Annotation])
+		parse_annotationNodes(entity[:Name], entity[:Annotation])
 		set_description(entity[:Name], @json_object)
 		
 		# PROCESS Properties
@@ -127,13 +110,15 @@ module SpecMaker
 			@json_object[:properties].push process_complextype(entity[:Name], entity[:Property])
 		end
 		preserve_object_property_descriptions(@json_object[:name])
-		File.open("#{JSON_SOURCE_FOLDER}#{(@json_object[:name]).downcase}.json", "w") do |f|
+
+		Dir.mkdir(JSON_SOURCE_FOLDER) unless File.exists?(JSON_SOURCE_FOLDER)
+		jsonFileName = JSON_SOURCE_FOLDER + (@json_object[:name]).downcase + ".json" 
+		File.open(jsonFileName, "w") do |f|
 			f.write(JSON.pretty_generate @json_object, :encoding => 'UTF-8')
 		end		
 		GC.start
 	end
-
-
+	
 	schema[:EntityType].each do |entity|
 		puts "-> Processing Entity #{entity[:Name]}"
 		@ient = @ient + 1
@@ -174,7 +159,7 @@ module SpecMaker
 			end
 		end
 		
-		parse_annotations(entity[:Name], entity[:Annotation])
+		parse_annotationNodes(entity[:Name], entity[:Annotation])
 		set_description(entity[:Name], @json_object)
 
 		# PROCESS Properties
@@ -224,12 +209,13 @@ module SpecMaker
 
 	@collectionNames = {}
 	# Process EntitySets
-	schema[:EntityContainer][:EntitySet].each do |entity|
+	def self.process_entitySet(entity)
 		@ientityset = @ientityset + 1
 		@icollection = @icollection + 1
 		@json_object = nil 
 		@json_object = deep_copy(@template) 
 
+		p entity
 		puts "-> Processing EntitySet Type #{entity[:Name]}"
 		@json_object[:name] = entity[:Name]
 		@json_object[:isEntitySet] = true
@@ -262,6 +248,7 @@ module SpecMaker
 
 		GC.start
 	end
+	run_ItemOrArray(schema[:EntityContainer][:EntitySet], self.method(:process_entitySet))
 
 	# Process Singleton
 	if schema[:EntityContainer][:Singleton].is_a?(Array)
@@ -279,7 +266,7 @@ module SpecMaker
 		puts "calling fill rest path with: /#{schema[:EntityContainer][:Singleton][:Name].downcase}, #{dt} " 
 		fill_rest_path("/#{schema[:EntityContainer][:Singleton][:Name].downcase}", dt, false)
 	end
-
+	
 	File.open(ANNOTATIONS, "w") do |f|
 		f.write(JSON.pretty_generate @annotations, :encoding => 'UTF-8')
 	end

@@ -67,19 +67,41 @@ module SpecMaker
 	@iexampleFilesWrittem = 0
 	@annotations = {}
 
-	def self.parse_annotations(target, annotations)
+	def self.run_ItemOrArray(itemOrArray, delegate)
+		if itemOrArray
+			if itemOrArray.is_a?(Array)
+				itemOrArray.each do |item|
+					delegate.call(item)
+				end
+			else
+				delegate.call(itemOrArray)
+			end
+		end
+	end
+
+	def self.parse_annotationsNodes(schema)
+		run_ItemOrArray(schema[:Annotations], self.method(:parse_annotationsNode))
+	end
+	
+	def self.parse_annotationsNode(annotations)
+		target = get_type(annotations[:Target]).downcase
+		puts "-> Processing Annotation #{target}"
+		parse_annotationNodes(target, annotations[:Annotation])
+	end
+	
+	def self.parse_annotationNodes(target, annotations)
 		if annotations
 			if annotations.is_a?(Array)
 				annotations.each do |annotation|
-					parse_annotation(target, nil, annotation)
+					parse_annotationNode(target, nil, annotation)
 				end
 			else
-				parse_annotation(target, nil, annotations)
+				parse_annotationNode(target, nil, annotations)
 			end
 		end
 	end
 	
-	def self.parse_annotation(target, term, annotation)
+	def self.parse_annotationNode(target, term, annotation)
 		puts "-> Processing Annotation; Target: #{target}; Term: #{term}; Annotation: #{annotation}"
 		
 		if annotation[:Term]
@@ -104,10 +126,10 @@ module SpecMaker
 		if annotation[:Record][:PropertyValue]
 			if annotation[:Record][:PropertyValue].is_a?(Array)
 				annotation[:Record][:PropertyValue].each do |propertyValue|
-					parse_annotation(target, term, propertyValue)
+					parse_annotationNode(target, term, propertyValue)
 				end
 			else
-				parse_annotation(target, term, annotation[:Record][:PropertyValue])
+				parse_annotationNode(target, term, annotation[:Record][:PropertyValue])
 			end
 		end
 		elsif annotation[:Collection]
@@ -285,7 +307,7 @@ module SpecMaker
 		@iprop = @iprop + 1
 		
 		annotationTarget = className + "/" + item[:Name]
-		parse_annotations(annotationTarget, item[:Annotation])
+		parse_annotationNodes(annotationTarget, item[:Annotation])
 		set_description(annotationTarget, prop)
 
 		return prop
@@ -309,7 +331,7 @@ module SpecMaker
 		@inprop = @inprop + 1
 		
 		annotationTarget = className + "/" + item[:Name]
-		parse_annotations(annotationTarget, item[:Annotation])
+		parse_annotationNodes(annotationTarget, item[:Annotation])
 		set_description(annotationTarget, prop)
 
 		return prop
@@ -333,7 +355,7 @@ module SpecMaker
 		end
 		
 		annotationTarget = className + "/" + item[:Name]
-		parse_annotations(annotationTarget, item[:Annotation])
+		parse_annotationNodes(annotationTarget, item[:Annotation])
 		set_description(annotationTarget, prop)
 
     return prop		

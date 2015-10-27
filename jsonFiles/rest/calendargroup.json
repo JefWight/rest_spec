@@ -24,33 +24,8 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/groups/<objectId>/drive/items/<id>/createdByUser/CalendarGroups/<Id>": true,
-    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/CalendarGroups/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/createdByUser/CalendarGroups/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/CalendarGroups/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/createdByUser/CalendarGroups/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/CalendarGroups/<Id>": true,
-    "/groups/<objectId>/drive/root/createdByUser/CalendarGroups/<Id>": true,
-    "/groups/<objectId>/drive/root/lastModifiedByUser/CalendarGroups/<Id>": true,
-    "/users/<objectId>/CalendarGroups/<Id>": true,
-    "/drives/<id>/items/<id>/createdByUser/CalendarGroups/<Id>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/CalendarGroups/<Id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/CalendarGroups/<Id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/CalendarGroups/<Id>": true,
-    "/drives/<id>/special/<id>/createdByUser/CalendarGroups/<Id>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/CalendarGroups/<Id>": true,
-    "/drives/<id>/root/createdByUser/CalendarGroups/<Id>": true,
-    "/drives/<id>/root/lastModifiedByUser/CalendarGroups/<Id>": true,
-    "/shares/<id>/items/<id>/createdByUser/CalendarGroups/<Id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/CalendarGroups/<Id>": true,
-    "/drive/items/<id>/createdByUser/CalendarGroups/<Id>": true,
-    "/drive/items/<id>/lastModifiedByUser/CalendarGroups/<Id>": true,
-    "/drive/shared/<id>/createdByUser/CalendarGroups/<Id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/CalendarGroups/<Id>": true,
-    "/drive/special/<id>/createdByUser/CalendarGroups/<Id>": true,
-    "/drive/special/<id>/lastModifiedByUser/CalendarGroups/<Id>": true,
-    "/drive/root/createdByUser/CalendarGroups/<Id>": true,
-    "/drive/root/lastModifiedByUser/CalendarGroups/<Id>": true
+    "/Users/<Id>/CalendarGroups/<Id>": true,
+    "/me/CalendarGroups/<Id>": true
   },
   "properties": [
     {
@@ -65,13 +40,13 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
-      "name": "ChangeKey",
-      "description": "Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.",
+      "name": "ClassId",
+      "description": "The class identifier.",
       "isKey": false,
-      "dataType": "String",
+      "dataType": "Guid",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -79,13 +54,13 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
-      "name": "ClassId",
-      "description": "The class identifier.",
+      "name": "ChangeKey",
+      "description": "Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.",
       "isKey": false,
-      "dataType": "Guid",
+      "dataType": "String",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -106,8 +81,8 @@
       "isRelationship": false,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": false
+      "isNullable": null,
+      "isUnicode": null
     },
     {
       "name": "Calendars",

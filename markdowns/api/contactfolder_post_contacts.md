@@ -6,9 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/ContactFolders/<Id>/Contacts
-POST /drive/root/createdByUser/ContactFolders/<Id>/Contacts
-POST /drive/root/lastModifiedByUser/ContactFolders/<Id>/Contacts
+POST /me/ContactFolders/<Id>/Contacts
+POST /Users/<Id>/ContactFolders/<Id>/Contacts
 
 ```
 ### Request headers
@@ -31,7 +30,7 @@ Here is an example of the request.
   "name": "create_contact_from_contactfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/ContactFolders/<Id>
+POST https://outlook.office.com/v1.0/me/ContactFolders/<Id>
 ```
 In the request body, supply a JSON representation of [Contact](../resources/contact.md) object.
 ##### Response
@@ -57,6 +56,9 @@ Content-length: 1977
   "NickName": "NickName-value",
   "Surname": "Surname-value",
   "Title": "Title-value",
+  "YomiGivenName": "YomiGivenName-value",
+  "YomiSurname": "YomiSurname-value",
+  "YomiCompanyName": "YomiCompanyName-value",
   "Generation": "Generation-value",
   "EmailAddresses": [
     {
@@ -78,10 +80,10 @@ Content-length: 1977
   "HomePhones": [
     "HomePhones-value"
   ],
+  "MobilePhone1": "MobilePhone1-value",
   "BusinessPhones": [
     "BusinessPhones-value"
   ],
-  "MobilePhone1": "MobilePhone1-value",
   "HomeAddress": {
     "Street": "Street-value",
     "City": "City-value",
@@ -103,9 +105,6 @@ Content-length: 1977
     "CountryOrRegion": "CountryOrRegion-value",
     "PostalCode": "PostalCode-value"
   },
-  "YomiCompanyName": "YomiCompanyName-value",
-  "YomiGivenName": "YomiGivenName-value",
-  "YomiSurname": "YomiSurname-value",
   "SpouseName": "SpouseName-value",
   "PersonalNotes": "PersonalNotes-value",
   "Children": [
@@ -115,8 +114,8 @@ Content-length: 1977
   "Categories": [
     "Categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Id": "Id-value"
 }
 ```

@@ -6,9 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/<objectId>/CalendarGroups/<Id>
-DELETE /drive/root/createdByUser/CalendarGroups/<Id>
-DELETE /drive/root/lastModifiedByUser/CalendarGroups/<Id>
+DELETE /me/CalendarGroups/<Id>
+DELETE /Users/<Id>/CalendarGroups/<Id>
 
 ```
 ### Request headers
@@ -31,7 +30,7 @@ Here is an example of the request.
   "name": "delete_calendargroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/<objectId>/CalendarGroups/<Id>
+DELETE https://outlook.office.com/v1.0/me/CalendarGroups/<Id>
 ```
 ##### Response
 Here is an example of the response.

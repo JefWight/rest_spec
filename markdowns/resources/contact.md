@@ -9,8 +9,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "ContactPhoto",
-    "Extensions"
+
   ],
   "@odata.type": "microsoft.graph.contact"
 }-->
@@ -34,20 +33,13 @@ Here is a JSON representation of the resource
     "String-value"
   ],
   "CompanyName": "String-value",
-  "ContactPhoto": {
-    "@odata.type": "microsoft.graph.photo"
-  },
-  "CreatedDateTime": "String (timestamp)",
+  "DateTimeCreated": "String (timestamp)",
+  "DateTimeLastModified": "String (timestamp)",
   "Department": "String-value",
   "DisplayName": "String-value",
   "EmailAddresses": [
     {
       "@odata.type": "microsoft.graph.emailaddress"
-    }
-  ],
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.extension"
     }
   ],
   "FileAs": "String-value",
@@ -65,7 +57,6 @@ Here is a JSON representation of the resource
   ],
   "Initials": "String-value",
   "JobTitle": "String-value",
-  "LastModifiedDateTime": "String (timestamp)",
   "Manager": "String-value",
   "MiddleName": "String-value",
   "MobilePhone1": "String-value",
@@ -98,7 +89,8 @@ Here is a JSON representation of the resource
 |ChangeKey|String|Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |Children|String collection||
 |CompanyName|String|The name of the contact's company.|
-|CreatedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeCreated|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeLastModified|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Department|String|The name for the department in which the contact works.|
 |DisplayName|String|The display name for the contact.|
 |EmailAddresses|[EmailAddress](emailaddress.md) collection|The contact's email addresses.|
@@ -111,7 +103,6 @@ Here is a JSON representation of the resource
 |ImAddresses|String collection|The contact's instant messaging (IM) addresses.|
 |Initials|String|The contact's initials.|
 |JobTitle|String|The contact’s job title.|
-|LastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Manager|String|The user or contact that is this contact’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE|
 |MiddleName|String|The contact's middle name.|
 |MobilePhone1|String|The contact's mobile phone number.|
@@ -129,18 +120,14 @@ Here is a JSON representation of the resource
 |YomiSurname|String|The phonetic Japanese surname (last name)  of the contact. This property is optional.|
 
 ### Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|ContactPhoto|[Photo](photo.md)| Read-only.|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+None
+
 
 ### Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Contact](../api/contact_get.md) | [Contact](contact.md) |Read properties and relationships of contact object.|
-|[Create Extension](../api/contact_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[List Extensions](../api/contact_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
 |[Update](../api/contact_update.md) | [Contact](contact.md)	|Update Contact object. |
 |[Delete](../api/contact_delete.md) | None |Delete Contact object. |
 

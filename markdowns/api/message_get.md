@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/Messages/<Id>
-GET /drive/root/createdByUser/Messages/<Id>
-GET /drive/root/lastModifiedByUser/Messages/<Id>
+GET /me/Messages/<Id>
+GET /Users/<Id>/Messages/<Id>
+GET /me/RootFolder/Messages/<Id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_message"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/Messages/<Id>
+GET https://outlook.office.com/v1.0/me/Messages/<Id>
 ```
 ##### Response
 Here is an example of the response.
@@ -49,6 +49,7 @@ Content-type: application/json
 Content-length: 1546
 
 {
+  "HasAttachments": true,
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
@@ -56,15 +57,14 @@ Content-length: 1546
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
-  "HasAttachments": true,
   "ParentFolderId": "ParentFolderId-value",
-  "From": {
+  "Sender": {
     "EmailAddress": {
       "Name": "Name-value",
       "Address": "Address-value"
     }
   },
-  "Sender": {
+  "From": {
     "EmailAddress": {
       "Name": "Name-value",
       "Address": "Address-value"
@@ -107,19 +107,19 @@ Content-length: 1546
     "ContentType": "ContentType-value",
     "Content": "Content-value"
   },
-  "ReceivedDateTime": "datetime-value",
-  "SentDateTime": "datetime-value",
   "IsDeliveryReceiptRequested": true,
   "IsReadReceiptRequested": true,
-  "IsDraft": true,
   "IsRead": true,
+  "IsDraft": true,
+  "DateTimeReceived": "datetime-value",
+  "DateTimeSent": "datetime-value",
   "WebLink": "WebLink-value",
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Id": "Id-value"
 }
 ```

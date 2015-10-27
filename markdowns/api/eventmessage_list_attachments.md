@@ -59,7 +59,7 @@ Content-length: 215
       "ContentType": "ContentType-value",
       "Size": 99,
       "IsInline": true,
-      "LastModifiedDateTime": "datetime-value",
+      "DateTimeLastModified": "datetime-value",
       "Id": "Id-value"
     }
   ]

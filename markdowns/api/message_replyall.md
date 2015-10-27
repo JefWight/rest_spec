@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/Messages/<Id>/ReplyAll
-POST /drive/root/createdByUser/Messages/<Id>/ReplyAll
-POST /drive/root/lastModifiedByUser/Messages/<Id>/ReplyAll
+POST /me/Messages/<Id>/ReplyAll
+POST /Users/<Id>/Messages/<Id>/ReplyAll
+POST /me/RootFolder/Messages/<Id>/ReplyAll
 
 ```
 ### Request headers
@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "message_replyall"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/Messages/<Id>/ReplyAll
+POST https://outlook.office.com/v1.0/me/Messages/<Id>/ReplyAll
 Content-type: application/json
 Content-length: 32
 

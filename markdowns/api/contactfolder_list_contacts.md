@@ -6,9 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/ContactFolders/<Id>/Contacts
-GET /drive/root/createdByUser/ContactFolders/<Id>/Contacts
-GET /drive/root/lastModifiedByUser/ContactFolders/<Id>/Contacts
+GET /me/ContactFolders/<Id>/Contacts
+GET /Users/<Id>/ContactFolders/<Id>/Contacts
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +38,7 @@ Here is an example of the request.
   "name": "get_contacts"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/ContactFolders/<Id>/Contacts
+GET https://outlook.office.com/v1.0/me/ContactFolders/<Id>/Contacts
 ```
 ##### Response
 Here is an example of the response.
@@ -67,6 +66,9 @@ Content-length: 2290
       "NickName": "NickName-value",
       "Surname": "Surname-value",
       "Title": "Title-value",
+      "YomiGivenName": "YomiGivenName-value",
+      "YomiSurname": "YomiSurname-value",
+      "YomiCompanyName": "YomiCompanyName-value",
       "Generation": "Generation-value",
       "EmailAddresses": [
         {
@@ -88,10 +90,10 @@ Content-length: 2290
       "HomePhones": [
         "HomePhones-value"
       ],
+      "MobilePhone1": "MobilePhone1-value",
       "BusinessPhones": [
         "BusinessPhones-value"
       ],
-      "MobilePhone1": "MobilePhone1-value",
       "HomeAddress": {
         "Street": "Street-value",
         "City": "City-value",
@@ -113,9 +115,6 @@ Content-length: 2290
         "CountryOrRegion": "CountryOrRegion-value",
         "PostalCode": "PostalCode-value"
       },
-      "YomiCompanyName": "YomiCompanyName-value",
-      "YomiGivenName": "YomiGivenName-value",
-      "YomiSurname": "YomiSurname-value",
       "SpouseName": "SpouseName-value",
       "PersonalNotes": "PersonalNotes-value",
       "Children": [
@@ -125,8 +124,8 @@ Content-length: 2290
       "Categories": [
         "Categories-value"
       ],
-      "CreatedDateTime": "datetime-value",
-      "LastModifiedDateTime": "datetime-value",
+      "DateTimeCreated": "datetime-value",
+      "DateTimeLastModified": "datetime-value",
       "Id": "Id-value"
     }
   ]

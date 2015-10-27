@@ -10,8 +10,7 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "Attachments",
-    "Event",
-    "Extensions"
+    "Event"
   ],
   "@odata.type": "microsoft.graph.eventmessage"
 }-->
@@ -42,15 +41,13 @@ Here is a JSON representation of the resource
   ],
   "ChangeKey": "String-value",
   "ConversationId": "String-value",
-  "CreatedDateTime": "String (timestamp)",
+  "DateTimeCreated": "String (timestamp)",
+  "DateTimeLastModified": "String (timestamp)",
+  "DateTimeReceived": "String (timestamp)",
+  "DateTimeSent": "String (timestamp)",
   "Event": {
     "@odata.type": "microsoft.graph.event"
   },
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.extension"
-    }
-  ],
   "From": {
     "@odata.type": "microsoft.graph.recipient"
   },
@@ -61,10 +58,8 @@ Here is a JSON representation of the resource
   "IsDraft": true,
   "IsRead": true,
   "IsReadReceiptRequested": true,
-  "LastModifiedDateTime": "String (timestamp)",
   "MeetingMessageType": "String-value",
   "ParentFolderId": "String-value",
-  "ReceivedDateTime": "String (timestamp)",
   "ReplyTo": [
     {
       "@odata.type": "microsoft.graph.recipient"
@@ -73,7 +68,6 @@ Here is a JSON representation of the resource
   "Sender": {
     "@odata.type": "microsoft.graph.recipient"
   },
-  "SentDateTime": "String (timestamp)",
   "Subject": "String-value",
   "ToRecipients": [
     {
@@ -97,7 +91,10 @@ Here is a JSON representation of the resource
 |CcRecipients|[Recipient](recipient.md) collection||
 |ChangeKey|String||
 |ConversationId|String||
-|CreatedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeCreated|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeLastModified|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeReceived|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeSent|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |From|[Recipient](recipient.md)||
 |HasAttachments|Boolean||
 |Id|String| Read-only.|
@@ -106,13 +103,10 @@ Here is a JSON representation of the resource
 |IsDraft|Boolean||
 |IsRead|Boolean||
 |IsReadReceiptRequested|Boolean||
-|LastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |MeetingMessageType|String| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5  Possible values are: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
 |ParentFolderId|String||
-|ReceivedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |ReplyTo|[Recipient](recipient.md) collection||
 |Sender|[Recipient](recipient.md)||
-|SentDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Subject|String||
 |ToRecipients|[Recipient](recipient.md) collection||
 |UniqueBody|[ItemBody](itembody.md)||
@@ -122,8 +116,7 @@ Here is a JSON representation of the resource
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |Attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
-|Event|[Event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+|Event|[Event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only. Nullable.|
 
 ### Methods
 
@@ -132,8 +125,6 @@ Here is a JSON representation of the resource
 |[Get EventMessage](../api/eventmessage_get.md) | [EventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
 |[Create Attachment](../api/eventmessage_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
 |[List Attachments](../api/eventmessage_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
-|[Create Extension](../api/eventmessage_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[List Extensions](../api/eventmessage_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
 |[Update](../api/eventmessage_update.md) | [EventMessage](eventmessage.md)	|Update EventMessage object. |
 |[Delete](../api/eventmessage_delete.md) | None |Delete EventMessage object. |
 |[Copy](../api/eventmessage_copy.md)|[Message](message.md)||

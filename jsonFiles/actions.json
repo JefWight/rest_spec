@@ -1,164 +1,5 @@
 {
-  "DirectoryObject": [
-    {
-      "name": "checkMemberGroups",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "String",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "groupIds",
-          "description": "",
-          "dataType": "String",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "getMemberGroups",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "String",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "securityEnabledOnly",
-          "description": "",
-          "dataType": "Boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "getMemberObjects",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "String",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "securityEnabledOnly",
-          "description": "",
-          "dataType": "Boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    }
-  ],
-  "Application": [
-    {
-      "name": "restore",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Application",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "identifierUris",
-          "description": "",
-          "dataType": "String",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": false
-        }
-      ]
-    }
-  ],
   "User": [
-    {
-      "name": "assignLicense",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "User",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "addLicenses",
-          "description": "",
-          "dataType": "AssignedLicense",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        },
-        {
-          "name": "removeLicenses",
-          "description": "",
-          "dataType": "Guid",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        }
-      ]
-    },
     {
       "name": "SendMail",
       "displayName": "",
@@ -199,13 +40,13 @@
       ]
     }
   ],
-  "MailFolder": [
+  "Folder": [
     {
       "name": "Copy",
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "MailFolder",
+      "returnType": "Folder",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -225,7 +66,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
       ]
     },
@@ -234,7 +75,7 @@
       "displayName": "",
       "description": "",
       "prerequisites": "",
-      "returnType": "MailFolder",
+      "returnType": "Folder",
       "isReturnNullable": null,
       "isReturnTypeCollection": false,
       "httpSuccessCode": "200",
@@ -254,7 +95,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
       ]
     }
@@ -285,7 +126,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
       ]
     },
@@ -314,7 +155,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
       ]
     },
@@ -403,7 +244,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
       ]
     },
@@ -432,7 +273,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
       ]
     },
@@ -461,7 +302,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         },
         {
           "name": "ToRecipients",
@@ -522,7 +363,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         },
         {
           "name": "SendResponse",
@@ -561,7 +402,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         },
         {
           "name": "SendResponse",
@@ -600,7 +441,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         },
         {
           "name": "SendResponse",
@@ -611,799 +452,6 @@
           "enumName": null,
           "isNullable": null,
           "isUnicode": null
-        }
-      ]
-    }
-  ],
-  "Group": [
-    {
-      "name": "SubscribeByMail",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "UnsubscribeByMail",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "AddFavorite",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "RemoveFavorite",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "ResetUnseenCount",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    }
-  ],
-  "ConversationThread": [
-    {
-      "name": "Reply",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Post",
-          "description": "",
-          "dataType": "Post",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        }
-      ]
-    }
-  ],
-  "Post": [
-    {
-      "name": "Forward",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Comment",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "ToRecipients",
-          "description": "",
-          "dataType": "Recipient",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "Reply",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "Post",
-          "description": "",
-          "dataType": "Post",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        }
-      ]
-    }
-  ],
-  "item": [
-    {
-      "name": "invite",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "permission",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "recipients",
-          "description": "",
-          "dataType": "recipients",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": null
-        },
-        {
-          "name": "message",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "requireSignIn",
-          "description": "",
-          "dataType": "Boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "sendInvitation",
-          "description": "",
-          "dataType": "Boolean",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "roles",
-          "description": "",
-          "dataType": "String",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "copy",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "item",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "parentReference",
-          "description": "",
-          "dataType": "itemReference",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        },
-        {
-          "name": "name",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "createLink",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "permission",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "type",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": false,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "createSession",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "uploadSession",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "item",
-          "description": "",
-          "dataType": "chunkedUploadSessionDescriptor",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "allPhotos",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "item",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    },
-    {
-      "name": "delta",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "item",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "token",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "search",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "item",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "q",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    }
-  ],
-  "Page": [
-    {
-      "name": "PatchContent",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": null,
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "commands",
-          "description": "",
-          "dataType": "PatchContentCommand",
-          "isCollection": true,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": null
-        }
-      ]
-    },
-    {
-      "name": "CopyToSection",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "CopyPageModel",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "id",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "siteCollectionId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "siteId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "Thumbnail",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Stream",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    }
-  ],
-  "Notebook": [
-    {
-      "name": "CopyNotebook",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "CopyNotebookModel",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "siteCollectionId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "siteId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "renameAs",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    }
-  ],
-  "Section": [
-    {
-      "name": "CopyToNotebook",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "CopySectionModel",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "id",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "siteCollectionId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "siteId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "renameAs",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "CopyToSectionGroup",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "CopySectionModel",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": false,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "id",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "siteCollectionId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "siteId",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        },
-        {
-          "name": "renameAs",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
-        }
-      ]
-    },
-    {
-      "name": "Thumbnail",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "Stream",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    }
-  ],
-  "drive": [
-    {
-      "name": "allPhotos",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "item",
-      "isReturnNullable": false,
-      "isReturnTypeCollection": true,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-
-      ]
-    }
-  ],
-  "SiteCollection": [
-    {
-      "name": "FromUrl",
-      "displayName": "",
-      "description": "",
-      "prerequisites": "",
-      "returnType": "SiteMetadata",
-      "isReturnNullable": null,
-      "isReturnTypeCollection": false,
-      "httpSuccessCode": "200",
-      "isFunction": true,
-      "scopes": [
-
-      ],
-      "errorCodes": [
-
-      ],
-      "parameters": [
-        {
-          "name": "url",
-          "description": "",
-          "dataType": "String",
-          "isCollection": false,
-          "isRequired": true,
-          "enumName": null,
-          "isNullable": null,
-          "isUnicode": false
         }
       ]
     }

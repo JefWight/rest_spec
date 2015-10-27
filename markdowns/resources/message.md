@@ -9,8 +9,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "Attachments",
-    "Extensions"
+    "Attachments"
   ],
   "@odata.type": "microsoft.graph.message"
 }-->
@@ -41,12 +40,10 @@ Here is a JSON representation of the resource
   ],
   "ChangeKey": "String-value",
   "ConversationId": "String-value",
-  "CreatedDateTime": "String (timestamp)",
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.extension"
-    }
-  ],
+  "DateTimeCreated": "String (timestamp)",
+  "DateTimeLastModified": "String (timestamp)",
+  "DateTimeReceived": "String (timestamp)",
+  "DateTimeSent": "String (timestamp)",
   "From": {
     "@odata.type": "microsoft.graph.recipient"
   },
@@ -57,9 +54,7 @@ Here is a JSON representation of the resource
   "IsDraft": true,
   "IsRead": true,
   "IsReadReceiptRequested": true,
-  "LastModifiedDateTime": "String (timestamp)",
   "ParentFolderId": "String-value",
-  "ReceivedDateTime": "String (timestamp)",
   "ReplyTo": [
     {
       "@odata.type": "microsoft.graph.recipient"
@@ -68,7 +63,6 @@ Here is a JSON representation of the resource
   "Sender": {
     "@odata.type": "microsoft.graph.recipient"
   },
-  "SentDateTime": "String (timestamp)",
   "Subject": "String-value",
   "ToRecipients": [
     {
@@ -92,7 +86,10 @@ Here is a JSON representation of the resource
 |CcRecipients|[Recipient](recipient.md) collection||
 |ChangeKey|String||
 |ConversationId|String||
-|CreatedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeCreated|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeLastModified|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeReceived|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeSent|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |From|[Recipient](recipient.md)||
 |HasAttachments|Boolean||
 |Id|String| Read-only.|
@@ -101,12 +98,9 @@ Here is a JSON representation of the resource
 |IsDraft|Boolean||
 |IsRead|Boolean||
 |IsReadReceiptRequested|Boolean||
-|LastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |ParentFolderId|String||
-|ReceivedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |ReplyTo|[Recipient](recipient.md) collection||
 |Sender|[Recipient](recipient.md)||
-|SentDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Subject|String||
 |ToRecipients|[Recipient](recipient.md) collection||
 |UniqueBody|[ItemBody](itembody.md)||
@@ -116,7 +110,6 @@ Here is a JSON representation of the resource
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |Attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
 
 ### Methods
 
@@ -125,8 +118,6 @@ Here is a JSON representation of the resource
 |[Get Message](../api/message_get.md) | [Message](message.md) |Read properties and relationships of message object.|
 |[Create Attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
 |[List Attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
-|[Create Extension](../api/message_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[List Extensions](../api/message_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
 |[Update](../api/message_update.md) | [Message](message.md)	|Update Message object. |
 |[Delete](../api/message_delete.md) | None |Delete Message object. |
 |[Copy](../api/message_copy.md)|[Message](message.md)||

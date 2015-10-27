@@ -6,9 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/ContactFolders
-POST /drive/root/createdByUser/ContactFolders
-POST /drive/root/lastModifiedByUser/ContactFolders
+POST /me/ContactFolders
+POST /Users/<Id>/ContactFolders
 
 ```
 ### Request headers
@@ -31,7 +30,7 @@ Here is an example of the request.
   "name": "create_contactfolder_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>
+POST https://outlook.office.com/v1.0/me
 ```
 In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.
 ##### Response

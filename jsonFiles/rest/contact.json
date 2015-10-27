@@ -24,60 +24,10 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/groups/<objectId>/drive/items/<id>/createdByUser/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/items/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/createdByUser/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/createdByUser/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/root/createdByUser/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/root/createdByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/root/lastModifiedByUser/Contacts/<Id>": true,
-    "/groups/<objectId>/drive/root/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/users/<objectId>/Contacts/<Id>": true,
-    "/users/<objectId>/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drives/<id>/items/<id>/createdByUser/Contacts/<Id>": true,
-    "/drives/<id>/items/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/Contacts/<Id>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/Contacts/<Id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/Contacts/<Id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drives/<id>/special/<id>/createdByUser/Contacts/<Id>": true,
-    "/drives/<id>/special/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/Contacts/<Id>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drives/<id>/root/createdByUser/Contacts/<Id>": true,
-    "/drives/<id>/root/createdByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drives/<id>/root/lastModifiedByUser/Contacts/<Id>": true,
-    "/drives/<id>/root/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/shares/<id>/items/<id>/createdByUser/Contacts/<Id>": true,
-    "/shares/<id>/items/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/Contacts/<Id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drive/items/<id>/createdByUser/Contacts/<Id>": true,
-    "/drive/items/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drive/items/<id>/lastModifiedByUser/Contacts/<Id>": true,
-    "/drive/items/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drive/shared/<id>/createdByUser/Contacts/<Id>": true,
-    "/drive/shared/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/Contacts/<Id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drive/special/<id>/createdByUser/Contacts/<Id>": true,
-    "/drive/special/<id>/createdByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drive/special/<id>/lastModifiedByUser/Contacts/<Id>": true,
-    "/drive/special/<id>/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drive/root/createdByUser/Contacts/<Id>": true,
-    "/drive/root/createdByUser/ContactFolders/<Id>/Contacts/<Id>": true,
-    "/drive/root/lastModifiedByUser/Contacts/<Id>": true,
-    "/drive/root/lastModifiedByUser/ContactFolders/<Id>/Contacts/<Id>": true
+    "/Users/<Id>/Contacts/<Id>": true,
+    "/Users/<Id>/ContactFolders/<Id>/Contacts/<Id>": true,
+    "/me/Contacts/<Id>": true,
+    "/me/ContactFolders/<Id>/Contacts/<Id>": true
   },
   "properties": [
     {
@@ -92,7 +42,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "Birthday",
@@ -120,7 +70,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "DisplayName",
@@ -134,7 +84,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "GivenName",
@@ -148,7 +98,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "Initials",
@@ -162,7 +112,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "MiddleName",
@@ -176,7 +126,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "NickName",
@@ -190,7 +140,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "Surname",
@@ -204,7 +154,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "Title",
@@ -218,7 +168,49 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
+    },
+    {
+      "name": "YomiGivenName",
+      "description": "The phonetic Japanese given name (first name) of the contact. This property is optional.",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "YomiSurname",
+      "description": "The phonetic Japanese surname (last name)  of the contact. This property is optional.",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "YomiCompanyName",
+      "description": "The phonetic Japanese company name of the contact. This property is optional.",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     },
     {
       "name": "Generation",
@@ -232,7 +224,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "EmailAddresses",
@@ -260,7 +252,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "JobTitle",
@@ -274,7 +266,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "CompanyName",
@@ -288,7 +280,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "Department",
@@ -302,7 +294,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "OfficeLocation",
@@ -316,7 +308,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "Profession",
@@ -330,7 +322,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "BusinessHomePage",
@@ -344,7 +336,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "AssistantName",
@@ -358,7 +350,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "Manager",
@@ -372,7 +364,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "HomePhones",
@@ -386,21 +378,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "BusinessPhones",
-      "description": "The contact's business phone numbers.",
-      "isKey": false,
-      "dataType": "String",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "MobilePhone1",
@@ -414,7 +392,21 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
+    },
+    {
+      "name": "BusinessPhones",
+      "description": "The contact's business phone numbers.",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
     },
     {
       "name": "HomeAddress",
@@ -459,48 +451,6 @@
       "isUnicode": null
     },
     {
-      "name": "YomiCompanyName",
-      "description": "The phonetic Japanese company name of the contact. This property is optional.",
-      "isKey": false,
-      "dataType": "String",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "YomiGivenName",
-      "description": "The phonetic Japanese given name (first name) of the contact. This property is optional.",
-      "isKey": false,
-      "dataType": "String",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
-      "name": "YomiSurname",
-      "description": "The phonetic Japanese surname (last name)  of the contact. This property is optional.",
-      "isKey": false,
-      "dataType": "String",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": false
-    },
-    {
       "name": "SpouseName",
       "description": "",
       "isKey": false,
@@ -512,7 +462,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "PersonalNotes",
@@ -526,7 +476,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "Children",
@@ -540,7 +490,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "ChangeKey",
@@ -554,7 +504,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "Categories",
@@ -568,10 +518,10 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
-      "name": "CreatedDateTime",
+      "name": "DateTimeCreated",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -585,7 +535,7 @@
       "isUnicode": null
     },
     {
-      "name": "LastModifiedDateTime",
+      "name": "DateTimeLastModified",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -609,35 +559,7 @@
       "isRelationship": false,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": false
-    },
-    {
-      "name": "ContactPhoto",
-      "description": "",
-      "isKey": false,
-      "dataType": "Photo",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": null
-    },
-    {
-      "name": "Extensions",
-      "description": "",
-      "isKey": false,
-      "dataType": "Extension",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
+      "isNullable": null,
       "isUnicode": null
     }
   ],

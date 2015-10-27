@@ -6,9 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/SendMail
-POST /drive/root/createdByUser/SendMail
-POST /drive/root/lastModifiedByUser/SendMail
+POST /me/SendMail
+POST /Users/<Id>/SendMail
 
 ```
 ### Request headers
@@ -36,12 +35,13 @@ Here is an example of the request.
   "name": "user_sendmail"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/SendMail
+POST https://outlook.office.com/v1.0/me/SendMail
 Content-type: application/json
 Content-length: 1975
 
 {
   "Message": {
+    "HasAttachments": true,
     "Subject": "Subject-value",
     "Body": {
       "ContentType": "ContentType-value",
@@ -49,15 +49,14 @@ Content-length: 1975
     },
     "BodyPreview": "BodyPreview-value",
     "Importance": "Importance-value",
-    "HasAttachments": true,
     "ParentFolderId": "ParentFolderId-value",
-    "From": {
+    "Sender": {
       "EmailAddress": {
         "Name": "Name-value",
         "Address": "Address-value"
       }
     },
-    "Sender": {
+    "From": {
       "EmailAddress": {
         "Name": "Name-value",
         "Address": "Address-value"
@@ -100,19 +99,19 @@ Content-length: 1975
       "ContentType": "ContentType-value",
       "Content": "Content-value"
     },
-    "ReceivedDateTime": "datetime-value",
-    "SentDateTime": "datetime-value",
     "IsDeliveryReceiptRequested": true,
     "IsReadReceiptRequested": true,
-    "IsDraft": true,
     "IsRead": true,
+    "IsDraft": true,
+    "DateTimeReceived": "datetime-value",
+    "DateTimeSent": "datetime-value",
     "WebLink": "WebLink-value",
     "ChangeKey": "ChangeKey-value",
     "Categories": [
       "Categories-value"
     ],
-    "CreatedDateTime": "datetime-value",
-    "LastModifiedDateTime": "datetime-value",
+    "DateTimeCreated": "datetime-value",
+    "DateTimeLastModified": "datetime-value",
     "Id": "Id-value",
     "Attachments": [
       {
@@ -120,7 +119,7 @@ Content-length: 1975
         "ContentType": "ContentType-value",
         "Size": 99,
         "IsInline": true,
-        "LastModifiedDateTime": "datetime-value",
+        "DateTimeLastModified": "datetime-value",
         "Id": "Id-value"
       }
     ]

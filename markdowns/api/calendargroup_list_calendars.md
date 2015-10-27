@@ -6,9 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/CalendarGroups/<Id>/Calendars
-GET /drive/root/createdByUser/CalendarGroups/<Id>/Calendars
-GET /drive/root/lastModifiedByUser/CalendarGroups/<Id>/Calendars
+GET /me/CalendarGroups/<Id>/Calendars
+GET /Users/<Id>/CalendarGroups/<Id>/Calendars
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +38,7 @@ Here is an example of the request.
   "name": "get_calendars"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/CalendarGroups/<Id>/Calendars
+GET https://outlook.office.com/v1.0/me/CalendarGroups/<Id>/Calendars
 ```
 ##### Response
 Here is an example of the response.
@@ -58,8 +57,8 @@ Content-length: 151
   "value": [
     {
       "Name": "Name-value",
-      "ChangeKey": "ChangeKey-value",
       "Color": "Color-value",
+      "ChangeKey": "ChangeKey-value",
       "Id": "Id-value"
     }
   ]

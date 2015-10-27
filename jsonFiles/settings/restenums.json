@@ -107,56 +107,6 @@
       }
     }
   },
-  "FreeBusyStatus": {
-    "isExclusive": true,
-    "options": {
-      "Free": {
-        "value": "0",
-        "description": ""
-      },
-      "Tentative": {
-        "value": "1",
-        "description": ""
-      },
-      "Busy": {
-        "value": "2",
-        "description": ""
-      },
-      "Oof": {
-        "value": "3",
-        "description": ""
-      },
-      "WorkingElsewhere": {
-        "value": "4",
-        "description": ""
-      },
-      "Unknown": {
-        "value": "-1",
-        "description": ""
-      }
-    }
-  },
-  "EventType": {
-    "isExclusive": true,
-    "options": {
-      "SingleInstance": {
-        "value": "0",
-        "description": ""
-      },
-      "Occurrence": {
-        "value": "1",
-        "description": ""
-      },
-      "Exception": {
-        "value": "2",
-        "description": ""
-      },
-      "SeriesMaster": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
   "ResponseType": {
     "isExclusive": true,
     "options": {
@@ -186,19 +136,23 @@
       }
     }
   },
-  "AttendeeType": {
+  "Sensitivity": {
     "isExclusive": true,
     "options": {
-      "Required": {
+      "Normal": {
         "value": "0",
         "description": ""
       },
-      "Optional": {
+      "Personal": {
         "value": "1",
         "description": ""
       },
-      "Resource": {
+      "Private": {
         "value": "2",
+        "description": ""
+      },
+      "Confidential": {
+        "value": "3",
         "description": ""
       }
     }
@@ -307,175 +261,69 @@
       }
     }
   },
-  "GroupAccessType": {
+  "FreeBusyStatus": {
     "isExclusive": true,
     "options": {
-      "None": {
+      "Free": {
         "value": "0",
         "description": ""
       },
-      "Private": {
+      "Tentative": {
         "value": "1",
         "description": ""
       },
-      "Secret": {
+      "Busy": {
         "value": "2",
         "description": ""
       },
-      "Public": {
-        "value": "3",
-        "description": ""
-      }
-    }
-  },
-  "DisplaySettings": {
-    "isExclusive": false,
-    "options": {
-      "None": {
-        "value": "0",
-        "description": ""
-      },
-      "Today": {
-        "value": "1",
-        "description": ""
-      },
-      "TimeScale": {
-        "value": "2",
-        "description": ""
-      },
-      "TaskDate": {
-        "value": "4",
-        "description": ""
-      },
-      "All": {
-        "value": "7",
-        "description": ""
-      }
-    }
-  },
-  "DrawingStyle": {
-    "isExclusive": true,
-    "options": {
-      "Bar": {
-        "value": "0",
-        "description": ""
-      },
-      "Callout": {
-        "value": "1",
-        "description": ""
-      }
-    }
-  },
-  "AnchorPosition": {
-    "isExclusive": true,
-    "options": {
-      "Top": {
-        "value": "0",
-        "description": ""
-      },
-      "Bottom": {
-        "value": "1",
-        "description": ""
-      }
-    }
-  },
-  "TaskBoardType": {
-    "isExclusive": true,
-    "options": {
-      "Status": {
-        "value": "0",
-        "description": ""
-      },
-      "AssignedTo": {
-        "value": "1",
-        "description": ""
-      },
-      "Bucket": {
-        "value": "2",
-        "description": ""
-      }
-    }
-  },
-  "PreviewType": {
-    "isExclusive": true,
-    "options": {
-      "Automatic": {
-        "value": "0",
-        "description": ""
-      },
-      "NoPreview": {
-        "value": "1",
-        "description": ""
-      },
-      "CheckList": {
-        "value": "2",
-        "description": ""
-      },
-      "Notes": {
+      "Oof": {
         "value": "3",
         "description": ""
       },
-      "Reference": {
+      "WorkingElsewhere": {
         "value": "4",
         "description": ""
-      }
-    }
-  },
-  "PatchInsertPosition": {
-    "isExclusive": true,
-    "options": {
-      "After": {
-        "value": "0",
-        "description": ""
       },
-      "Before": {
-        "value": "1",
-        "description": ""
-      }
-    }
-  },
-  "PatchActionType": {
-    "isExclusive": true,
-    "options": {
-      "Replace": {
-        "value": "0",
-        "description": ""
-      },
-      "Append": {
-        "value": "1",
-        "description": ""
-      },
-      "Delete": {
-        "value": "2",
-        "description": ""
-      },
-      "Insert": {
-        "value": "3",
-        "description": ""
-      },
-      "Prepend": {
-        "value": "4",
-        "description": ""
-      }
-    }
-  },
-  "UserRole": {
-    "isExclusive": true,
-    "options": {
-      "Owner": {
-        "value": "0",
-        "description": ""
-      },
-      "Contributor": {
-        "value": "1",
-        "description": ""
-      },
-      "Reader": {
-        "value": "2",
-        "description": ""
-      },
-      "None": {
+      "Unknown": {
         "value": "-1",
+        "description": ""
+      }
+    }
+  },
+  "EventType": {
+    "isExclusive": true,
+    "options": {
+      "SingleInstance": {
+        "value": "0",
+        "description": ""
+      },
+      "Occurrence": {
+        "value": "1",
+        "description": ""
+      },
+      "Exception": {
+        "value": "2",
+        "description": ""
+      },
+      "SeriesMaster": {
+        "value": "3",
+        "description": ""
+      }
+    }
+  },
+  "AttendeeType": {
+    "isExclusive": true,
+    "options": {
+      "Required": {
+        "value": "0",
+        "description": ""
+      },
+      "Optional": {
+        "value": "1",
+        "description": ""
+      },
+      "Resource": {
+        "value": "2",
         "description": ""
       }
     }

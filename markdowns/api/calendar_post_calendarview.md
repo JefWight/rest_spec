@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/Calendar/CalendarView
-POST /groups/<objectId>/Calendar/CalendarView
-POST /users/<objectId>/Calendars/<Id>/CalendarView
+POST /me/Calendar/CalendarView
+POST /Users/<Id>/Calendar/CalendarView
+POST /me/Events/<Id>/Calendar/CalendarView
 
 ```
 ### Request headers
@@ -31,7 +31,7 @@ Here is an example of the request.
   "name": "create_event_from_calendar"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>/Calendar
+POST https://outlook.office.com/v1.0/me/Calendar
 ```
 In the request body, supply a JSON representation of [Event](../resources/event.md) object.
 ##### Response
@@ -44,9 +44,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1812
+Content-length: 2080
 
 {
+  "ResponseStatus": {
+    "Response": "Response-value",
+    "Time": "datetime-value"
+  },
+  "iCalUId": "iCalUId-value",
+  "Reminder": 99,
+  "HasAttachments": true,
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
@@ -54,41 +61,32 @@ Content-length: 1812
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
-  "HasAttachments": true,
+  "Sensitivity": "Sensitivity-value",
   "Start": "datetime-value",
+  "OriginalStart": "datetime-value",
   "StartTimeZone": "StartTimeZone-value",
   "End": "datetime-value",
   "EndTimeZone": "EndTimeZone-value",
-  "Reminder": 99,
   "Location": {
-    "altitude": 99,
-    "latitude": 99,
-    "longitude": 99
-  },
-  "ShowAs": "ShowAs-value",
-  "ResponseStatus": {
-    "Response": "Response-value",
-    "Time": "datetime-value"
+    "DisplayName": "DisplayName-value",
+    "Address": {
+      "Street": "Street-value",
+      "City": "City-value",
+      "State": "State-value",
+      "CountryOrRegion": "CountryOrRegion-value",
+      "PostalCode": "PostalCode-value"
+    },
+    "Coordinates": {
+      "Altitude": 99,
+      "Latitude": 99,
+      "Longitude": 99,
+      "Accuracy": 99,
+      "AltitudeAccuracy": 99
+    }
   },
   "IsAllDay": true,
   "IsCancelled": true,
   "IsOrganizer": true,
-  "ResponseRequested": true,
-  "Type": "Type-value",
-  "SeriesMasterId": "SeriesMasterId-value",
-  "Attendees": [
-    {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
-      },
-      "Status": {
-        "Response": "Response-value",
-        "Time": "datetime-value"
-      },
-      "Type": "Type-value"
-    }
-  ],
   "Recurrence": {
     "Pattern": {
       "Type": "Type-value",
@@ -108,21 +106,32 @@ Content-length: 1812
       "NumberOfOccurrences": 99
     }
   },
+  "ResponseRequested": true,
+  "SeriesMasterId": "SeriesMasterId-value",
+  "ShowAs": "ShowAs-value",
+  "Type": "Type-value",
+  "Attendees": [
+    {
+      "Status": {
+        "Response": "Response-value",
+        "Time": "datetime-value"
+      },
+      "Type": "Type-value"
+    }
+  ],
   "Organizer": {
     "EmailAddress": {
       "Name": "Name-value",
       "Address": "Address-value"
     }
   },
-  "iCalUId": "iCalUId-value",
   "WebLink": "WebLink-value",
-  "OriginalStart": "datetime-value",
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Id": "Id-value"
 }
 ```

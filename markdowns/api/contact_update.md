@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/Contacts/<Id>
-PATCH /drive/root/createdByUser/Contacts/<Id>
-PATCH /drive/root/lastModifiedByUser/Contacts/<Id>
+PATCH /me/Contacts/<Id>
+PATCH /Users/<Id>/Contacts/<Id>
+PATCH /me/ContactFolders/<Id>/Contacts/<Id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -29,7 +29,8 @@ In the request body, supply the values for relevant fields that should be update
 |ChangeKey|String|Identifies the version of the contact. Every time the contact is changed, ChangeKey  changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |Children|String||
 |CompanyName|String|The name of the contact's company.|
-|CreatedDateTime|DateTimeOffset||
+|DateTimeCreated|DateTimeOffset||
+|DateTimeLastModified|DateTimeOffset||
 |Department|String|The name for the department in which the contact works.|
 |DisplayName|String|The display name for the contact.|
 |EmailAddresses|EmailAddress|The contact's email addresses.|
@@ -41,7 +42,6 @@ In the request body, supply the values for relevant fields that should be update
 |ImAddresses|String|The contact's instant messaging (IM) addresses.|
 |Initials|String|The contact's initials.|
 |JobTitle|String|The contact’s job title.|
-|LastModifiedDateTime|DateTimeOffset||
 |Manager|String|The user or contact that is this contact’s manager. Inherited from [DirectoryObject].            HTTP Methods: GET, PUT, DELETE|
 |MiddleName|String|The contact's middle name.|
 |MobilePhone1|String|The contact's mobile phone number.|
@@ -68,7 +68,7 @@ Here is an example of the request.
   "name": "update_contact"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/<objectId>/Contacts/<Id>
+PUT https://outlook.office.com/v1.0/me/Contacts/<Id>
 Content-type: application/json
 Content-length: 1977
 
@@ -83,6 +83,9 @@ Content-length: 1977
   "NickName": "NickName-value",
   "Surname": "Surname-value",
   "Title": "Title-value",
+  "YomiGivenName": "YomiGivenName-value",
+  "YomiSurname": "YomiSurname-value",
+  "YomiCompanyName": "YomiCompanyName-value",
   "Generation": "Generation-value",
   "EmailAddresses": [
     {
@@ -104,10 +107,10 @@ Content-length: 1977
   "HomePhones": [
     "HomePhones-value"
   ],
+  "MobilePhone1": "MobilePhone1-value",
   "BusinessPhones": [
     "BusinessPhones-value"
   ],
-  "MobilePhone1": "MobilePhone1-value",
   "HomeAddress": {
     "Street": "Street-value",
     "City": "City-value",
@@ -129,9 +132,6 @@ Content-length: 1977
     "CountryOrRegion": "CountryOrRegion-value",
     "PostalCode": "PostalCode-value"
   },
-  "YomiCompanyName": "YomiCompanyName-value",
-  "YomiGivenName": "YomiGivenName-value",
-  "YomiSurname": "YomiSurname-value",
   "SpouseName": "SpouseName-value",
   "PersonalNotes": "PersonalNotes-value",
   "Children": [
@@ -141,8 +141,8 @@ Content-length: 1977
   "Categories": [
     "Categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Id": "Id-value"
 }
 ```
@@ -169,6 +169,9 @@ Content-length: 1977
   "NickName": "NickName-value",
   "Surname": "Surname-value",
   "Title": "Title-value",
+  "YomiGivenName": "YomiGivenName-value",
+  "YomiSurname": "YomiSurname-value",
+  "YomiCompanyName": "YomiCompanyName-value",
   "Generation": "Generation-value",
   "EmailAddresses": [
     {
@@ -190,10 +193,10 @@ Content-length: 1977
   "HomePhones": [
     "HomePhones-value"
   ],
+  "MobilePhone1": "MobilePhone1-value",
   "BusinessPhones": [
     "BusinessPhones-value"
   ],
-  "MobilePhone1": "MobilePhone1-value",
   "HomeAddress": {
     "Street": "Street-value",
     "City": "City-value",
@@ -215,9 +218,6 @@ Content-length: 1977
     "CountryOrRegion": "CountryOrRegion-value",
     "PostalCode": "PostalCode-value"
   },
-  "YomiCompanyName": "YomiCompanyName-value",
-  "YomiGivenName": "YomiGivenName-value",
-  "YomiSurname": "YomiSurname-value",
   "SpouseName": "SpouseName-value",
   "PersonalNotes": "PersonalNotes-value",
   "Children": [
@@ -227,8 +227,8 @@ Content-length: 1977
   "Categories": [
     "Categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Id": "Id-value"
 }
 ```

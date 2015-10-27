@@ -16,9 +16,6 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "EmailAddress": {
-    "@odata.type": "microsoft.graph.emailaddress"
-  },
   "Status": {
     "@odata.type": "microsoft.graph.responsestatus"
   },
@@ -29,7 +26,6 @@ Here is a JSON representation of the resource
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|EmailAddress|[EmailAddress](emailaddress.md)|The name and email address of the attendee.|
 |Status|[ResponseStatus](responsestatus.md)|The response (none, accepted, declined, etc.) and time.|
 |Type|String|The attendee type: Required = 0, Optional = 1, Resource = 2. Possible values are: `Required`, `Optional`, `Resource`.|
 

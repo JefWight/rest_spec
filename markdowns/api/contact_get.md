@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/Contacts/<Id>
-GET /drive/root/createdByUser/Contacts/<Id>
-GET /drive/root/lastModifiedByUser/Contacts/<Id>
+GET /me/Contacts/<Id>
+GET /Users/<Id>/Contacts/<Id>
+GET /me/ContactFolders/<Id>/Contacts/<Id>
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -34,7 +34,7 @@ Here is an example of the request.
   "name": "get_contact"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/Contacts/<Id>
+GET https://outlook.office.com/v1.0/me/Contacts/<Id>
 ```
 ##### Response
 Here is an example of the response.
@@ -59,6 +59,9 @@ Content-length: 1977
   "NickName": "NickName-value",
   "Surname": "Surname-value",
   "Title": "Title-value",
+  "YomiGivenName": "YomiGivenName-value",
+  "YomiSurname": "YomiSurname-value",
+  "YomiCompanyName": "YomiCompanyName-value",
   "Generation": "Generation-value",
   "EmailAddresses": [
     {
@@ -80,10 +83,10 @@ Content-length: 1977
   "HomePhones": [
     "HomePhones-value"
   ],
+  "MobilePhone1": "MobilePhone1-value",
   "BusinessPhones": [
     "BusinessPhones-value"
   ],
-  "MobilePhone1": "MobilePhone1-value",
   "HomeAddress": {
     "Street": "Street-value",
     "City": "City-value",
@@ -105,9 +108,6 @@ Content-length: 1977
     "CountryOrRegion": "CountryOrRegion-value",
     "PostalCode": "PostalCode-value"
   },
-  "YomiCompanyName": "YomiCompanyName-value",
-  "YomiGivenName": "YomiGivenName-value",
-  "YomiSurname": "YomiSurname-value",
   "SpouseName": "SpouseName-value",
   "PersonalNotes": "PersonalNotes-value",
   "Children": [
@@ -117,8 +117,8 @@ Content-length: 1977
   "Categories": [
     "Categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Id": "Id-value"
 }
 ```

@@ -1,5 +1,5 @@
 {
-  "name": "users",
+  "name": "Users",
   "description": "",
   "collectionOf": "User",
   "isComplexType": false,
@@ -24,7 +24,7 @@
   "updateDescription": null,
   "deleteDescription": null,
   "restPath": {
-    "/users": true
+    "/Users": true
   },
   "properties": [
 

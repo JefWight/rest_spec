@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/Messages/<Id>/Attachments
-GET /drive/root/createdByUser/Messages/<Id>/Attachments
-GET /drive/root/lastModifiedByUser/Messages/<Id>/Attachments
+GET /me/Messages/<Id>/Attachments
+GET /Users/<Id>/Messages/<Id>/Attachments
+GET /me/RootFolder/Messages/<Id>/Attachments
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +39,7 @@ Here is an example of the request.
   "name": "get_attachments"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/Messages/<Id>/Attachments
+GET https://outlook.office.com/v1.0/me/Messages/<Id>/Attachments
 ```
 ##### Response
 Here is an example of the response.
@@ -61,7 +61,7 @@ Content-length: 215
       "ContentType": "ContentType-value",
       "Size": 99,
       "IsInline": true,
-      "LastModifiedDateTime": "datetime-value",
+      "DateTimeLastModified": "datetime-value",
       "Id": "Id-value"
     }
   ]

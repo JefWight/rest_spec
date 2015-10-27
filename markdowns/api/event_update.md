@@ -6,9 +6,9 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/<objectId>/Events/<Id>
-PATCH /groups/<objectId>/Events/<Id>
-PATCH /users/<objectId>/CalendarView/<Id>
+PATCH /me/Events/<Id>
+PATCH /me/CalendarView/<Id>
+PATCH /Users/<Id>/Events/<Id>
 ```
 ### Optional request headers
 | Name       | Type | Description|
@@ -25,7 +25,8 @@ In the request body, supply the values for relevant fields that should be update
 |BodyPreview|String|The preview of the message associated with the event.|
 |Categories|String|The categories associated with the event.|
 |ChangeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|CreatedDateTime|DateTimeOffset||
+|DateTimeCreated|DateTimeOffset||
+|DateTimeLastModified|DateTimeOffset||
 |End|DateTimeOffset|The date and time that the event ends.<br/><br/>By default, the end time is in UTC. You can specify an optional time zone in EndTimeZone, express the end time in that time zone, and include a time offset from UTC. Note that if you use EndTimeZone, you must specify a value for StartTimeZone as well.<br/><br/>This example specifies February 25, 2015, 9:34pm in Pacific Standard Time: "2015-02-25T21:34:00-08:00". |
 |EndTimeZone|String| Identifies the meeting's time zone for the meeting end time (see the End property). This property is set with the time zone name as it is stored in Windows. You can get the time zone names by calling System.TimeZoneInfo.GetSystemTimeZones().<br/><br/>This property is optional for v1.0. However, this property must be used if the StartTimeZone property is used.<br/><br/>See [TimeZone](https://technet.microsoft.com/en-us/library/cc749073.aspx) for more information. |
 |HasAttachments|Boolean|Set to true if the event has attachments.|
@@ -33,7 +34,6 @@ In the request body, supply the values for relevant fields that should be update
 |IsAllDay|Boolean|Set to true if the event lasts all day.|
 |IsCancelled|Boolean|Set to true if the event has been canceled.|
 |IsOrganizer|Boolean|Set to true if the message sender is also the organizer.|
-|LastModifiedDateTime|DateTimeOffset||
 |Location|Location|The location of the event.|
 |Organizer|Recipient|The organizer of the event.|
 |OriginalStart|DateTimeOffset||
@@ -41,6 +41,7 @@ In the request body, supply the values for relevant fields that should be update
 |Reminder|Int32||
 |ResponseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |ResponseStatus|ResponseStatus|Indicates the type of response sent in response to an event message.|
+|Sensitivity|String| Possible values are: `Normal`, `Personal`, `Private`, `Confidential`.|
 |SeriesMasterId|String|The categories assigned to the item.|
 |ShowAs|String|The status to show: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1. Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
 |Start|DateTimeOffset|The start time of the event. <br/><br/>By default, the start time is in UTC. You can specify an optional time zone in StartTimeZone, express the start time in that time zone, and include a time offset from UTC. Note that if you use StartTimeZone, you must specify a value for EndTimeZone as well.<br/><br/>This example specifies February 25, 2015, 7:34pm in Pacific Standard Time: "2015-02-25T19:34:00-08:00".  |
@@ -60,11 +61,18 @@ Here is an example of the request.
   "name": "update_event"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/<objectId>/Events/<Id>
+PUT https://outlook.office.com/v1.0/me/Events/<Id>
 Content-type: application/json
-Content-length: 1812
+Content-length: 2080
 
 {
+  "ResponseStatus": {
+    "Response": "Response-value",
+    "Time": "datetime-value"
+  },
+  "iCalUId": "iCalUId-value",
+  "Reminder": 99,
+  "HasAttachments": true,
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
@@ -72,41 +80,32 @@ Content-length: 1812
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
-  "HasAttachments": true,
+  "Sensitivity": "Sensitivity-value",
   "Start": "datetime-value",
+  "OriginalStart": "datetime-value",
   "StartTimeZone": "StartTimeZone-value",
   "End": "datetime-value",
   "EndTimeZone": "EndTimeZone-value",
-  "Reminder": 99,
   "Location": {
-    "altitude": 99,
-    "latitude": 99,
-    "longitude": 99
-  },
-  "ShowAs": "ShowAs-value",
-  "ResponseStatus": {
-    "Response": "Response-value",
-    "Time": "datetime-value"
+    "DisplayName": "DisplayName-value",
+    "Address": {
+      "Street": "Street-value",
+      "City": "City-value",
+      "State": "State-value",
+      "CountryOrRegion": "CountryOrRegion-value",
+      "PostalCode": "PostalCode-value"
+    },
+    "Coordinates": {
+      "Altitude": 99,
+      "Latitude": 99,
+      "Longitude": 99,
+      "Accuracy": 99,
+      "AltitudeAccuracy": 99
+    }
   },
   "IsAllDay": true,
   "IsCancelled": true,
   "IsOrganizer": true,
-  "ResponseRequested": true,
-  "Type": "Type-value",
-  "SeriesMasterId": "SeriesMasterId-value",
-  "Attendees": [
-    {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
-      },
-      "Status": {
-        "Response": "Response-value",
-        "Time": "datetime-value"
-      },
-      "Type": "Type-value"
-    }
-  ],
   "Recurrence": {
     "Pattern": {
       "Type": "Type-value",
@@ -126,21 +125,32 @@ Content-length: 1812
       "NumberOfOccurrences": 99
     }
   },
+  "ResponseRequested": true,
+  "SeriesMasterId": "SeriesMasterId-value",
+  "ShowAs": "ShowAs-value",
+  "Type": "Type-value",
+  "Attendees": [
+    {
+      "Status": {
+        "Response": "Response-value",
+        "Time": "datetime-value"
+      },
+      "Type": "Type-value"
+    }
+  ],
   "Organizer": {
     "EmailAddress": {
       "Name": "Name-value",
       "Address": "Address-value"
     }
   },
-  "iCalUId": "iCalUId-value",
   "WebLink": "WebLink-value",
-  "OriginalStart": "datetime-value",
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Id": "Id-value"
 }
 ```
@@ -154,9 +164,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1812
+Content-length: 2080
 
 {
+  "ResponseStatus": {
+    "Response": "Response-value",
+    "Time": "datetime-value"
+  },
+  "iCalUId": "iCalUId-value",
+  "Reminder": 99,
+  "HasAttachments": true,
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
@@ -164,41 +181,32 @@ Content-length: 1812
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
-  "HasAttachments": true,
+  "Sensitivity": "Sensitivity-value",
   "Start": "datetime-value",
+  "OriginalStart": "datetime-value",
   "StartTimeZone": "StartTimeZone-value",
   "End": "datetime-value",
   "EndTimeZone": "EndTimeZone-value",
-  "Reminder": 99,
   "Location": {
-    "altitude": 99,
-    "latitude": 99,
-    "longitude": 99
-  },
-  "ShowAs": "ShowAs-value",
-  "ResponseStatus": {
-    "Response": "Response-value",
-    "Time": "datetime-value"
+    "DisplayName": "DisplayName-value",
+    "Address": {
+      "Street": "Street-value",
+      "City": "City-value",
+      "State": "State-value",
+      "CountryOrRegion": "CountryOrRegion-value",
+      "PostalCode": "PostalCode-value"
+    },
+    "Coordinates": {
+      "Altitude": 99,
+      "Latitude": 99,
+      "Longitude": 99,
+      "Accuracy": 99,
+      "AltitudeAccuracy": 99
+    }
   },
   "IsAllDay": true,
   "IsCancelled": true,
   "IsOrganizer": true,
-  "ResponseRequested": true,
-  "Type": "Type-value",
-  "SeriesMasterId": "SeriesMasterId-value",
-  "Attendees": [
-    {
-      "EmailAddress": {
-        "Name": "Name-value",
-        "Address": "Address-value"
-      },
-      "Status": {
-        "Response": "Response-value",
-        "Time": "datetime-value"
-      },
-      "Type": "Type-value"
-    }
-  ],
   "Recurrence": {
     "Pattern": {
       "Type": "Type-value",
@@ -218,21 +226,32 @@ Content-length: 1812
       "NumberOfOccurrences": 99
     }
   },
+  "ResponseRequested": true,
+  "SeriesMasterId": "SeriesMasterId-value",
+  "ShowAs": "ShowAs-value",
+  "Type": "Type-value",
+  "Attendees": [
+    {
+      "Status": {
+        "Response": "Response-value",
+        "Time": "datetime-value"
+      },
+      "Type": "Type-value"
+    }
+  ],
   "Organizer": {
     "EmailAddress": {
       "Name": "Name-value",
       "Address": "Address-value"
     }
   },
-  "iCalUId": "iCalUId-value",
   "WebLink": "WebLink-value",
-  "OriginalStart": "datetime-value",
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Id": "Id-value"
 }
 ```

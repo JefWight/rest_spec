@@ -1,4 +1,4 @@
-# location resource type
+# Location resource type
 
 The location of an event.
 
@@ -16,24 +16,28 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "altitude": 1024,
-  "latitude": 1024,
-  "longitude": 1024
+  "Address": {
+    "@odata.type": "microsoft.graph.physicaladdress"
+  },
+  "Coordinates": {
+    "@odata.type": "microsoft.graph.geocoordinates"
+  },
+  "DisplayName": "String-value"
 }
 
 ```
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|altitude|Double||
-|latitude|Double||
-|longitude|Double||
+|Address|[PhysicalAddress](physicaladdress.md)||
+|Coordinates|[GeoCoordinates](geocoordinates.md)||
+|DisplayName|String||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "location resource",
+  "description": "Location resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

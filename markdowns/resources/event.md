@@ -11,7 +11,6 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "Attachments",
     "Calendar",
-    "Extensions",
     "Instances"
   ],
   "@odata.type": "microsoft.graph.event"
@@ -40,14 +39,10 @@ Here is a JSON representation of the resource
     "String-value"
   ],
   "ChangeKey": "String-value",
-  "CreatedDateTime": "String (timestamp)",
+  "DateTimeCreated": "String (timestamp)",
+  "DateTimeLastModified": "String (timestamp)",
   "End": "String (timestamp)",
   "EndTimeZone": "String-value",
-  "Extensions": [
-    {
-      "@odata.type": "microsoft.graph.extension"
-    }
-  ],
   "HasAttachments": true,
   "Id": "String-value (identifier)",
   "Importance": "String-value",
@@ -59,7 +54,6 @@ Here is a JSON representation of the resource
   "IsAllDay": true,
   "IsCancelled": true,
   "IsOrganizer": true,
-  "LastModifiedDateTime": "String (timestamp)",
   "Location": {
     "@odata.type": "microsoft.graph.location"
   },
@@ -75,6 +69,7 @@ Here is a JSON representation of the resource
   "ResponseStatus": {
     "@odata.type": "microsoft.graph.responsestatus"
   },
+  "Sensitivity": "String-value",
   "SeriesMasterId": "String-value",
   "ShowAs": "String-value",
   "Start": "String (timestamp)",
@@ -94,7 +89,8 @@ Here is a JSON representation of the resource
 |BodyPreview|String|The preview of the message associated with the event.|
 |Categories|String collection|The categories associated with the event.|
 |ChangeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|CreatedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeCreated|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|DateTimeLastModified|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |End|DateTimeOffset|The date and time that the event ends.<br/><br/>By default, the end time is in UTC. You can specify an optional time zone in EndTimeZone, express the end time in that time zone, and include a time offset from UTC. Note that if you use EndTimeZone, you must specify a value for StartTimeZone as well.<br/><br/>This example specifies February 25, 2015, 9:34pm in Pacific Standard Time: "2015-02-25T21:34:00-08:00". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |EndTimeZone|String| Identifies the meeting's time zone for the meeting end time (see the End property). This property is set with the time zone name as it is stored in Windows. You can get the time zone names by calling System.TimeZoneInfo.GetSystemTimeZones().<br/><br/>This property is optional for v1.0. However, this property must be used if the StartTimeZone property is used.<br/><br/>See [TimeZone](https://technet.microsoft.com/en-us/library/cc749073.aspx) for more information. |
 |HasAttachments|Boolean|Set to true if the event has attachments.|
@@ -103,7 +99,6 @@ Here is a JSON representation of the resource
 |IsAllDay|Boolean|Set to true if the event lasts all day.|
 |IsCancelled|Boolean|Set to true if the event has been canceled.|
 |IsOrganizer|Boolean|Set to true if the message sender is also the organizer.|
-|LastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |Location|[Location](location.md)|The location of the event.|
 |Organizer|[Recipient](recipient.md)|The organizer of the event.|
 |OriginalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -111,6 +106,7 @@ Here is a JSON representation of the resource
 |Reminder|Int32||
 |ResponseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |ResponseStatus|[ResponseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
+|Sensitivity|String| Possible values are: `Normal`, `Personal`, `Private`, `Confidential`.|
 |SeriesMasterId|String|The categories assigned to the item.|
 |ShowAs|String|The status to show: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1. Possible values are: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
 |Start|DateTimeOffset|The start time of the event. <br/><br/>By default, the start time is in UTC. You can specify an optional time zone in StartTimeZone, express the start time in that time zone, and include a time offset from UTC. Note that if you use StartTimeZone, you must specify a value for EndTimeZone as well.<br/><br/>This example specifies February 25, 2015, 7:34pm in Pacific Standard Time: "2015-02-25T19:34:00-08:00".  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -124,8 +120,7 @@ Here is a JSON representation of the resource
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |Attachments|[Attachment](attachment.md) collection|The collection of [FileAttachment](#FileAttachmentResource) and [ItemAttachment](#FileAttachmentResource) attachments for the event. Navigation property. Read-only. Nullable.|
-|Calendar|[Calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
-|Extensions|[Extension](extension.md) collection| Read-only. Nullable.|
+|Calendar|[Calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only. Nullable.|
 |Instances|[Event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
 
 ### Methods
@@ -135,8 +130,6 @@ Here is a JSON representation of the resource
 |[Get Event](../api/event_get.md) | [Event](event.md) |Read properties and relationships of event object.|
 |[Create Attachment](../api/event_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the Attachments collection.|
 |[List Attachments](../api/event_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
-|[Create Extension](../api/event_post_extensions.md) |[Extension](extension.md)| Create a new Extension by posting to the Extensions collection.|
-|[List Extensions](../api/event_list_extensions.md) |[Extension](extension.md) collection| Get a Extension object collection.|
 |[Create Event](../api/event_post_instances.md) |[Event](event.md)| Create a new Event by posting to the Instances collection.|
 |[List Instances](../api/event_list_instances.md) |[Event](event.md) collection| Get a Event object collection.|
 |[Update](../api/event_update.md) | [Event](event.md)	|Update Event object. |

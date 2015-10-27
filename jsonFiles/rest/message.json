@@ -24,62 +24,28 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
-    "/groups/<objectId>/drive/items/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/items/<id>/createdByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/items/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/createdByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/shared/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/createdByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/special/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/root/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/root/createdByUser/Messages/<Id>": true,
-    "/groups/<objectId>/drive/root/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/groups/<objectId>/drive/root/lastModifiedByUser/Messages/<Id>": true,
-    "/users/<objectId>/MailFolders/<Id>/Messages/<Id>": true,
-    "/users/<objectId>/Messages/<Id>": true,
-    "/drives/<id>/items/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/items/<id>/createdByUser/Messages/<Id>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/items/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/shared/<id>/createdByUser/Messages/<Id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/shared/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drives/<id>/special/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/special/<id>/createdByUser/Messages/<Id>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/special/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drives/<id>/root/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/root/createdByUser/Messages/<Id>": true,
-    "/drives/<id>/root/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drives/<id>/root/lastModifiedByUser/Messages/<Id>": true,
-    "/shares/<id>/items/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/shares/<id>/items/<id>/createdByUser/Messages/<Id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/shares/<id>/items/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drive/items/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/items/<id>/createdByUser/Messages/<Id>": true,
-    "/drive/items/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/items/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drive/shared/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/shared/<id>/createdByUser/Messages/<Id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/shared/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drive/special/<id>/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/special/<id>/createdByUser/Messages/<Id>": true,
-    "/drive/special/<id>/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/special/<id>/lastModifiedByUser/Messages/<Id>": true,
-    "/drive/root/createdByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/root/createdByUser/Messages/<Id>": true,
-    "/drive/root/lastModifiedByUser/MailFolders/<Id>/Messages/<Id>": true,
-    "/drive/root/lastModifiedByUser/Messages/<Id>": true
+    "/Users/<Id>/Messages/<Id>": true,
+    "/Users/<Id>/Folders/<Id>/Messages/<Id>": true,
+    "/Users/<Id>/RootFolder/Messages/<Id>": true,
+    "/me/Messages/<Id>": true,
+    "/me/Folders/<Id>/Messages/<Id>": true,
+    "/me/RootFolder/Messages/<Id>": true
   },
   "properties": [
+    {
+      "name": "HasAttachments",
+      "description": "",
+      "isKey": false,
+      "dataType": "Boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
     {
       "name": "Subject",
       "description": "",
@@ -92,7 +58,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "Body",
@@ -120,7 +86,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "Importance",
@@ -129,20 +95,6 @@
       "dataType": "String",
       "isReadOnly": false,
       "enumName": "Importance",
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "HasAttachments",
-      "description": "",
-      "isKey": false,
-      "dataType": "Boolean",
-      "isReadOnly": false,
-      "enumName": null,
       "isCollection": false,
       "isRelationship": false,
       "supportFilter": false,
@@ -162,10 +114,10 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
-      "name": "From",
+      "name": "Sender",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -179,7 +131,7 @@
       "isUnicode": null
     },
     {
-      "name": "Sender",
+      "name": "From",
       "description": "",
       "isKey": false,
       "dataType": "Recipient",
@@ -260,41 +212,13 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "UniqueBody",
       "description": "",
       "isKey": false,
       "dataType": "ItemBody",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "ReceivedDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "DateTimeOffset",
-      "isReadOnly": false,
-      "enumName": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": null,
-      "isUnicode": null
-    },
-    {
-      "name": "SentDateTime",
-      "description": "",
-      "isKey": false,
-      "dataType": "DateTimeOffset",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -333,6 +257,20 @@
       "isUnicode": null
     },
     {
+      "name": "IsRead",
+      "description": "",
+      "isKey": false,
+      "dataType": "Boolean",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
       "name": "IsDraft",
       "description": "",
       "isKey": false,
@@ -347,10 +285,24 @@
       "isUnicode": null
     },
     {
-      "name": "IsRead",
+      "name": "DateTimeReceived",
       "description": "",
       "isKey": false,
-      "dataType": "Boolean",
+      "dataType": "DateTimeOffset",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "DateTimeSent",
+      "description": "",
+      "isKey": false,
+      "dataType": "DateTimeOffset",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -372,7 +324,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "ChangeKey",
@@ -386,7 +338,7 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
       "name": "Categories",
@@ -400,10 +352,10 @@
       "supportFilter": false,
       "allowPostToCollection": true,
       "isNullable": null,
-      "isUnicode": false
+      "isUnicode": null
     },
     {
-      "name": "CreatedDateTime",
+      "name": "DateTimeCreated",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -417,7 +369,7 @@
       "isUnicode": null
     },
     {
-      "name": "LastModifiedDateTime",
+      "name": "DateTimeLastModified",
       "description": "",
       "isKey": false,
       "dataType": "DateTimeOffset",
@@ -441,28 +393,14 @@
       "isRelationship": false,
       "supportFilter": false,
       "allowPostToCollection": true,
-      "isNullable": false,
-      "isUnicode": false
+      "isNullable": null,
+      "isUnicode": null
     },
     {
       "name": "Attachments",
       "description": "",
       "isKey": false,
       "dataType": "Attachment",
-      "isReadOnly": true,
-      "enumName": null,
-      "isCollection": true,
-      "isRelationship": true,
-      "supportFilter": false,
-      "allowPostToCollection": true,
-      "isNullable": true,
-      "isUnicode": null
-    },
-    {
-      "name": "Extensions",
-      "description": "",
-      "isKey": false,
-      "dataType": "Extension",
       "isReadOnly": true,
       "enumName": null,
       "isCollection": true,
@@ -499,7 +437,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
       ]
     },
@@ -528,7 +466,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
       ]
     },
@@ -617,7 +555,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
       ]
     },
@@ -646,7 +584,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         }
       ]
     },
@@ -675,7 +613,7 @@
           "isRequired": true,
           "enumName": null,
           "isNullable": null,
-          "isUnicode": false
+          "isUnicode": null
         },
         {
           "name": "ToRecipients",

@@ -6,9 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<objectId>/Messages
-POST /drive/root/createdByUser/Messages
-POST /drive/root/lastModifiedByUser/Messages
+POST /me/Messages
+POST /Users/<Id>/Messages
 
 ```
 ### Request headers
@@ -31,7 +30,7 @@ Here is an example of the request.
   "name": "create_message_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/<objectId>
+POST https://outlook.office.com/v1.0/me
 ```
 In the request body, supply a JSON representation of [Message](../resources/message.md) object.
 ##### Response
@@ -47,6 +46,7 @@ Content-type: application/json
 Content-length: 1546
 
 {
+  "HasAttachments": true,
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
@@ -54,15 +54,14 @@ Content-length: 1546
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
-  "HasAttachments": true,
   "ParentFolderId": "ParentFolderId-value",
-  "From": {
+  "Sender": {
     "EmailAddress": {
       "Name": "Name-value",
       "Address": "Address-value"
     }
   },
-  "Sender": {
+  "From": {
     "EmailAddress": {
       "Name": "Name-value",
       "Address": "Address-value"
@@ -105,19 +104,19 @@ Content-length: 1546
     "ContentType": "ContentType-value",
     "Content": "Content-value"
   },
-  "ReceivedDateTime": "datetime-value",
-  "SentDateTime": "datetime-value",
   "IsDeliveryReceiptRequested": true,
   "IsReadReceiptRequested": true,
-  "IsDraft": true,
   "IsRead": true,
+  "IsDraft": true,
+  "DateTimeReceived": "datetime-value",
+  "DateTimeSent": "datetime-value",
   "WebLink": "WebLink-value",
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Id": "Id-value"
 }
 ```

@@ -1,5 +1,5 @@
 {
-  "name": "location",
+  "name": "Location",
   "description": "The location of an event.",
   "collectionOf": null,
   "isComplexType": true,
@@ -27,10 +27,10 @@
   },
   "properties": [
     {
-      "name": "altitude",
+      "name": "DisplayName",
       "description": "",
       "isKey": false,
-      "dataType": "Double",
+      "dataType": "String",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -41,10 +41,10 @@
       "isUnicode": null
     },
     {
-      "name": "latitude",
+      "name": "Address",
       "description": "",
       "isKey": false,
-      "dataType": "Double",
+      "dataType": "PhysicalAddress",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,
@@ -55,10 +55,10 @@
       "isUnicode": null
     },
     {
-      "name": "longitude",
+      "name": "Coordinates",
       "description": "",
       "isKey": false,
-      "dataType": "Double",
+      "dataType": "GeoCoordinates",
       "isReadOnly": false,
       "enumName": null,
       "isCollection": false,

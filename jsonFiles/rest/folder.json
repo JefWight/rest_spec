@@ -1,13 +1,13 @@
 {
-  "name": "folder",
+  "name": "Folder",
   "description": "A folder in a user's mailbox, such as Inbox, Drafts, and Sent Items. Folders can contain messages and other folders.",
   "collectionOf": null,
-  "isComplexType": true,
+  "isComplexType": false,
   "isEntitySet": false,
-  "allowPatch": false,
-  "allowUpsert": false,
-  "allowPatchCreate": false,
-  "allowDelete": false,
+  "allowPatch": true,
+  "allowUpsert": true,
+  "allowPatchCreate": true,
+  "allowDelete": true,
   "isReferenceable": true,
   "isExpandable": true,
   "isFilterable": true,
@@ -24,10 +24,42 @@
   "updateDescription": "",
   "deleteDescription": "",
   "restPath": {
+    "/Users/<Id>/Folders/<Id>": true,
+    "/Users/<Id>/RootFolder": true,
+    "/me/Folders/<Id>": true,
+    "/me/RootFolder": true
   },
   "properties": [
     {
-      "name": "childCount",
+      "name": "DisplayName",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "ParentFolderId",
+      "description": "",
+      "isKey": false,
+      "dataType": "String",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "ChildFolderCount",
       "description": "",
       "isKey": false,
       "dataType": "Int32",
@@ -39,9 +71,136 @@
       "allowPostToCollection": true,
       "isNullable": null,
       "isUnicode": null
+    },
+    {
+      "name": "UnreadItemCount",
+      "description": "",
+      "isKey": false,
+      "dataType": "Int32",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "TotalItemCount",
+      "description": "",
+      "isKey": false,
+      "dataType": "Int32",
+      "isReadOnly": false,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "Id",
+      "description": "",
+      "isKey": true,
+      "dataType": "String",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": null,
+      "isUnicode": null
+    },
+    {
+      "name": "Messages",
+      "description": "",
+      "isKey": false,
+      "dataType": "Message",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
+    },
+    {
+      "name": "ChildFolders",
+      "description": "",
+      "isKey": false,
+      "dataType": "Folder",
+      "isReadOnly": true,
+      "enumName": null,
+      "isCollection": true,
+      "isRelationship": true,
+      "supportFilter": false,
+      "allowPostToCollection": true,
+      "isNullable": true,
+      "isUnicode": null
     }
   ],
   "methods": [
+    {
+      "name": "Copy",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "Folder",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
 
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "DestinationId",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    },
+    {
+      "name": "Move",
+      "displayName": "",
+      "description": "",
+      "prerequisites": "",
+      "returnType": "Folder",
+      "isReturnNullable": null,
+      "isReturnTypeCollection": false,
+      "httpSuccessCode": "200",
+      "isFunction": false,
+      "scopes": [
+
+      ],
+      "errorCodes": [
+
+      ],
+      "parameters": [
+        {
+          "name": "DestinationId",
+          "description": "",
+          "dataType": "String",
+          "isCollection": false,
+          "isRequired": true,
+          "enumName": null,
+          "isNullable": null,
+          "isUnicode": null
+        }
+      ]
+    }
   ]
 }

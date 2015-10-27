@@ -25,7 +25,10 @@ In the request body, supply the values for relevant fields that should be update
 |CcRecipients|Recipient||
 |ChangeKey|String||
 |ConversationId|String||
-|CreatedDateTime|DateTimeOffset||
+|DateTimeCreated|DateTimeOffset||
+|DateTimeLastModified|DateTimeOffset||
+|DateTimeReceived|DateTimeOffset||
+|DateTimeSent|DateTimeOffset||
 |From|Recipient||
 |HasAttachments|Boolean||
 |Importance|String| Possible values are: `Low`, `Normal`, `High`.|
@@ -33,13 +36,10 @@ In the request body, supply the values for relevant fields that should be update
 |IsDraft|Boolean||
 |IsRead|Boolean||
 |IsReadReceiptRequested|Boolean||
-|LastModifiedDateTime|DateTimeOffset||
 |MeetingMessageType|String| The type of event message: None = 0, MeetingRequest = 1, MeetingCancelled = 2, MeetingAccepted = 3, MeetingTentativelyAccepted = 4, MeetingDeclined = 5  Possible values are: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
 |ParentFolderId|String||
-|ReceivedDateTime|DateTimeOffset||
 |ReplyTo|Recipient||
 |Sender|Recipient||
-|SentDateTime|DateTimeOffset||
 |Subject|String||
 |ToRecipients|Recipient||
 |UniqueBody|ItemBody||
@@ -60,6 +60,7 @@ Content-type: application/json
 Content-length: 1598
 
 {
+  "HasAttachments": true,
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
@@ -67,15 +68,14 @@ Content-length: 1598
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
-  "HasAttachments": true,
   "ParentFolderId": "ParentFolderId-value",
-  "From": {
+  "Sender": {
     "EmailAddress": {
       "Name": "Name-value",
       "Address": "Address-value"
     }
   },
-  "Sender": {
+  "From": {
     "EmailAddress": {
       "Name": "Name-value",
       "Address": "Address-value"
@@ -118,19 +118,19 @@ Content-length: 1598
     "ContentType": "ContentType-value",
     "Content": "Content-value"
   },
-  "ReceivedDateTime": "datetime-value",
-  "SentDateTime": "datetime-value",
   "IsDeliveryReceiptRequested": true,
   "IsReadReceiptRequested": true,
-  "IsDraft": true,
   "IsRead": true,
+  "IsDraft": true,
+  "DateTimeReceived": "datetime-value",
+  "DateTimeSent": "datetime-value",
   "WebLink": "WebLink-value",
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Id": "Id-value",
   "MeetingMessageType": "MeetingMessageType-value"
 }
@@ -148,6 +148,7 @@ Content-type: application/json
 Content-length: 1598
 
 {
+  "HasAttachments": true,
   "Subject": "Subject-value",
   "Body": {
     "ContentType": "ContentType-value",
@@ -155,15 +156,14 @@ Content-length: 1598
   },
   "BodyPreview": "BodyPreview-value",
   "Importance": "Importance-value",
-  "HasAttachments": true,
   "ParentFolderId": "ParentFolderId-value",
-  "From": {
+  "Sender": {
     "EmailAddress": {
       "Name": "Name-value",
       "Address": "Address-value"
     }
   },
-  "Sender": {
+  "From": {
     "EmailAddress": {
       "Name": "Name-value",
       "Address": "Address-value"
@@ -206,19 +206,19 @@ Content-length: 1598
     "ContentType": "ContentType-value",
     "Content": "Content-value"
   },
-  "ReceivedDateTime": "datetime-value",
-  "SentDateTime": "datetime-value",
   "IsDeliveryReceiptRequested": true,
   "IsReadReceiptRequested": true,
-  "IsDraft": true,
   "IsRead": true,
+  "IsDraft": true,
+  "DateTimeReceived": "datetime-value",
+  "DateTimeSent": "datetime-value",
   "WebLink": "WebLink-value",
   "ChangeKey": "ChangeKey-value",
   "Categories": [
     "Categories-value"
   ],
-  "CreatedDateTime": "datetime-value",
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeCreated": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Id": "Id-value",
   "MeetingMessageType": "MeetingMessageType-value"
 }

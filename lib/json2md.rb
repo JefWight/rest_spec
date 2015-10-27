@@ -508,6 +508,7 @@ module SpecMaker
 		# if File.exists?(outfile)
 		# 	puts "*-----> List file #{outfile} already exists."
 		# end
+		Dir.mkdir(MARKDOWN_API_FOLDER) unless File.exists?(MARKDOWN_API_FOLDER)	
 		file=File.new(outfile,'w')
 		getMethodLines.each do |line|
 			file.write line

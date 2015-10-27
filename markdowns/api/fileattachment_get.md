@@ -44,17 +44,18 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 282
+Content-length: 308
 
 {
   "ContentId": "ContentId-value",
   "ContentLocation": "ContentLocation-value",
   "ContentBytes": "ContentBytes-value",
+  "IsContactPhoto": true,
   "Name": "Name-value",
   "ContentType": "ContentType-value",
   "Size": 99,
   "IsInline": true,
-  "LastModifiedDateTime": "datetime-value",
+  "DateTimeLastModified": "datetime-value",
   "Id": "Id-value"
 }
 ```

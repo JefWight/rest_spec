@@ -6,9 +6,8 @@ The following **scopes** are required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<objectId>/ContactFolders/<Id>/ChildFolders
-GET /drive/root/createdByUser/ContactFolders/<Id>/ChildFolders
-GET /drive/root/lastModifiedByUser/ContactFolders/<Id>/ChildFolders
+GET /me/ContactFolders/<Id>/ChildFolders
+GET /Users/<Id>/ContactFolders/<Id>/ChildFolders
 ```
 ### Optional query parameters
 |Name|Value|Description|
@@ -39,7 +38,7 @@ Here is an example of the request.
   "name": "get_childfolders"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<objectId>/ContactFolders/<Id>/ChildFolders
+GET https://outlook.office.com/v1.0/me/ContactFolders/<Id>/ChildFolders
 ```
 ##### Response
 Here is an example of the response.

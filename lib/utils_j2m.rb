@@ -3,12 +3,14 @@ module SpecMaker
 	JSON_BASE_FOLDER = "../jsonFiles/"
 	JSON_SOURCE_FOLDER = "../jsonFiles/rest/"
 	ENUMS = JSON_BASE_FOLDER + '/settings/restenums.json'
-	MARKDOWN_RESOURCE_FOLDER = "../markdowns/resources/"
-	MARKDOWN_API_FOLDER = "../markdowns/api/"
+	MARKDOWN_FOLDER = "../markdowns/"
+	Dir.mkdir(MARKDOWN_FOLDER) unless File.exists?(MARKDOWN_FOLDER)	
+	MARKDOWN_RESOURCE_FOLDER = MARKDOWN_FOLDER + "resources/"
+	MARKDOWN_API_FOLDER = MARKDOWN_FOLDER + "api/"
 	EXAMPLES_FOLDER = JSON_SOURCE_FOLDER + "examples/"
 	JSON_EXAMPLE_FOLDER = "../jsonFiles/examples/"	
 	ANNOTATIONS = JSON_BASE_FOLDER + 'settings/annotations.json'
-	SERVER = 'https://graph.microsoft.com/v1.0'
+	SERVER = 'https://outlook.office.com/v1.0'
 	HEADER1 = '# '
 	HEADER2 = '## '
 	HEADER3 = '### '
@@ -130,8 +132,7 @@ module SpecMaker
 	# End log file
 
 	# Create markdown folder if it doesn't already exist
-	Dir.mkdir(MARKDOWN_RESOURCE_FOLDER) unless 
-									File.exists?(MARKDOWN_RESOURCE_FOLDER)	
+	Dir.mkdir(MARKDOWN_RESOURCE_FOLDER) unless File.exists?(MARKDOWN_RESOURCE_FOLDER)	
 
 	if !File.exists?(JSON_SOURCE_FOLDER)
 		@logger.fatal("JSON Resource File folder does not exist. Aborting")

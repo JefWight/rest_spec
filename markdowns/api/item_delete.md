@@ -1,14 +1,12 @@
-# Delete item
+# Delete Item
 
-Delete item.
+Delete Item.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /drive/root
-DELETE /drive/items/<id>
-DELETE /drives/<id>/root
+
 
 ```
 ### Request headers
@@ -31,7 +29,7 @@ Here is an example of the request.
   "name": "delete_item"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/drive/root
+
 ```
 ##### Response
 Here is an example of the response.
@@ -47,7 +45,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete item",
+  "description": "Delete Item",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
